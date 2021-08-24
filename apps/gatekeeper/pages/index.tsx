@@ -14,26 +14,13 @@
   }
   ```
 */
-import React, { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { ChevronRightIcon } from '@heroicons/react/solid';
-import Logo from '../components/gfx/icons/logo';
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-];
+import React, { Fragment } from "react"
+import Image from "next/image"
 
 export default function Home() {
   return (
     <div className="relative bg-shark-100 overflow-hidden">
-      <div
-        className="hidden lg:block lg:absolute lg:inset-0"
-        aria-hidden="true"
-      >
+      <div className="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
         <svg
           className="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8"
           width={640}
@@ -85,21 +72,16 @@ export default function Home() {
                   Coming soon
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                  <span className="block text-gray-900">
-                    Take control of your
-                  </span>
+                  <span className="block text-gray-900">Take control of your</span>
                   <span className="block text-ai-aqua-600">micro services</span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Let your micro components drive web application delivery at
-                global scale with the worlds first DevOps platform built for the
-                IoT and edge.
+                Let your micro components drive web application delivery at global scale
+                with the worlds first DevOps platform built for the IoT and edge.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">
-                  Request login token
-                </p>
+                <p className="text-base font-medium text-gray-900">Request login token</p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
                     Email
@@ -119,7 +101,7 @@ export default function Home() {
                   </button>
                 </form>
                 <p className="mt-3 text-sm text-gray-500">
-                  We care about the protection of your data. Read our{' '}
+                  We care about the protection of your data. Read our{" "}
                   <a
                     href="https://cdn.watheia.org/assets/terms-and-conditions.txt"
                     target="_blank"
@@ -180,7 +162,7 @@ export default function Home() {
                   className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
-                  <img
+                  <Image
                     className="w-full rounded-xxl"
                     src="/illustrations/undraw_server_cluster_jwwq.svg"
                     alt="Presentstion thumbnail"
@@ -194,13 +176,7 @@ export default function Home() {
                       fill="currentColor"
                       viewBox="0 0 84 84"
                     >
-                      <circle
-                        opacity="0.9"
-                        cx={42}
-                        cy={42}
-                        r={42}
-                        fill="white"
-                      />
+                      <circle opacity="0.9" cx={42} cy={42} r={42} fill="white" />
                       <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
                     </svg>
                   </div>
@@ -211,5 +187,5 @@ export default function Home() {
         </article>
       </div>
     </div>
-  );
+  )
 }
