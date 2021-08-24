@@ -68,20 +68,20 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
-                <span className="block text-sm font-semibold uppercase tracking-wide sm:text-shark-500 lg:text-sm xl:text-shark-500 text-accents-8">
+                <span className="block text-sm font-semibold uppercase tracking-wide sm:text-shark-400 lg:text-sm xl:text-shark-400">
                   Coming soon
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-shark-900">Take control of your</span>
-                  <span className="block text-ai-aqua-600">micro services</span>
+                  <span className="block text-ai-aqua-600">micro components</span>
                 </span>
               </h1>
-              <p className="mt-3 text-base text-shark-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Let your micro components drive web application delivery at global scale
-                with the worlds first DevOps platform built for the IoT and edge.
+              <p className="mt-3 text-base text-shark-800 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                Let micro components drive feature delivery at global scale with the worlds{" "}
+                <s>first</s> best DevOps platform built for IoT and the edge.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto text-left lg:mx-0">
-                <p className="text-base font-sm text-shark-900">
+                <p className="text-base font-xsm text-shark-800">
                   Get single use login token
                 </p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
@@ -99,10 +99,10 @@ export default function Home() {
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ai-aqua-600 shadow-sm hover:bg-ai-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Request early access
+                    Request Access
                   </button>
                 </form>
-                <p className="mt-3 text-xs text-shark-500">
+                <p className="mt-3 text-xs text-shark-800">
                   We care about the protection of your data. Your email address will not
                   saved any longer than needed to send the OTP code. Read our{" "}
                   <a

@@ -19,33 +19,40 @@ export default function About() {
     <div className="py-16 bg-shark-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-          <h2 className="text-base text-ai-aqua-600 font-semibold tracking-wide uppercase">
-            About Watheia Labs
+          <h2 className="text-base text-regal-blue-700 font-semibold tracking-wide uppercase">
+            We create digital products.
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            What makes us different
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-shark-900 sm:text-4xl">
+            About Us
           </p>
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
-          <p className="text-lg text-gray-500">
-            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-            consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu
-            morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae
-            fames senectus vitae.
+          <p className="text-lg text-shark-700 text-2xl mx-4 text-">
+            Our mission is to make is to make technology more accesible to all.
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="prose prose-ai-aqua text-gray-500 mx-auto lg:max-w-none">
-              <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum.
-                Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
-                donec laoreet quam urna.
+            <div className="prose prose-ai-aqua text-shark-500 mx-auto lg:max-w-none">
+              <p className="text-shark-900 font-bold">
+                Here are just few things that make our mission easier
               </p>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>Design architectures that are adaptable and resilient to change</li>
+                <li>Progressively enhance behavior based on detected hardware features.</li>
+                {/* <li>
+                  Advocate for the elimination of software patents and a reduction to all
+                  copyright terms
+                </li> */}
+                <li>
+                  Refurbish, repair, or recycle electronic waste (household appliances,
+                  printer/fax machines, multi-unit phone systems, whole desktop computers
+                  (most likely missing the install key).
+                </li>
+                <li>
+                  Maintain a free emergency hotline for seniors as they become exposed to
+                  large-scale misinformation, scams, and identity theft campaigns.
+                </li>
               </ul>
               <p>
                 Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel
@@ -103,7 +110,7 @@ export default function About() {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200"
+                    className="text-shark-200"
                     fill="currentColor"
                   />
                 </pattern>
@@ -115,41 +122,27 @@ export default function About() {
               />
             </svg>
             <blockquote className="relative bg-white rounded-lg shadow-lg">
-              <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
+              <div className="rounded-t-lg px-6 py-4 sm:px-6 sm:pt-5 sm:pb-8">
                 <img
-                  src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
+                  src="https://cdn.watheia.org/assets/logo-banner.png"
                   alt="Workcation"
-                  className="h-8"
+                  className="h-14 float-left mr-8"
                 />
-                <div className="relative text-lg text-gray-700 font-medium mt-8">
+                <div className="relative text-lg text-shark-900 font-medium mt-4">
                   <svg
-                    className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+                    className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-shark-200"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"
                   >
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
-                  <p className="relative">
-                    Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur
-                    pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim
-                    id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.
+                  <p className="relative text-tracking-tight">
+                    Watheia Labs was formed by Aaron R Miller and Patrick S Stevenson to
+                    build and manage a portfolio of IT products and services.
                   </p>
                 </div>
               </div>
-              <cite className="relative flex items-center sm:items-start bg-ai-aqua-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-                <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
-                  <img
-                    className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-ai-aqua-300"
-                    src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
-                    alt=""
-                  />
-                </div>
-                <span className="relative ml-4 text-ai-aqua-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                  <p className="text-white font-semibold sm:inline">Judith Black</p>{" "}
-                  <p className="sm:inline">CEO at Workcation</p>
-                </span>
-              </cite>
             </blockquote>
           </div>
         </div>

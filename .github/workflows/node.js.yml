@@ -28,5 +28,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
       - run: yarn install
-      - run: yarn nx run gatekeeper:build:production --verbose
       - run: yarn nx run gatekeeper:test --verbose --coverage
+      # - run: yarn nx run gatekeeper:build:production --verbose
