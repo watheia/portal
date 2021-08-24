@@ -27,7 +27,7 @@ export default function About() {
           </p>
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
-          <p className="text-lg text-shark-700 text-2xl mx-4 text-">
+          <p className="text-lg text-shark-700 text-2xl mx-4">
             Our mission is to make is to make technology more accesible to all.
           </p>
         </div>

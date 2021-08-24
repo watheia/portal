@@ -1,0 +1,3 @@
+[submodule "cluster"]
+	path = cluster
+	url = git@gitlab.com:watheia/cluster-operator.git
