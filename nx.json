@@ -1,0 +1,39 @@
+{
+  "npmScope": "waweb",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "NTMzNTQ5OGUtMzVhMS00NmRkLWE2NzctNmNkZTY5MjAxZTQwfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "gatekeeper": {
+      "tags": []
+    },
+    "gatekeeper-e2e": {
+      "tags": [],
+      "implicitDependencies": ["gatekeeper"]
+    }
+  }
+}
