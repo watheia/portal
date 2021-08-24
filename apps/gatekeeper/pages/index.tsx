@@ -42,7 +42,7 @@ export default function Home() {
                 y={0}
                 width={4}
                 height={4}
-                className="text-gray-200"
+                className="text-shark-200"
                 fill="currentColor"
               />
             </pattern>
@@ -51,7 +51,7 @@ export default function Home() {
             y={72}
             width={640}
             height={640}
-            className="text-gray-50"
+            className="text-shark-50"
             fill="currentColor"
           />
           <rect
@@ -72,16 +72,18 @@ export default function Home() {
                   Coming soon
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                  <span className="block text-gray-900">Take control of your</span>
+                  <span className="block text-shark-900">Take control of your</span>
                   <span className="block text-ai-aqua-600">micro services</span>
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 text-base text-shark-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 Let your micro components drive web application delivery at global scale
                 with the worlds first DevOps platform built for the IoT and edge.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">Request login token</p>
+                <p className="text-base font-sm text-shark-900">
+                  Get single use login token
+                </p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
                     Email
@@ -90,27 +92,28 @@ export default function Home() {
                     type="text"
                     name="email"
                     id="email"
-                    className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-ai-aqua-500 focus:border-ai-aqua-500 sm:flex-1 border-gray-300"
+                    className="block w-full py-3 text-base rounded-md placeholder-shark-500 shadow-sm focus:ring-ai-aqua-500 focus:border-ai-aqua-500 sm:flex-1 border-shark-300"
                     placeholder="Enter your email"
                   />
                   <button
                     type="submit"
-                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ai-aqua-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ai-aqua-600 shadow-sm hover:bg-ai-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Get access
+                    Request early access
                   </button>
                 </form>
-                <p className="mt-3 text-sm text-gray-500">
-                  We care about the protection of your data. Read our{" "}
+                <p className="mt-3 text-xs text-shark-500">
+                  We care about the protection of your data. Your email address will not
+                  saved any longer than needed to send the OTP code. Read our{" "}
                   <a
                     href="https://cdn.watheia.org/assets/terms-and-conditions.txt"
                     target="_blank"
                     rel="noreferrer"
-                    className="font-medium text-gray-900 underline"
+                    className="font-medium text-regal-blue-800 hover:text-regal-blue-600 underline"
                   >
                     Privacy Policy
-                  </a>
-                  .
+                  </a>{" "}
+                  for details.
                 </p>
               </div>
             </div>
@@ -137,7 +140,7 @@ export default function Home() {
                       y={0}
                       width={4}
                       height={4}
-                      className="text-gray-200"
+                      className="text-shark-200"
                       fill="currentColor"
                     />
                   </pattern>
@@ -146,7 +149,7 @@ export default function Home() {
                   y={72}
                   width={640}
                   height={640}
-                  className="text-gray-50"
+                  className="text-shark-50"
                   fill="currentColor"
                 />
                 <rect
@@ -163,6 +166,8 @@ export default function Home() {
                 >
                   <span className="sr-only">Watch our video to learn more</span>
                   <Image
+                    width="888"
+                    height="710.80704"
                     className="w-full rounded-xxl"
                     src="/illustrations/undraw_server_cluster_jwwq.svg"
                     alt="Presentstion thumbnail"

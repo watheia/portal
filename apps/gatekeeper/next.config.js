@@ -13,7 +13,9 @@ const nextConfig = {
   images: {
     domains: [
       "watheia.app",
+      "static.bit.dev",
       "cdn.watheia.org",
+      "images.unsplash.com",
       "www.datocms-assets.com",
       "a.storyblok.com",
       "images.ctfassets.net",
