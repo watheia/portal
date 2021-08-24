@@ -28,41 +28,37 @@ export default function About() {
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
-            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum
-            urna sed consectetur neque tristique pellentesque. Blandit amet, sed
-            aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel
-            porttitor vitae ut. Amet vitae fames senectus vitae.
+            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
+            consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu
+            morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae
+            fames senectus vitae.
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
             <div className="prose prose-ai-aqua text-gray-500 mx-auto lg:max-w-none">
               <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
+                Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum.
+                Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
+                donec laoreet quam urna.
               </p>
               <ul role="list">
                 <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-                </li>
+                <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
                 <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
               </ul>
               <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
+                Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel
+                ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in
+                venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit
+                aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
               </p>
               <h3>We’re here to help</h3>
               <p>
-                Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                Consectetur pretium in volutpat, diam. Montes, magna cursus
-                nulla feugiat dignissim id lobortis amet. Laoreet sem est
-                phasellus eu proin massa, lectus. Diam rutrum posuere donec
-                ultricies non morbi. Mi a platea auctor mi.
+                Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur
+                pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id
+                lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum
+                posuere donec ultricies non morbi. Mi a platea auctor mi.
               </p>
             </div>
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
@@ -135,10 +131,9 @@ export default function About() {
                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                   </svg>
                   <p className="relative">
-                    Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                    Consectetur pretium in volutpat, diam. Montes, magna cursus
-                    nulla feugiat dignissim id lobortis amet. Laoreet sem est
-                    phasellus eu proin massa, lectus.
+                    Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur
+                    pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim
+                    id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.
                   </p>
                 </div>
               </div>
@@ -151,9 +146,7 @@ export default function About() {
                   />
                 </div>
                 <span className="relative ml-4 text-ai-aqua-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                  <p className="text-white font-semibold sm:inline">
-                    Judith Black
-                  </p>{' '}
+                  <p className="text-white font-semibold sm:inline">Judith Black</p>{" "}
                   <p className="sm:inline">CEO at Workcation</p>
                 </span>
               </cite>
@@ -162,5 +155,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }

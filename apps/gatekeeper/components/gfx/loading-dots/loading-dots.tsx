@@ -1,4 +1,4 @@
-import s from './loading-dots.module.css';
+import s from "./loading-dots.module.css"
 
 const LoadingDots = () => {
   return (
@@ -7,7 +7,7 @@ const LoadingDots = () => {
       <span />
       <span />
     </span>
-  );
-};
+  )
+}
 
-export default LoadingDots;
+export default LoadingDots

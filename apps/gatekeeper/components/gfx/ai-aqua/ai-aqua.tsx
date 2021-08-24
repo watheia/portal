@@ -1,13 +1,8 @@
-import * as React from 'react';
+import * as React from "react"
 
 function AiAqua(props) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="100%"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" {...props}>
       <defs>
         <linearGradient id="prefix__a" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#004658" />
@@ -19,7 +14,7 @@ function AiAqua(props) {
       </defs>
       <path fill="url(#prefix__a)" d="M0 0h640v640H0z" />
     </svg>
-  );
+  )
 }
 
-export default AiAqua;
+export default AiAqua

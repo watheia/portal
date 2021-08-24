@@ -16,38 +16,38 @@
 */
 const posts = [
   {
-    title: 'Boost your conversion rate',
-    href: '#',
+    title: "Boost your conversion rate",
+    href: "#",
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2021',
-    datetime: '2021-06-16',
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    date: "Mar 16, 2021",
+    datetime: "2021-06-16"
   },
   {
-    title: 'How to use search engine optimization to drive sales',
-    href: '#',
+    title: "How to use search engine optimization to drive sales",
+    href: "#",
     description:
-      'Optio cum necessitatibus dolor voluptatum provident commodi et. Qui aperiam fugiat nemo cumque.',
-    date: 'Mar 10, 2021',
-    datetime: '2021-03-10',
+      "Optio cum necessitatibus dolor voluptatum provident commodi et. Qui aperiam fugiat nemo cumque.",
+    date: "Mar 10, 2021",
+    datetime: "2021-03-10"
   },
   {
-    title: 'Improve your customer experience',
-    href: '#',
+    title: "Improve your customer experience",
+    href: "#",
     description:
-      'Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas iusto libero adipisci rem et corporis.',
-    date: 'Feb 12, 2021',
-    datetime: '2021-02-12',
+      "Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas iusto libero adipisci rem et corporis.",
+    date: "Feb 12, 2021",
+    datetime: "2021-02-12"
   },
   {
-    title: 'Writing effective landing page copy',
-    href: '#',
+    title: "Writing effective landing page copy",
+    href: "#",
     description:
-      'Ipsum voluptates quia doloremque culpa qui eius. Id qui id officia molestias quaerat deleniti. Qui facere numquam autem libero quae cupiditate asperiores vitae cupiditate. Cumque id deleniti explicabo.',
-    date: 'Jan 29, 2021',
-    datetime: '2021-01-29',
-  },
-];
+      "Ipsum voluptates quia doloremque culpa qui eius. Id qui id officia molestias quaerat deleniti. Qui facere numquam autem libero quae cupiditate asperiores vitae cupiditate. Cumque id deleniti explicabo.",
+    date: "Jan 29, 2021",
+    datetime: "2021-01-29"
+  }
+]
 
 export default function Blog() {
   return (
@@ -59,8 +59,7 @@ export default function Blog() {
           </h2>
           <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
             <p className="text-xl text-gray-500">
-              A curated list on breaking tech news, delivered strait to your
-              inbox.
+              A curated list on breaking tech news, delivered strait to your inbox.
             </p>
             <form className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-end">
               <div>
@@ -95,12 +94,8 @@ export default function Blog() {
                 <time dateTime={post.datetime}>{post.date}</time>
               </p>
               <a href="#" className="mt-2 block">
-                <p className="text-xl font-semibold text-gray-900">
-                  {post.title}
-                </p>
-                <p className="mt-3 text-base text-gray-500">
-                  {post.description}
-                </p>
+                <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                <p className="mt-3 text-base text-gray-500">{post.description}</p>
               </a>
               <div className="mt-3">
                 <a
@@ -115,5 +110,5 @@ export default function Blog() {
         </div>
       </div>
     </div>
-  );
+  )
 }

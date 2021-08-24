@@ -31,8 +31,8 @@
   --violet-light: #4fd2d2;
   --violet: #04bfbf;
 
-  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
-    'Helvetica', sans-serif;
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
+    sans-serif;
 
   --header-height: 64px;
   --vh100-offset: calc(100vh - var(--header-height));
@@ -52,7 +52,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   touch-action: manipulation;
-  font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+  font-feature-settings: "case" 1, "rlig" 1, "calt" 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,7 +70,7 @@ body {
 
 body {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -78,14 +78,14 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.animated {
+/* .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+} */
 
 .fadeIn {
   -webkit-animation-name: fadeIn;

@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import s from './navbar.module.css';
+import Link from "next/link"
+import s from "./navbar.module.css"
 
-import Logo from '../../gfx/icons/logo';
-import { useUser } from '../../../utils/useUser';
+import Logo from "../../gfx/icons/logo"
+import { useUser } from "../../../utils/useUser"
 
 const Navbar = () => {
-  const { user, signOut } = useUser();
+  const { user, signOut } = useUser()
 
   return (
     <nav className={s.root}>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

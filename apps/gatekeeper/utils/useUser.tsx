@@ -1,5 +1,5 @@
-import { useEffect, useState, createContext, useContext } from 'react';
-import { supabase } from './supabase-client';
+import { useEffect, useState, createContext, useContext } from "react"
+import { supabase } from "./supabase-client"
 
 export const UserContext = createContext({
   session: null,
@@ -12,16 +12,16 @@ export const UserContext = createContext({
   signOut: () => {
     // setUserDetails(null);
     // setSubscription(null);
-    return supabase.auth.signOut();
-  },
-});
+    return supabase.auth.signOut()
+  }
+})
 
 export const UserContextProvider = (props) => {
-  const [userLoaded, setUserLoaded] = useState(false);
-  const [session, setSession] = useState(null);
-  const [user, setUser] = useState(null);
-  const [userDetails, setUserDetails] = useState(null);
-  const [subscription, setSubscription] = useState(null);
+  const [userLoaded, setUserLoaded] = useState(false)
+  const [session, setSession] = useState(null)
+  const [user, setUser] = useState(null)
+  const [userDetails, setUserDetails] = useState(null)
+  const [subscription, setSubscription] = useState(null)
 
   // useEffect(() => {
   //   const session = supabase.auth.session();
@@ -68,18 +68,18 @@ export const UserContextProvider = (props) => {
     signIn: (options) => supabase.auth.signIn(options),
     signUp: (options) => supabase.auth.signUp(options),
     signOut: () => {
-      setUserDetails(null);
-      setSubscription(null);
-      return supabase.auth.signOut();
-    },
-  };
-  return <UserContext.Provider value={value} {...props} />;
-};
+      setUserDetails(null)
+      setSubscription(null)
+      return supabase.auth.signOut()
+    }
+  }
+  return <UserContext.Provider value={value} {...props} />
+}
 
 export const useUser = () => {
-  const context = useContext(UserContext);
+  const context = useContext(UserContext)
   if (context === undefined) {
-    throw new Error(`useUser must be used within a UserContextProvider.`);
+    throw new Error(`useUser must be used within a UserContextProvider.`)
   }
-  return context;
-};
+  return context
+}

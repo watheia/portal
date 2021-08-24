@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import s from './footer.module.css';
+import Link from "next/link"
+import s from "./footer.module.css"
 
-import Logo from '../../gfx/icons/logo';
-import GitHub from '../../gfx/icons/github';
-import WaCard from '../../gfx/wa-card/wa-card';
+import Logo from "../../gfx/icons/logo"
+import GitHub from "../../gfx/icons/github"
+import WaCard from "../../gfx/wa-card/wa-card"
 
 export default function Footer() {
   return (
@@ -18,5 +18,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

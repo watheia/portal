@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes } from "react"
 import {
   AnnotationIcon,
   ChatAlt2Icon,
@@ -13,10 +13,10 @@ import {
   SparklesIcon,
   TrashIcon,
   UsersIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import { ChevronDownIcon } from '@heroicons/react/solid';
-import Image from 'next/image';
+  XIcon
+} from "@heroicons/react/outline"
+import { ChevronDownIcon } from "@heroicons/react/solid"
+import Image from "next/image"
 
 // const solutions = [
 //   {
@@ -47,80 +47,80 @@ import Image from 'next/image';
 // ];
 const features = [
   {
-    name: 'Unlimited Inboxes',
+    name: "Unlimited Inboxes",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: InboxIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: InboxIcon
   },
   {
-    name: 'Manage Team Members',
+    name: "Manage Team Members",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: UsersIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: UsersIcon
   },
   {
-    name: 'Spam Report',
+    name: "Spam Report",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: TrashIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: TrashIcon
   },
   {
-    name: 'Compose in Markdown',
+    name: "Compose in Markdown",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: PencilAltIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: PencilAltIcon
   },
   {
-    name: 'Team Reporting',
+    name: "Team Reporting",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: DocumentReportIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: DocumentReportIcon
   },
   {
-    name: 'Saved Replies',
+    name: "Saved Replies",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ReplyIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: ReplyIcon
   },
   {
-    name: 'Email Commenting',
+    name: "Email Commenting",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ChatAltIcon,
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: ChatAltIcon
   },
   {
-    name: 'Connect with Customers',
+    name: "Connect with Customers",
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: HeartIcon,
-  },
-];
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+    icon: HeartIcon
+  }
+]
 const metrics = [
   {
     id: 1,
-    stat: '8K+',
-    emphasis: 'Companies',
-    rest: 'use laoreet amet lacus nibh integer quis.',
+    stat: "8K+",
+    emphasis: "Companies",
+    rest: "use laoreet amet lacus nibh integer quis."
   },
   {
     id: 2,
-    stat: '25K+',
-    emphasis: 'Countries around the globe',
-    rest: 'lacus nibh integer quis.',
+    stat: "25K+",
+    emphasis: "Countries around the globe",
+    rest: "lacus nibh integer quis."
   },
   {
     id: 3,
-    stat: '98%',
-    emphasis: 'Customer satisfaction',
-    rest: 'laoreet amet lacus nibh integer quis.',
+    stat: "98%",
+    emphasis: "Customer satisfaction",
+    rest: "laoreet amet lacus nibh integer quis."
   },
   {
     id: 4,
-    stat: '12M+',
-    emphasis: 'Issues resolved',
-    rest: 'lacus nibh integer quis.',
-  },
-];
+    stat: "12M+",
+    emphasis: "Issues resolved",
+    rest: "lacus nibh integer quis."
+  }
+]
 // const footerNavigation = {
 //   solutions: [
 //     { name: 'Marketing', href: '#' },
@@ -212,7 +212,7 @@ const metrics = [
 // };
 
 /* eslint-disable-next-line */
-export type AboutProps = HTMLAttributes<HTMLDivElement>;
+export type AboutProps = HTMLAttributes<HTMLDivElement>
 
 export function About(props: AboutProps) {
   return (
@@ -234,14 +234,11 @@ export function About(props: AboutProps) {
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                   <span className="block text-white">Take control of your</span>
-                  <span className="block text-ai-aqua-200">
-                    customer support
-                  </span>
+                  <span className="block text-ai-aqua-200">customer support</span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl text-ai-aqua-200 sm:max-w-3xl">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+                  cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
                 </p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -322,10 +319,7 @@ export function About(props: AboutProps) {
                 <div>
                   <div>
                     <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-regal-blue-600 to-ai-aqua-600">
-                      <InboxIcon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
+                      <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
@@ -333,11 +327,10 @@ export function About(props: AboutProps) {
                       Stay on top of customer support
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare
-                      iaculis bibendum malesuada faucibus lacinia porttitor.
-                      Pulvinar laoreet sagittis viverra duis. In venenatis sem
-                      arcu pretium pharetra at. Lectus viverra dui tellus ornare
-                      pharetra.
+                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum
+                      malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis
+                      viverra duis. In venenatis sem arcu pretium pharetra at. Lectus
+                      viverra dui tellus ornare pharetra.
                     </p>
                     <div className="mt-6">
                       <a
@@ -353,9 +346,9 @@ export function About(props: AboutProps) {
                   <blockquote>
                     <div>
                       <p className="text-base text-gray-500">
-                        &ldquo;Cras velit quis eros eget rhoncus lacus ultrices
-                        sed diam. Sit orci risus aenean curabitur donec aliquet.
-                        Mi venenatis in euismod ut.&rdquo;
+                        &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam.
+                        Sit orci risus aenean curabitur donec aliquet. Mi venenatis in
+                        euismod ut.&rdquo;
                       </p>
                     </div>
                     <footer className="mt-3">
@@ -392,10 +385,7 @@ export function About(props: AboutProps) {
                 <div>
                   <div>
                     <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-regal-blue-600 to-ai-aqua-600">
-                      <SparklesIcon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
+                      <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
@@ -403,11 +393,10 @@ export function About(props: AboutProps) {
                       Better understand your customers
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                      Semper curabitur ullamcorper posuere nunc sed. Ornare
-                      iaculis bibendum malesuada faucibus lacinia porttitor.
-                      Pulvinar laoreet sagittis viverra duis. In venenatis sem
-                      arcu pretium pharetra at. Lectus viverra dui tellus ornare
-                      pharetra.
+                      Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum
+                      malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis
+                      viverra duis. In venenatis sem arcu pretium pharetra at. Lectus
+                      viverra dui tellus ornare pharetra.
                     </p>
                     <div className="mt-6">
                       <a
@@ -440,25 +429,19 @@ export function About(props: AboutProps) {
               Inbox support built for efficiency
             </h2>
             <p className="mt-4 max-w-3xl text-lg shark-100">
-              Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
-              magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis
-              in.
+              Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit
+              morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
               {features.map((feature) => (
                 <div key={feature.name}>
                   <div>
                     <span className="flex items-center justify-center h-12 w-12 rounded-md bg-shark-100 bg-opacity-10">
-                      <feature.icon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
+                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h3 className="text-lg font-medium text-white">
-                      {feature.name}
-                    </h3>
+                    <h3 className="text-lg font-medium text-white">{feature.name}</h3>
                     <p className="mt-2 text-base text-regal-blue-200">
                       {feature.description}
                     </p>
@@ -497,22 +480,17 @@ export function About(props: AboutProps) {
                 Get actionable data that will help grow your business
               </p>
               <p className="mt-5 text-lg text-gray-300">
-                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in
-                adipiscing quis in viverra tristique sem. Ornare feugiat viverra
-                eleifend fusce orci in quis amet. Sit in et vitae tortor, massa.
-                Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam
-                sit tellus quis at.
+                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in
+                viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis
+                amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer
+                quis. Eu vulputate diam sit tellus quis at.
               </p>
               <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
                 {metrics.map((item) => (
                   <p key={item.id}>
-                    <span className="block text-2xl font-bold text-white">
-                      {item.stat}
-                    </span>
+                    <span className="block text-2xl font-bold text-white">{item.stat}</span>
                     <span className="mt-1 block text-base text-gray-300">
-                      <span className="font-medium text-white">
-                        {item.emphasis}
-                      </span>{' '}
+                      <span className="font-medium text-white">{item.emphasis}</span>{" "}
                       {item.rest}
                     </span>
                   </p>
@@ -543,7 +521,7 @@ export function About(props: AboutProps) {
         </div>
       </main>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About

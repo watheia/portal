@@ -1,23 +1,23 @@
 // apps/site/postcss.config.js
-const { join } = require('path');
+const { join } = require("path")
 
 module.exports = {
   plugins: {
     tailwindcss: {
-      config: join(__dirname, 'tailwind.config.js'),
+      config: join(__dirname, "tailwind.config.js")
     },
     autoprefixer: {},
-    'postcss-nesting': {},
-    'postcss-flexbugs-fixes': {
-      'postcss-preset-env': {
+    "postcss-nesting": {},
+    "postcss-flexbugs-fixes": {
+      "postcss-preset-env": {
         autoprefixer: {
-          flexbox: 'no-2009',
+          flexbox: "no-2009"
         },
         stage: 3,
         features: {
-          'custom-properties': false,
-        },
-      },
-    },
-  },
-};
+          "custom-properties": false
+        }
+      }
+    }
+  }
+}
