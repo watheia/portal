@@ -1,25 +1,21 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Head from "next/head"
+import { useRouter } from "next/router"
 
-import Navbar from './navbar';
-import Footer from './footer';
-import { HTMLAttributes } from 'react';
+import Navbar from "./navbar"
+import Footer from "./footer"
+import { HTMLAttributes } from "react"
 
-export type LayoutProps = { meta?: any } & HTMLAttributes<HTMLDivElement>;
+export type LayoutProps = { meta?: any } & HTMLAttributes<HTMLDivElement>
 
-export default function Layout({
-  children,
-  meta: pageMeta,
-  ...props
-}: LayoutProps) {
-  const router = useRouter();
+export default function Layout({ children, meta: pageMeta, ...props }: LayoutProps) {
+  const router = useRouter()
   const meta = {
-    title: 'Gatekeeper',
-    description: 'by Watheia Labs',
-    cardImage: '/og.png',
-    ...pageMeta,
-  };
-  const basePath = router.asPath ?? '/';
+    title: "Gatekeeper",
+    description: "by Watheia Labs",
+    cardImage: "/og.png",
+    ...pageMeta
+  }
+  const basePath = router?.asPath ?? "/"
 
   return (
     <>
@@ -46,5 +42,5 @@ export default function Layout({
         <Footer />
       </div>
     </>
-  );
+  )
 }

@@ -8,7 +8,9 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "root": "apps/gatekeeper",
             "outputPath": "dist/apps/gatekeeper"
@@ -38,16 +40,31 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/gatekeeper"],
+          "outputs": [
+            "coverage/apps/gatekeeper"
+          ],
           "options": {
             "jestConfig": "apps/gatekeeper/jest.config.js",
-            "passWithNoTests": true
+            "passWithNoTests": true,
+            "codeCoverage": true,
+            "colors": true
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/gatekeeper/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/gatekeeper/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "run-coveralls": {
+          "executor": "@nrwl/workspace:run-commands",
+          "outputs": [
+            "coverage/lcov.info"
+          ],
+          "options": {
+            "command": "yarn jest --coverage && coveralls < coverage/lcov.info"
           }
         }
       }
@@ -73,7 +90,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/gatekeeper-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/gatekeeper-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }

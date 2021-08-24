@@ -1,4 +1,6 @@
-# Waweb
+# MFE Portal
+
+[![Coverage Status](https://coveralls.io/repos/github/watheia/waweb-portal/badge.svg?branch=main)](https://coveralls.io/github/watheia/waweb-portal?branch=main)
 
 This project was generated using [Nx](https://nx.dev).
 

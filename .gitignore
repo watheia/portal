@@ -48,3 +48,5 @@ Thumbs.db
 !.yarn/versions
 .pnp.*
 package.tgz
+
+.coveralls.yml
