@@ -3569,6 +3569,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@waweb/atoms@workspace:libs/atoms":
+  version: 0.0.0-use.local
+  resolution: "@waweb/atoms@workspace:libs/atoms"
+  languageName: unknown
+  linkType: soft
+
+"@waweb/gfx@workspace:libs/gfx":
+  version: 0.0.0-use.local
+  resolution: "@waweb/gfx@workspace:libs/gfx"
+  languageName: unknown
+  linkType: soft
+
+"@waweb/layout@workspace:libs/layout":
+  version: 0.0.0-use.local
+  resolution: "@waweb/layout@workspace:libs/layout"
+  languageName: unknown
+  linkType: soft
+
+"@waweb/molecules@workspace:libs/molecules":
+  version: 0.0.0-use.local
+  resolution: "@waweb/molecules@workspace:libs/molecules"
+  languageName: unknown
+  linkType: soft
+
+"@waweb/utils@workspace:libs/utils":
+  version: 0.0.0-use.local
+  resolution: "@waweb/utils@workspace:libs/utils"
+  languageName: unknown
+  linkType: soft
+
 "@webassemblyjs/ast@npm:1.9.0":
   version: 1.9.0
   resolution: "@webassemblyjs/ast@npm:1.9.0"
@@ -8605,6 +8635,14 @@ fsevents@^1.2.7:
   checksum: ca6c170f37640e2d94297da8bb4bf27a1d12bea3e00e6a3e007fd7aa32e37e000f5772acf941b4e4f3cf1c95c3752033d0c509af157ad8f526e7f00723b9eb9f
   languageName: node
   linkType: hard
+
+"gatekeeper@workspace:apps/gatekeeper":
+  version: 0.0.0-use.local
+  resolution: "gatekeeper@workspace:apps/gatekeeper"
+  dependencies:
+    dependency-cruiser: ^10.1.1
+  languageName: unknown
+  linkType: soft
 
 "gauge@npm:~2.7.3":
   version: 2.7.4

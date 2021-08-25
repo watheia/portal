@@ -243,13 +243,13 @@ export function About(props) {
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <a
                       href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-shark-100 hover:bg-shark-200 hover:shadow-none sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-full shadow-sm bg-shark-100 hover:bg-shark-200 hover:shadow-none sm:px-8"
                     >
                       Get support
                     </a>
                     <a
                       href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-secondary font-medium rounded-md shadow-sm text-white bg-ai-aqua-500 bg-opacity-60 hover:shadow-none sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white bg-ai-aqua-500 bg-opacity-60 hover:shadow-none sm:px-8"
                     >
                       Learn more
                     </a>
@@ -526,7 +526,7 @@ export function About(props) {
             <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
               <a
                 href="#"
-                className="flex items-center justify-center bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-600 bg-origin-border px-4 py-3 border border-transparent text-secondary font-medium rounded-md shadow-sm text-white hover:from-regal-blue-700 hover:to-ai-aqua-700"
+                className="flex items-center justify-center bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-600 bg-origin-border px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white hover:from-regal-blue-700 hover:to-ai-aqua-700"
               >
                 Get Early Access
               </a>

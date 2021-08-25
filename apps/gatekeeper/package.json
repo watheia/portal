@@ -1,0 +1,7 @@
+{
+  "name": "gatekeeper",
+  "version": "0.0.1",
+  "devDependencies": {
+    "dependency-cruiser": "^10.1.1"
+  }
+}
