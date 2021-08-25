@@ -28,12 +28,18 @@
     ]
   },
   "projects": {
+    "atoms": {
+      "tags": []
+    },
     "gatekeeper": {
       "tags": []
     },
     "gatekeeper-e2e": {
       "tags": [],
       "implicitDependencies": ["gatekeeper"]
+    },
+    "gfx": {
+      "tags": []
     }
   }
 }

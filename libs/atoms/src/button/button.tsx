@@ -1,15 +1,15 @@
-import cn from "classnames"
+import clsx from "clsx"
 import React, { forwardRef, HTMLAttributes, useRef } from "react"
 import mergeRefs from "react-merge-refs"
 import s from "./button.module.css"
 
-import LoadingDots from "../../gfx/loading-dots"
+import { LoadingDots } from "@waweb/gfx"
 
 export type ButtonProps = {
   variant?: "flat" | "slim" | "cta" | "subtle"
   type?: "submit" | "reset" | "button"
   active?: boolean
-  width?: number | string | null | undefined
+  width?: number | string
   loading?: boolean
   disabled?: boolean
   Component?: "button"
@@ -29,7 +29,7 @@ const Button = forwardRef((props: ButtonProps, buttonRef): JSX.Element => {
     ...rest
   } = props
   const ref = useRef(null)
-  const rootClassName = cn(
+  const rootClassName = clsx(
     s.root,
     {
       [s.slim]: variant === "slim",

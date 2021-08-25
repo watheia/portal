@@ -1,6 +1,7 @@
-import * as React from "react"
+import React from "react"
+import { SVGProps } from "react"
 
-function AiAqua(props) {
+function AiAqua(props: SVGProps<SVGSVGElement>) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" {...props}>
       <defs>

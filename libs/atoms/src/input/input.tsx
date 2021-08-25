@@ -1,15 +1,16 @@
-import React from "react"
-import cn from "classnames"
+import React, { ChangeEvent, HTMLAttributes } from "react"
+import clsx from "clsx"
 import s from "./input.module.css"
 
-const Input = (props) => {
+export type InputProps = HTMLAttributes<HTMLInputElement>
+const Input = (props: InputProps) => {
   const { className, children, onChange, ...rest } = props
 
-  const rootClassName = cn(s.root, {}, className)
+  const rootClassName = clsx(s.root, {}, className)
 
-  const handleOnChange = (e) => {
+  const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
-      onChange(e.target.value)
+      onChange(e)
     }
     return null
   }

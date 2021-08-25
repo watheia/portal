@@ -1,6 +1,7 @@
 import * as React from "react"
+import { SVGProps } from "react"
 
-function Logo(props) {
+function Logo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

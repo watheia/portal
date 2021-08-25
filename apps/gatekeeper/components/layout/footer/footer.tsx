@@ -1,9 +1,7 @@
 import Link from "next/link"
 import s from "./footer.module.css"
 
-import Logo from "../../gfx/icons/logo"
-import GitHub from "../../gfx/icons/github"
-import WaCard from "../../gfx/wa-card/wa-card"
+import { WaCard } from "@waweb/gfx"
 
 export default function Footer() {
   return (

@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@waweb/atoms": ["libs/atoms/src/index.ts"],
+      "@waweb/gfx": ["libs/gfx/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

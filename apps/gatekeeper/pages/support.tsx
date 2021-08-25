@@ -1,21 +1,15 @@
 import { HTMLAttributes } from "react"
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
   ChatAltIcon,
   DocumentReportIcon,
   HeartIcon,
   InboxIcon,
-  MenuIcon,
   PencilAltIcon,
-  QuestionMarkCircleIcon,
   ReplyIcon,
   SparklesIcon,
   TrashIcon,
-  UsersIcon,
-  XIcon
+  UsersIcon
 } from "@heroicons/react/outline"
-import { ChevronDownIcon } from "@heroicons/react/solid"
 import Image from "next/image"
 
 // const solutions = [
@@ -214,7 +208,7 @@ const metrics = [
 /* eslint-disable-next-line */
 export type AboutProps = HTMLAttributes<HTMLDivElement>
 
-export function About(props: AboutProps) {
+export function About(props) {
   return (
     <div className="bg-shark-100 py-6">
       <main>

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import s from "./navbar.module.css"
 
-import Logo from "../../gfx/icons/logo"
+import { Logo } from "@waweb/gfx"
 import { useUser } from "../../../utils/useUser"
 
 const Navbar = () => {

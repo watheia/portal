@@ -1,6 +1,46 @@
 {
   "version": 2,
   "projects": {
+    "atoms": {
+      "root": "libs/atoms",
+      "sourceRoot": "libs/atoms/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/atoms",
+            "tsConfig": "libs/atoms/tsconfig.lib.json",
+            "project": "libs/atoms/package.json",
+            "entryFile": "libs/atoms/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/atoms/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/atoms/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/atoms"],
+          "options": {
+            "jestConfig": "libs/atoms/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "gatekeeper": {
       "root": "apps/gatekeeper",
       "sourceRoot": "apps/gatekeeper",
@@ -83,6 +123,46 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/gatekeeper-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "gfx": {
+      "root": "libs/gfx",
+      "sourceRoot": "libs/gfx/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/gfx",
+            "tsConfig": "libs/gfx/tsconfig.lib.json",
+            "project": "libs/gfx/package.json",
+            "entryFile": "libs/gfx/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/gfx/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/gfx/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/gfx"],
+          "options": {
+            "jestConfig": "libs/gfx/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
