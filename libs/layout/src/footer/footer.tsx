@@ -11,7 +11,7 @@ export default function Footer() {
           <span>&copy; 2020 Watheia Labs, LLC. All rights reserved.</span>
         </div>
         <div className="flex items-center">
-          <span className="text-primary">Expertly Crafted by</span>
+          <span className="text-secondary">Expertly Crafted by</span>
           <WaCard className="inline-block h-24 ml-4 text-primary" />
         </div>
       </div>

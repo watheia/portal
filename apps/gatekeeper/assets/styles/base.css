@@ -1,31 +1,31 @@
 :root {
   --primary: #110f10;
   --primary-2: #1a1718;
-  --secondary: #ffffff;
-  --secondary-2: #f1f3f5;
+  --secondary: #fefeff;
+  --secondary-2: #fefeff;
   --hover: rgba(255, 255, 255, 0.075);
   --hover-1: rgba(255, 255, 255, 0.15);
   --hover-2: rgba(255, 255, 255, 0.25);
   --selection: var(--purple);
 
-  --text-base: white;
-  --text-primary: white;
-  --text-secondary: black;
+  --text-base: #110f10;
+  --text-primary: #1a1718;
+  --text-secondary: #fff;
 
-  --accents-0: #212529;
-  --accents-1: #343a40;
-  --accents-2: #495057;
-  --accents-3: #868e96;
-  --accents-4: #adb5bd;
-  --accents-5: #ced4da;
-  --accents-6: #dee2e6;
-  --accents-7: #e9ecef;
-  --accents-8: #f1f3f5;
-  --accents-9: #f8f9fa;
+  --accents-0: #110f10;
+  --accents-1: #151313;
+  --accents-2: #1a1718;
+  --accents-3: #201c1d;
+  --accents-4: #231f20;
+  --accents-5: #656263;
+  --accents-6: #a7a5a6;
+  --accents-7: #dbdcdd;
+  --accents-8: #fafbfb;
+  --accents-9: #fefeff;
 
   --green: #025e5e;
-  --red: #da3c3c;
-  --pink: #e64980;
+  --red: #590b35;
+  --pink: #8b5472;
   --purple: #04bfbf;
   --blue: #0070f3;
   --violet-light: #4fd2d2;

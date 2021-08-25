@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@waweb/atoms": ["libs/atoms/src/index.ts"],
-      "@waweb/gfx": ["libs/gfx/src/index.ts"]
+      "@waweb/gfx": ["libs/gfx/src/index.ts"],
+      "@waweb/layout": ["libs/layout/src/index.ts"],
+      "@waweb/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

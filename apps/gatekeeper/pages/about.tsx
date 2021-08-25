@@ -185,9 +185,7 @@ export default function About(props) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
             <div className="prose prose-ai-aqua text-shark-500 mx-auto lg:max-w-none">
-              <p className="text-shark-900 font-bold">
-                Here are just few activities we are engaged in
-              </p>
+              <h3>What we do</h3>
               <ul role="list">
                 <li>Design architectures that are adaptable and resilient to change</li>
                 <li>Progressively enhance behavior based on detected hardware features.</li>
@@ -223,7 +221,7 @@ export default function About(props) {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-ai-aqua-600 hover:bg-ai-aqua-700"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-ai-aqua-600 hover:bg-ai-aqua-700"
                 >
                   Contact sales
                 </a>

@@ -1,5 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require("@nrwl/next/plugins/with-nx")
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true"
+})
+const withPlugins = require("next-compose-plugins")
+
+const plugins = [withNx, withBundleAnalyzer]
 
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
@@ -14,6 +20,7 @@ const nextConfig = {
     domains: [
       "watheia.app",
       "static.bit.dev",
+      "tailwindui.com",
       "cdn.watheia.org",
       "images.unsplash.com",
       "www.datocms-assets.com",
@@ -27,4 +34,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withNx(nextConfig)
+module.exports = withPlugins(plugins, nextConfig)

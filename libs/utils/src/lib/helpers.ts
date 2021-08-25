@@ -1,3 +1,5 @@
+import { Payload } from "./types"
+
 export const getURL = (): string => {
   const url =
     process?.env?.URL && process.env.URL !== ""
@@ -8,19 +10,19 @@ export const getURL = (): string => {
   return url.includes("http") ? url : `https://${url}`
 }
 
-export const postData = async ({ url, token, data = {} }): Promise<any> => {
-  const res = await fetch(url, {
+export const postData = async ({ url, token, data = {} }: Payload): Promise<any> => {
+  return await fetch(url, {
     method: "POST",
     headers: new Headers({ "Content-Type": "application/json", token }),
     credentials: "same-origin",
     body: JSON.stringify(data)
   })
-
-  if (res["error"]) {
-    throw res["error"]
-  }
-
-  return res.json()
+    .then((res) => {
+      res.json()
+    })
+    .catch((res) => {
+      throw res.error ?? res
+    })
 }
 
 export const toDateTime = (secs: number): Date => {

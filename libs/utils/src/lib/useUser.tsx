@@ -1,3 +1,4 @@
+import { UserCredentials } from "@supabase/gotrue-js"
 import { useEffect, useState, createContext, useContext } from "react"
 import { supabase } from "./supabase-client"
 
@@ -7,8 +8,8 @@ export const UserContext = createContext({
   userDetails: null,
   userLoaded: false,
   subscription: null,
-  signIn: (options) => supabase.auth.signIn(options),
-  signUp: (options) => supabase.auth.signUp(options),
+  signIn: (options: UserCredentials) => supabase.auth.signIn(options),
+  signUp: (options: UserCredentials) => supabase.auth.signUp(options),
   signOut: () => {
     // setUserDetails(null);
     // setSubscription(null);
@@ -16,7 +17,7 @@ export const UserContext = createContext({
   }
 })
 
-export const UserContextProvider = (props) => {
+export const UserContextProvider = (props: any): JSX.Element => {
   const [userLoaded, setUserLoaded] = useState(false)
   const [session, setSession] = useState(null)
   const [user, setUser] = useState(null)
@@ -65,8 +66,8 @@ export const UserContextProvider = (props) => {
     userDetails,
     userLoaded,
     subscription,
-    signIn: (options) => supabase.auth.signIn(options),
-    signUp: (options) => supabase.auth.signUp(options),
+    signIn: (options: UserCredentials) => supabase.auth.signIn(options),
+    signUp: (options: UserCredentials) => supabase.auth.signUp(options),
     signOut: () => {
       setUserDetails(null)
       setSubscription(null)

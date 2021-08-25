@@ -2,9 +2,9 @@ import { useEffect } from "react"
 import "../assets/styles/index.css"
 import "../assets/styles/chrome-bug.css"
 
-import Layout from "../components/layout"
+import { TopLayout } from "@waweb/layout"
 // import { UserContextProvider } from '../utils/useUser';
-const UserContextProvider = (props) => <div {...props} />
+// const UserContextProvider = (props) => <div {...props} />
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -12,12 +12,8 @@ export default function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <div className="bg-primary">
-      <UserContextProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </UserContextProvider>
-    </div>
+    <TopLayout>
+      <Component {...pageProps} />
+    </TopLayout>
   )
 }

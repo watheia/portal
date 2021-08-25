@@ -40,6 +40,12 @@
     },
     "gfx": {
       "tags": []
+    },
+    "layout": {
+      "tags": []
+    },
+    "utils": {
+      "tags": []
     }
   }
 }

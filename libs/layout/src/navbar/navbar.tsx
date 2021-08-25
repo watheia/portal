@@ -2,10 +2,10 @@ import Link from "next/link"
 import s from "./navbar.module.css"
 
 import { Logo } from "@waweb/gfx"
-import { useUser } from "../../../utils/useUser"
+// import { useUser } from "@waweb/utils"
 
 const Navbar = () => {
-  const { user, signOut } = useUser()
+  // const { user, signOut } = useUser()
 
   return (
     <nav className={s.root}>

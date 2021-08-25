@@ -1,8 +1,9 @@
 import { createClient } from "@supabase/supabase-js"
+import { Principal } from "./types"
 
 export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? ""
 )
 
 export const getActiveProductsWithPrices = async () => {
@@ -22,7 +23,7 @@ export const getActiveProductsWithPrices = async () => {
   return data || []
 }
 
-export const updateUserName = async (user, name) => {
+export const updateUserName = async (user: Principal, name: string) => {
   await supabase
     .from("users")
     .update({
