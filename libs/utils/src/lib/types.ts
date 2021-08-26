@@ -1,5 +1,12 @@
 import { HTMLAttributes } from "react"
 
+export type Layout = {
+  layout: any
+  component: any
+  // All other props
+  [x: string]: any
+} & Record<string, any>
+
 /**
  * Alias for Record<string, any>
  */

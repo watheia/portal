@@ -9,6 +9,7 @@ export type {
   UserRole,
   Principal,
   AppRole,
+  Layout,
   AppPermission,
   UserStatus,
   ColorScheme,

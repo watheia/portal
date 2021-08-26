@@ -59,6 +59,7 @@
   "devDependencies": {
     "@babel/core": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
+    "@emotion/babel-plugin": "11.2.0",
     "@next/bundle-analyzer": "^11.1.0",
     "@nrwl/cli": "12.7.2",
     "@nrwl/cypress": "12.7.2",

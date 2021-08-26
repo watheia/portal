@@ -44,6 +44,13 @@
     "layout": {
       "tags": []
     },
+    "materials": {
+      "tags": []
+    },
+    "materials-e2e": {
+      "tags": [],
+      "implicitDependencies": ["materials"]
+    },
     "molecules": {
       "tags": []
     },
