@@ -47,6 +47,12 @@
     "molecules": {
       "tags": []
     },
+    "organisms": {
+      "tags": []
+    },
+    "theme": {
+      "tags": []
+    },
     "utils": {
       "tags": []
     }

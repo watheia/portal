@@ -1,5 +1,5 @@
 .root {
-  @apply sticky shadow-md top-0 bg-black z-40 transition-all duration-150  border-b-2 border-black border-solid;
+  @apply sticky shadow-md top-0 z-40 transition-all duration-150  border-b-2 border-l-2 border-r-2 rounded-b border-black border-solid;
   background-image: url("/gradient_A-1024x576.svg");
   background-size: cover;
 }

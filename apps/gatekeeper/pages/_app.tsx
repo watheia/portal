@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import "../assets/styles/index.css"
-import "../assets/styles/chrome-bug.css"
+import "../styles/index.css"
+import "../styles/chrome-bug.css"
 
 import { TopLayout } from "@waweb/layout"
 // import { UserContextProvider } from '../utils/useUser';

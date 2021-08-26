@@ -14,7 +14,7 @@
             "tsConfig": "libs/atoms/tsconfig.lib.json",
             "project": "libs/atoms/package.json",
             "entryFile": "libs/atoms/src/index.ts",
-            "external": ["react/jsx-runtime"],
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
@@ -140,7 +140,7 @@
             "tsConfig": "libs/gfx/tsconfig.lib.json",
             "project": "libs/gfx/package.json",
             "entryFile": "libs/gfx/src/index.ts",
-            "external": ["react/jsx-runtime"],
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
@@ -180,7 +180,7 @@
             "tsConfig": "libs/layout/tsconfig.lib.json",
             "project": "libs/layout/package.json",
             "entryFile": "libs/layout/src/index.ts",
-            "external": ["react/jsx-runtime"],
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
@@ -220,7 +220,7 @@
             "tsConfig": "libs/molecules/tsconfig.lib.json",
             "project": "libs/molecules/package.json",
             "entryFile": "libs/molecules/src/index.ts",
-            "external": ["react/jsx-runtime"],
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
@@ -247,6 +247,86 @@
         }
       }
     },
+    "organisms": {
+      "root": "libs/organisms",
+      "sourceRoot": "libs/organisms/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/organisms",
+            "tsConfig": "libs/organisms/tsconfig.lib.json",
+            "project": "libs/organisms/package.json",
+            "entryFile": "libs/organisms/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/organisms/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/organisms/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/organisms"],
+          "options": {
+            "jestConfig": "libs/organisms/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "theme": {
+      "root": "libs/theme",
+      "sourceRoot": "libs/theme/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/theme",
+            "tsConfig": "libs/theme/tsconfig.lib.json",
+            "project": "libs/theme/package.json",
+            "entryFile": "libs/theme/src/index.ts",
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/theme/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/theme/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/theme"],
+          "options": {
+            "jestConfig": "libs/theme/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "utils": {
       "root": "libs/utils",
       "sourceRoot": "libs/utils/src",
@@ -260,7 +340,7 @@
             "tsConfig": "libs/utils/tsconfig.lib.json",
             "project": "libs/utils/package.json",
             "entryFile": "libs/utils/src/index.ts",
-            "external": ["react/jsx-runtime"],
+            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {

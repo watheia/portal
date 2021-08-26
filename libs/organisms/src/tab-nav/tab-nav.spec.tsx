@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Blog from "../pages/blog"
+import TabNav from "./tab-nav"
 
-describe("Blog", () => {
+describe("TabNav", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Blog />)
+    const { baseElement } = render(<TabNav />)
     expect(baseElement).toBeTruthy()
   })
 })

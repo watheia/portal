@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import TopLayout from "./top-layout"
+import News from "../pages/news"
 
-describe("TopLayout", () => {
+describe("News", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<TopLayout />)
+    const { baseElement } = render(<News />)
     expect(baseElement).toBeTruthy()
   })
 })

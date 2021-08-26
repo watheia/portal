@@ -101,7 +101,7 @@ export default function Home(props) {
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-ai-aqua-600 shadow-sm hover:bg-ai-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Send Credentials
+                    Send Link
                   </button>
                 </form>
                 <p className="mt-3 text-xs text-shark-800">

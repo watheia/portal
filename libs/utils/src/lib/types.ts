@@ -1,28 +1,28 @@
 export interface Product {
-  id: any
-  active: any
-  name: any
-  description: any
-  images: any[]
-  metadata: any
+  id: string | number
+  active: boolean
+  name: string
+  description: string
+  images: string[]
+  metadata: Record<string, any>
 }
 
 export interface PricingPeriod {
-  interval: any
-  interval_count: any
-  trial_period_days: any
+  interval: 12 | 1
+  interval_count: number
+  trial_period_days: number
 }
 
 export interface Pricing {
-  id: any
-  product: any
-  active: any
-  currency: any
-  nickname: any
-  type: any
-  unit_amount: any
+  id: string | number
+  product: Product
+  active: boolean
+  currency: "USD" | "PESO" | "BITCOIN"
+  nickname: "string"
+  type: "string"
+  unit_amount: number
   recurring: PricingPeriod
-  metadata: any
+  metadata: Record<string, any>
 }
 
 export interface Stakeholder {

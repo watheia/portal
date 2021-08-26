@@ -6,7 +6,7 @@ import Footer from "../footer"
 
 // import { useRouter } from "next/router"
 
-export type TopLayoutProps = { meta?: any } & HTMLAttributes<HTMLDivElement>
+export type TopLayoutProps = { meta?: Record<string, any> } & HTMLAttributes<HTMLDivElement>
 
 export default function TopLayout({ children, meta: pageMeta, ...props }: TopLayoutProps) {
   // const router = useRouter()
@@ -37,7 +37,7 @@ export default function TopLayout({ children, meta: pageMeta, ...props }: TopLay
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <div {...props}>
+      <div {...props} className="max-w-6xl mx-auto">
         <Navbar />
         <main id="skip">{children}</main>
         <Footer />
