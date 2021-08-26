@@ -1,19 +1,16 @@
 import { useEffect } from "react"
+import { Theme } from "@waweb/theme"
 import "../styles/index.css"
 import "../styles/chrome-bug.css"
 
-import { TopLayout } from "@waweb/layout"
-// import { UserContextProvider } from '../utils/useUser';
-// const UserContextProvider = (props) => <div {...props} />
-
-export default function MyApp({ Component, pageProps }) {
+export default function WaApp({ Component, pageProps }) {
   useEffect(() => {
     document.body.classList?.remove("loading")
   }, [])
 
   return (
-    <TopLayout>
+    <Theme>
       <Component {...pageProps} />
-    </TopLayout>
+    </Theme>
   )
 }

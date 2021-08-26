@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Theme from "./theme"
+import WithLayout from "./with-layout"
 
-describe("Theme", () => {
+describe("WithLayout", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Theme />)
+    const { baseElement } = render(<WithLayout />)
     expect(baseElement).toBeTruthy()
   })
 })

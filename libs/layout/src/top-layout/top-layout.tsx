@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react"
 import Head from "next/head"
 
-import Navbar from "../navbar"
+import Header from "../header"
 import Footer from "../footer"
 
 // import { useRouter } from "next/router"
@@ -37,11 +37,7 @@ export default function TopLayout({ children, meta: pageMeta, ...props }: TopLay
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <div {...props} className="max-w-6xl mx-auto">
-        <Navbar />
-        <main id="skip">{children}</main>
-        <Footer />
-      </div>
+      <div {...props}>{children}</div>
     </>
   )
 }

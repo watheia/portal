@@ -50,6 +50,10 @@
     "organisms": {
       "tags": []
     },
+    "organisms-e2e": {
+      "tags": [],
+      "implicitDependencies": ["organisms"]
+    },
     "theme": {
       "tags": []
     },
