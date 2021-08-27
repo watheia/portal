@@ -16,12 +16,11 @@
 */
 import React, { Fragment } from "react"
 import Image from "next/image"
-import cls from "./index.module.css"
 import { Dotscreen } from "@waweb/gfx"
 
 export default function Home(props) {
   return (
-    <div className={cls.page}>
+    <div>
       <div className="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
         <svg
           className="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8"
@@ -75,7 +74,7 @@ export default function Home(props) {
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-shark-900">Take control of your</span>
-                  <span className="block text-ai-aqua-600">micro components</span>
+                  <span className="block text-aqua-600">micro components</span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-shark-800 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -94,12 +93,12 @@ export default function Home(props) {
                     type="text"
                     name="email"
                     id="email"
-                    className="block w-full py-3 text-base rounded-md placeholder-shark-500 shadow-sm focus:ring-ai-aqua-500 focus:border-ai-aqua-500 sm:flex-1 border-shark-300"
+                    className="block w-full py-3 text-base rounded-md placeholder-shark-500 shadow-sm focus:ring-aqua-500 focus:border-aqua-500 sm:flex-1 border-shark-300"
                     placeholder="Enter your email"
                   />
                   <button
                     type="submit"
-                    className="mt-3 w-full px-6 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-ai-aqua-600 shadow-sm hover:bg-ai-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                    className="mt-3 w-full px-6 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-aqua-600 shadow-sm hover:bg-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
                     Send Link
                   </button>
@@ -124,7 +123,7 @@ export default function Home(props) {
               <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                 <button
                   type="button"
-                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500"
+                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
                   <Image
@@ -139,7 +138,7 @@ export default function Home(props) {
                     aria-hidden="true"
                   >
                     <svg
-                      className="h-20 w-20 text-ai-aqua-500"
+                      className="h-20 w-20 text-aqua-500"
                       fill="currentColor"
                       viewBox="0 0 84 84"
                     >

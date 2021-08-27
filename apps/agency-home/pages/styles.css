@@ -1,5 +1,14 @@
+@tailwind base;
+@import "../styles/base.css";
+
+@tailwind components;
+@import "../styles/components.css";
+
+@tailwind utilities;
+
+@import "../styles/chrome-bug.css";
+/* 
 .app {
-  font-family: sans-serif;
   min-width: 300px;
   max-width: 600px;
   margin: 50px auto;
@@ -20,7 +29,7 @@
 }
 
 .app header {
-  background-color: #143055;
+  background-color: var(--shark-2);
   color: white;
   padding: 5px;
   border-radius: 3px;
@@ -56,7 +65,7 @@
 }
 
 .app .resource {
-  color: #0094ba;
+  color: #04bfbf;
   height: 36px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -72,8 +81,8 @@
 .app pre {
   padding: 9px;
   border-radius: 4px;
-  background-color: black;
-  color: #eee;
+  background-color: #110f10;
+  color: #fefeff;
 }
 
 .app details {
@@ -125,4 +134,4 @@
   height: 16px;
   width: 16px;
   margin-right: 4px;
-}
+} */

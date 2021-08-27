@@ -82,7 +82,7 @@ const StrategySection = () => {
       {features.map((feature) => (
         <div key={feature.name} className="relative">
           <dt>
-            <div className="absolute flex items-center justify-center h-12 w-12 .,lk bg-ai-aqua-500 text-white">
+            <div className="absolute flex items-center justify-center h-12 w-12 .,lk bg-aqua-500 text-white">
               <feature.icon className="h-6 w-6" aria-hidden="true" />
             </div>
             <p className="ml-16 text-lg leading-6 font-medium text-shark-900">
@@ -142,7 +142,7 @@ const ServiceSection = () => (
       {transferFeatures.map((item) => (
         <div key={item.id} className="relative">
           <dt>
-            <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-ai-aqua-500 text-white">
+            <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-aqua-500 text-white">
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </div>
             <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{item.name}</p>
@@ -184,7 +184,7 @@ export default function About(props) {
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="prose prose-ai-aqua text-shark-500 mx-auto lg:max-w-none">
+            <div className="prose prose-aqua text-shark-500 mx-auto lg:max-w-none">
               <h3>What we do</h3>
               <ul role="list">
                 <li>Design architectures that are adaptable and resilient to change</li>
@@ -221,7 +221,7 @@ export default function About(props) {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-ai-aqua-600 hover:bg-ai-aqua-700"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-secondary font-medium rounded-md text-white bg-aqua-600 hover:bg-aqua-700"
                 >
                   Contact sales
                 </a>
@@ -229,7 +229,7 @@ export default function About(props) {
               <div className="rounded-md shadow ml-4">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-ai-aqua-600 bg-white hover:bg-shark-100"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-aqua-600 bg-white hover:bg-shark-100"
                 >
                   Learn more
                 </a>
