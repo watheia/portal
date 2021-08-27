@@ -1,3 +1,4 @@
+const { AGENCY_HOME } = process.env
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require("@nrwl/next/plugins/with-nx")
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
@@ -31,6 +32,34 @@ const nextConfig = {
       "localhost" // For Strapi
     ],
     imageSizes: [24, 64, 300]
+  },
+
+  // Setup rewrites
+  async rewrites() {
+    return [
+      {
+        source: "/:path*",
+        destination: `/:path*`
+      },
+      {
+        source: "/home",
+        destination: `${AGENCY_HOME}/home`
+      },
+      {
+        source: "/home/:path*",
+        destination: `${AGENCY_HOME}/home/:path*`
+      }
+    ]
+  },
+
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home/",
+        permanent: false
+      }
+    ]
   }
 }
 

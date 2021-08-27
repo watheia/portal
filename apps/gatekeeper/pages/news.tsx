@@ -73,14 +73,14 @@ export default function Blog(props) {
                   type="email"
                   autoComplete="email"
                   required
-                  className="appearance-none w-full px-4 py-2 border border-shark-300 text-base rounded-md text-shark-900 bg-white placeholder-shark-500 focus:outline-none focus:ring-ai-aqua-500 focus:border-ai-aqua-500 lg:max-w-xs"
+                  className="appearance-none w-full px-4 py-2 border border-shark-300 text-base rounded-md text-shark-900 bg-white placeholder-shark-500 focus:outline-none focus:ring-aqua-500 focus:border-aqua-500 lg:max-w-xs"
                   placeholder="Enter your email"
                 />
               </div>
               <div className="mt-2 flex-shrink-0 w-full flex rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:w-auto sm:inline-flex">
                 <button
                   type="button"
-                  className="w-full bg-ai-aqua-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-secondary font-medium text-white hover:bg-ai-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-aqua-500 sm:w-auto sm:inline-flex"
+                  className="w-full bg-aqua-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-secondary font-medium text-white hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500 sm:w-auto sm:inline-flex"
                 >
                   Notify me
                 </button>
@@ -101,7 +101,7 @@ export default function Blog(props) {
               <div className="mt-3">
                 <a
                   href={post.href}
-                  className="text-base font-semibold hover:underline hover:font-bold text-ai-aqua-600 hover:text-ai-aqua-500"
+                  className="text-base font-semibold hover:underline hover:font-bold text-aqua-600 hover:text-aqua-500"
                 >
                   Learn more
                   <ArrowRight />

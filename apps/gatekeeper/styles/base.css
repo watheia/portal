@@ -12,16 +12,16 @@
   --text-primary: #1a1718;
   --text-secondary: #fff;
 
-  --accents-0: #110f10;
-  --accents-1: #151313;
-  --accents-2: #1a1718;
-  --accents-3: #201c1d;
-  --accents-4: #231f20;
-  --accents-5: #656263;
-  --accents-6: #a7a5a6;
-  --accents-7: #dbdcdd;
-  --accents-8: #fafbfb;
-  --accents-9: #fefeff;
+  --shark-0: #110f10;
+  --shark-1: #151313;
+  --shark-2: #1a1718;
+  --shark-3: #201c1d;
+  --shark-4: #231f20;
+  --shark-5: #656263;
+  --shark-6: #a7a5a6;
+  --shark-7: #dbdcdd;
+  --shark-8: #fafbfb;
+  --shark-9: #fefeff;
 
   --green: #025e5e;
   --red: #590b35;
@@ -64,7 +64,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--accents-8);
+  background-color: var(--shark-8);
   color: var(--text-primary);
 }
 

@@ -1,6 +1,9 @@
+export { default as withLayout } from "./with-layout"
 export * from "./main"
 export * from "./footer"
-export * from "./navbar"
+
+export { default, default as Header } from "./header"
+export type { HeaderProps } from "./header"
 
 export { TopLayout } from "./top-layout"
 export type { TopLayoutProps } from "./top-layout"

@@ -226,7 +226,7 @@ export function About(props) {
                   alt="People working on laptops"
                   layout="fill"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-regal-blue-800 to-ai-aqua-700 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-r from-regal-blue-800 to-aqua-700 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -249,7 +249,7 @@ export function About(props) {
                     </a>
                     <a
                       href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white bg-ai-aqua-500 bg-opacity-60 hover:shadow-none sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white bg-aqua-500 bg-opacity-60 hover:shadow-none sm:px-8"
                     >
                       Learn more
                     </a>
@@ -327,7 +327,7 @@ export function About(props) {
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-600">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-aqua-800 to-aqua-600">
                       <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
@@ -344,7 +344,7 @@ export function About(props) {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="inline-flex bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-500 bg-origin-border px-4 py-2 border border-transparent text-white font-medium rounded-full shadow-sm hover:shadow-none  hover:from-ai-aqua-900 hover:to-ai-aqua-700"
+                        className="inline-flex bg-gradient-to-r from-aqua-800 to-aqua-500 bg-origin-border px-4 py-2 border border-transparent text-white font-medium rounded-full shadow-sm hover:shadow-none  hover:from-aqua-900 hover:to-aqua-700"
                       >
                         Get started
                       </a>
@@ -398,7 +398,7 @@ export function About(props) {
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-500">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-aqua-800 to-aqua-500">
                       <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
@@ -415,7 +415,7 @@ export function About(props) {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="inline-flex bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-500 bg-origin-border px-4 py-2 border border-transparent text-white font-medium rounded-full shadow-sm hover:shadow-none  hover:from-ai-aqua-900 hover:to-ai-aqua-700"
+                        className="inline-flex bg-gradient-to-r from-aqua-800 to-aqua-500 bg-origin-border px-4 py-2 border border-transparent text-white font-medium rounded-full shadow-sm hover:shadow-none  hover:from-aqua-900 hover:to-aqua-700"
                       >
                         Get started
                       </a>
@@ -440,7 +440,7 @@ export function About(props) {
         </div>
 
         {/* Gradient Feature Section */}
-        <div className="bg-gradient-to-r from-ai-aqua-600 to-ai-aqua-500">
+        <div className="bg-gradient-to-r from-aqua-600 to-aqua-500">
           <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
             <h2 className="text-3xl font-extrabold text-white tracking-tight">
               Inbox support built for efficiency
@@ -519,14 +519,14 @@ export function About(props) {
           <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 className="text-4xl font-extrabold tracking-tight text-base sm:text-4xl">
               <span className="block">Ready to get started?</span>
-              <span className="block bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-aqua-800 to-aqua-600 bg-clip-text text-transparent">
                 Get in touch or create an account.
               </span>
             </h2>
             <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
               <a
                 href="#"
-                className="flex items-center justify-center bg-gradient-to-r from-ai-aqua-800 to-ai-aqua-600 bg-origin-border px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white hover:from-regal-blue-700 hover:to-ai-aqua-700"
+                className="flex items-center justify-center bg-gradient-to-r from-aqua-800 to-aqua-600 bg-origin-border px-4 py-3 border border-transparent text-secondary font-medium rounded-full shadow-sm text-white hover:from-regal-blue-700 hover:to-aqua-700"
               >
                 Get Early Access
               </a>
