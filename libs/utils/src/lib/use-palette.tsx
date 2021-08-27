@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { ColorScheme } from "@waweb/utils"
+import { ColorScheme } from "./types"
 import AOS from "aos"
 
 const usePalette = () => {

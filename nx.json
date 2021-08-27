@@ -44,13 +44,6 @@
     "layout": {
       "tags": []
     },
-    "micro-news": {
-      "tags": []
-    },
-    "micro-news-e2e": {
-      "tags": [],
-      "implicitDependencies": ["micro-news"]
-    },
     "molecules": {
       "tags": []
     },
@@ -66,27 +59,6 @@
     },
     "utils": {
       "tags": []
-    },
-    "watheia-blog": {
-      "tags": []
-    },
-    "watheia-blog-e2e": {
-      "tags": [],
-      "implicitDependencies": ["watheia-blog"]
-    },
-    "watheia-home": {
-      "tags": []
-    },
-    "watheia-home-e2e": {
-      "tags": [],
-      "implicitDependencies": ["watheia-home"]
-    },
-    "watheia-support": {
-      "tags": []
-    },
-    "watheia-support-e2e": {
-      "tags": [],
-      "implicitDependencies": ["watheia-support"]
     }
   }
 }

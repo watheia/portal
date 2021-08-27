@@ -69,7 +69,8 @@
           "executor": "@nrwl/next:server",
           "options": {
             "buildTarget": "gatekeeper:build",
-            "dev": true
+            "dev": true,
+            "port": 8080
           },
           "configurations": {
             "production": {
@@ -105,6 +106,14 @@
           "outputs": ["coverage/lcov.info"],
           "options": {
             "command": "yarn jest --coverage && coveralls < coverage/lcov.info"
+          }
+        },
+        "dotdeps": {
+          "executor": "@nrwl/workspace:run-commands",
+          "outputs": ["dist/apps/gatekeeper/dependencies.dot"],
+          "options": {
+            "command": "yarn depcruise --config .dependency-cruiser.js --output-type dot . | dot -T svg > depgraph.svg",
+            "cwd": "apps/gatekeeper"
           }
         }
       }
@@ -217,83 +226,6 @@
           "options": {
             "jestConfig": "libs/layout/jest.config.js",
             "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "micro-news": {
-      "root": "apps/micro-news",
-      "sourceRoot": "apps/micro-news",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/micro-news",
-            "outputPath": "dist/apps/micro-news"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "micro-news:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "micro-news:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "micro-news:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/micro-news"],
-          "options": {
-            "jestConfig": "apps/micro-news/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/micro-news/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "micro-news-e2e": {
-      "root": "apps/micro-news-e2e",
-      "sourceRoot": "apps/micro-news-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/micro-news-e2e/cypress.json",
-            "tsConfig": "apps/micro-news-e2e/tsconfig.e2e.json",
-            "devServerTarget": "micro-news:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "micro-news:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/micro-news-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -530,243 +462,6 @@
           "options": {
             "jestConfig": "libs/utils/jest.config.js",
             "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "watheia-blog": {
-      "root": "apps/watheia-blog",
-      "sourceRoot": "apps/watheia-blog",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/watheia-blog",
-            "outputPath": "dist/apps/watheia-blog"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "watheia-blog:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "watheia-blog:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "watheia-blog:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/watheia-blog"],
-          "options": {
-            "jestConfig": "apps/watheia-blog/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-blog/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "watheia-blog-e2e": {
-      "root": "apps/watheia-blog-e2e",
-      "sourceRoot": "apps/watheia-blog-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/watheia-blog-e2e/cypress.json",
-            "tsConfig": "apps/watheia-blog-e2e/tsconfig.e2e.json",
-            "devServerTarget": "watheia-blog:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "watheia-blog:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-blog-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
-    },
-    "watheia-home": {
-      "root": "apps/watheia-home",
-      "sourceRoot": "apps/watheia-home",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/watheia-home",
-            "outputPath": "dist/apps/watheia-home",
-            "stylePreprocessorOptions": {
-              "includePaths": ["libs/theme/assets"]
-            },
-            "extractCss": true
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "watheia-home:build",
-            "port": 4300,
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "watheia-home:build:production",
-              "dev": false,
-              "port": 8080
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "watheia-home:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/watheia-home"],
-          "options": {
-            "jestConfig": "apps/watheia-home/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-home/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "watheia-home-e2e": {
-      "root": "apps/watheia-home-e2e",
-      "sourceRoot": "apps/watheia-home-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/watheia-home-e2e/cypress.json",
-            "tsConfig": "apps/watheia-home-e2e/tsconfig.e2e.json",
-            "devServerTarget": "watheia-home:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "watheia-home:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-home-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
-    },
-    "watheia-support": {
-      "root": "apps/watheia-support",
-      "sourceRoot": "apps/watheia-support",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/watheia-support",
-            "outputPath": "dist/apps/watheia-support"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "watheia-support:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "watheia-support:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "watheia-support:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/watheia-support"],
-          "options": {
-            "jestConfig": "apps/watheia-support/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-support/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "watheia-support-e2e": {
-      "root": "apps/watheia-support-e2e",
-      "sourceRoot": "apps/watheia-support-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/watheia-support-e2e/cypress.json",
-            "tsConfig": "apps/watheia-support-e2e/tsconfig.e2e.json",
-            "devServerTarget": "watheia-support:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "watheia-support:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/watheia-support-e2e/**/*.{js,ts}"]
           }
         }
       }

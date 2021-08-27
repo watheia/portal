@@ -1,4 +1,4 @@
-const { AGENCY_HOME } = process.env
+const { WATHEIA_HOME, WATHEIA_BLOG, MICRO_NEWS } = process.env
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require("@nrwl/next/plugins/with-nx")
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
@@ -43,11 +43,27 @@ const nextConfig = {
       },
       {
         source: "/home",
-        destination: `${AGENCY_HOME}/home`
+        destination: `${WATHEIA_HOME}/home`
       },
       {
         source: "/home/:path*",
-        destination: `${AGENCY_HOME}/home/:path*`
+        destination: `${WATHEIA_HOME}/home/:path*`
+      },
+      {
+        source: "/blog",
+        destination: `${WATHEIA_BLOG}/blog`
+      },
+      {
+        source: "/blog/:path*",
+        destination: `${WATHEIA_BLOG}/blog/:path*`
+      },
+      {
+        source: "/news",
+        destination: `${MICRO_NEWS}/news`
+      },
+      {
+        source: "/news/:path*",
+        destination: `${MICRO_NEWS}/news/:path*`
       }
     ]
   },
