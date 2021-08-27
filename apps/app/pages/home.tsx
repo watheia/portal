@@ -142,22 +142,17 @@ export default function Index({ className, ...props }: HtmlHTMLAttributes<HTMLDi
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-                  <div className="lg:py-24">
-                    <a
-                      href="#"
-                      className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200"
-                    >
-                      <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-aqua-500 to-aqua-600 rounded-full">
-                        We&apos;re hiring
-                      </span>
-                      <span className="ml-4 text-sm text-shark-200">
-                        Visit our careers page
-                      </span>
-                      <ChevronRightIcon
-                        className="ml-2 w-5 h-5 text-shark-500"
-                        aria-hidden="true"
-                      />
-                    </a>
+                  <div className="lg:py-12">
+                    <span className="px-3 py-0.5 text-white animate-pulse text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-shark-500 to-shark-600 rounded-full">
+                      connecting
+                    </span>
+                    <span className="ml-4 text-sm text-shark-300">
+                      Establishing isomorphic link...
+                    </span>
+                    <ChevronRightIcon
+                      className="ml-2 w-5 h-5 text-shark-500"
+                      aria-hidden="true"
+                    />
                     <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                       <span className="block">A better way to</span>
                       <span className="pb-3 block bg-clip-text text-aqua-500 sm:pb-5">
@@ -178,14 +173,16 @@ export default function Index({ className, ...props }: HtmlHTMLAttributes<HTMLDi
                             <input
                               id="email"
                               type="email"
+                              disabled
                               placeholder="Enter email to request login token"
-                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-shark-900 placeholder-shark-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-400 focus:ring-offset-shark-900"
+                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-shark-900 placeholder-shark-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-400 focus:ring-offset-shark-900 opacity-50"
                             />
                           </div>
                           <div className="mt-3 sm:mt-0 sm:ml-3">
                             <button
                               type="submit"
-                              className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-aqua-500 to-aqua-700 text-white font-medium hover:from-aqua-700 hover:to-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-400 focus:ring-offset-shark-900"
+                              className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-aqua-500 to-aqua-700 text-white font-medium hover:from-aqua-700 hover:to-aqua-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-400 focus:ring-offset-shark-900 opacity-50"
+                              disabled
                             >
                               Get early access
                             </button>
@@ -217,11 +214,11 @@ export default function Index({ className, ...props }: HtmlHTMLAttributes<HTMLDi
           </div>
 
           {/* Feature section with screenshot */}
-          <div className="relative bg-shark-100 pt-16 sm:pt-24 lg:pt-32">
+          <div className="relative bg-gradient-to-b from-shark-100 to-white pt-16 sm:pt-24 lg:pt-32">
             <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
               <div>
                 <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-                  Serverless
+                  seamlessly scale from <code>0</code> to <code>100</code>
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold text-shark-900 tracking-tight sm:text-4xl">
                   No server? No problem.
@@ -243,7 +240,7 @@ export default function Index({ className, ...props }: HtmlHTMLAttributes<HTMLDi
           </div>
 
           {/* Feature section with grid */}
-          <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+          <div className="relative bg-gradient-to-b from-shark-50 to-white py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
               <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
                 Deploy faster
