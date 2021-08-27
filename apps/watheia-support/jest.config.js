@@ -1,10 +1,10 @@
 module.exports = {
-  displayName: "materials",
+  displayName: "realtime-support",
   preset: "../../jest.preset.js",
   transform: {
     "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "@nrwl/react/plugins/jest",
     "^.+\\.[tj]sx?$": "babel-jest"
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  coverageDirectory: "../../coverage/apps/agency-home"
+  coverageDirectory: "../../coverage/apps/watheia-support"
 }

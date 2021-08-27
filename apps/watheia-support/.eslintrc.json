@@ -10,7 +10,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": ["apps/agency-home/tsconfig.*?.json"]
+        "project": ["apps/watheia-support/tsconfig.*?.json"]
       },
       "rules": {}
     },

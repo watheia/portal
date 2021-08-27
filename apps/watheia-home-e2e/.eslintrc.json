@@ -5,7 +5,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": ["apps/agency-home-e2e/tsconfig.*?.json"]
+        "project": ["apps/watheia-home-e2e/tsconfig.*?.json"]
       },
       "rules": {}
     },

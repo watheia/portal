@@ -28,22 +28,8 @@
     ]
   },
   "projects": {
-    "agency-home": {
-      "tags": []
-    },
-    "agency-home-e2e": {
-      "tags": [],
-      "implicitDependencies": ["agency-home"]
-    },
     "atoms": {
       "tags": []
-    },
-    "case-studies": {
-      "tags": []
-    },
-    "case-studies-e2e": {
-      "tags": [],
-      "implicitDependencies": ["case-studies"]
     },
     "gatekeeper": {
       "tags": []
@@ -75,18 +61,32 @@
       "tags": [],
       "implicitDependencies": ["organisms"]
     },
-    "realtime-support": {
-      "tags": []
-    },
-    "realtime-support-e2e": {
-      "tags": [],
-      "implicitDependencies": ["realtime-support"]
-    },
     "theme": {
       "tags": []
     },
     "utils": {
       "tags": []
+    },
+    "watheia-blog": {
+      "tags": []
+    },
+    "watheia-blog-e2e": {
+      "tags": [],
+      "implicitDependencies": ["watheia-blog"]
+    },
+    "watheia-home": {
+      "tags": []
+    },
+    "watheia-home-e2e": {
+      "tags": [],
+      "implicitDependencies": ["watheia-home"]
+    },
+    "watheia-support": {
+      "tags": []
+    },
+    "watheia-support-e2e": {
+      "tags": [],
+      "implicitDependencies": ["watheia-support"]
     }
   }
 }
