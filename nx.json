@@ -28,25 +28,21 @@
     ]
   },
   "projects": {
+    "app": {
+      "tags": []
+    },
+    "assets": {
+      "tags": []
+    },
     "atoms": {
       "tags": []
     },
-    "gatekeeper": {
-      "tags": []
-    },
-    "gatekeeper-e2e": {
+    "e2e": {
       "tags": [],
-      "implicitDependencies": ["gatekeeper"]
+      "implicitDependencies": ["app"]
     },
     "gfx": {
       "tags": []
-    },
-    "home": {
-      "tags": []
-    },
-    "home-e2e": {
-      "tags": [],
-      "implicitDependencies": ["home"]
     },
     "layout": {
       "tags": []

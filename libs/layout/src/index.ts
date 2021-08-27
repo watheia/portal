@@ -1,9 +1,7 @@
+export { default as Article } from "./layouts/article"
+export type { ArticleProps } from "./layouts/article"
+
+export { default as Panel } from "./layouts/panel"
+export type { PanelProps } from "./layouts/panel"
+
 export { default as withLayout } from "./with-layout"
-export * from "./main"
-export * from "./footer"
-
-export { default, default as Header } from "./header"
-export type { HeaderProps } from "./header"
-
-export { TopLayout } from "./top-layout"
-export type { TopLayoutProps } from "./top-layout"

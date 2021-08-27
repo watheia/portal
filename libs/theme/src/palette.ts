@@ -11,7 +11,7 @@ export const light = {
     main: "#04BFBF",
     light: "rgb(71, 145, 219)",
     dark: "rgb(17, 82, 147)",
-    contrastText: "#fff"
+    contrastText: "#fefeff"
   },
   secondary: {
     light: "#ffb74d",
@@ -25,10 +25,10 @@ export const light = {
   },
   divider: "rgba(0, 0, 0, 0.12)",
   background: {
-    paper: "#fff",
-    default: "#fff",
+    paper: "#fefeff",
+    default: "#fefeff",
     level2: "#f5f5f5",
-    level1: "#fff",
+    level1: "#fefeff",
     footer: "#1b1642"
   }
 }
@@ -41,7 +41,7 @@ export const dark = {
   cardShadow: "rgba(0, 0, 0, .11)",
   common: {
     black: "#000",
-    white: "#fff"
+    white: "#fefeff"
   },
   type: "dark",
   primary: {
