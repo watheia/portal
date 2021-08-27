@@ -41,6 +41,13 @@
     "gfx": {
       "tags": []
     },
+    "home": {
+      "tags": []
+    },
+    "home-e2e": {
+      "tags": [],
+      "implicitDependencies": ["home"]
+    },
     "layout": {
       "tags": []
     },
