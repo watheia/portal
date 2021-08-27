@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { ColorScheme } from "@waweb/utils"
 import AOS from "aos"
 
-const useColorScheme = () => {
+const usePalette = () => {
   const [colorScheme, setTheme] = useState<ColorScheme>("light")
   const [mountedComponent, setMountedComponent] = useState(false)
 
@@ -29,4 +29,4 @@ const useColorScheme = () => {
   return [colorScheme, themeToggler, mountedComponent]
 }
 
-export default useColorScheme
+export default usePalette

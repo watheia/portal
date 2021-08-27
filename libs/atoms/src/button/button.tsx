@@ -1,9 +1,9 @@
 import clsx from "clsx"
 import React, { forwardRef, HTMLAttributes, useRef } from "react"
 import mergeRefs from "react-merge-refs"
-import s from "./button.module.css"
+import s from "./button.module.scss"
 
-import { LoadingDots } from "@waweb/gfx"
+import { LoadingDots } from "../loading-dots"
 
 export type ButtonProps = {
   variant?: "flat" | "slim" | "cta" | "subtle"

@@ -28,8 +28,22 @@
     ]
   },
   "projects": {
+    "agency-home": {
+      "tags": []
+    },
+    "agency-home-e2e": {
+      "tags": [],
+      "implicitDependencies": ["agency-home"]
+    },
     "atoms": {
       "tags": []
+    },
+    "case-studies": {
+      "tags": []
+    },
+    "case-studies-e2e": {
+      "tags": [],
+      "implicitDependencies": ["case-studies"]
     },
     "gatekeeper": {
       "tags": []
@@ -44,12 +58,12 @@
     "layout": {
       "tags": []
     },
-    "materials": {
+    "micro-news": {
       "tags": []
     },
-    "materials-e2e": {
+    "micro-news-e2e": {
       "tags": [],
-      "implicitDependencies": ["materials"]
+      "implicitDependencies": ["micro-news"]
     },
     "molecules": {
       "tags": []
@@ -60,6 +74,13 @@
     "organisms-e2e": {
       "tags": [],
       "implicitDependencies": ["organisms"]
+    },
+    "realtime-support": {
+      "tags": []
+    },
+    "realtime-support-e2e": {
+      "tags": [],
+      "implicitDependencies": ["realtime-support"]
     },
     "theme": {
       "tags": []

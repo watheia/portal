@@ -1,4 +1,4 @@
-export * from "./lib/with-layout/with-layout"
+export { default as withLayout } from "./with-layout"
 export * from "./main"
 export * from "./footer"
 

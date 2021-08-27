@@ -1,6 +1,89 @@
 {
   "version": 2,
   "projects": {
+    "agency-home": {
+      "root": "apps/agency-home",
+      "sourceRoot": "apps/agency-home",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/agency-home",
+            "outputPath": "dist/apps/agency-home",
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs/theme/assets"]
+            },
+            "extractCss": true
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "agency-home:build",
+            "port": 4300,
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "agency-home:build:production",
+              "dev": false,
+              "port": 8080
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "agency-home:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/agency-home"],
+          "options": {
+            "jestConfig": "apps/agency-home/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/agency-home/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "agency-home-e2e": {
+      "root": "apps/agency-home-e2e",
+      "sourceRoot": "apps/agency-home-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/agency-home-e2e/cypress.json",
+            "tsConfig": "apps/agency-home-e2e/tsconfig.e2e.json",
+            "devServerTarget": "agency-home:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "agency-home:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/agency-home-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "atoms": {
       "root": "libs/atoms",
       "sourceRoot": "libs/atoms/src",
@@ -15,6 +98,8 @@
             "project": "libs/atoms/package.json",
             "entryFile": "libs/atoms/src/index.ts",
             "external": [
+              "next/router",
+              "next/link",
               "react/jsx-runtime",
               "react",
               "react-dom",
@@ -43,6 +128,83 @@
           "options": {
             "jestConfig": "libs/atoms/jest.config.js",
             "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "case-studies": {
+      "root": "apps/case-studies",
+      "sourceRoot": "apps/case-studies",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/case-studies",
+            "outputPath": "dist/apps/case-studies"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "case-studies:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "case-studies:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "case-studies:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/case-studies"],
+          "options": {
+            "jestConfig": "apps/case-studies/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/case-studies/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "case-studies-e2e": {
+      "root": "apps/case-studies-e2e",
+      "sourceRoot": "apps/case-studies-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/case-studies-e2e/cypress.json",
+            "tsConfig": "apps/case-studies-e2e/tsconfig.e2e.json",
+            "devServerTarget": "case-studies:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "case-studies:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/case-studies-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -219,17 +381,17 @@
         }
       }
     },
-    "materials": {
-      "root": "apps/materials",
-      "sourceRoot": "apps/materials",
+    "micro-news": {
+      "root": "apps/micro-news",
+      "sourceRoot": "apps/micro-news",
       "projectType": "application",
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "root": "apps/materials",
-            "outputPath": "dist/apps/materials"
+            "root": "apps/micro-news",
+            "outputPath": "dist/apps/micro-news"
           },
           "configurations": {
             "production": {}
@@ -238,12 +400,12 @@
         "serve": {
           "executor": "@nrwl/next:server",
           "options": {
-            "buildTarget": "materials:build",
+            "buildTarget": "micro-news:build",
             "dev": true
           },
           "configurations": {
             "production": {
-              "buildTarget": "materials:build:production",
+              "buildTarget": "micro-news:build:production",
               "dev": false
             }
           }
@@ -251,47 +413,47 @@
         "export": {
           "executor": "@nrwl/next:export",
           "options": {
-            "buildTarget": "materials:build:production"
+            "buildTarget": "micro-news:build:production"
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/materials"],
+          "outputs": ["coverage/apps/micro-news"],
           "options": {
-            "jestConfig": "apps/materials/jest.config.js",
+            "jestConfig": "apps/micro-news/jest.config.js",
             "passWithNoTests": true
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/materials/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["apps/micro-news/**/*.{ts,tsx,js,jsx}"]
           }
         }
       }
     },
-    "materials-e2e": {
-      "root": "apps/materials-e2e",
-      "sourceRoot": "apps/materials-e2e/src",
+    "micro-news-e2e": {
+      "root": "apps/micro-news-e2e",
+      "sourceRoot": "apps/micro-news-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/materials-e2e/cypress.json",
-            "tsConfig": "apps/materials-e2e/tsconfig.e2e.json",
-            "devServerTarget": "materials:serve"
+            "cypressConfig": "apps/micro-news-e2e/cypress.json",
+            "tsConfig": "apps/micro-news-e2e/tsconfig.e2e.json",
+            "devServerTarget": "micro-news:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "materials:serve:production"
+              "devServerTarget": "micro-news:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/materials-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/micro-news-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -445,6 +607,83 @@
         }
       }
     },
+    "realtime-support": {
+      "root": "apps/realtime-support",
+      "sourceRoot": "apps/realtime-support",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/realtime-support",
+            "outputPath": "dist/apps/realtime-support"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "realtime-support:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "realtime-support:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "realtime-support:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/realtime-support"],
+          "options": {
+            "jestConfig": "apps/realtime-support/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/realtime-support/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "realtime-support-e2e": {
+      "root": "apps/realtime-support-e2e",
+      "sourceRoot": "apps/realtime-support-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/realtime-support-e2e/cypress.json",
+            "tsConfig": "apps/realtime-support-e2e/tsconfig.e2e.json",
+            "devServerTarget": "realtime-support:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "realtime-support:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/realtime-support-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "theme": {
       "root": "libs/theme",
       "sourceRoot": "libs/theme/src",
@@ -458,6 +697,7 @@
             "tsConfig": "libs/theme/tsconfig.lib.json",
             "project": "libs/theme/package.json",
             "entryFile": "libs/theme/src/index.ts",
+            "extractCss": true,
             "external": [
               "react/jsx-runtime",
               "react",

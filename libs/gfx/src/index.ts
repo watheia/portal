@@ -1,5 +1,4 @@
 export * from "./ai-aqua"
 export * from "./dotscreen"
 export * from "./icons"
-export * from "./loading-dots"
 export * from "./wa-card"

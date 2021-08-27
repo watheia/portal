@@ -1,5 +1,5 @@
-import { HTMLAttributes, SVGProps } from "react"
-import s from "./loading-dots.module.css"
+import { HTMLAttributes } from "react"
+import s from "./loading-dots.module.scss"
 
 const LoadingDots = (props: HTMLAttributes<HTMLSpanElement>) => {
   return (
