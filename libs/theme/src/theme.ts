@@ -5,7 +5,7 @@ import {
   Typography
 } from "@material-ui/core"
 import { light, dark } from "./palette"
-import { ColorScheme } from "@waweb/utils"
+import { ColorScheme } from "@waweb/model"
 
 export const createTheme = (colorScheme: ColorScheme): Theme => {
   return responsiveFontSizes(

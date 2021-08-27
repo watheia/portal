@@ -2846,6 +2846,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/cli@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/cli@npm:12.8.0"
+  dependencies:
+    "@nrwl/tao": 12.8.0
+    chalk: 4.1.0
+    v8-compile-cache: 2.3.0
+    yargs: 15.4.1
+    yargs-parser: 20.0.0
+  bin:
+    nx: bin/nx.js
+  checksum: 17ff4cd1d04660da87c8c821a2712db160d465ff87d61247b17a1c51764ca6eb362ddcc9625a5eab589db1264a2ae90a936034a30b946ab311274aae92d0f2aa
+  languageName: node
+  linkType: hard
+
 "@nrwl/cypress@npm:12.7.2":
   version: 12.7.2
   resolution: "@nrwl/cypress@npm:12.7.2"
@@ -2883,6 +2898,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/devkit@npm:12.8.0"
+  dependencies:
+    "@nrwl/tao": 12.8.0
+    ejs: ^3.1.5
+    ignore: ^5.0.4
+    rxjs: ^6.5.4
+    semver: 7.3.4
+    tslib: ^2.0.0
+  checksum: efee28a5bd4b7704ce664b2dfb73faf3a953d14a30f6821cd06bdceac25cff0c9cba0ed479988e8311c15fc8029483f6172c28e26debc9b02d6dc751575fec8c
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:12.7.2":
   version: 12.7.2
   resolution: "@nrwl/eslint-plugin-nx@npm:12.7.2"
@@ -2916,6 +2945,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/jest@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/jest@npm:12.8.0"
+  dependencies:
+    "@jest/reporters": 27.0.6
+    "@jest/test-result": 27.0.6
+    "@nrwl/devkit": 12.8.0
+    chalk: 4.1.0
+    identity-obj-proxy: 3.0.0
+    jest-config: 27.0.6
+    jest-resolve: 27.0.6
+    jest-util: 27.0.6
+    rxjs: ^6.5.4
+    tslib: ^2.0.0
+  checksum: 40d0cc986eb8703ad51e613e0c50297ce863781ad8fb1fd652ffb77d7ae83060e49b250c3f71b3dbd8b9a609be52dc5cefc7ed6b4c08ee18aaf11a84569a2d20
+  languageName: node
+  linkType: hard
+
 "@nrwl/linter@npm:12.7.2":
   version: 12.7.2
   resolution: "@nrwl/linter@npm:12.7.2"
@@ -2926,6 +2973,19 @@ __metadata:
     tmp: ~0.2.1
     tslib: ^2.0.0
   checksum: 4706db3bf4b2adb8664fd3842619c5b40c20558c517a6e8c1dd6db5ac37a217d171b8e72aee519d9014eb11e2e4296c7fd20e1fc5c599cbad20e01f419f47a7a
+  languageName: node
+  linkType: hard
+
+"@nrwl/linter@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/linter@npm:12.8.0"
+  dependencies:
+    "@nrwl/devkit": 12.8.0
+    glob: 7.1.4
+    minimatch: 3.0.4
+    tmp: ~0.2.1
+    tslib: ^2.0.0
+  checksum: bc975a54d858761a270a62ac0eecf621486b7b36d7001e265ee1ca913e72ac3b6e0349c109134aa4150acf18fe27cf80c624e8c5c01646b59f52318d84e8bed5
   languageName: node
   linkType: hard
 
@@ -2951,6 +3011,35 @@ __metadata:
   peerDependencies:
     next: ^11.1.0
   checksum: 2be0bf6f2e957f9c47f3876a55a9269c0fd8ef179347d540486e42f41a220ce84945ac3f2919c91687891054509111e2177c8183081501fe06eca672a01de8d4
+  languageName: node
+  linkType: hard
+
+"@nrwl/node@npm:^12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/node@npm:12.8.0"
+  dependencies:
+    "@nrwl/devkit": 12.8.0
+    "@nrwl/jest": 12.8.0
+    "@nrwl/linter": 12.8.0
+    "@nrwl/workspace": 12.8.0
+    chalk: 4.1.0
+    circular-dependency-plugin: 5.2.0
+    copy-webpack-plugin: 6.4.1
+    fork-ts-checker-webpack-plugin: 6.2.10
+    fs-extra: ^9.1.0
+    glob: 7.1.4
+    license-webpack-plugin: 2.3.15
+    rxjs: ^6.5.4
+    rxjs-for-await: 0.0.2
+    source-map-support: 0.5.19
+    tree-kill: 1.2.2
+    ts-loader: 5.4.5
+    tsconfig-paths-webpack-plugin: 3.4.1
+    tslib: ^2.0.0
+    webpack: 4.46.0
+    webpack-merge: 4.2.1
+    webpack-node-externals: 1.7.2
+  checksum: 890c20e5bc9f7d6a7b761dc2bc4a70c6cc444a3e0c598b5012d190c52af67741e8946ec1f8f80623e954f3a41c2c0fc87ed6766916a3cc9a01b0a1abbefe1162
   languageName: node
   linkType: hard
 
@@ -3032,6 +3121,26 @@ __metadata:
   bin:
     tao: index.js
   checksum: 779f8d3ae8498b0b7d66ee552873dce5284bbfd43183568fd2c359b4c736d91ca5dc5e1f3b7a5f7b006f99b65801aea5891ab35d924992c1a016c00c9ad2c18b
+  languageName: node
+  linkType: hard
+
+"@nrwl/tao@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/tao@npm:12.8.0"
+  dependencies:
+    chalk: 4.1.0
+    enquirer: ~2.3.6
+    fs-extra: ^9.1.0
+    jsonc-parser: 3.0.0
+    rxjs: ^6.5.4
+    rxjs-for-await: 0.0.2
+    semver: 7.3.4
+    tmp: ~0.2.1
+    tslib: ^2.0.0
+    yargs-parser: 20.0.0
+  bin:
+    tao: index.js
+  checksum: cc60aab5a33f8dff68cc9eb96fd41b1cbc876f455d0dc04821b64c7a5cf6aa91acd1ceea83bb6f7f12a86d581b67a8a53b369997a60dbd72b5d30573c96a860f
   languageName: node
   linkType: hard
 
@@ -3152,6 +3261,38 @@ __metadata:
   peerDependencies:
     prettier: ^2.3.0
   checksum: 839bd89a4fc26e0c272bb95850fd061204a956ad74bb156290dc45ce30ca7c7cba45bfab754a8df35d1bceda4acc3d9360862902f3a2ac4c5e0f83b1a735cc4e
+  languageName: node
+  linkType: hard
+
+"@nrwl/workspace@npm:12.8.0":
+  version: 12.8.0
+  resolution: "@nrwl/workspace@npm:12.8.0"
+  dependencies:
+    "@nrwl/cli": 12.8.0
+    "@nrwl/devkit": 12.8.0
+    "@nrwl/jest": 12.8.0
+    "@nrwl/linter": 12.8.0
+    chalk: 4.1.0
+    chokidar: ^3.5.1
+    cosmiconfig: ^4.0.0
+    dotenv: ~10.0.0
+    enquirer: ~2.3.6
+    flat: ^5.0.2
+    fs-extra: ^9.1.0
+    glob: 7.1.4
+    ignore: ^5.0.4
+    minimatch: 3.0.4
+    npm-run-all: ^4.1.5
+    open: ^7.4.2
+    rxjs: ^6.5.4
+    semver: 7.3.4
+    tmp: ~0.2.1
+    tslib: ^2.0.0
+    yargs: 15.4.1
+    yargs-parser: 20.0.0
+  peerDependencies:
+    prettier: ^2.3.0
+  checksum: 6166cb6096e04e8ef7b375dc372684103b38ce158d0c66083c5d5066d7f5206e74ee2513c4f6d83aaad409cddfb754c83489e29560d128bbfe0a35b438509270
   languageName: node
   linkType: hard
 
@@ -21358,7 +21499,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.17, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19":
+"source-map-support@npm:0.5.19, source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.17, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.19":
   version: 0.5.19
   resolution: "source-map-support@npm:0.5.19"
   dependencies:
@@ -22650,6 +22791,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"tree-kill@npm:1.2.2":
+  version: 1.2.2
+  resolution: "tree-kill@npm:1.2.2"
+  bin:
+    tree-kill: cli.js
+  checksum: 49117f5f410d19c84b0464d29afb9642c863bc5ba40fcb9a245d474c6d5cc64d1b177a6e6713129eb346b40aebb9d4631d967517f9fbe8251c35b21b13cd96c7
+  languageName: node
+  linkType: hard
+
 "trim-trailing-lines@npm:^1.0.0":
   version: 1.1.4
   resolution: "trim-trailing-lines@npm:1.1.4"
@@ -23683,6 +23833,7 @@ typescript@~4.3.5:
     "@nrwl/jest": 12.7.2
     "@nrwl/linter": 12.7.2
     "@nrwl/next": 12.7.2
+    "@nrwl/node": ^12.8.0
     "@nrwl/nx-cloud": latest
     "@nrwl/react": 12.7.2
     "@nrwl/storybook": 12.7.2

@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { ColorScheme } from "@waweb/utils"
+import { ColorScheme } from "@waweb/model"
 import { CssBaseline, Paper, ThemeProvider } from "@material-ui/core"
 import { createTheme } from "./theme"
 

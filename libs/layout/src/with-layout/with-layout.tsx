@@ -2,7 +2,8 @@ import * as React from "react"
 import { Theme } from "@waweb/theme"
 import { useEffect } from "react"
 import AOS from "aos"
-import { ColorScheme, usePalette } from "@waweb/utils"
+import { usePalette } from "@waweb/utils"
+import { ColorScheme } from "@waweb/model"
 
 interface Props {
   colorScheme: ColorScheme

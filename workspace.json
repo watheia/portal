@@ -243,6 +243,38 @@
         }
       }
     },
+    "model": {
+      "root": "libs/model",
+      "sourceRoot": "libs/model/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/model",
+            "tsConfig": "libs/model/tsconfig.lib.json",
+            "packageJson": "libs/model/package.json",
+            "main": "libs/model/src/index.ts",
+            "assets": ["libs/model/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/model/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/model"],
+          "options": {
+            "jestConfig": "libs/model/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "molecules": {
       "root": "libs/molecules",
       "sourceRoot": "libs/molecules/src",
