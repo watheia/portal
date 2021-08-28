@@ -9,11 +9,7 @@ export type PanelProps = HTMLAttributes<HTMLDivElement>
 export default function Panel({ children, className, ...props }: PanelProps) {
   return (
     <div className={clsx(styles.panel, className)}>
-      <div className={styles.content}>
-        {/* Content goes here */}
-        {/* We use less vertical padding on card headers on desktop than on body sections */}
-      </div>
-      <div className={styles.footer}>{/* Content goes here */}</div>
+      <div className={clsx(styles.content)}>{children}</div>
     </div>
   )
 }

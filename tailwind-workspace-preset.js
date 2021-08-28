@@ -6,7 +6,7 @@ module.exports = {
         "8xl": "1920px"
       },
       colors: {
-        "regal-blue": {
+        blue: {
           50: "#f2f6f8",
           100: "#e6edf1",
           200: "#c0d1dc",
@@ -42,48 +42,31 @@ module.exports = {
           800: "#151313",
           900: "#110f10"
         },
-        primary: "var(--primary)",
-        "primary-2": "var(--primary-2)",
-        secondary: "var(--secondary)",
-        "secondary-2": "var(--secondary-2)",
-        hover: "var(--hover)",
-        "hover-1": "var(--hover-1)",
-        "hover-2": "var(--hover-2)",
-        "shark-0": "var(--shark-0)",
-        "shark-1": "var(--shark-1)",
-        "shark-2": "var(--shark-2)",
-        "shark-3": "var(--shark-3)",
-        "shark-4": "var(--shark-4)",
-        "shark-5": "var(--shark-5)",
-        "shark-6": "var(--shark-6)",
-        "shark-7": "var(--shark-7)",
-        "shark-8": "var(--shark-8)",
-        "shark-9": "var(--shark-9)",
-        "aqua-0": "var(--aqua-0)",
-        "aqua-1": "var(--aqua-1)",
-        "aqua-2": "var(--aqua-2)",
-        "aqua-3": "var(--aqua-3)",
-        "aqua-4": "var(--aqua-4)",
-        "aqua-5": "var(--aqua-5)",
-        "aqua-6": "var(--aqua-6)",
-        "aqua-7": "var(--aqua-7)",
-        "aqua-8": "var(--aqua-8)",
-        "aqua-9": "var(--aqua-9)",
-        violet: "var(--violet)",
-        "violet-light": "var(--violet-light)",
-        pink: "var(--pink)",
-        cyan: "var(--aqua)",
-        blue: "var(--blue)",
-        green: "var(--green)",
-        red: "var(--red)"
+        mulberry: {
+          50: "#f7f3f5",
+          100: "#eee7eb",
+          200: "#d6c2cd",
+          300: "#bd9dae",
+          400: "#8b5472",
+          500: "#590b35",
+          600: "#500a30",
+          700: "#430828",
+          800: "#350720",
+          900: "#2c051a"
+        },
+        primary: "#110f10",
+        "primary-2": "#1a1718",
+        secondary: "#fefeff",
+        "secondary-2": "#fafbfb"
       },
       textColor: {
-        base: "var(--text-base)",
-        primary: "var(--text-primary)",
-        secondary: "var(--text-secondary)"
+        base: "#110f10",
+        primary: "#1a1718",
+        secondary: "#fefeff",
+        brand: "#04BFBF"
       },
       boxShadow: {
-        "outline-2": "0 0 0 2px var(--shark-8)",
+        "outline-2": "0 0 0 2px #151313",
         magical:
           "rgba(0, 0, 0, 0.02) 0px 30px 30px, rgba(0, 0, 0, 0.03) 0px 0px 8px, rgba(0, 0, 0, 0.05) 0px 1px 0px"
       },

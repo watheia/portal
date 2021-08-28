@@ -4,54 +4,28 @@ import {
   CogIcon,
   LockClosedIcon,
   RefreshIcon,
+  CalendarIcon,
+  ChartBarIcon,
+  FolderIcon,
+  HomeIcon,
+  InboxIcon,
+  UsersIcon,
   ServerIcon,
-  ShieldCheckIcon
+  ShieldCheckIcon,
+  GlobeAltIcon,
+  ScaleIcon,
+  LightningBoltIcon,
+  AnnotationIcon,
+  MailIcon
 } from "@heroicons/react/outline"
 
-export const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" }
-]
+export const missionStatement = "Our mission is to make technology more humanistic."
 
-export const features = [
-  {
-    name: "Push to Deploy",
-    description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.",
-    icon: CloudUploadIcon
-  },
-  {
-    name: "SSL Certificates",
-    description:
-      "Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.",
-    icon: LockClosedIcon
-  },
-  {
-    name: "Simple Queues",
-    description:
-      "Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.",
-    icon: RefreshIcon
-  },
-  {
-    name: "Advanced Security",
-    description:
-      "Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.",
-    icon: ShieldCheckIcon
-  },
-  {
-    name: "Powerful API",
-    description:
-      "Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.",
-    icon: CogIcon
-  },
-  {
-    name: "Database Backups",
-    description:
-      "Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.",
-    icon: ServerIcon
-  }
+export const navigation = [
+  { name: "Company", href: "/company", icon: HomeIcon, current: false },
+  { name: "Blog", href: "/blog", icon: ChartBarIcon, current: false },
+  { name: "News", href: "/news", icon: FolderIcon, current: false },
+  { name: "Support", href: "/support", icon: CalendarIcon, current: false }
 ]
 
 export const blogPosts = [
@@ -162,3 +136,71 @@ export const footerNavigation = {
     }
   ]
 }
+
+export const features = [
+  {
+    name: "Lean Strategy",
+    description:
+      "A lean strategy is about gaining a competitive edge by offering better quality products at competitive prices and making a sustainable profit by eliminating waste through engaging employees in discovering deeper ways to think about their own jobs and smarter ways of working together.",
+    icon: GlobeAltIcon
+  },
+  {
+    name: "Domain Driven Design",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: ScaleIcon
+  },
+  {
+    name: "Behavior Driven Development",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: LightningBoltIcon
+  },
+  {
+    name: "Systems Thinking",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: AnnotationIcon
+  }
+]
+
+export const services = [
+  {
+    id: 1,
+    name: "Engineering & Design",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: GlobeAltIcon
+  },
+  {
+    id: 2,
+    name: "Product Development",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: ScaleIcon
+  },
+  {
+    id: 3,
+    name: "Education & Training",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: LightningBoltIcon
+  }
+]
+
+export const communicationFeatures = [
+  {
+    id: 1,
+    name: "Mobile notifications",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: AnnotationIcon
+  },
+  {
+    id: 2,
+    name: "Reminder emails",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: MailIcon
+  }
+]

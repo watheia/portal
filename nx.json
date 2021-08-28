@@ -37,6 +37,13 @@
     "atoms": {
       "tags": []
     },
+    "corporate": {
+      "tags": []
+    },
+    "corporate-e2e": {
+      "tags": [],
+      "implicitDependencies": ["corporate"]
+    },
     "e2e": {
       "tags": [],
       "implicitDependencies": ["app"]

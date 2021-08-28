@@ -320,7 +320,7 @@ export function About(props) {
         <div className="relative pt-16 pb-32 overflow-hidden">
           <div
             aria-hidden="true"
-            className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+            className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-shark-100"
           />
           <div className="relative">
             <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
@@ -351,7 +351,7 @@ export function About(props) {
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 border-t border-gray-200 pt-6">
+                <div className="mt-8 border-t border-shark-200 pt-6">
                   <blockquote>
                     <div>
                       <p className="text-base text-shark-500">
@@ -406,7 +406,7 @@ export function About(props) {
                     <h2 className="text-3xl font-extrabold tracking-tight text-base">
                       Better understand your customers
                     </h2>
-                    <p className="mt-4 text-lg text-accents-4">
+                    <p className="mt-4 text-lg text-shark-4">
                       Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum
                       malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis
                       viverra duis. In venenatis sem arcu pretium pharetra at. Lectus
@@ -480,14 +480,14 @@ export function About(props) {
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+                  className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-shark-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
                 />
               </div>
             </div>
           </div>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
             <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-              <h2 className="text-sm text-accents-8 font-semibold tracking-wide uppercase">
+              <h2 className="text-sm text-shark-8 font-semibold tracking-wide uppercase">
                 Valuable Metrics
               </h2>
               <p className="mt-3 text-3xl font-extrabold text-white">
