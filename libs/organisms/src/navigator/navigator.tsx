@@ -13,7 +13,7 @@ export type NavigatorProps = {
 } & HTMLAttributes<HTMLDivElement>
 
 export const Navigator = ({ navigation, className, ...props }: NavigatorProps) => (
-  <Popover className={clsx("relative", className)}>
+  <Popover className={clsx("relative", className)} {...props}>
     <div className="bg-shark-900 pt-6">
       <nav
         className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
@@ -38,7 +38,7 @@ export const Navigator = ({ navigation, className, ...props }: NavigatorProps) =
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-medium text-white hover:text-shark-300 hover:underline"
+                  className="font-light text-shark-100 hover:text-white hover:font-medium hover:underline"
                 >
                   {item.name}
                 </a>
@@ -48,7 +48,7 @@ export const Navigator = ({ navigation, className, ...props }: NavigatorProps) =
         <div className="hidden md:flex md:items-center md:space-x-6">
           <Link
             href="/user/login"
-            className="text-base font-medium text-white hover:text-shark-300"
+            className="font-medium text-secondary-2 hover:text-secondary"
           >
             Log in
           </Link>

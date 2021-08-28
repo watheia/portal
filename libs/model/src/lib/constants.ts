@@ -7,7 +7,7 @@ import {
   MailIcon
 } from "@heroicons/react/outline"
 
-export const missionStatement = "Our mission is to make technology more humanistic."
+export const missionStatement = "Our mission is to create more humanistic technology."
 
 export const blogPosts = [
   {
@@ -68,55 +68,6 @@ export const blogPosts = [
     readingLength: "11 min"
   }
 ]
-
-export const footerNavigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" }
-  ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" }
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" }
-  ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" }
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "",
-      icon: Facebook
-    },
-    {
-      name: "Instagram",
-      href: "",
-      icon: Instagram
-    },
-    {
-      name: "Twitter",
-      href: "",
-      icon: Twitter
-    },
-    {
-      name: "GitHub",
-      href: "#",
-      icon: Github
-    }
-  ]
-}
 
 export const features = [
   {

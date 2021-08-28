@@ -30,18 +30,13 @@ import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import { ChevronRightIcon, ExternalLinkIcon } from "@heroicons/react/solid"
 import { Watheia, WatheiaAlt, WaBanner } from "@waweb/gfx"
-import { Navigator } from "@waweb/organisms"
+import { Navigator, Footer } from "@waweb/organisms"
 import clsx from "clsx"
-import {
-  navigation,
-  features,
-  blogPosts,
-  missionStatement,
-  footerNavigation
-} from "@waweb/model"
+import { navigation, features, blogPosts, missionStatement } from "@waweb/model"
 
 const Content = (props: HTMLAttributes<HTMLDivElement>) => (
   <main {...props}>
+    {/* Hero section */}
     <div className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -340,122 +335,19 @@ const Content = (props: HTMLAttributes<HTMLDivElement>) => (
   </main>
 )
 
-const Footer = () => (
-  <footer className="bg-shark-100" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" className="sr-only">
-      Footer
-    </h2>
-    <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
-      <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div className="space-y-8 xl:col-span-1">
-          <WaBanner className="h-10" />
-          <p className="text-shark-500 text-base">{missionStatement}</p>
-          <div className="flex space-x-6">
-            {footerNavigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={clsx(item.href ?? "hover:text-shark-500", "text-shark-400")}
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
-        </div>
-        <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-shark-400 tracking-wider uppercase">
-                Solutions
-              </h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {footerNavigation.solutions.map((item) => (
-                  <li key={item.name}>
-                    <a
-                      href={item.href}
-                      className="text-base text-shark-500 hover:text-shark-900"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-shark-400 tracking-wider uppercase">
-                Support
-              </h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {footerNavigation.support.map((item) => (
-                  <li key={item.name}>
-                    <a
-                      href={item.href}
-                      className="text-base text-shark-500 hover:text-shark-900"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-shark-400 tracking-wider uppercase">
-                Company
-              </h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {footerNavigation.company.map((item) => (
-                  <li key={item.name}>
-                    <a
-                      href={item.href}
-                      className="text-base text-shark-500 hover:text-shark-900"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-shark-400 tracking-wider uppercase">
-                Legal
-              </h3>
-              <ul role="list" className="mt-4 space-y-4">
-                {footerNavigation.legal.map((item) => (
-                  <li key={item.name}>
-                    <a
-                      href={item.href}
-                      className="text-base text-shark-500 hover:text-shark-900"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-12 border-t border-shark-200 py-8">
-        <p className="text-base text-shark-400 xl:text-center">
-          &copy; 2021 Watheia Labs, LLC. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-)
-
 export default function Index({ className, ...props }) {
   return (
     <div className={clsx("bg-shark-100", className)} {...props}>
       <div className="relative overflow-hidden">
         <header>
-          <Navigator navigation={navigation} />
+          <Navigator navigation={navigation.primary} />
         </header>
-        <Content />
-        <Footer />
+        <main>
+          <Content />
+        </main>
+        <footer>
+          <Footer navigation={navigation} />
+        </footer>
       </div>
     </div>
   )
