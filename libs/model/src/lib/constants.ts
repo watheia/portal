@@ -1,17 +1,5 @@
 import { Facebook, Github, Instagram, Twitter } from "@waweb/gfx"
 import {
-  CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
-  RefreshIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  UsersIcon,
-  ServerIcon,
-  ShieldCheckIcon,
   GlobeAltIcon,
   ScaleIcon,
   LightningBoltIcon,
@@ -20,13 +8,6 @@ import {
 } from "@heroicons/react/outline"
 
 export const missionStatement = "Our mission is to make technology more humanistic."
-
-export const navigation = [
-  { name: "Company", href: "/company", icon: HomeIcon, current: false },
-  { name: "Blog", href: "/blog", icon: ChartBarIcon, current: false },
-  { name: "News", href: "/news", icon: FolderIcon, current: false },
-  { name: "Support", href: "/support", icon: CalendarIcon, current: false }
-]
 
 export const blogPosts = [
   {

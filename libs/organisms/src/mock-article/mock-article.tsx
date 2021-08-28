@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react"
 import { Link } from "@waweb/atoms"
 
-export type HelloWorldProps = HTMLAttributes<HTMLDivElement>
+export type MockArticleProps = HTMLAttributes<HTMLDivElement>
 
 /**
  * This example requires Tailwind CSS v2.0+
@@ -18,7 +18,7 @@ export type HelloWorldProps = HTMLAttributes<HTMLDivElement>
  * }
  * ```
  */
-export const HelloWorld = ({ className, ...props }: HelloWorldProps) => {
+export const MockArticle = ({ className, ...props }: MockArticleProps) => {
   return (
     <div className="py-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
@@ -160,4 +160,4 @@ export const HelloWorld = ({ className, ...props }: HelloWorldProps) => {
   )
 }
 
-export default HelloWorld
+export default MockArticle

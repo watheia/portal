@@ -1,5 +1,5 @@
-import { HelloWorld } from "@waweb/organisms"
+import { MockArticle } from "@waweb/organisms"
 import { Page, withLayout } from "@waweb/layout"
 
-const IndexPage = withLayout(HelloWorld, Page)
+const IndexPage = withLayout(MockArticle, Page)
 export default IndexPage
