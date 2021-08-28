@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react"
+import { Link } from "@waweb/atoms"
 
 export type HelloWorldProps = HTMLAttributes<HTMLDivElement>
 
@@ -69,7 +70,7 @@ export const HelloWorld = ({ className, ...props }: HelloWorldProps) => {
                   className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-shark-50 bg-aqua-600 hover:bg-aqua-700"
                 >
                   Contact sales
-                </a>
+                </Link>
               </div>
               <div className="rounded-md shadow ml-4">
                 <a
