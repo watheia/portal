@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import ServerStatus from "./server-status"
+import Heading from "./heading"
 
-describe("ServerStatus", () => {
+describe("Heading", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<ServerStatus />)
+    const { baseElement } = render(<Heading />)
     expect(baseElement).toBeTruthy()
   })
 })

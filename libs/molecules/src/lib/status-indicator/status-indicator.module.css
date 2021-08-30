@@ -1,0 +1,11 @@
+.root {
+  @apply inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200;
+}
+
+.pill {
+  @apply animate-pulse px-3 py-0.5 text-secondary-2 text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-shark-500 to-shark-600 rounded-full;
+}
+
+.content {
+  @apply ml-4 text-sm text-shark-400;
+}

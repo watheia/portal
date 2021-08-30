@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -26,11 +27,12 @@
   ```
 */
 
-import { ChevronRightIcon, ExternalLinkIcon } from "@heroicons/react/solid"
+import { ExternalLinkIcon } from "@heroicons/react/solid"
 import { solutions, blogPosts } from "@waweb/dato"
 import Image from "next/image"
 import { Link } from "@waweb/atoms"
 import { withLayout, PageLayout } from "@waweb/layout"
+import Heading from "@waweb/molecules"
 
 export const HeroSection = () => (
   <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
@@ -38,12 +40,6 @@ export const HeroSection = () => (
       <div className="lg:grid lg:grid-c bbols-2 lg:gap-8">
         <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
           <div className="lg:py-12">
-            <span className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200">
-              <span className="animate-pulse px-3 py-0.5 text-secondary-2 text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-shark-500 to-shark-600 rounded-full">
-                Offline
-              </span>
-              <span className="ml-4 text-sm">Establishing isomorphic link...</span>
-            </span>
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <span className="block">A better way to ship</span>
               <span className="pb-3  text-6xl block bg-clip-text text-aqua-500 sm:pb-5">
@@ -107,50 +103,13 @@ export const HeroSection = () => (
   </section>
 )
 
-export const ServerlessSection = () => (
-  <section className="relative bg-gradient-to-b from-shark-100 to-white pt-16 sm:pt-24 lg:pt-32">
-    <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-      <div>
-        <h2 className="text-base font-semibold tracking-wider text-primary-2 uppercase">
-          We&apos;ve got you covered.
-        </h2>
-        <p className="mt-2 text-3xl font-extrabold text-primary tracking-tight sm:text-4xl">
-          No server? No problem.
-        </p>
-        <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis
-          quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-        </p>
-      </div>
-      <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-        <Image
-          className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-          src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
-          width={2432}
-          height={1760}
-          alt="Projects app screenshot"
-        />
-      </div>
-    </div>
-  </section>
-)
-
 export const FeaturesSection = () => (
   <section className="relative bg-gradient-to-b from-shark-50 to-shark-200 py-16 sm:py-24 lg:py-32">
     <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-        deploy from code to production faster
-      </h2>
-      <p
-        className="mt-2 text-3xl font-extrabold text-primary-2
-       tracking-tight sm:text-4xl"
-      >
-        Everything you need to contiuasly integrate
-      </p>
-      <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-        Deliver features in your libraries, applications, and services faster and with
-        greater confidence in the results.
-      </p>
+      <Heading title="We've got you covered." subTitle=" No server? No problem.">
+        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis
+        nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+      </Heading>
       <div className="mt-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {solutions.map((solution) => (
@@ -226,18 +185,10 @@ export const TestemonialSection = () => (
 export const FeaturedPostsSection = () => (
   <section className="relative bg-shark-100 py-16 sm:py-24 lg:py-32">
     <div className="relative">
-      <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-          Case Studies
-        </h2>
-        <p className="mt-2 text-3xl font-extrabold text-primary tracking-tight sm:text-4xl">
-          Original Research &amp; Insights
-        </p>
-        <p className="mt-5 mx-auto max-w-prose text-xl text-shark-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis
-          quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-        </p>
-      </div>
+      <Heading title="Case Studies" subTitle="Original Research &amp; Insights">
+        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis
+        nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+      </Heading>
       <div className="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
         {blogPosts.map((post) => (
           <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -302,13 +253,13 @@ export const CtaSection = () => (
     </div>
     <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
       <div className="md:ml-auto md:w-1/2 md:pl-10">
-        <h2 className="text-base font-semibold uppercase tracking-wider text-shark-300">
+        <h2 className="font-semibold uppercase tracking-wider text-aqua-500">
           Award winning support
         </h2>
-        <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <p className="mt-2 text-secondary text-3xl font-extrabold tracking-tight sm:text-4xl">
           We&apos;re here to help
         </p>
-        <p className="mt-3 text-lg text-shark-300">
+        <p className="mt-3 text-lg text-secondary-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus
           etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.
           Aliquet amet volutpat quisque ut interdum tincidunt duis.
@@ -319,7 +270,7 @@ export const CtaSection = () => (
               href="/support"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-shark-100"
             >
-              Visit the help center
+              Get Support
               <ExternalLinkIcon
                 className="-mr-1 ml-3 h-5 w-5 text-shark-400"
                 aria-hidden="true"
@@ -335,7 +286,6 @@ export const CtaSection = () => (
 const Home = () => (
   <>
     <HeroSection />
-    <ServerlessSection />
     <FeaturesSection />
     <TestemonialSection />
     <FeaturedPostsSection />

@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Molecules from "./molecules"
+import CardBlockquote from "./card-blockquote"
 
-describe("Molecules", () => {
+describe("CardBlockquote", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Molecules />)
+    const { baseElement } = render(<CardBlockquote />)
     expect(baseElement).toBeTruthy()
   })
 })

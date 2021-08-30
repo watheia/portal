@@ -74,7 +74,9 @@ export default function withLayout(
     return (
       <SSRProvider>
         <OverlayProvider>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
           <ResizeHandler />
           <NProgress />
         </OverlayProvider>

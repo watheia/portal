@@ -67,9 +67,10 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(props,
   } = props
 
   const router = useRouter()
+  if (!router) console.error(`Failed loading router context with useRouter: ${router}`)
   const pathname = typeof href === "string" ? href : href.pathname
   const className = clsx(classNameProps, {
-    [activeClassName]: router.pathname === pathname && activeClassName
+    [activeClassName]: router?.pathname === pathname && activeClassName
   })
 
   const isExternal =
