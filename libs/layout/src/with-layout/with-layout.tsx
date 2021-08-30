@@ -1,11 +1,10 @@
-import * as React from "react"
-import { Theme } from "@waweb/theme"
-import Head from "next/head"
-import { useRouter } from "next/router"
+import React from "react"
 import AOS from "aos"
-import { Paper } from "@material-ui/core"
 import { useEffect, useState } from "react"
 import { ColorScheme } from "@waweb/dato"
+import { OverlayProvider, SSRProvider } from "react-aria"
+import NProgress from "../components/nprogress"
+import ResizeHandler from "../components/resize-handler"
 
 export interface LayoutProps {
   children: Element
@@ -73,13 +72,13 @@ export default function withLayout(
     if (!mountedComponent) return <div />
 
     return (
-      // <Theme colorScheme={themeMode as ColorScheme}>
-      //   <Paper elevation={0}>
-      <Layout themeMode={themeMode as ColorScheme} themeToggler={themeToggler}>
-        <Component themeMode={themeMode as ColorScheme} {...pageProps} />
-      </Layout>
-      //   </Paper>
-      // </Theme>
+      <SSRProvider>
+        <OverlayProvider>
+          <Component {...pageProps} />
+          <ResizeHandler />
+          <NProgress />
+        </OverlayProvider>
+      </SSRProvider>
     )
   }
 

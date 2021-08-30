@@ -6182,6 +6182,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@types/nprogress@npm:0.2.0"
+  checksum: 561384775008ae58111f038f8f9468b3de8987cd753feef9bf6d07af0e1343390d492a078bb08a7b53ac7370208e31e06ac069cb852c435d49f5fe218e9769c4
+  languageName: node
+  linkType: hard
+
 "@types/overlayscrollbars@npm:^1.12.0":
   version: 1.12.1
   resolution: "@types/overlayscrollbars@npm:1.12.1"
@@ -17865,6 +17872,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "nprogress@npm:0.2.0"
+  checksum: 66b7bec5d563ecf2d1c3d2815e6d5eb74ed815eee8563e0afa63d3f185ab1b9cf2ddd97e1ded263b9995c5019d26d600320e849e50f3747984daa033744619dc
+  languageName: node
+  linkType: hard
+
 "nth-check@npm:^1.0.2":
   version: 1.0.2
   resolution: "nth-check@npm:1.0.2"
@@ -24693,6 +24707,7 @@ typescript@~4.4.2:
     "@types/aos": ^3.0.4
     "@types/jest": 27.0.1
     "@types/node": ^16.7.4
+    "@types/nprogress": ^0.2.0
     "@types/react": ^17.0.19
     "@types/react-dom": ^17.0.9
     "@typescript-eslint/eslint-plugin": ~4.29.3
@@ -24721,6 +24736,7 @@ typescript@~4.4.2:
     next: ^11.1.0
     next-compose-plugins: ^2.2.1
     node-sass: 5.0.0
+    nprogress: ^0.2.0
     postcss: ^8.3.6
     postcss-flexbugs-fixes: ^5.0.2
     postcss-nesting: ^8.0.1
