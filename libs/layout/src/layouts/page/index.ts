@@ -1,2 +1,2 @@
-export { default, default as Page } from "./page"
-export type { PageProps } from "./page"
+export { default, default as PageLayout } from "./page"
+export type { PageLayoutProps } from "./page"

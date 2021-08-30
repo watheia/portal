@@ -1,5 +1,5 @@
 :root {
-  --shark-50: #fefeff;
+  --shark-0: #fefeff;
   --shark-1: #fafbfb;
   --shark-2: #dbdcdd;
   --shark-3: #a7a5a6;
@@ -81,7 +81,8 @@ html {
 }
 
 html,
-body {
+body,
+.app {
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

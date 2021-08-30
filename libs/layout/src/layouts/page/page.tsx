@@ -1,15 +1,24 @@
 import { HTMLAttributes } from "react"
 import clsx from "clsx"
-import styles from "./page.module.css"
+import { Navigator, Footer } from "@waweb/organisms"
+import { navigation } from "@waweb/dato"
 
 /* eslint-disable-next-line */
-export type PageProps = HTMLAttributes<HTMLDivElement>
+export type PageLayoutProps = HTMLAttributes<HTMLDivElement>
 
 /* This example requires Tailwind CSS v2.0+ */
-export default function Page({ children, className, ...props }: PageProps) {
+export default function PageLayout({ children, className, ...props }: PageLayoutProps) {
   return (
-    <div className={clsx(styles.page, className)}>
-      <div className={clsx(styles.content)}>{children}</div>
+    <div className={clsx("bg-shark-100", className)} {...props}>
+      <div className="relative overflow-hidden">
+        <header>
+          <Navigator navigation={navigation.primary} />
+        </header>
+        <main>{children}</main>
+        <footer>
+          <Footer navigation={navigation} />
+        </footer>
+      </div>
     </div>
   )
 }

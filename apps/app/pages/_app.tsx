@@ -10,7 +10,9 @@ export default function WaApp({ Component, pageProps }) {
 
   return (
     <Theme>
-      <Component {...pageProps} />
+      <div className="app">
+        <Component {...pageProps} />
+      </div>
     </Theme>
   )
 }

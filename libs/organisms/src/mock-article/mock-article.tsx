@@ -1,35 +1,38 @@
-import { HTMLAttributes } from "react"
 import { Link } from "@waweb/atoms"
+import { HTMLAttributes } from "react"
 
 export type MockArticleProps = HTMLAttributes<HTMLDivElement>
 
-/**
- * This example requires Tailwind CSS v2.0+
- * This example requires some changes to your config:
- *
- * ```
- * // tailwind.config.js
- * module.exports = {
- *   // ...
- *   plugins: [
- *     // ...
- *     require('@tailwindcss/typography'),
- * ],
- * }
- * ```
- */
-export const MockArticle = ({ className, ...props }: MockArticleProps) => {
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/typography'),
+    ],
+  }
+  ```
+*/
+export const MockArticle = (props: MockArticleProps) => {
   return (
-    <div className="py-12 overflow-hidden">
+    <div className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-          <h2 className="text-aqua-500 font-semibold tracking-wide uppercase">Balance</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-primary-2 sm:text-4xl">
+          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            Transactions
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             What makes us different
           </p>
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
-          <p className="text-lg text-shark-500">
+          <p className="text-lg text-gray-500">
             Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
             consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu
             morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae
@@ -38,7 +41,7 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="prose prose-aqua text-shark-500 mx-auto lg:max-w-none">
+            <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
               <p>
                 Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum.
                 Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
@@ -66,19 +69,19 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
               <div className="rounded-md shadow">
                 <Link
-                  href="/contact?channel=sales"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-shark-50 bg-aqua-600 hover:bg-aqua-700"
+                  href="/support"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Contact sales
                 </Link>
               </div>
               <div className="rounded-md shadow ml-4">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-aqua-600 bg-shark-50 hover:bg-shark-50"
+                <Link
+                  href="/support"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                 >
                   Learn more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -105,7 +108,7 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-shark-200"
+                    className="text-gray-200"
                     fill="currentColor"
                   />
                 </pattern>
@@ -116,16 +119,16 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
                 fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
               />
             </svg>
-            <blockquote className="relative bg-shark-50 rounded-lg shadow-lg">
+            <blockquote className="relative bg-white rounded-lg shadow-lg">
               <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
                 <img
                   src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
                   alt="Workcation"
                   className="h-8"
                 />
-                <div className="relative text-lg text-shark-700 font-medium mt-8">
+                <div className="relative text-lg text-gray-700 font-medium mt-8">
                   <svg
-                    className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-shark-200"
+                    className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"
@@ -140,7 +143,7 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
                 </div>
               </div>
               <cite className="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-                <div className="relative rounded-full border-2 border-shark-50 sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
+                <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
                   <img
                     className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300"
                     src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
@@ -148,7 +151,7 @@ export const MockArticle = ({ className, ...props }: MockArticleProps) => {
                   />
                 </div>
                 <span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                  <p className="text-shark-50 font-semibold sm:inline">Judith Black</p>{" "}
+                  <p className="text-white font-semibold sm:inline">Judith Black</p>{" "}
                   <p className="sm:inline">CEO at Workcation</p>
                 </span>
               </cite>

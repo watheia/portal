@@ -1,3 +1,6 @@
+export { Text } from "./typography"
+export type { TextProps } from "./typography"
+
 export { default as Button } from "./button"
 export type { ButtonProps } from "./button"
 

@@ -1,21 +1,20 @@
 import { HTMLAttributes } from "react"
 
-export type Layout = {
-  layout: any
-  component: any
-  // All other props
-  [x: string]: any
-} & Record<string, any>
-
 /**
  * Alias for Record<string, any>
  */
 export type Metadata = Record<string, any>
 
+export type Layout = {
+  layout: any
+  component: any
+  meta?: Metadata
+}
+
 /**
  * Model Channel
  */
-export type Channel = {
+export interface Channel {
   id: bigint
   inserted_at: Date
   slug: string
@@ -25,7 +24,7 @@ export type Channel = {
 /**
  * Model Message
  */
-export type Message = {
+export interface Message {
   id: bigint
   inserted_at: Date
   message: string | null
@@ -36,7 +35,7 @@ export type Message = {
 /**
  * Model RolePermission
  */
-export type RolePermission = {
+export interface RolePermission {
   id: bigint
   role: AppRole
   permission: AppPermission
@@ -45,7 +44,7 @@ export type RolePermission = {
 /**
  * Model UserRole
  */
-export type UserRole = {
+export interface UserRole {
   id: bigint
   user_id: string
   role: AppRole
@@ -54,8 +53,7 @@ export type UserRole = {
 /**
  * Model Principal
  */
-
-export type Principal = {
+export interface Principal {
   id: string
   username: string | null
   status: UserStatus | null
@@ -112,17 +110,20 @@ export interface Pricing {
   product: Product
   active: boolean
   currency: "USD" | "PESO" | "BITCOIN"
-  nickname: "string"
-  type: "string"
+  nickname: string
+  type: string
   unit_amount: number
   recurring: PricingPeriod
   metadata: Metadata
 }
 
-export interface Stakeholder {
+export interface Person {
   uuid: string
   name: string
   email?: string
+  handle?: string
+  imageUrl: string
+  href: string
 }
 
 export interface Payload {
@@ -132,11 +133,61 @@ export interface Payload {
 }
 
 export type View = {
-  className?: string
-  metadata?: Metadata
+  meta?: Metadata
   colorScheme?: ColorScheme
 } & HTMLAttributes<HTMLDivElement>
 
 export interface Greeting {
   message: string
+}
+
+export interface Announcement {
+  id: number | string
+  title: string
+  href: string
+  preview: string
+}
+
+export interface Sample {
+  label: string
+  value: number
+}
+
+export interface Action {
+  icon: any
+  name: string
+  href?: string
+  iconForeground?: string
+  iconBackground?: string
+}
+
+export interface Feature {
+  id: string | number
+  name: string
+  description: string
+  icon?: any
+}
+
+export interface Post {
+  id: number | string
+  title: string
+  href: string
+  date: string
+  datetime: string
+  category: { name: string; href: string }
+  imageUrl: string
+  description: string
+  author: {
+    name: string
+    imageUrl?: string
+    href?: string
+  }
+  readingLength: string
+}
+
+export type ActivityType = "comment" | "mention" | "post" | "update" | "assignment" | "tags"
+
+export interface Activity extends Record<string, any> {
+  id: string | number
+  type: ActivityType
 }

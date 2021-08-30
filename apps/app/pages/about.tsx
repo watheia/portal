@@ -1,6 +1,7 @@
-import { features, services } from "@waweb/model"
+import { solutions, services } from "@waweb/dato"
 import { Dotbox, WaBanner } from "@waweb/gfx"
 import { FormationBlockquote } from "@waweb/molecules"
+import { PageLayout, withLayout } from "@waweb/layout"
 
 const StrategySection = () => {
   return (
@@ -8,7 +9,7 @@ const StrategySection = () => {
       <p className="leading-8 tracking-tight text-shark-900 text-2xl">
         Our process for sucess
       </p>
-      {features.map((feature) => (
+      {solutions.map((feature) => (
         <div key={feature.name} className="relative">
           <dt>
             <div className="absolute flex items-center justify-center h-12 w-12 .,lk bg-aqua-500 text-white">
@@ -69,7 +70,7 @@ const ServiceSection = () => (
   }
   ```
 */
-export default function Company(props) {
+export function Company(props) {
   return (
     <div className="py-16 bg-shark-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
@@ -88,10 +89,6 @@ export default function Company(props) {
               <ul role="list">
                 <li>Design architectures that are adaptable and resilient to change</li>
                 <li>Progressively enhance behavior based on detected hardware features.</li>
-                {/* <li>
-                  Advocate for the elimination of software patents and a reduction to all
-                  copyright terms
-                </li> */}
                 <li>
                   Refurbish, repair, or recycle electronic waste (household appliances,
                   printer/fax machines, multi-unit phone systems, whole desktop computers
@@ -145,3 +142,6 @@ export default function Company(props) {
     </div>
   )
 }
+
+const CompanyPage = withLayout(Company, PageLayout)
+export default CompanyPage

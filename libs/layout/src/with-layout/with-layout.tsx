@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import AOS from "aos"
 import { Paper } from "@material-ui/core"
 import { useEffect, useState } from "react"
-import { ColorScheme } from "@waweb/model"
+import { ColorScheme } from "@waweb/dato"
 
 export interface LayoutProps {
   children: Element
