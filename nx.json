@@ -37,6 +37,16 @@
     "atoms": {
       "tags": []
     },
+    "corporate": {
+      "tags": []
+    },
+    "corporate-e2e": {
+      "tags": [],
+      "implicitDependencies": ["corporate"]
+    },
+    "dato": {
+      "tags": []
+    },
     "e2e": {
       "tags": [],
       "implicitDependencies": ["app"]
@@ -45,9 +55,6 @@
       "tags": []
     },
     "layout": {
-      "tags": []
-    },
-    "model": {
       "tags": []
     },
     "molecules": {

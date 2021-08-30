@@ -1,4 +1,4 @@
-import { Payload } from "./types"
+import { Payload } from "@waweb/dato"
 
 export const getURL = (): string => {
   const url =

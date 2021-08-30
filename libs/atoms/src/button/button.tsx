@@ -6,7 +6,7 @@ import s from "./button.module.scss"
 import { LoadingDots } from "../loading-dots"
 
 export type ButtonProps = {
-  variant?: "flat" | "slim" | "cta" | "subtle"
+  variant?: "primary" | "secondary" | "cta" | "outline"
   type?: "submit" | "reset" | "button"
   active?: boolean
   width?: number | string
@@ -18,7 +18,7 @@ export type ButtonProps = {
 const Button = forwardRef((props: ButtonProps, buttonRef): JSX.Element => {
   const {
     className,
-    variant = "flat",
+    variant = "primary",
     children,
     active,
     width,
@@ -32,7 +32,7 @@ const Button = forwardRef((props: ButtonProps, buttonRef): JSX.Element => {
   const rootClassName = clsx(
     s.root,
     {
-      [s.slim]: variant === "slim",
+      [s.slim]: variant === "secondary",
       [s.loading]: loading,
       [s.disabled]: disabled
     },
