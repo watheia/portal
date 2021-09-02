@@ -1,7 +1,3 @@
 {
-  "presets": [["@nrwl/web/babel", { "useBuiltIns": "usage" }]],
-  "plugins": [
-    ["@babel/plugin-proposal-private-methods", { "loose": true }],
-    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-  ]
+  "presets": [["@nrwl/web/babel", { "useBuiltIns": "usage" }]]
 }

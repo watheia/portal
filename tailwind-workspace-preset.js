@@ -6,7 +6,7 @@ module.exports = {
         "8xl": "1920px"
       },
       colors: {
-        blue: {
+        regal: {
           50: "#f2f6f8",
           100: "#e6edf1",
           200: "#c0d1dc",

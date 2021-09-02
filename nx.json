@@ -8,14 +8,15 @@
       "dependencies": "*",
       "devDependencies": "*"
     },
-    ".eslintrc.json": "*"
+    ".eslintrc.json": "*",
+    ".stylelintrc.json": "*"
   },
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "NTMzNTQ5OGUtMzVhMS00NmRkLWE2NzctNmNkZTY5MjAxZTQwfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
+        "accessToken": "NWViNTFmY2ItM2JhMy00NjJjLTg3YzAtNmU1MThkY2RlNzhjfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -28,31 +29,31 @@
     ]
   },
   "projects": {
-    "app": {
-      "tags": []
-    },
     "assets": {
       "tags": []
     },
     "atoms": {
       "tags": []
     },
-    "corporate": {
-      "tags": []
-    },
-    "corporate-e2e": {
-      "tags": [],
-      "implicitDependencies": ["corporate"]
-    },
     "dato": {
       "tags": []
     },
-    "e2e": {
+    "gatekeeper": {
+      "tags": []
+    },
+    "gatekeeper-e2e": {
       "tags": [],
-      "implicitDependencies": ["app"]
+      "implicitDependencies": ["gatekeeper"]
     },
     "gfx": {
       "tags": []
+    },
+    "home": {
+      "tags": []
+    },
+    "home-e2e": {
+      "tags": [],
+      "implicitDependencies": ["home"]
     },
     "layout": {
       "tags": []
@@ -62,10 +63,6 @@
     },
     "organisms": {
       "tags": []
-    },
-    "organisms-e2e": {
-      "tags": [],
-      "implicitDependencies": ["organisms"]
     },
     "theme": {
       "tags": []
