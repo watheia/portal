@@ -2,7 +2,7 @@ import "./footer.module.css"
 import clsx from "clsx"
 import { WaBanner } from "@waweb/gfx"
 import { Link } from "@waweb/atoms"
-import { missionStatement, Sitemap } from "@waweb/dato"
+import { missionStatement, Sitemap } from "@waweb/utils"
 import { HTMLAttributes } from "react"
 
 /* eslint-disable-next-line */

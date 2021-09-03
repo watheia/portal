@@ -1,7 +1,7 @@
 import React from "react"
 import AOS from "aos"
 import { useEffect, useState } from "react"
-import { ColorScheme } from "@waweb/dato"
+import { ColorScheme } from "@waweb/utils"
 import { OverlayProvider, SSRProvider } from "react-aria"
 import NProgress from "../components/nprogress"
 import ResizeHandler from "../components/resize-handler"

@@ -20,12 +20,10 @@
       "@waweb/assets/images/graphics/*": ["libs/assets/src/images/graphics/*"],
       "@waweb/assets/styles/*": ["libs/assets/src/styles/*"],
       "@waweb/atoms": ["libs/atoms/src/index.ts"],
-      "@waweb/dato": ["libs/dato/src/index.ts"],
       "@waweb/gfx": ["libs/gfx/src/index.ts"],
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/molecules": ["libs/molecules/src/index.ts"],
       "@waweb/organisms": ["libs/organisms/src/index.ts"],
-      "@waweb/theme": ["libs/theme/src/index.ts"],
       "@waweb/utils": ["libs/utils/src/index.ts"]
     }
   },

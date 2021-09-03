@@ -4710,7 +4710,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.0.1":
+"@types/jest@npm:^27.0.1":
   version: 27.0.1
   resolution: "@types/jest@npm:27.0.1"
   dependencies:
@@ -4731,6 +4731,13 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.172":
+  version: 4.14.172
+  resolution: "@types/lodash@npm:4.14.172"
+  checksum: 5fc51ea40d7e455bd1c760bcc60c9e81f82d85988666d4d4969bd8311367c63bbf1fe2be48755ba87836710e45fff94014ec164ebe6ccaa72815014981152434
   languageName: node
   linkType: hard
 
@@ -7639,10 +7646,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.1, core-js@npm:^3.17.1, core-js@npm:^3.6.5":
+"core-js@npm:^3.0.1, core-js@npm:^3.6.5":
   version: 3.17.1
   resolution: "core-js@npm:3.17.1"
   checksum: b5e7040168ab8d17728428f0a914a0e6af0d9e3f5cc968e989a7f663aa0eca5bbd2715a497cc28fdcbcb5ad1582b37543d5d988133fa5908fef04f06d79c0a18
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.17.1":
+  version: 3.17.2
+  resolution: "core-js@npm:3.17.2"
+  checksum: 54df8d467bc59ff65f9db3764a486f102605483c7c2b0bad8d83171bfcfa3e0e38197a7349f072249cc07d3b140e92c655b4ce08315206dcfae0e4c3b744f378
   languageName: node
   linkType: hard
 
@@ -17061,7 +17075,7 @@ fsevents@^1.2.7:
 
 "react-dom@npm:17.0.2":
   version: 17.0.2
-  resolution: "react-dom@npm:17.0.2"
+  resolution: "react-dom@npm:17.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-dom%2F-%2Freact-dom-17.0.2.tgz"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
@@ -17120,6 +17134,13 @@ fsevents@^1.2.7:
     react: ^17.0.1
     react-dom: ^17.0.1
   checksum: 40cdb1e63b82fcbe6d9fc18c1cfa22c681c34f0c35b25540f1cf9049032e9b98152753d7370e90ac7f190b34f37a236d1792cbf84988091312b965e07ef7afe5
+  languageName: node
+  linkType: hard
+
+"react-merge-refs@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "react-merge-refs@npm:1.1.0"
+  checksum: 90884352999002d868ab9f1bcfe3222fb0f2178ed629f1da7e98e5a9b02a2c96b4aa72800db92aabd69d2483211b4be57a2088e89a11a0b660e7ada744d4ddf7
   languageName: node
   linkType: hard
 
@@ -17258,7 +17279,7 @@ fsevents@^1.2.7:
 
 "react@npm:17.0.2":
   version: 17.0.2
-  resolution: "react@npm:17.0.2"
+  resolution: "react@npm:17.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact%2F-%2Freact-17.0.2.tgz"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
@@ -20755,7 +20776,8 @@ typescript@~4.4.2:
     "@types/aos": ^3.0.4
     "@types/chai": ^4.2.21
     "@types/history": ^4.7.9
-    "@types/jest": 27.0.1
+    "@types/jest": ^27.0.1
+    "@types/lodash": ^4.14.172
     "@types/mocha": ^9.0.0
     "@types/node": 16.7.10
     "@types/nprogress": ^0.2.0
@@ -20785,6 +20807,7 @@ typescript@~4.4.2:
     jarallax: ^1.12.7
     jest: 27.1.0
     leaflet: ^1.7.1
+    lodash: ^4.17.21
     mocha: ^9.1.1
     next: 11.1.2
     nprogress: ^0.2.0
@@ -20802,6 +20825,7 @@ typescript@~4.4.2:
     react-dom: 17.0.2
     react-lazy-load-image-component: ^1.5.1
     react-leaflet: ^3.2.1
+    react-merge-refs: ^1.1.0
     react-router-dom: ^5.2.1
     react-stately: ^3.8.0
     react-syntax-highlighter: ^15.4.4

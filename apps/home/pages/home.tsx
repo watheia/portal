@@ -28,7 +28,7 @@
 */
 
 import { ExternalLinkIcon } from "@heroicons/react/solid"
-import { solutions, blogPosts } from "@waweb/dato"
+import { solutions, blogPosts } from "@waweb/utils"
 import Image from "next/image"
 import { Link } from "@waweb/atoms"
 import { withLayout, PageLayout } from "@waweb/layout"

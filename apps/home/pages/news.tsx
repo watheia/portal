@@ -1,11 +1,11 @@
 import ArrowRight from "@material-ui/icons/ArrowRightAlt"
 import { Link } from "@waweb/atoms"
-import { Post } from "@waweb/dato"
+import { Post } from "@waweb/utils"
 import React, { HtmlHTMLAttributes } from "react"
 import clsx from "clsx"
 import { PageLayout, withLayout } from "@waweb/layout"
 import { GetStaticProps, InferGetStaticPropsType } from "next"
-import { blogPosts } from "@waweb/dato"
+import { blogPosts } from "@waweb/utils"
 
 export const getStaticProps: GetStaticProps<NewsProps> = async (context) => {
   return {

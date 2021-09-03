@@ -6,7 +6,7 @@ import {
   ScaleIcon
 } from "@heroicons/react/outline"
 import { PageLayout, withLayout } from "@waweb/layout"
-import { solutions } from "@waweb/dato"
+import { solutions } from "@waweb/utils"
 
 export const Solutions = (props) => {
   return (

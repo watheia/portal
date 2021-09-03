@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react"
 import clsx from "clsx"
 import { Navigator, Footer } from "@waweb/organisms"
-import { navigation } from "@waweb/dato"
+import { navigation } from "@waweb/utils"
 
 /* eslint-disable-next-line */
 export type PageLayoutProps = HTMLAttributes<HTMLDivElement>

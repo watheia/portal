@@ -1,4 +1,4 @@
-import { services } from "@waweb/dato"
+import { services } from "@waweb/utils"
 import { Dotbox, WaBanner } from "@waweb/gfx"
 import { PageLayout, withLayout } from "@waweb/layout"
 

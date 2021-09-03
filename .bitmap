@@ -9,5 +9,17 @@
  */
 
 {
+    "ui/design/wa-card": {
+        "scope": "watheia.app",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "libs/gfx/src/ui/design/wa-card"
+    },
+    "ui/design/wa-icon": {
+        "scope": "watheia.app",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "libs/gfx/src/ui/design/wa-icon"
+    },
     "$schema-version": "14.9.0"
 }
