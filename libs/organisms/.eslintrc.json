@@ -5,10 +5,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": [
-          "libs/organisms/tsconfig.*?.json",
-          "libs/organisms/.storybook/tsconfig.json"
-        ]
+        "project": ["libs/organisms/tsconfig.*?.json"]
       },
       "rules": {}
     },
