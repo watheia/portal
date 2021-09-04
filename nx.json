@@ -66,6 +66,13 @@
     },
     "utils": {
       "tags": []
+    },
+    "with-supabase-auth": {
+      "tags": []
+    },
+    "with-supabase-auth-e2e": {
+      "tags": [],
+      "implicitDependencies": ["with-supabase-auth"]
     }
   }
 }

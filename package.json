@@ -21,6 +21,7 @@
     "@next/mdx": "^11.1.2",
     "@nrwl/next": "12.8.0",
     "@prisma/client": "2.30.3",
+    "@supabase/supabase-js": "^1.22.4",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/line-clamp": "^0.2.1",
@@ -29,6 +30,7 @@
     "autoprefixer": "^10.3.4",
     "clsx": "^1.1.1",
     "core-js": "^3.17.2",
+    "graphql-request": "^3.5.0",
     "jarallax": "^1.12.7",
     "leaflet": "^1.7.1",
     "next": "11.1.2",
@@ -59,6 +61,7 @@
     "swiper": "^7.0.3",
     "swr": "^1.0.0",
     "tailwindcss": "^2.2.9",
+    "tiny-json-http": "^7.3.0",
     "tslib": "^2.3.1",
     "validate.js": "^0.13.1"
   },

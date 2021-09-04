@@ -476,6 +476,82 @@
           }
         }
       }
+    },
+    "with-supabase-auth": {
+      "root": "apps/with-supabase-auth",
+      "sourceRoot": "apps/with-supabase-auth",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/with-supabase-auth",
+            "outputPath": "dist/apps/with-supabase-auth"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "with-supabase-auth:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "with-supabase-auth:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "with-supabase-auth:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/with-supabase-auth"],
+          "options": {
+            "jestConfig": "apps/with-supabase-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/with-supabase-auth/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "with-supabase-auth-e2e": {
+      "root": "apps/with-supabase-auth-e2e",
+      "sourceRoot": "apps/with-supabase-auth-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/with-supabase-auth-e2e/cypress.json",
+            "devServerTarget": "with-supabase-auth:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "with-supabase-auth:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/with-supabase-auth-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
     }
   },
   "cli": {
