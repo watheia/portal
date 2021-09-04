@@ -3,6 +3,7 @@ import { Fragment } from "react"
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
 import { WaCard } from "@waweb/gfx"
+import { Link } from "@waweb/atoms"
 import clsx from "clsx"
 import { InferGetStaticPropsType } from "next"
 
@@ -231,7 +232,7 @@ const Navigator = ({ navigation, user, userNavigation }) => (
         <Disclosure.Panel className="border-b border-shark-700 md:hidden">
           <div className="px-2 py-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className={clsx(
@@ -243,7 +244,7 @@ const Navigator = ({ navigation, user, userNavigation }) => (
                 aria-current={item.current ? "page" : undefined}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="pt-4 pb-3 border-t border-shark-700">
@@ -269,13 +270,14 @@ const Navigator = ({ navigation, user, userNavigation }) => (
             </div>
             <div className="mt-3 px-2 space-y-1">
               {userNavigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
+                  color="inherit"
                   className="block px-3 py-2 rounded-md text-shark-50 font-medium text-shark-400 hover:text-shark-50 hover:bg-shark-700"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -306,19 +308,27 @@ const MainContent = () => (
 )
 
 const Footer = ({ social }) => (
-  <footer className="bg-white">
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+  <footer className="bg-shark-700">
+    <div className="max-w-7xl mx-auto py-4 px-6 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div className="flex justify-center space-x-6 md:order-2">
         {social.map((item) => (
-          <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+          <a
+            key={item.name}
+            href={item.href}
+            className="text-shark-400 hover:text-shark-500"
+          >
             <span className="sr-only">{item.name}</span>
             <item.icon className="h-6 w-6" aria-hidden="true" />
           </a>
         ))}
       </div>
       <div className="mt-8 md:mt-0 md:order-1">
-        <p className="text-center text-base text-gray-400">
-          &copy; 2021 Watheia Labs, LLC. All rights reserved.
+        <p className="text-center text-base text-shark-300">
+          &copy; 2021{" "}
+          <Link href="https://watheia.app/" color="inherit" className="text-shark-50">
+            Watheia Labs, LLC
+          </Link>
+          . All rights reserved.
         </p>
       </div>
     </div>
@@ -326,12 +336,12 @@ const Footer = ({ social }) => (
 )
 
 const Index = ({
-  user,
-  title,
-  navigation,
-  userNavigation,
-  social
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+      user,
+      title,
+      navigation,
+      userNavigation,
+      social
+    }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <div className="bg-shark-800 pb-32">
