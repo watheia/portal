@@ -1,6 +1,6 @@
-import { services } from "@waweb/utils"
+import { META_DESCRIPTION, services } from "@waweb/model"
 import { Dotbox, WaBanner } from "@waweb/gfx"
-import { PageLayout, withLayout } from "@waweb/layout"
+import { Page } from "@waweb/layout"
 
 // const StrategySection = () => {
 //   return (
@@ -90,9 +90,13 @@ const ServiceSection = () => (
   }
   ```
 */
-export function Company(props) {
+export function About(props) {
+  const meta = {
+    title: "About Us",
+    description: META_DESCRIPTION
+  }
   return (
-    <div className="py-16 bg-shark-100 overflow-hidden">
+    <Page meta={meta} className="py-16 bg-shark-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
         <div className="text-base max-w-prose mx-auto lg:max-w-none">
           <h2 className="text-base text-regal-blue-700 font-semibold uppercase">
@@ -162,9 +166,8 @@ export function Company(props) {
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   )
 }
 
-const CompanyPage = withLayout(Company, PageLayout)
-export default CompanyPage
+export default About

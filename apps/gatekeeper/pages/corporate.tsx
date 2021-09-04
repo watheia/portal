@@ -52,12 +52,12 @@ const HeroSection = () => (
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <span className="block">A better way to</span>
               <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-aqua-200 to-aqua-500 sm:pb-5">
-                ship web apps
+                ship micro services
               </span>
             </h1>
             <p className="text-base text-shark-300 sm:text-xl lg:text-lg xl:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
-              cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
+              Let micro components drive feature delivery at global scale with the worlds{" "}
+              <s>first</s> best DevOps platform built for IoT and the edge.
             </p>
             <div className="mt-10 sm:mt-12">
               <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
