@@ -1,7 +1,7 @@
 .page {
   height: var(--vh100-offset);
-  font-family: sans-serif;
   margin: 1rem;
+  font-family: sans-serif;
 }
 
 .content {

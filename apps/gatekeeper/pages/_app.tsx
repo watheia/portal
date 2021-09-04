@@ -23,7 +23,7 @@ import "@waweb/assets/styles/index.css"
 import "@waweb/assets/styles/nprogress.css"
 import "@waweb/assets/styles/chrome-bug.css"
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   useEffect(() => {
     document.body.classList?.remove("loading")
   }, [])

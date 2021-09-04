@@ -4,9 +4,6 @@ export { default as NProgress } from "./lib/nprogress"
 export { default as ResizeHandler } from "./lib/resize-handler"
 export * from "./lib/constants"
 
-export { navigation } from "./lib//navigation"
-export type { NavigationZone, Sitemap } from "./lib/navigation"
-
 export type {
   Activity,
   AppRole,
@@ -18,10 +15,11 @@ export type {
   Payload,
   Post,
   Principal,
-  Product,
-  Pricing,
-  PricingPeriod,
+  // Product,
+  // Pricing,
+  // PricingPeriod,
   Person,
+  SocialLink,
   RolePermission,
   UserRole,
   UserStatus,

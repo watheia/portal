@@ -1,12 +1,11 @@
-export * from "./components/resize-handler/resize-handler"
-export * from "./components/nprogress/nprogress"
-export { default as ArticleLayout } from "./layouts/article"
-export type { ArticleProps as ArticleLayoutProps } from "./layouts/article"
+export * from "./components/footer/footer"
+export * from "./components/header/header"
+export * from "./components/header/header"
+export { default as Container } from "./container"
+export type { ContainerProps } from "./container"
 
-export { default as PanelLayout } from "./layouts/panel"
-export type { PanelProps } from "./layouts/panel"
+export { default as Page } from "./page"
+export type { PageProps } from "./page"
 
-export { default as PageLayout } from "./layouts/page"
-export type { PageLayoutProps } from "./layouts/page"
-
-export { default as withLayout } from "./with-layout"
+export { default as Panel } from "./panel"
+export type { PanelProps } from "./panel"

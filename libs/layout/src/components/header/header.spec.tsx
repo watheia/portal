@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Navigator from "./navigator"
+import Header from "./header"
 
-describe("Navigator", () => {
+describe("Header", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Navigator />)
+    const { baseElement } = render(<Header />)
     expect(baseElement).toBeTruthy()
   })
 })
