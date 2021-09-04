@@ -18,7 +18,14 @@ export type PageProps = {
   fullViewport?: boolean
 } & HTMLAttributes<HTMLDivElement>
 
-const SEO = ({ title, url, description, image }): JSX.Element => (
+export type SeoProps = {
+  title: string
+  url: string
+  description: string
+  image: string
+}
+
+const SEO = ({ title, url, description, image }: SeoProps): JSX.Element => (
   <Head>
     <title>{title}</title>
     <meta property="og:title" content={title} />
@@ -56,11 +63,11 @@ export default function Page({ children, className, meta, ...props }: PageProps)
   const description = meta?.description || SITE_NAME
   return (
     <>
-      <SEO title={title} url={url} description={description} />
+      <SEO title={title} url={url} description={description} image={image} />
       <Header />
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-          <div className="bg-shark-50 rounded-lg shadow px-1/2 py-1/2 sm:px-1 sm:py-1">
+          <div className="bg-shark-50 rounded-lg shadow px-1 py-1 sm:px-2 sm:py-2">
             {children}
           </div>
         </div>
