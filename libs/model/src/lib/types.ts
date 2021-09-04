@@ -1,5 +1,3 @@
-import { HTMLAttributes } from "react"
-
 /**
  * Alias for Record<string, any>
  */
@@ -141,7 +139,7 @@ export interface Payload {
 export type View = {
   meta?: Metadata
   colorScheme?: ColorScheme
-} & HTMLAttributes<HTMLDivElement>
+}
 
 export interface Greeting {
   message: string

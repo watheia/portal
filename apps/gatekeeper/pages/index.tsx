@@ -28,7 +28,7 @@
 
 import { ChevronRightIcon, ExternalLinkIcon } from "@heroicons/react/solid"
 import { Page } from "@waweb/layout"
-import { blogPosts, features, META_DESCRIPTION, MISSION_STATEMENT } from "@waweb/context"
+import { blogPosts, features, META_DESCRIPTION, MISSION_STATEMENT } from "@waweb/model"
 
 const HeroSection = () => (
   <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">

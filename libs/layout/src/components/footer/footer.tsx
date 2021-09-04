@@ -1,8 +1,8 @@
 import { HtmlHTMLAttributes } from "react"
-import "./footer.module.css"
 import { Icon, Link } from "@waweb/atoms"
-import { SocialLink } from "@waweb/utils"
-import { social as socialDefault } from "@waweb/context"
+import { social as socialDefault, SocialLink } from "@waweb/model"
+import clsx from "clsx"
+import styles from "./footer.module.css"
 
 /* eslint-disable-next-line */
 export type FooterProps = {
@@ -11,7 +11,7 @@ export type FooterProps = {
 
 export function Footer({ social = socialDefault, className, ...props }: FooterProps) {
   return (
-    <footer className="bg-shark-700">
+    <footer className={clsx(styles.footer, className)}>
       <div className="max-w-7xl mx-auto py-4 px-6 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {social.map((item) => (
