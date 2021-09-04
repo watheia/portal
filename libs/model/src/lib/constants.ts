@@ -11,7 +11,7 @@ export const SITE_URL = "https://localhost:4200"
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin
 export const TWITTER_USER_NAME = "watheia"
 export const BRAND_NAME = "Watheia"
-export const SITE_NAME_MULTILINE = ["ACME", "Conf"]
+export const SITE_NAME_MULTILINE = ["Watheia", "Corporate"]
 export const SITE_NAME = "Corporate"
 export const META_DESCRIPTION =
   "This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel."
@@ -25,7 +25,7 @@ export const COOKIE = "user-id"
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name
-export const LEGAL_URL = "/home/terms-and-conditions"
+export const LEGAL_URL = "/terms-and-conditions"
 export const COPYRIGHT_HOLDER = "Watheia Labs, LLC."
 
 export const REPO = "https://github.com/watheia/waweb"
@@ -147,7 +147,7 @@ export const userNavigation = [
 ]
 
 export const navigation = [
-  { name: "Corporate", href: "/corporate", current: true },
+  { name: "Corporate", href: "/corporate", current: false },
   { name: "Blog", href: "/blog", current: false },
   { name: "Support", href: "/support", current: false }
 ]
