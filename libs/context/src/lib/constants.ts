@@ -147,9 +147,9 @@ export const userNavigation = [
 ]
 
 export const navigation = [
-  { name: "Home", href: "/home", current: true },
+  { name: "Corporate", href: "/corporate", current: true },
   { name: "Blog", href: "/blog", current: false },
-  { name: "Contact", href: "/contact", current: false }
+  { name: "Support", href: "/support", current: false }
 ]
 
 export const social = [
