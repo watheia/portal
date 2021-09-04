@@ -5,340 +5,311 @@
   
   ```
   // tailwind.config.js
-  const colors = require('tailwindcss/colors')
-  
   module.exports = {
     // ...
-    theme: {
-      extend: {
-        colors: {
-          aqua: colors.aqua,
-          regal: colors.regal,
-        },
-      },
-    },
     plugins: [
       // ...
       require('@tailwindcss/forms'),
-      require('@tailwindcss/aspect-ratio'),
     ],
   }
   ```
 */
+import { Fragment } from "react"
+import { Transition } from "@headlessui/react"
+import {
+  ChartBarIcon,
+  CheckCircleIcon,
+  CursorClickIcon,
+  PhoneIcon,
+  PlayIcon,
+  ShieldCheckIcon,
+  ViewGridIcon
+} from "@heroicons/react/outline"
+import clsx from "clsx"
+import { Disclosure, Menu } from "@headlessui/react"
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
+import { WaCard } from "@waweb/gfx"
 
-import { ChevronRightIcon, ExternalLinkIcon } from "@heroicons/react/solid"
-import { Page } from "@waweb/layout"
-import { blogPosts, features, META_DESCRIPTION, MISSION_STATEMENT } from "@waweb/context"
-
-const HeroSection = () => (
-  <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-    <div className="mx-auto max-w-7xl lg:px-8">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-        <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-          <div className="lg:py-24">
-            <a
-              href="#"
-              className="inline-flex items-center text-shark-50 bg-shark-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200"
-            >
-              <span className="px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-aqua-500 to-regal-400 rounded-full">
-                We&apos;re hiring
-              </span>
-              <span className="ml-4 text-sm text-secondary-2">Visit our careers page</span>
-              <ChevronRightIcon
-                className="ml-2 w-5 h-5 text-shark-500"
-                aria-hidden="true"
-              />
-            </a>
-            <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-              <span className="block">A better way to</span>
-              <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-aqua-200 to-aqua-500 sm:pb-5">
-                ship web apps
-              </span>
-            </h1>
-            <p className="text-base text-shark-300 sm:text-xl lg:text-lg xl:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
-              cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
-            </p>
-            <div className="mt-10 sm:mt-12">
-              <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                <div className="sm:flex">
-                  <div className="min-w-0 flex-1">
-                    <label htmlFor="email" className="sr-only">
-                      Email address
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email"
-                      className="block w-full px-4 py-3 rounded-md border-0 text-base text-shark-900 placeholder-shark-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-regal-400 focus:ring-offset-shark-900"
-                    />
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <button
-                      type="submit"
-                      className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-aqua-500 to-regal-400 text-shark-50 font-medium hover:from-aqua-600 hover:to-regal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-regal-400 focus:ring-offset-shark-900"
-                    >
-                      Request login
-                    </button>
-                  </div>
-                </div>
-                <p className="mt-3 text-sm text-shark-300 sm:mt-4">
-                  Your privacy is important to us. Please read our{" "}
-                  <a href="/term-and-conditions" className="font-medium text-shark-50">
-                    terms and conditions
-                  </a>
-                  for more information.
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-          <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-            {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-            <img
-              className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-              src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+const MobileMenuBtn = ({ open }) => (
+  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-aqua-500">
+    <span className="sr-only">Open main menu</span>
+    {open ? (
+      <XIcon className="block h-6 w-6" aria-hidden="true" />
+    ) : (
+      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+    )}
+  </Disclosure.Button>
 )
-
-const ServerlessSection = () => (
-  <div className="relative bg-shark-50 pt-16 sm:pt-24 lg:pt-32">
-    <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-      <div>
-        <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-          Serverless
-        </h2>
-        <p className="mt-2 text-3xl font-extrabold text-shark-900 tracking-tight sm:text-4xl">
-          No server? No problem.
-        </p>
-        <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis
-          quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-        </p>
-      </div>
-      <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-        <img
-          className="rounded-lg shadow-xl ring-1 ring-shark-900 ring-opacity-5"
-          src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
-)
-
-const FeaturesSection = () => (
-  <div className="relative bg-shark-50 py-16 sm:py-24 lg:py-32">
-    <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-        Deploy faster
-      </h2>
-      <p className="mt-2 text-3xl font-extrabold text-shark-900 tracking-tight sm:text-4xl">
-        Everything you need to deploy your app
-      </p>
-      <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis
-        nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-      </p>
-      <div className="mt-12">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <div key={feature.name} className="pt-6">
-              <div className="flow-root bg-shark-200 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-aqua-500 to-regal-400 rounded-md shadow-lg">
-                      <feature.icon className="h-6 w-6 text-shark-50" aria-hidden="true" />
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-shark-900 tracking-tight">
-                    {feature.name}
-                  </h3>
-                  <p className="mt-5 text-base text-shark-500">{feature.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
-const TestimonialSection = () => (
-  <div className="pb-16 bg-gradient-to-r from-aqua-500 to-regal-400 lg:pb-0 lg:z-10 lg:relative">
-    <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-      <div className="relative lg:-my-8">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-1/2 bg-shark-50 lg:hidden"
-        />
-        <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-          <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-            <img
-              className="object-cover lg:h-full lg:w-full"
-              src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-        <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-          <blockquote>
-            <div>
-              <svg
-                className="h-12 w-12 text-shark-50 opacity-25"
-                fill="currentColor"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-              >
-                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-              </svg>
-              <p className="mt-6 text-2xl font-medium text-shark-50">{MISSION_STATEMENT}</p>
-            </div>
-            <footer className="mt-6">
-              <p className="font-medium text-shark-50">Aaron R Miller</p>
-              <p className="font-medium text-regal-100">CTO at Watheia Labs</p>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
-const FeaturedPostsSection = () => (
-  <div className="relative bg-shark-50 py-16 sm:py-24 lg:py-32">
-    <div className="relative">
-      <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="text-base font-semibold tracking-wider text-aqua-600 uppercase">
-          Learn
-        </h2>
-        <p className="mt-2 text-3xl font-extrabold text-shark-900 tracking-tight sm:text-4xl">
-          Case Studies
-        </p>
-        <p className="mt-5 mx-auto max-w-prose text-xl text-shark-500">
-          Our perspectives on business, technology, design, and more.
-        </p>
-      </div>
-      <div className="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
-        {blogPosts.map((post) => (
-          <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div className="flex-shrink-0">
-              <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
-            </div>
-            <div className="flex-1 bg-shark-50 p-6 flex flex-col justify-between">
-              <div className="flex-1">
-                <p className="text-sm font-medium text-aqua-600">
-                  <a href={post.category.href} className="hover:underline">
-                    {post.category.name}
-                  </a>
-                </p>
-                <a href={post.href} className="block mt-2">
-                  <p className="text-xl font-semibold text-shark-900">{post.title}</p>
-                  <p className="mt-3 text-base text-shark-500">{post.preview}</p>
-                </a>
-              </div>
-              <div className="mt-6 flex items-center">
-                <div className="flex-shrink-0">
-                  <a href={post.author.href}>
-                    <img
-                      className="h-10 w-10 rounded-full"
-                      src={post.author.imageUrl}
-                      alt={post.author.name}
-                    />
-                  </a>
-                </div>
-                <div className="ml-3">
-                  <p className="text-sm font-medium text-shark-900">
-                    <a href={post.author.href} className="hover:underline">
-                      {post.author.name}
-                    </a>
-                  </p>
-                  <div className="flex space-x-1 text-sm text-shark-500">
-                    <time dateTime={post.datetime}>{post.date}</time>
-                    <span aria-hidden="true">&middot;</span>
-                    <span>{post.readingLength} read</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-)
-
-const CtaSection = () => (
-  <div className="relative bg-shark-900">
-    <div className="relative h-56 bg-aqua-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-      <img
-        className="w-full h-full object-cover"
-        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
-        alt=""
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-aqua-500 to-regal-400 mix-blend-multiply"
-      />
-    </div>
-    <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
-      <div className="md:ml-auto md:w-1/2 md:pl-10">
-        <h2 className="text-base font-semibold uppercase tracking-wider text-shark-300">
-          Award winning support
-        </h2>
-        <p className="mt-2 text-shark-50 text-3xl font-extrabold tracking-tight sm:text-4xl">
-          We’re here to help
-        </p>
-        <p className="mt-3 text-lg text-shark-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus
-          etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.
-          Aliquet amet volutpat quisque ut interdum tincidunt duis.
-        </p>
-        <div className="mt-8">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-shark-900 bg-shark-50 hover:bg-shark-50"
-            >
-              Visit the help center
-              <ExternalLinkIcon
-                className="-mr-1 ml-3 h-5 w-5 text-shark-400"
-                aria-hidden="true"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
-const Index = (props) => {
-  // const { query } = useRouter()
-  const meta = {
-    title: "Demo - Virtual Event Starter Kit",
-    description: META_DESCRIPTION
+const solutions = [
+  {
+    name: "Analytics",
+    description: "Get a better understanding of where your traffic is coming from.",
+    href: "#",
+    icon: ChartBarIcon
+  },
+  {
+    name: "Engagement",
+    description: "Speak directly to your customers in a more meaningful way.",
+    href: "#",
+    icon: CursorClickIcon
+  },
+  {
+    name: "Security",
+    description: "Your customers' data will be safe and secure.",
+    href: "#",
+    icon: ShieldCheckIcon
+  },
+  {
+    name: "Integrations",
+    description: "Connect with third-party tools that you're already using.",
+    href: "#",
+    icon: ViewGridIcon
   }
+]
+
+const callsToAction = [
+  { name: "Home", href: "/home/", icon: PlayIcon },
+  { name: "Blog", href: "/blog/", icon: CheckCircleIcon },
+  { name: "Sales", href: "/sales/", icon: PhoneIcon }
+]
+
+const Header = () => {
   return (
-    <Page meta={meta} className="bg-shark-50">
-      <HeroSection />
-      <ServerlessSection />
-      <FeaturesSection />
-      <TestimonialSection />
-      <FeaturedPostsSection />
-      <CtaSection />
-    </Page>
+    <Disclosure as="nav" className="bg-shark-50 shadow">
+      {({ open }) => (
+        <>
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="relative flex justify-between h-16">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button */}
+                <MobileMenuBtn open={open} />
+              </div>
+              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="hidden  sm:flex sm:space-x-8">
+                  <div className="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0  sm:space-x-3 sm:px-6 lg:px-8">
+                    {callsToAction.map((item) => (
+                      <div key={item.name} className="flow-root">
+                        <a
+                          href={item.href}
+                          className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150"
+                        >
+                          <item.icon
+                            className="flex-shrink-0 h-6 w-6 text-gray-400 hidden sm:flex"
+                            aria-hidden="true"
+                          />
+                          <span className="ml-1 whitespace-nowrap">{item.name}</span>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  type="button"
+                  className="bg-shark-50 p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
+                >
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+
+                {/* Profile dropdown */}
+                <Menu as="div" className="ml-3 relative">
+                  <div>
+                    <Menu.Button className="bg-shark-50 rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500">
+                      <span className="sr-only">Open user menu</span>
+                      <WaCard className="h-8 w-8" />
+                    </Menu.Button>
+                  </div>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-shark-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={clsx(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Your Profile
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={clsx(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Settings
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={clsx(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Sign out
+                          </a>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="pt-2 pb-4 space-y-1">
+              {/* Current: "bg-aqua-50 border-aqua-500 text-aqua-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              {callsToAction.map((item, i) => (
+                <div key={item.name} className="flow-root">
+                  <a
+                    href={item.href}
+                    className={clsx(
+                      i === 0
+                        ? "bg-aqua-50 border-aqua-500 text-aqua-700"
+                        : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700",
+                      "block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   )
 }
 
-export default Index
+const StatusIndicator = () => (
+  <span className="inline-flex items-center text-shark-50 bg-shark-900 rounded-full p-1 pr-2 sm:text-secondary lg:text-sm xl:text-secondary hover:text-shark-200">
+    <span className="animate-pulse z-0 px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-aqua-500 rounded-full">
+      Connected
+    </span>
+    <span className="ml-4 text-sm">Realtime mode activated.</span>
+  </span>
+)
+
+export default function Index(props) {
+  return (
+    <>
+      <div className="relative bg-shark-900 overflow-hidden h-screen">
+        <Header />
+        <div className="relative pt-6 pb-16 sm:pb-24">
+          <main className="mt-16 sm:mt-24">
+            <div className="mx-auto max-w-7xl">
+              <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+                  <div>
+                    <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
+                      <span className="md:block">Watheia</span>{" "}
+                      <span className="text-aqua-400 md:block">Gatekeeper</span>
+                    </h1>
+                    <p className="mt-3 text-secondary text-skark-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                      Please enjoy your stay.
+                    </p>
+                    <p className="mt-8 text-sm text-shark-50 uppercase tracking-wide font-semibold sm:mt-10">
+                      Used by
+                    </p>
+                    <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
+                      <div className="flex flex-wrap items-start justify-between">
+                        <div className="flex justify-center px-1">
+                          <img
+                            className="h-9 sm:h-10"
+                            src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                            alt="Tuple"
+                          />
+                        </div>
+                        <div className="flex justify-center px-1">
+                          <img
+                            className="h-9 sm:h-10"
+                            src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                            alt="Workcation"
+                          />
+                        </div>
+                        <div className="flex justify-center px-1">
+                          <img
+                            className="h-9 sm:h-10"
+                            src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                            alt="StaticKit"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
+                  <div className="bg-shark-50 sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
+                    <div className="px-4 py-8 sm:px-10">
+                      <h3 className="text-lg leading-6 font-medium text-gray-900">
+                        Authentication Request
+                      </h3>
+                      <div className="mt-6">
+                        <form action="#" method="POST" className="space-y-6">
+                          <div>
+                            <label htmlFor="mobile-or-email" className="sr-only">
+                              Mobile number or email
+                            </label>
+                            <input
+                              type="text"
+                              name="mobile-or-email"
+                              id="mobile-or-email"
+                              autoComplete="email"
+                              placeholder="Mobile number or email"
+                              required
+                              className="block w-full shadow-sm focus:ring-aqua-500 focus:border-aqua-500 sm:text-sm border-shark-300 rounded-md"
+                            />
+                          </div>
+
+                          <div>
+                            <button
+                              type="submit"
+                              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-shark-50 bg-aqua-600 hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
+                            >
+                              Get portal link
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div className="px-4 py-6 bg-shark-50 border-t-2 border-shark-200 sm:px-10">
+                      <p className="text-xs leading-5 text-shark-500">
+                        Your privacy is important. Please see our{" "}
+                        <a href="#" className="font-medium text-shark-900 hover:underline">
+                          Terms &amp; Conditions
+                        </a>
+                        .
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </>
+  )
+}

@@ -15,7 +15,6 @@
  */
 
 import { SSRProvider, OverlayProvider } from "react-aria"
-import type { AppProps } from "next/app"
 import { NProgress, ResizeHandler } from "@waweb/utils"
 import { useEffect } from "react"
 
