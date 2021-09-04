@@ -35,9 +35,6 @@
     "atoms": {
       "tags": []
     },
-    "context": {
-      "tags": []
-    },
     "gatekeeper": {
       "tags": []
     },
@@ -56,6 +53,9 @@
       "implicitDependencies": ["home"]
     },
     "layout": {
+      "tags": []
+    },
+    "model": {
       "tags": []
     },
     "molecules": {

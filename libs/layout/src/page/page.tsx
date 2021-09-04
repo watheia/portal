@@ -2,7 +2,7 @@ import { HTMLAttributes } from "react"
 import Head from "next/head"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import { SITE_NAME, SITE_URL, TWITTER_USER_NAME } from "@waweb/context"
+import { SITE_NAME, SITE_URL, TWITTER_USER_NAME } from "@waweb/model"
 import { useRouter } from "next/router"
 
 export type PageMeta = {

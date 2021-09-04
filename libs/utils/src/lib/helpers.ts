@@ -1,4 +1,4 @@
-import { Payload } from "@waweb/utils"
+import { Payload } from "@waweb/model"
 
 export const getURL = (): string => {
   const url =

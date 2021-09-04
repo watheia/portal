@@ -9,7 +9,7 @@ import {
   navigation as defaultNavigation,
   user as defaultUser,
   userNavigation as defaultUserNavigation
-} from "@waweb/context"
+} from "@waweb/model"
 
 import styles from "./header.module.css"
 
