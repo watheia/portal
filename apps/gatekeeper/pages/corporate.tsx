@@ -326,7 +326,7 @@ const CtaSection = () => (
 const Index = (props) => {
   // const { query } = useRouter()
   const meta = {
-    title: "Watheia Corporate - Please enjoy your stay.",
+    title: "Corporate",
     description: META_DESCRIPTION
   }
   return (

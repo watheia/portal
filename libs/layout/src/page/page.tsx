@@ -64,7 +64,7 @@ export default function Page({ children, className, meta, ...props }: PageProps)
   return (
     <>
       <SEO title={title} url={url} description={description} image={image} />
-      <Header />
+      <Header title={title} />
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
           <div className="bg-shark-50 rounded-lg shadow px-1 py-1 sm:px-2 sm:py-2">

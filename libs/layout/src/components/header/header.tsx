@@ -181,10 +181,10 @@ export function Header({ title, className, ...props }: HeaderProps) {
   return (
     <div className={clsx("bg-shark-800 pb-32", className)} {...props}>
       <Navigator />
-      <header className="py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="py-3">
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-shark-50">{title}</h1>
-        </div>
+        </div> */}
       </header>
     </div>
   )

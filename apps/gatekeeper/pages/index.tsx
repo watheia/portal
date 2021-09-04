@@ -58,7 +58,7 @@ const Header = () => (
 )
 
 const AuthForm = () => (
-  <div className="bg-shark-50 sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
+  <div className="bg-shark-50 sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg">
     <div className="px-4 py-8 sm:px-10">
       <h3 className="text-lg leading-6 font-medium text-gray-900">
         Authentication Request
@@ -85,7 +85,7 @@ const AuthForm = () => (
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-shark-50 bg-aqua-600 hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
             >
-              Get portal link
+              Get login code
             </button>
           </div>
         </form>
@@ -103,15 +103,15 @@ const AuthForm = () => (
   </div>
 )
 
-const Index = () => {
+const Index = (props) => {
   const meta = {
-    title: "Watheia Corporate - Please enjoy your stay.",
+    title: "Gatekeeper",
     description: META_DESCRIPTION
   }
   return (
     <Page meta={meta} className="bg-shark-900">
-      <div className="relative bg-shark-900 overflow-hidden h-screen">
-        <div className="relative pt-6 pb-16 sm:pb-24">
+      <div className="bg-shark-900">
+        <div className="pt-6 pb-16 sm:pb-24">
           <main className="mt-16 sm:mt-24">
             <div className="mx-auto max-w-7xl">
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
