@@ -1,7 +1,8 @@
 import { HtmlHTMLAttributes } from "react"
 import "./footer.module.css"
 import { Icon, Link } from "@waweb/atoms"
-import { social as socialDefault, SocialLink } from "@waweb/utils"
+import { SocialLink } from "@waweb/utils"
+import { social as socialDefault } from "@waweb/context"
 
 /* eslint-disable-next-line */
 export type FooterProps = {

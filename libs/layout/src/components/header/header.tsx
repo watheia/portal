@@ -5,9 +5,11 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
 import { WaCard } from "@waweb/gfx"
 import { Link } from "@waweb/atoms"
 import clsx from "clsx"
-import { navigation as defaultNavigation } from "@waweb/utils"
-import { user as defaultUser } from "@waweb/utils"
-import { userNavigation as defaultUserNavigation } from "@waweb/utils"
+import {
+  navigation as defaultNavigation,
+  user as defaultUser,
+  userNavigation as defaultUserNavigation
+} from "@waweb/context"
 
 import styles from "./header.module.css"
 
@@ -27,7 +29,12 @@ const Navigator = ({
             <div className="flex items-center justify-between h-16 px-4 sm:px-0">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <WaCard className="h-16 w-16" />
+                  {/* <img
+                    src="/assets/images/wa-logo.svg"
+                    className="h-16 w-16"
+                    alt="Watheia Labs"
+                  /> */}
+                  <WaCard className="h-16 w-auto" />
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">

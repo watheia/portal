@@ -20,6 +20,7 @@
       "@waweb/assets/images/graphics/*": ["libs/assets/src/images/graphics/*"],
       "@waweb/assets/styles/*": ["libs/assets/src/styles/*"],
       "@waweb/atoms": ["libs/atoms/src/index.ts"],
+      "@waweb/context": ["libs/context/src/index.ts"],
       "@waweb/gfx": ["libs/gfx/src/index.ts"],
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/molecules": ["libs/molecules/src/index.ts"],

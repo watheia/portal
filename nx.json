@@ -15,13 +15,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e",
-          "stylelint"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
         "accessToken": "NWViNTFmY2ItM2JhMy00NjJjLTg3YzAtNmU1MThkY2RlNzhjfHJlYWQtd3JpdGU="
       }
     }
@@ -41,14 +35,15 @@
     "atoms": {
       "tags": []
     },
+    "context": {
+      "tags": []
+    },
     "gatekeeper": {
       "tags": []
     },
     "gatekeeper-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "gatekeeper"
-      ]
+      "implicitDependencies": ["gatekeeper"]
     },
     "gfx": {
       "tags": []
@@ -58,9 +53,7 @@
     },
     "home-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "home"
-      ]
+      "implicitDependencies": ["home"]
     },
     "layout": {
       "tags": []
