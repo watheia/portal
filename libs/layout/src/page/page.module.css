@@ -1,0 +1,13 @@
+.page {
+  height: var(--vh100-offset);
+  margin: 1rem;
+  font-family: sans-serif;
+}
+
+.content {
+  @apply px-4 sm:px-6;
+}
+
+/* .footer {
+  @apply bg-shark-900 text-white px-4 py-5 sm:p-6;
+} */

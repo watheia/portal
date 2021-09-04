@@ -62,6 +62,46 @@
         }
       }
     },
+    "context": {
+      "root": "libs/context",
+      "sourceRoot": "libs/context/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/context",
+            "tsConfig": "libs/context/tsconfig.lib.json",
+            "project": "libs/context/package.json",
+            "entryFile": "libs/context/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/context/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/context/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/context"],
+          "options": {
+            "jestConfig": "libs/context/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "gatekeeper": {
       "root": "apps/gatekeeper",
       "sourceRoot": "apps/gatekeeper",

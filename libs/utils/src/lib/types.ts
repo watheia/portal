@@ -90,32 +90,38 @@ export type UserStatus = typeof user_status[keyof typeof user_status]
 
 export type ColorScheme = "light" | "dark"
 
-export interface Product {
-  id: string | number
-  active: boolean
+export interface SocialLink {
   name: string
-  description: string
-  images: string[]
-  metadata: Metadata
+  href: string
+  icon: string
 }
 
-export interface PricingPeriod {
-  interval: 12 | 1
-  interval_count: number
-  trial_period_days: number
-}
+// export interface Product {
+//   id: string | number
+//   active: boolean
+//   name: string
+//   description: string
+//   images: string[]
+//   metadata: Metadata
+// }
 
-export interface Pricing {
-  id: string | number
-  product: Product
-  active: boolean
-  currency: "USD" | "PESO" | "BITCOIN"
-  nickname: string
-  type: string
-  unit_amount: number
-  recurring: PricingPeriod
-  metadata: Metadata
-}
+// export interface PricingPeriod {
+//   interval: 12 | 1
+//   interval_count: number
+//   trial_period_days: number
+// }
+
+// export interface Pricing {
+//   id: string | number
+//   product: Product
+//   active: boolean
+//   currency: "USD" | "PESO" | "BITCOIN"
+//   nickname: string
+//   type: string
+//   unit_amount: number
+//   recurring: PricingPeriod
+//   metadata: Metadata
+// }
 
 export interface Person {
   uuid: string

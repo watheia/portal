@@ -1,7 +1,7 @@
 {
   "npmScope": "waweb",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "package.json": {
@@ -33,6 +33,9 @@
       "tags": []
     },
     "atoms": {
+      "tags": []
+    },
+    "context": {
       "tags": []
     },
     "gatekeeper": {
