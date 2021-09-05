@@ -1,0 +1,20 @@
+---
+labels: ["react", "adobe clean", "font"]
+description: "Adobe Clean Fonts"
+---
+
+## Adobe Clean Fonts
+
+```tsx
+import { sansFont, serifFont } from "@watheia/app.theme.fonts.clean"
+
+function ClientContext({ children }) {
+  return (
+    <div>
+      {children}
+      <div className={sansFont}>I am text that will appear in Adobe Clean font!</div>
+      <div className={serifFont}>I am text that will appear in Adobe Clean Serif font!</div>
+    </div>
+  )
+}
+```

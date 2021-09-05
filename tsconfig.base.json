@@ -20,6 +20,8 @@
       "@waweb/assets/images/graphics/*": ["libs/assets/src/images/graphics/*"],
       "@waweb/assets/styles/*": ["libs/assets/src/styles/*"],
       "@waweb/atoms": ["libs/atoms/src/index.ts"],
+      "@waweb/components": ["libs/components/src/index.ts"],
+      "@waweb/dato": ["libs/dato/src/index.ts"],
       "@waweb/gfx": ["libs/gfx/src/index.ts"],
       "@waweb/layout": ["libs/layout/src/index.ts"],
       "@waweb/model": ["libs/model/src/index.ts"],

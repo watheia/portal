@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import useSWR, { ConfigInterface } from "swr"
+import useSWR from "swr"
 
-export default function useLoginStatus(opts?: ConfigInterface) {
+export default function useLoginStatus(opts?: any) {
   const { data, error, mutate } = useSWR(
     `/api/auth`,
     async (url) => {

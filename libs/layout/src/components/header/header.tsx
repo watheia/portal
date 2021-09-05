@@ -25,7 +25,7 @@ const Navigator = ({
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="border-b border-shark-700">
+          <div className="border-b border-shark-500">
             <div className="flex items-center justify-between h-16 px-4 sm:px-0">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
@@ -34,7 +34,7 @@ const Navigator = ({
                     className="h-16 w-16"
                     alt="Watheia Labs"
                   /> */}
-                  <WaCard className="h-16 w-auto" />
+                  <WaCard className="h-16 w-auto pb-1" />
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
@@ -45,7 +45,7 @@ const Navigator = ({
                         className={clsx(
                           item.current
                             ? "bg-shark-900 text-shark-50"
-                            : "text-shark-300 hover:bg-shark-700 hover:text-shark-50",
+                            : "text-shark-300 hover:bg-shark-600 hover:text-shark-50",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -128,7 +128,7 @@ const Navigator = ({
                 className={clsx(
                   item.current
                     ? "bg-shark-900 text-shark-50"
-                    : "text-shark-300 hover:bg-shark-700 hover:text-shark-50",
+                    : "text-shark-200 hover:bg-shark-700 hover:text-shark-50",
                   "block px-3 py-2 rounded-md text-shark-50 font-medium"
                 )}
                 aria-current={item.current ? "page" : undefined}

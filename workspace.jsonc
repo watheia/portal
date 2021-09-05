@@ -22,7 +22,7 @@
      * scope - scope name only, e.g. 'compilation'.
      * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
-    "defaultDirectory": "libs/gfx/src/{name}",
+    "defaultDirectory": "libs/components/src/{name}",
     /**
      * default scope for all components in workspace.
      **/
@@ -80,8 +80,8 @@
           "homepage": "https://watheia.app",
           "repository": {
             "type": "git",
-            "url": "https://auto-devops.com/watheia/hybrid-homepage",
-            "directory": "libs/{scope}/src/{name}"
+            "url": "https://github.com/watheia/waweb",
+            "directory": "libs/components/src/{name}"
           },
           "keywords": [
             "components",
@@ -96,17 +96,17 @@
         }
       }
     },
-    "libs/components": {
+    "{envs/*}": {
       "defaultScope": "watheia.app",
-      "teambit.react/react": {
-        "mdx": true
-      }
+      "teambit.harmony/aspect": {}
     },
-    "libs/theme": {
-      "defaultScope": "watheia.theme",
-      "teambit.react/react": {
-        "mdx": true
-      }
+    "{theme/**}": {
+      "defaultScope": "watheia.app",
+      "teambit.react/react": {}
+    },
+    "{ui/**}": {
+      "defaultScope": "watheia.app",
+      "watheia.app/envs/tailwind-react": {}
     },
     "{hooks/use-graphql-light}": {
       "teambit.dependencies/dependency-resolver": {
