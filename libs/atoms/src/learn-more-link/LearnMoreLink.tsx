@@ -1,6 +1,6 @@
 import clsx from "clsx"
-import { Typography, IconButton } from "@material-ui/core"
-import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt"
+import { Typography, IconButton } from "@mui/material"
+import { ArrowRightAlt } from "@mui/icons-material"
 import { LearnMoreLinkProps } from "./LearnMoreLinkProps"
 import Link from "../link"
 
@@ -36,7 +36,7 @@ const LearnMoreLink = ({
         color={"primary"}
         {...iconProps}
       >
-        <ArrowRightAltIcon className="learn-more-link__arrow" />
+        <ArrowRightAlt className="learn-more-link__arrow" />
       </IconButton>
     </>
   )

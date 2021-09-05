@@ -1,6 +1,5 @@
 import clsx from "clsx"
-import NoSsr from "@material-ui/core/NoSsr"
-import { get } from "lodash"
+import { NoSsr } from "@mui/material"
 
 import { Facebook, Github, Instagram, Twitter, WaCard } from "@waweb/gfx"
 import React, { HtmlHTMLAttributes } from "react"
@@ -41,18 +40,7 @@ const renderIcon = (iconClass: string): JSX.Element => {
  * @param {Object} props
  */
 const Icon = ({ iconClass, iconColor, className, ...rest }: IconProps): JSX.Element => {
-  const Icon = get(icons, iconClass, null)
-
-  return (
-    <NoSsr>
-      {renderIcon(iconClass)}
-      {/* <Icon
-        className={clsx("icon", iconClass, className)}
-        style={{ color: iconColor }}
-        {...rest}
-      /> */}
-    </NoSsr>
-  )
+  return <NoSsr>{renderIcon(iconClass)}</NoSsr>
 }
 
 export default Icon

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material/styles"
 import { SSRProvider, OverlayProvider } from "react-aria"
 import { NProgress, ResizeHandler } from "@waweb/utils"
 import { useEffect } from "react"
@@ -22,6 +23,23 @@ import "@waweb/assets/styles/index.css"
 import "@waweb/assets/styles/nprogress.css"
 import "@waweb/assets/styles/chrome-bug.css"
 
+const theme = responsiveFontSizes(
+  createTheme({
+    palette: {
+      primary: {
+        main: "#04BFBF"
+      },
+      secondary: {
+        main: "#024873"
+      },
+      common: {
+        white: "#fefeff",
+        black: "#110f10"
+      }
+    }
+  })
+)
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     document.body.classList?.remove("loading")
@@ -29,7 +47,9 @@ export default function App({ Component, pageProps }) {
   return (
     <SSRProvider>
       <OverlayProvider>
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
         <ResizeHandler />
         <NProgress />
       </OverlayProvider>

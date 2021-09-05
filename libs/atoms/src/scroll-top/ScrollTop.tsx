@@ -1,7 +1,7 @@
-import useScrollTrigger from "@material-ui/core/useScrollTrigger"
-import Fab from "@material-ui/core/Fab"
-import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp"
-import Zoom from "@material-ui/core/Zoom"
+import useScrollTrigger from "@mui/material/useScrollTrigger"
+import Fab from "@mui/material/Fab"
+import { KeyboardArrowUp } from "@mui/icons-material"
+import Zoom from "@mui/material/Zoom"
 
 const ScrollTop = (): JSX.Element => {
   // const classes = useStyles()
@@ -23,7 +23,7 @@ const ScrollTop = (): JSX.Element => {
     <Zoom in={trigger}>
       <div onClick={handleClick} role="presentation" className="scroll-top">
         <Fab color="primary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
+          <KeyboardArrowUp />
         </Fab>
       </div>
     </Zoom>

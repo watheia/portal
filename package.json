@@ -11,9 +11,11 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/server": "^11.4.0",
-    "@emotion/styled": "11.3.0",
+    "@emotion/styled": "^11.3.0",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
+    "@mui/icons-material": "next",
+    "@mui/material": "next",
     "@next/bundle-analyzer": "^11.1.2",
     "@next/mdx": "^11.1.2",
     "@nrwl/next": "12.8.0",
