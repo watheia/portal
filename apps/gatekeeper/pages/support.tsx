@@ -133,7 +133,7 @@ export default function Support({ className, ...props }) {
     description: META_DESCRIPTION
   }
   return (
-    <Page meta={meta} className={clsx("min-h-screen bg-shark-50", className)} className="">
+    <Page meta={meta} className={clsx("min-h-screen bg-shark-50", className)}>
       <main>
         {/* Header */}
         <div className="py-12 bg-shark-50 sm:py-18">
