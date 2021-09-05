@@ -34,12 +34,12 @@
 
   --primary: var(--shark-9);
   --primary-2: var(--shark-7);
-  --secondary: var(--shark-50);
+  --secondary: var(--shark-0);
   --secondary-2: var(--shark-2);
   --hover: rgba(255, 255, 255, 0.075);
   --hover-1: rgba(255, 255, 255, 0.15);
   --hover-2: rgba(255, 255, 255, 0.25);
-  --selection: var(--aqua-3);
+  --selection: var(--mulberry-5);
 
   --text-base: var(--shark-9);
   --text-primary: var(--shark-7);
@@ -52,6 +52,37 @@
   --blue: #024873;
   --violet-light: var(--mulberry-6);
   --violet: var(--mulberry-7);
+
+  --space: 4px;
+  --space-2x: 8px;
+  --space-3x: 12px;
+  --space-4x: 16px;
+  --space-6x: 24px;
+  --space-8x: 32px;
+  --space-12x: 48px;
+  --space-16x: 64px;
+  --space-32x: 128px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+
+  --accents-1: #fafbfb;
+  --accents-2: #dbdcdd;
+  --accents-3: #a7a5a6;
+  --accents-4: #656263;
+  --accents-5: #231f20;
+  --accents-6: #201c1d;
+  --accents-7: #1a1718;
+  --accents-8: #151313;
+
+  --gray: #231f20;
+  --secondary-color: var(--accents-4);
+  --sidebar: var(--shark-9);
+  --header-height: 72px;
+  --brand: var(--aqua-5);
 
   --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
     sans-serif;

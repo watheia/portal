@@ -1,3 +1,4 @@
+import { Page } from "@waweb/layout"
 /* This example requires Tailwind CSS v2.0+ */
 const posts = [
   {
@@ -50,19 +51,26 @@ const posts = [
   }
 ]
 
+import { META_DESCRIPTION } from "@waweb/model"
 import clsx from "clsx"
 import { HtmlHTMLAttributes } from "react"
 
 export type BlogProps = HtmlHTMLAttributes<HTMLDivElement>
 export default function Blog({ className = "", ...props }) {
+  const meta = {
+    title: "Case Studies",
+    description: META_DESCRIPTION
+  }
+
   return (
-    <div
+    <Page
+      meta={meta}
       className={clsx(
         "bg-shark-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8",
         className
       )}
     >
-      <div className="relative max-w-lg mx-auto divide-y-2 divide-shark-200 lg:max-w-7xl">
+      <div className="relative max-w-lg p-4 md:p-8 mx-auto divide-y-2 divide-shark-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl tracking-tight font-extrabold text-shark-900 sm:text-4xl">
             Recent publications
@@ -117,6 +125,6 @@ export default function Blog({ className = "", ...props }) {
           ))}
         </div>
       </div>
-    </div>
+    </Page>
   )
 }

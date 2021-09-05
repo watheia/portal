@@ -23,10 +23,13 @@
   }
   ```
 */
-import { Fragment } from "react"
+import { Fragment, HtmlHTMLAttributes } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import { ExternalLinkIcon } from "@heroicons/react/solid"
+import { META_DESCRIPTION } from "@waweb/model"
+import { Page } from "@waweb/layout"
+import clsx from "clsx"
 
 const navigation = [
   { name: "Work", href: "#" },
@@ -124,12 +127,16 @@ const footerNavigation = {
   ]
 }
 
-export default function Support(props) {
+export default function Support({ className, ...props }) {
+  const meta = {
+    title: "Get Support",
+    description: META_DESCRIPTION
+  }
   return (
-    <div className="min-h-screen bg-shark-50">
+    <Page meta={meta} className={clsx("min-h-screen bg-shark-50", className)} className="">
       <main>
         {/* Header */}
-        <div className="py-24 bg-shark-50 sm:py-32">
+        <div className="py-12 bg-shark-50 sm:py-18">
           <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
             <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-shark-900 text-center sm:text-5xl sm:leading-none lg:text-6xl">
               Get Support
@@ -391,6 +398,6 @@ export default function Support(props) {
           </div>
         </div>
       </main>
-    </div>
+    </Page>
   )
 }
