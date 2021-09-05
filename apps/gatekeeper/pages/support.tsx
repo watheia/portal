@@ -12,7 +12,7 @@
     theme: {
       extend: {
         colors: {
-          grape: colors.purple,
+          aqua: colors.purple,
         },
       },
     },
@@ -180,7 +180,7 @@ export default function Support(props) {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export default function Support(props) {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -214,7 +214,7 @@ export default function Support(props) {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default function Support(props) {
                         name="company"
                         id="company"
                         autoComplete="organization"
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -254,7 +254,7 @@ export default function Support(props) {
                         id="phone"
                         autoComplete="tel"
                         aria-describedby="phone-description"
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -279,7 +279,7 @@ export default function Support(props) {
                         name="how-can-we-help"
                         aria-describedby="how-can-we-help-description"
                         rows={4}
-                        className="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border border-shark-300 rounded-md"
+                        className="block w-full shadow-sm sm:text-sm focus:ring-aqua-500 focus:border-aqua-500 border border-shark-300 rounded-md"
                         defaultValue={""}
                       />
                     </div>
@@ -295,7 +295,7 @@ export default function Support(props) {
                           name="budget"
                           defaultValue="under_25k"
                           type="radio"
-                          className="focus:ring-grape-500 h-4 w-4 text-grape-600 border-shark-300"
+                          className="focus:ring-aqua-500 h-4 w-4 text-aqua-600 border-shark-300"
                         />
                         <label htmlFor="budget-under-25k" className="ml-3">
                           <span className="block text-sm text-shark-700">
@@ -309,7 +309,7 @@ export default function Support(props) {
                           name="budget"
                           defaultValue="25k-50k"
                           type="radio"
-                          className="focus:ring-grape-500 h-4 w-4 text-grape-600 border-shark-300"
+                          className="focus:ring-aqua-500 h-4 w-4 text-aqua-600 border-shark-300"
                         />
                         <label htmlFor="budget-25k-50k" className="ml-3">
                           <span className="block text-sm text-shark-700">$25K – $50K</span>
@@ -321,7 +321,7 @@ export default function Support(props) {
                           name="budget"
                           defaultValue="50k-100k"
                           type="radio"
-                          className="focus:ring-grape-500 h-4 w-4 text-grape-600 border-shark-300"
+                          className="focus:ring-aqua-500 h-4 w-4 text-aqua-600 border-shark-300"
                         />
                         <label htmlFor="budget-50k-100k" className="ml-3">
                           <span className="block text-sm text-shark-700">$50K – $100K</span>
@@ -333,7 +333,7 @@ export default function Support(props) {
                           name="budget"
                           defaultValue="over_100k"
                           type="radio"
-                          className="focus:ring-grape-500 h-4 w-4 text-grape-600 border-shark-300"
+                          className="focus:ring-aqua-500 h-4 w-4 text-aqua-600 border-shark-300"
                         />
                         <label htmlFor="budget-over-100k" className="ml-3">
                           <span className="block text-sm text-shark-700">$100K+</span>
@@ -353,14 +353,14 @@ export default function Support(props) {
                         type="text"
                         name="how-did-you-hear-about-us"
                         id="how-did-you-hear-about-us"
-                        className="shadow-sm focus:ring-grape-500 focus:border-grape-500 block w-full sm:text-sm border-shark-300 rounded-md"
+                        className="shadow-sm focus:ring-aqua-500 focus:border-aqua-500 block w-full sm:text-sm border-shark-300 rounded-md"
                       />
                     </div>
                   </div>
                   <div className="text-right sm:col-span-2">
                     <button
                       type="submit"
-                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-shark-50 bg-grape-600 hover:bg-grape-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grape-500"
+                      className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-shark-50 bg-aqua-600 hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
                     >
                       Submit
                     </button>
@@ -372,15 +372,15 @@ export default function Support(props) {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-grape-400">
+        <div className="bg-aqua-400">
           <div className="max-w-md mx-auto text-center py-16 px-4 sm:max-w-2xl sm:py-24 sm:px-6 lg:px-8 lg:py-32">
             <h2 className="text-3xl font-extrabold sm:text-4xl">
               <span className="block text-shark-50">Looking for a new career?</span>
-              <span className="block text-grape-900">We’re hiring.</span>
+              <span className="block text-aqua-900">We’re hiring.</span>
             </h2>
             <a
               href="#"
-              className="mt-8 w-full inline-flex items-center justify-center py-3 px-5 bg-shark-50 border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-grape-50 sm:w-auto"
+              className="mt-8 w-full inline-flex items-center justify-center py-3 px-5 bg-shark-50 border border-transparent rounded-md shadow-md text-base font-medium text-aqua-600 hover:bg-aqua-50 sm:w-auto"
             >
               <span>See open positions</span>
               <ExternalLinkIcon
