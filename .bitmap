@@ -9,17 +9,71 @@
  */
 
 {
-    "ui/design/wa-card": {
+    "envs/tailwind-react": {
         "scope": "watheia.app",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
-        "rootDir": "libs/gfx/src/ui/design/wa-card"
+        "rootDir": "libs/components/src/envs/tailwind-react"
     },
-    "ui/design/wa-icon": {
+    "modules/style-regexps": {
+        "scope": "watheia.app",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/modules/style-regexps"
+    },
+    "theme/brand-definition": {
+        "scope": "watheia.app",
+        "version": "0.0.5",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/brand-definition"
+    },
+    "theme/color-definition": {
+        "scope": "watheia.app",
+        "version": "0.0.6",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/color-definition"
+    },
+    "theme/colors": {
+        "scope": "watheia.app",
+        "version": "0.0.5",
+        "mainFile": "colors.module.scss",
+        "rootDir": "libs/components/src/theme/colors"
+    },
+    "theme/fonts/clean": {
         "scope": "watheia.app",
         "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "libs/gfx/src/ui/design/wa-icon"
+        "rootDir": "libs/components/src/theme/fonts/clean"
+    },
+    "theme/heading-margin-definition": {
+        "scope": "watheia.app",
+        "version": "0.0.5",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/heading-margin-definition"
+    },
+    "theme/shadow-definition": {
+        "scope": "watheia.app",
+        "version": "0.0.5",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/shadow-definition"
+    },
+    "theme/size-definition": {
+        "scope": "watheia.app",
+        "version": "0.0.5",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/size-definition"
+    },
+    "theme/tailwind-styles": {
+        "scope": "watheia.app",
+        "version": "0.0.4",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/theme/tailwind-styles"
+    },
+    "theme/theme-provider": {
+        "scope": "watheia.app",
+        "version": "0.0.6",
+        "mainFile": "index.tsx",
+        "rootDir": "libs/components/src/theme/theme-provider"
     },
     "$schema-version": "14.9.0"
 }

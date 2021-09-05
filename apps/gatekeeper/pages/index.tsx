@@ -16,6 +16,8 @@
 */
 import { Page } from "@waweb/layout"
 import { META_DESCRIPTION } from "@waweb/model"
+import { useState } from "react"
+import { supabase } from "../utils/supabase-client"
 
 const Header = () => (
   <div>
@@ -57,57 +59,76 @@ const Header = () => (
   </div>
 )
 
-const AuthForm = () => (
-  <div className="bg-shark-50 sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg">
-    <div className="px-4 py-8 sm:px-10">
-      <h3 className="text-lg leading-6 font-medium text-gray-900">
-        Authentication Request
-      </h3>
-      <div className="mt-6">
-        <form action="#" method="POST" className="space-y-6">
-          <div>
-            <label htmlFor="mobile-or-email" className="sr-only">
-              Mobile number or email
-            </label>
-            <input
-              type="text"
-              name="mobile-or-email"
-              id="mobile-or-email"
-              autoComplete="email"
-              placeholder="Mobile number or email"
-              required
-              className="block w-full shadow-sm focus:ring-aqua-500 focus:border-aqua-500 sm:text-sm border-shark-300 rounded-md"
-            />
-          </div>
+const AuthForm = () => {
+  const [loading, setLoading] = useState(false)
+  const [email, setEmail] = useState("")
 
-          <div>
-            <button
-              type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-shark-50 bg-aqua-600 hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
-            >
-              Get login code
-            </button>
-          </div>
-        </form>
+  const handleLogin = async (email) => {
+    try {
+      setLoading(true)
+      const { error } = await supabase.auth.signIn({ email })
+      if (error) throw error
+      alert("Check your email for the login link!")
+    } catch (error) {
+      alert(error.error_description || error.message)
+    } finally {
+      setLoading(false)
+    }
+  }
+  return (
+    <div className="bg-shark-50 sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg">
+      <div className="px-4 py-8 sm:px-10">
+        <h3 className="text-lg leading-6 font-medium text-gray-900">
+          Authentication Request
+        </h3>
+        <div className="mt-6">
+          <form action="#" method="POST" className="space-y-6">
+            <div>
+              <label htmlFor="mobile-or-email" className="sr-only">
+                Mobile number or email
+              </label>
+              <input
+                type="text"
+                name="mobile-or-email"
+                id="mobile-or-email"
+                autoComplete="email"
+                placeholder="Mobile number or email"
+                required
+                className="block w-full shadow-sm focus:ring-aqua-500 focus:border-aqua-500 sm:text-sm border-shark-300 rounded-md"
+              />
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                onClick={handleLogin}
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-shark-50 bg-aqua-600 hover:bg-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
+              >
+                Get login code
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="px-4 py-6 bg-shark-50 border-t-2 border-shark-200 sm:px-10">
+        <p className="text-xs leading-5 text-shark-500">
+          Your privacy is important. Please see our{" "}
+          <a href="#" className="font-medium text-shark-900 hover:underline">
+            Terms &amp; Conditions
+          </a>
+          .
+        </p>
       </div>
     </div>
-    <div className="px-4 py-6 bg-shark-50 border-t-2 border-shark-200 sm:px-10">
-      <p className="text-xs leading-5 text-shark-500">
-        Your privacy is important. Please see our{" "}
-        <a href="#" className="font-medium text-shark-900 hover:underline">
-          Terms &amp; Conditions
-        </a>
-        .
-      </p>
-    </div>
-  </div>
-)
+  )
+}
 
 const Index = (props) => {
   const meta = {
     title: "Gatekeeper",
     description: META_DESCRIPTION
   }
+
   return (
     <Page meta={meta} className="bg-shark-900">
       <div className="bg-shark-900">
