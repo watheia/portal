@@ -16,7 +16,7 @@
 */
 import { Page } from "@waweb/layout"
 import { META_DESCRIPTION } from "@waweb/model"
-import { useState } from "react"
+import { ChangeEvent, useState } from "react"
 import { supabase } from "../utils/supabase-client"
 
 const Header = () => (
@@ -94,6 +94,11 @@ const AuthForm = () => {
                 autoComplete="email"
                 placeholder="Mobile number or email"
                 required
+                value={email}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  setEmail(e.currentTarget.value)
+                }}
+                disabled={loading}
                 className="block w-full shadow-sm focus:ring-aqua-500 focus:border-aqua-500 sm:text-sm border-shark-300 rounded-md"
               />
             </div>
