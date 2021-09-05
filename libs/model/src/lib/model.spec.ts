@@ -1,7 +1,7 @@
-import { model } from "./model"
+import { features } from "./model"
 
-describe("model", () => {
+describe("features", () => {
   it("should work", () => {
-    expect(model()).toEqual("model")
+    expect(features).toHaveLength(6)
   })
 })
