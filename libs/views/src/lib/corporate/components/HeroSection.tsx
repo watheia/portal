@@ -9,7 +9,7 @@ export const HeroSection = () => (
           <div className="lg:py-24">
             <span className="inline-flex items-center text-shark-50 bg-shark-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200">
               <span className="animate-pulse px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-aqua-500 to-regal-400 rounded-full">
-                Realtime
+                Connected
               </span>
               <span className="ml-4 text-sm text-secondary-2">Please enjoy your stay.</span>
               <ChevronRightIcon
