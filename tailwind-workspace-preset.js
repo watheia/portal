@@ -54,6 +54,8 @@ module.exports = {
           800: "#350720",
           900: "#2c051a"
         },
+        "ring-1": "#04BFBF",
+        "ring-2": "#fefeff",
         primary: "#110f10",
         "primary-2": "#1a1718",
         secondary: "#fefeff",

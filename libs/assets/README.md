@@ -1,3 +1,7 @@
-# Static Assets
+# assets
 
-Contains common files to be copied into each project dist
+This library was generated with [Nx](https://nx.dev).
+
+## Running unit tests
+
+Run `nx test assets` to execute the unit tests via [Jest](https://jestjs.io).

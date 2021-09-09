@@ -1,4 +1,10 @@
-export const SITE_URL = "https://localhost:4200"
+export const BLOG_URL = process.env.BLOG_URL
+export const NEXT_PUBLIC_SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
+export const NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+export const DEFAULT_AVATARS_BUCKET = "avatars"
+
+export const SITE_URL = "https://watheia.app"
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin
 export const TWITTER_USER_NAME = "watheia"
 export const BRAND_NAME = "Watheia"

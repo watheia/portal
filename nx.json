@@ -1,5 +1,5 @@
 {
-  "npmScope": "waweb",
+  "npmScope": "gatekeeper",
   "affected": {
     "defaultBase": "main"
   },
@@ -15,8 +15,14 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
-        "accessToken": "NWViNTFmY2ItM2JhMy00NjJjLTg3YzAtNmU1MThkY2RlNzhjfHJlYWQtd3JpdGU="
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "stylelint"
+        ],
+        "accessToken": "YTU5MDQyNGEtZTFkOS00Mzg5LTg3MzEtYzMzZTIzODhiMTVifHJlYWQtd3JpdGU="
       }
     }
   },
@@ -32,24 +38,23 @@
     "assets": {
       "tags": []
     },
-    "atoms": {
+    "blog": {
       "tags": []
     },
-    "components": {
-      "tags": []
-    },
-    "dato": {
-      "tags": []
-    },
-    "gatekeeper": {
-      "tags": []
-    },
-    "gatekeeper-e2e": {
+    "blog-e2e": {
       "tags": [],
-      "implicitDependencies": ["gatekeeper"]
+      "implicitDependencies": [
+        "blog"
+      ]
     },
-    "gfx": {
+    "home": {
       "tags": []
+    },
+    "home-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "home"
+      ]
     },
     "layout": {
       "tags": []
@@ -57,21 +62,14 @@
     "model": {
       "tags": []
     },
-    "molecules": {
+    "supabase": {
       "tags": []
     },
-    "organisms": {
+    "util-helpers": {
       "tags": []
     },
-    "utils": {
+    "views": {
       "tags": []
-    },
-    "with-supabase-auth": {
-      "tags": []
-    },
-    "with-supabase-auth-e2e": {
-      "tags": [],
-      "implicitDependencies": ["with-supabase-auth"]
     }
   }
 }

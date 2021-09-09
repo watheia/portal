@@ -1,3 +1,0 @@
-# Gatekeeper
-
-![depgraph](./depgraph.svg)
