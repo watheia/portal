@@ -9,7 +9,7 @@ export const HeroSection = () => (
           <div className="lg:py-24">
             <span className="inline-flex items-center text-shark-50 bg-shark-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200">
               <span className="animate-pulse px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-aqua-500 to-regal-400 rounded-full">
-                Realtime
+                Connected
               </span>
               <span className="ml-4 text-sm text-secondary-2">Please enjoy your stay.</span>
               <ChevronRightIcon
@@ -18,9 +18,9 @@ export const HeroSection = () => (
               />
             </span>
             <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-              <span className="block">A better way to</span>
+              <span className="block">A better way to ship</span>
               <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-aqua-200 to-aqua-500 sm:pb-5">
-                ship micro services
+                modern web apps
               </span>
             </h1>
             <p className="text-base text-shark-300 sm:text-xl lg:text-lg xl:text-xl">
