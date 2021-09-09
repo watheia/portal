@@ -13,19 +13,18 @@ variables:
   YARN_CACHE: "$CI_PROJECT_DIR/.yarn"
   CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
 
-  image: node:14
-
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
 
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - .yarn
-    - node_modules
+# cache:
+#   key: ${CI_COMMIT_REF_SLUG}
+#   paths:
+#     - .yarn
+#     - node_modules
 
 build:
   stage: build
+  image: node:14-alpine
   script:
     # - yarn config set globalFolder ${YARN_CACHE}
     - yarn install
@@ -36,7 +35,7 @@ build:
       --verbose=true
 
 test:
-  image: node:14
+  image: node:14-alpine
   stage: test
   needs: [build]
   script:
@@ -48,6 +47,7 @@ test:
       --coverage
 
 lint:
+  image: node:14-alpine
   stage: test
   needs: [build]
   script:
