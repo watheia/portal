@@ -13,57 +13,46 @@ variables:
   YARN_CACHE: "$CI_PROJECT_DIR/.yarn"
   CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
 
+  image: node:14
+
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
+
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
-    - ${YARN_CACHE}
+    - .yarn
     - node_modules
 
-# this job installs NPM dependencies and Cypress
-install:
-  image: cypress/base:14
+build:
   stage: build
-
   script:
-    - yarn config set globalFolder ${YARN_CACHE}
+    # - yarn config set globalFolder ${YARN_CACHE}
     - yarn install
-    # show where the Cypress test runner binaries are cached
-    # - $(npm bin)/cypress cache path
-    # show all installed versions of Cypress binary
-    - $(npm bin)/cypress cache list
-    - $(npm bin)/cypress verify
+    - yarn nx run-many
+      --target=build
+      --all=true
+      --configuration=production
+      --verbose=true
 
-# two jobs that run after "install" job finishes
-# NPM dependencies and Cypress binary should be already installed
-cypress-e2e:
-  image: cypress/base:10
+test:
+  image: node:14
   stage: test
+  needs: [build]
   script:
-    - yarn config set globalFolder ${YARN_CACHE}
-    - yarn run-many --target=e2e --all=true --verbose=true
-  artifacts:
-    expire_in: 1 week
-    when: always
-    paths:
-      - dist/cypress/screenshots
-      - dist/cypress/videos
-    reports:
-      junit:
-        - dist/cypress/results/TEST-*.xml
-# cypress-e2e-chrome:
-#   image: cypress/browsers:chrome67
-#   stage: test
-#   script:
-#     - $(npm bin)/cypress run --browser chrome
-#   artifacts:
-#     expire_in: 1 week
-#     when: always
-#     paths:
-#       - dist/cypress/screenshots
-#       - dist/cypress/videos
-#     reports:
-#       junit:
-#         - results/TEST-*.xml
-# tip: lint this file using https://gitlab.com/ci/lint
+    - yarn install
+    - yarn nx run-many
+      --target=test
+      --all=true
+      --verbose=true
+      --coverage
+
+lint:
+  stage: test
+  needs: [build]
+  script:
+    - yarn install
+    - yarn nx run-many
+      --target=lint
+      --all=true
+      --verbose=true
