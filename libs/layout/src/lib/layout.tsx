@@ -1,6 +1,6 @@
 import { HtmlHTMLAttributes } from "react"
 import Header from "./header"
-import Container from "./container"
+import Paper from "./paper"
 import { navigation, userNavigation } from "@watheia/model"
 import Footer from "./footer"
 
@@ -14,7 +14,7 @@ export const Layout = ({ className, children, ...props }: LayoutProps) => {
     <div className={className} {...props}>
       <Header navigation={navigation} userNavigation={userNavigation} />
       <main>
-        <Container>{children}</Container>
+        <Paper>{children}</Paper>
       </main>
       <Footer />
     </div>
