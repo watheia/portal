@@ -15,13 +15,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e",
-          "stylelint"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
         "accessToken": "YTU5MDQyNGEtZTFkOS00Mzg5LTg3MzEtYzMzZTIzODhiMTVifHJlYWQtd3JpdGU="
       }
     }
@@ -43,18 +37,14 @@
     },
     "blog-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "blog"
-      ]
+      "implicitDependencies": ["blog"]
     },
     "home": {
       "tags": []
     },
     "home-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "home"
-      ]
+      "implicitDependencies": ["home"]
     },
     "layout": {
       "tags": []
@@ -70,6 +60,10 @@
     },
     "views": {
       "tags": []
+    },
+    "views-e2e": {
+      "tags": [],
+      "implicitDependencies": ["views"]
     }
   }
 }
