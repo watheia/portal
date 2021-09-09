@@ -48,6 +48,10 @@ Thumbs.db
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+libs/model/.env
+libs/supabase/.env
+apps/home/.env.local
+
 package.tgz
 
 .coveralls.yml

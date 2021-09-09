@@ -8,132 +8,32 @@
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["libs/assets/**/*.ts"]
           }
-        }
-      }
-    },
-    "atoms": {
-      "root": "libs/atoms",
-      "sourceRoot": "libs/atoms/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/web:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/atoms",
-            "tsConfig": "libs/atoms/tsconfig.lib.json",
-            "project": "libs/atoms/package.json",
-            "entryFile": "libs/atoms/src/index.ts",
-            "external": [
-              "next/router",
-              "next/link",
-              "react/jsx-runtime",
-              "react",
-              "react-dom",
-              "react-is",
-              "@material-ui/core"
-            ],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/atoms/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/atoms/**/*.{ts,tsx,js,jsx}"]
-          }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/atoms"],
+          "outputs": ["coverage/libs/assets"],
           "options": {
-            "jestConfig": "libs/atoms/jest.config.js",
+            "jestConfig": "libs/assets/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "components": {
-      "root": "libs/components",
-      "sourceRoot": "libs/components/src",
-      "projectType": "library",
-      "targets": {
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/components/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/components"],
-          "options": {
-            "jestConfig": "libs/components/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "dato": {
-      "root": "libs/dato",
-      "sourceRoot": "libs/dato/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/web:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/dato",
-            "tsConfig": "libs/dato/tsconfig.lib.json",
-            "project": "libs/dato/package.json",
-            "entryFile": "libs/dato/src/index.ts",
-            "external": ["react/jsx-runtime"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/dato/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/dato/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/dato"],
-          "options": {
-            "jestConfig": "libs/dato/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "gatekeeper": {
-      "root": "apps/gatekeeper",
-      "sourceRoot": "apps/gatekeeper",
+    "blog": {
+      "root": "apps/blog",
+      "sourceRoot": "apps/blog",
       "projectType": "application",
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "root": "apps/gatekeeper",
-            "outputPath": "dist/apps/gatekeeper"
+            "root": "apps/blog",
+            "outputPath": "dist/apps/blog"
           },
           "configurations": {
             "production": {}
@@ -142,12 +42,13 @@
         "serve": {
           "executor": "@nrwl/next:server",
           "options": {
-            "buildTarget": "gatekeeper:build",
-            "dev": true
+            "buildTarget": "blog:build",
+            "dev": true,
+            "port": 4300
           },
           "configurations": {
             "production": {
-              "buildTarget": "gatekeeper:build:production",
+              "buildTarget": "blog:build:production",
               "dev": false
             }
           }
@@ -155,87 +56,126 @@
         "export": {
           "executor": "@nrwl/next:export",
           "options": {
-            "buildTarget": "gatekeeper:build:production"
+            "buildTarget": "blog:build:production"
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/gatekeeper"],
+          "outputs": ["coverage/apps/blog"],
           "options": {
-            "jestConfig": "apps/gatekeeper/jest.config.js",
+            "jestConfig": "apps/blog/jest.config.js",
             "passWithNoTests": true
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/gatekeeper/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["apps/blog/**/*.{ts,tsx,js,jsx}"]
           }
         }
       }
     },
-    "gatekeeper-e2e": {
-      "root": "apps/gatekeeper-e2e",
-      "sourceRoot": "apps/gatekeeper-e2e/src",
+    "blog-e2e": {
+      "root": "apps/blog-e2e",
+      "sourceRoot": "apps/blog-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/gatekeeper-e2e/cypress.json",
-            "devServerTarget": "gatekeeper:serve",
-            "tsConfig": "apps/gatekeeper-e2e/tsconfig.json"
+            "cypressConfig": "apps/blog-e2e/cypress.json",
+            "devServerTarget": "blog:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gatekeeper:serve:production"
+              "devServerTarget": "blog:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/gatekeeper-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/blog-e2e/**/*.{js,ts}"]
           }
         }
       }
     },
-    "gfx": {
-      "root": "libs/gfx",
-      "sourceRoot": "libs/gfx/src",
-      "projectType": "library",
+    "home": {
+      "root": "apps/home",
+      "sourceRoot": "apps/home",
+      "projectType": "application",
       "targets": {
         "build": {
-          "executor": "@nrwl/web:package",
+          "executor": "@nrwl/next:build",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/libs/gfx",
-            "tsConfig": "libs/gfx/tsconfig.lib.json",
-            "project": "libs/gfx/package.json",
-            "entryFile": "libs/gfx/src/index.ts",
-            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/gfx/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "root": "apps/home",
+            "outputPath": "dist/apps/home"
+          },
+          "configurations": {
+            "production": {}
           }
         },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
+        "serve": {
+          "executor": "@nrwl/next:server",
           "options": {
-            "lintFilePatterns": ["libs/gfx/**/*.{ts,tsx,js,jsx}"]
+            "buildTarget": "home:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "home:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "home:build:production"
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/gfx"],
+          "outputs": ["coverage/apps/home"],
           "options": {
-            "jestConfig": "libs/gfx/jest.config.js",
+            "jestConfig": "apps/home/jest.config.js",
             "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "home-e2e": {
+      "root": "apps/home-e2e",
+      "sourceRoot": "apps/home-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/home-e2e/cypress.json",
+            "devServerTarget": "home:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "home:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/home-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -253,13 +193,7 @@
             "tsConfig": "libs/layout/tsconfig.lib.json",
             "project": "libs/layout/package.json",
             "entryFile": "libs/layout/src/index.ts",
-            "external": [
-              "react/jsx-runtime",
-              "react",
-              "react-dom",
-              "react-is",
-              "@material-ui/core"
-            ],
+            "external": ["react/jsx-runtime"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
@@ -272,6 +206,7 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["libs/layout/**/*.{ts,tsx,js,jsx}"]
           }
@@ -304,6 +239,7 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["libs/model/**/*.ts"]
           }
@@ -318,30 +254,24 @@
         }
       }
     },
-    "molecules": {
-      "root": "libs/molecules",
-      "sourceRoot": "libs/molecules/src",
+    "supabase": {
+      "root": "libs/supabase",
+      "sourceRoot": "libs/supabase/src",
       "projectType": "library",
       "targets": {
         "build": {
           "executor": "@nrwl/web:package",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/libs/molecules",
-            "tsConfig": "libs/molecules/tsconfig.lib.json",
-            "project": "libs/molecules/package.json",
-            "entryFile": "libs/molecules/src/index.ts",
-            "external": [
-              "react/jsx-runtime",
-              "react",
-              "react-dom",
-              "react-is",
-              "@material-ui/core"
-            ],
+            "outputPath": "dist/libs/supabase",
+            "tsConfig": "libs/supabase/tsconfig.lib.json",
+            "project": "libs/supabase/package.json",
+            "entryFile": "libs/supabase/src/index.ts",
+            "external": ["react/jsx-runtime"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
-                "glob": "libs/molecules/README.md",
+                "glob": "libs/supabase/README.md",
                 "input": ".",
                 "output": "."
               }
@@ -350,38 +280,72 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["libs/molecules/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["libs/supabase/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/molecules"],
+          "outputs": ["coverage/libs/supabase"],
           "options": {
-            "jestConfig": "libs/molecules/jest.config.js",
+            "jestConfig": "libs/supabase/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "organisms": {
-      "root": "libs/organisms",
-      "sourceRoot": "libs/organisms/src",
+    "util-helpers": {
+      "root": "libs/util/helpers",
+      "sourceRoot": "libs/util/helpers/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util/helpers",
+            "tsConfig": "libs/util/helpers/tsconfig.lib.json",
+            "packageJson": "libs/util/helpers/package.json",
+            "main": "libs/util/helpers/src/index.ts",
+            "assets": ["libs/util/helpers/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/util/helpers/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util/helpers"],
+          "options": {
+            "jestConfig": "libs/util/helpers/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "views": {
+      "root": "libs/views",
+      "sourceRoot": "libs/views/src",
       "projectType": "library",
       "targets": {
         "build": {
           "executor": "@nrwl/web:package",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/libs/organisms",
-            "tsConfig": "libs/organisms/tsconfig.lib.json",
-            "project": "libs/organisms/package.json",
-            "entryFile": "libs/organisms/src/index.ts",
-            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
+            "outputPath": "dist/libs/views",
+            "tsConfig": "libs/views/tsconfig.lib.json",
+            "project": "libs/views/package.json",
+            "entryFile": "libs/views/src/index.ts",
+            "external": ["react/jsx-runtime"],
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
-                "glob": "libs/organisms/README.md",
+                "glob": "libs/views/README.md",
                 "input": ".",
                 "output": "."
               }
@@ -390,132 +354,17 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["libs/organisms/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["libs/views/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/organisms"],
+          "outputs": ["coverage/libs/views"],
           "options": {
-            "jestConfig": "libs/organisms/jest.config.js",
+            "jestConfig": "libs/views/jest.config.js",
             "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "utils": {
-      "root": "libs/utils",
-      "sourceRoot": "libs/utils/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/web:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/utils",
-            "tsConfig": "libs/utils/tsconfig.lib.json",
-            "project": "libs/utils/package.json",
-            "entryFile": "libs/utils/src/index.ts",
-            "external": ["react/jsx-runtime", "react", "react-dom", "react-is"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/utils/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/utils/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/utils"],
-          "options": {
-            "jestConfig": "libs/utils/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "with-supabase-auth": {
-      "root": "apps/with-supabase-auth",
-      "sourceRoot": "apps/with-supabase-auth",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/with-supabase-auth",
-            "outputPath": "dist/apps/with-supabase-auth"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "with-supabase-auth:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "with-supabase-auth:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "with-supabase-auth:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/with-supabase-auth"],
-          "options": {
-            "jestConfig": "apps/with-supabase-auth/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/with-supabase-auth/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "with-supabase-auth-e2e": {
-      "root": "apps/with-supabase-auth-e2e",
-      "sourceRoot": "apps/with-supabase-auth-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/with-supabase-auth-e2e/cypress.json",
-            "devServerTarget": "with-supabase-auth:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "with-supabase-auth:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/with-supabase-auth-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -536,6 +385,5 @@
         "linter": "eslint"
       }
     }
-  },
-  "defaultProject": "gatekeeper"
+  }
 }

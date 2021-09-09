@@ -1,12 +1,33 @@
-/**
- * Alias for Record<string, any>
- */
-export type Metadata = Record<string, any>
+export interface SeoMeta {
+  title?: string
+  url?: string
+  description?: string
+  image?: string
+}
 
-export type Layout = {
-  layout: any
-  component: any
-  meta?: Metadata
+export interface User {
+  name: string
+  email?: string
+  imageUrl?: string
+}
+
+export interface NavItem {
+  name: string
+  href: string
+  current?: boolean
+}
+
+export interface Stat {
+  label: string
+  value: string | number
+}
+
+export interface Profile {
+  id: string
+  avatar_url: string
+  username: string
+  website: string
+  updated_at: string
 }
 
 /**
@@ -121,49 +142,49 @@ export interface SocialLink {
 //   metadata: Metadata
 // }
 
-export interface Person {
-  uuid: string
-  name: string
-  email?: string
-  handle?: string
-  imageUrl: string
-  href: string
-}
+// export interface Person {
+//   uuid: string
+//   name: string
+//   email?: string
+//   handle?: string
+//   imageUrl: string
+//   href: string
+// }
 
-export interface Payload {
-  url: string
-  token: string
-  data: Metadata
-}
+// export interface Payload {
+//   url: string
+//   token: string
+//   data: Metadata
+// }
 
-export type View = {
-  meta?: Metadata
-  colorScheme?: ColorScheme
-}
+// export type View = {
+//   meta?: Metadata
+//   colorScheme?: ColorScheme
+// }
 
-export interface Greeting {
-  message: string
-}
+// export interface Greeting {
+//   message: string
+// }
 
-export interface Announcement {
-  id: number | string
-  title: string
-  href: string
-  preview: string
-}
+// export interface Announcement {
+//   id: number | string
+//   title: string
+//   href: string
+//   preview: string
+// }
 
 export interface Sample {
   label: string
   value: number
 }
 
-export interface Action {
-  icon: any
-  name: string
-  href?: string
-  iconForeground?: string
-  iconBackground?: string
-}
+// export interface Action {
+//   icon: any
+//   name: string
+//   href?: string
+//   iconForeground?: string
+//   iconBackground?: string
+// }
 
 export interface Feature {
   id: string | number
@@ -189,9 +210,9 @@ export interface Post {
   readingLength: string
 }
 
-export type ActivityType = "comment" | "mention" | "post" | "update" | "assignment" | "tags"
+// export type ActivityType = "comment" | "mention" | "post" | "update" | "assignment" | "tags"
 
-export interface Activity extends Record<string, any> {
-  id: string | number
-  type: ActivityType
-}
+// export interface Activity extends Record<string, any> {
+//   id: string | number
+//   type: ActivityType
+// }

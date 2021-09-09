@@ -6,9 +6,8 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@next/next/no-img-element": 0,
         "@nrwl/nx/enforce-module-boundaries": [
-          "off",
+          "error",
           {
             "enforceBuildableLibDependency": true,
             "allow": [],
