@@ -32,20 +32,16 @@ export function Gatekeeper(props: GatekeeperProps) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
             <div className="lg:py-24">
-              <a
-                href="/signout"
-                className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-shark-300 lg:text-sm xl:text-shark-300 hover:text-shark-50"
+              <Span
+                href="/"
+                className="inline-flex items-center text-shark-50 bg-black rounded-full p-1 pr-2 sm:text-shark-300 lg:text-sm xl:text-shark-300 hover:text-shark-50"
               >
-                <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-aqua-500 rounded-full">
+                <span className="px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-aqua-500 rounded-full">
                   Connected
                 </span>
                 <span className="ml-4 text-sm">Switch to realtime mode (demo)</span>
-                <ChevronRightIcon
-                  className="ml-2 w-5 h-5 text-shark-500"
-                  aria-hidden="true"
-                />
-              </a>
-              <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+              </Span>
+              <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                 <span className="block">Iron</span>
                 <span className="block text-aqua-400">DevOps</span>
               </h1>
@@ -78,7 +74,7 @@ export function Gatekeeper(props: GatekeeperProps) {
                           handleLogin(email)
                         }}
                         disabled={loading}
-                        className="block w-full py-3 px-4 rounded-md shadow bg-aqua-500 text-white font-medium hover:bg-aqua-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-300 focus:ring-offset-shark-900"
+                        className="block w-full py-3 px-4 rounded-md shadow bg-aqua-500 text-shark-50 font-medium hover:bg-aqua-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-300 focus:ring-offset-shark-900"
                       >
                         Send Login
                       </button>
@@ -86,7 +82,7 @@ export function Gatekeeper(props: GatekeeperProps) {
                   </div>
                   <p className="mt-3 text-sm text-shark-300 sm:mt-4">
                     Your privacy is important to us. Please read our{" "}
-                    <a href="/terms-and-conditions" className="font-medium text-white">
+                    <a href="/terms-and-conditions" className="font-medium text-shark-50">
                       terms or service
                     </a>
                     .

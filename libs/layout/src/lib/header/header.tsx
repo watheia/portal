@@ -10,7 +10,7 @@ import WatheiaAlt from "@waweb/assets.images/watheia-alt.svg"
 import "./header.module.css"
 
 const MobileMenuButton = ({ isOpen }: { isOpen?: boolean }) => (
-  <Disclosure.Button className="bg-shark-800 inline-flex items-center justify-center p-2 rounded-md text-shark-400 hover:text-white hover:bg-shark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
+  <Disclosure.Button className="bg-shark-800 inline-flex items-center justify-center p-2 rounded-md text-shark-400 hover:text-shark-50 hover:bg-shark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
     <span className="sr-only">Open main menu</span>
     {isOpen ? (
       <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -28,8 +28,8 @@ const TabNav = ({ navigation }: { navigation: NavItem[] }) => (
         href={item.href}
         className={clsx(
           item.current
-            ? "bg-shark-700 text-white"
-            : "text-shark-300 hover:bg-shark-700 hover:text-white",
+            ? "bg-shark-700 text-shark-50"
+            : "text-shark-300 hover:bg-shark-700 hover:text-shark-50",
           "px-3 py-2 rounded-md text-sm font-medium"
         )}
         aria-current={item.current ? "page" : undefined}
@@ -43,7 +43,7 @@ const TabNav = ({ navigation }: { navigation: NavItem[] }) => (
 const ProfileDropdown = ({ userNavigation }: { userNavigation: NavItem[] }) => (
   <Menu as="div" className="ml-3 relative">
     <div>
-      <Menu.Button className="max-w-xs bg-shark-800 rounded-full flex items-center text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
+      <Menu.Button className="max-w-xs bg-shark-800 rounded-full flex items-center text-sm text-shark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
         <span className="sr-only">Open user menu</span>
         <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
       </Menu.Button>
@@ -57,7 +57,7 @@ const ProfileDropdown = ({ userNavigation }: { userNavigation: NavItem[] }) => (
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-shark-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
         {userNavigation.map((item) => (
           <Menu.Item key={item.name}>
             {({ active }) => (
@@ -104,7 +104,7 @@ const Navigator = ({ userNavigation, navigation, className, ...props }: HeaderPr
               <div className="ml-4 flex items-center md:ml-6">
                 <button
                   type="button"
-                  className="bg-shark-800 p-1 rounded-full text-shark-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white"
+                  className="bg-shark-800 p-1 rounded-full text-shark-400 hover:text-shark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -127,7 +127,7 @@ const Navigator = ({ userNavigation, navigation, className, ...props }: HeaderPr
                 className={clsx(
                   item.current
                     ? "bg-shark-200 text-shark-900"
-                    : "text-shark-900 hover:bg-shark-300 hover:text-white",
+                    : "text-shark-900 hover:bg-shark-300 hover:text-shark-50",
                   "block px-3 py-2 rounded-md text-base font-medium"
                 )}
                 aria-current={item.current ? "page" : undefined}
@@ -142,12 +142,12 @@ const Navigator = ({ userNavigation, navigation, className, ...props }: HeaderPr
                 <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
               </div>
               <div className="ml-3">
-                <div className="text-base font-medium text-white">{user.name}</div>
+                <div className="text-base font-medium text-shark-50">{user.name}</div>
                 <div className="text-sm font-medium text-shark-400">{user.email}</div>
               </div>
               <button
                 type="button"
-                className="ml-auto bg-shark-800 flex-shrink-0 p-1 rounded-full text-shark-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white"
+                className="ml-auto bg-shark-800 flex-shrink-0 p-1 rounded-full text-shark-400 hover:text-shark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white"
               >
                 <span className="sr-only">View notifications</span>
                 <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -158,7 +158,7 @@ const Navigator = ({ userNavigation, navigation, className, ...props }: HeaderPr
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-shark-400 hover:text-white hover:bg-shark-700"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-shark-400 hover:text-shark-50 hover:bg-shark-700"
                 >
                   {item.name}
                 </a>
