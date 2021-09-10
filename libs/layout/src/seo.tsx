@@ -19,7 +19,7 @@ export const SEO = ({ title, url, description, image }: SeoProps): JSX.Element =
   const router = useRouter()
   image = image || "https://cdn.watheia.org/assets/wa-card.png"
   title = title || SITE_NAME
-  url = url || `${getURL()}${router.asPath}`
+  url = url || `${getURL()}${router?.asPath}`
   description = description || SITE_NAME
   return (
     <Head>
