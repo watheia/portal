@@ -1,8 +1,11 @@
-export type { ContainerProps } from "./lib/container"
-export { Container } from "./lib/container"
+export type { ContainerProps } from "./container"
+export { Container } from "./container"
 
-export type { PaperProps } from "./lib/paper"
-export { Paper } from "./lib/paper"
+export type { PaperProps } from "./paper"
+export { Paper } from "./paper"
 
-export type { LayoutProps } from "./lib/layout"
-export { Layout } from "./lib/layout"
+export type { HeaderProps } from "./header"
+export { Header } from "./header"
+
+export type { LayoutProps } from "./layout"
+export { Layout } from "./layout"
