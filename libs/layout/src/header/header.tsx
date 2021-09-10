@@ -183,7 +183,7 @@ export const Header = ({
   ...props
 }: HeaderProps) => {
   return (
-    <div className={className} {...props}>
+    <div className={clsx("border-b-2 border-black drop-shadow-md", className)} {...props}>
       <Navigator userNavigation={userNavigation} navigation={navigation} />
     </div>
   )

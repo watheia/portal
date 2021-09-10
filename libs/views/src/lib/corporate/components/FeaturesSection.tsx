@@ -20,7 +20,7 @@ export const FeaturesSection = () => (
               <div className="flow-root bg-shark-200 rounded-lg px-6 pb-8">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-aqua-500 to-regal-400 rounded-md shadow-lg">
+                    <span className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-aqua-500 to-aqua-400 rounded-md shadow-lg">
                       <feature.icon className="h-6 w-6 text-shark-50" aria-hidden="true" />
                     </span>
                   </div>

@@ -1,3 +1,7 @@
+import { HtmlHTMLAttributes } from "react"
+
+export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
+
 export interface SeoMeta {
   title?: string
   url?: string

@@ -10,8 +10,11 @@ export const Paper = ({ children, className, ...props }: PaperProps) => {
       className={clsx("max-w-7xl mx-auto sm:py-6 sm:px-6 lg:px-8 min-h-screen", className)}
       {...props}
     >
-      <div className="overflow-hidden bg-transparent sm:bg-shark-50 sm:shadow sm:rounded-lg">
-        <div className="px-0 py-0 sm:px-2 sm:py-3 lg:p-8 lg:py-10"> {children}</div>
+      <div className=" border border-shark-500 overflow-hidden bg-transparent sm:bg-shark-900 sm:shadow-md sm:rounded-lg">
+        <div className="px-0 py-0 sm:px-1 sm:py-1 md:p-4 md:py-4 xlg:p-6 xlg:py-6">
+          {" "}
+          {children}
+        </div>
       </div>
     </div>
   )

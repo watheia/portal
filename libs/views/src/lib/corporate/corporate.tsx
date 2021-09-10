@@ -2,6 +2,8 @@ import CtaSection from "./components/CtaSection"
 import FeaturesSection from "./components/FeaturesSection"
 import HeroSection from "./components/HeroSection"
 import ServerlessSection from "./components/ServerlessSection"
+import SocialProof from "./components/SocialProof"
+import StatsSection from "./components/StatsSection"
 import TestimonialSection from "./components/TestimonialSection"
 import "./corporate.module.css"
 
@@ -15,6 +17,8 @@ const Corporate = (props: CorporateProps) => {
       <ServerlessSection />
       <FeaturesSection />
       <TestimonialSection />
+      {/* <SocialProof /> */}
+      <StatsSection />
       <CtaSection />
     </>
   )

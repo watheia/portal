@@ -44,7 +44,7 @@ export const LoginForm = () => {
               handleLogin(email)
             }}
             disabled={loading}
-            className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-aqua-500 to-regal-400 text-shark-50 font-medium hover:from-aqua-600 hover:to-regal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-regal-400 focus:ring-offset-shark-900"
+            className="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-aqua-500 to-aqua-400 text-shark-50 font-medium hover:from-aqua-600 hover:to-aqua-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-regal-400 focus:ring-offset-shark-900"
           >
             Send token
           </button>
