@@ -32,15 +32,12 @@ export function Gatekeeper(props: GatekeeperProps) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
             <div className="lg:py-24">
-              <Span
-                href="/"
-                className="inline-flex items-center text-shark-50 bg-black rounded-full p-1 pr-2 sm:text-shark-300 lg:text-sm xl:text-shark-300 hover:text-shark-50"
-              >
+              <span className="inline-flex items-center text-shark-50 bg-black rounded-full p-1 pr-2 sm:text-shark-300 lg:text-sm xl:text-shark-300 hover:text-shark-50">
                 <span className="px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-aqua-500 rounded-full">
                   Connected
                 </span>
                 <span className="ml-4 text-sm">Switch to realtime mode (demo)</span>
-              </Span>
+              </span>
               <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-shark-50 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                 <span className="block">Iron</span>
                 <span className="block text-aqua-400">DevOps</span>
