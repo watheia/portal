@@ -1,10 +1,12 @@
-import { SITE_NAME, SITE_URL, TWITTER_USER_NAME } from "@watheia/model"
+import { SITE_NAME, TWITTER_USER_NAME } from "@watheia/model"
 import Head from "next/head"
 import { getURL } from "@watheia/util.helpers"
-import appleTouchIcon from "@waweb/assets.images/apple-touch-icon.png"
-import favicon32 from "@waweb/assets.images/favicon-32x32.png"
-import favicon16 from "@waweb/assets.images/favicon-16x16.png"
 import { useRouter } from "next/router"
+
+const staticAssets = "https://cdn.watheia.org/assets"
+const appleTouchIcon = `${staticAssets}/apple-touch-icon.png`
+const favicon32 = `${staticAssets}/favicon-32x32.png`
+const favicon16 = `${staticAssets}/favicon-16x16.png`
 
 export interface SeoProps {
   title?: string
