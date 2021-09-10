@@ -15,7 +15,7 @@ import { User, NavItem, Stat, Feature, SocialLink } from "./types"
 
 export const user: User = {
   name: "Guest",
-  email: "n/a",
+  email: "",
   imageUrl: "https://cdn.watheia.org/assets/icon.png"
 }
 
@@ -27,9 +27,9 @@ export const navigation: NavItem[] = [
 ]
 
 export const userNavigation: NavItem[] = [
-  { name: "Profile", href: "/user/profile" },
-  { name: "Account", href: "/user/account" },
-  { name: "Signout", href: "/signout" }
+  { name: "Profile", href: "/user/profile", disabled: true },
+  { name: "Account", href: "/user/account", disabled: true },
+  { name: "Signin", href: "/signout" }
 ]
 
 export const stats: Stat[] = [

@@ -12,6 +12,7 @@ export interface NavItem {
   name: string
   href: string
   current?: boolean
+  disabled?: boolean
 }
 
 export interface Stat {

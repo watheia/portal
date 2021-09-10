@@ -1,7 +1,9 @@
 import { Disclosure } from "@headlessui/react"
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
-import { NavItem, User } from "@watheia/model"
+import { DivProps, NavItem, User } from "@watheia/model"
 import clsx from "clsx"
+
+import styles from "./MobileNav.module.css"
 
 const MobileMenuButton = ({ isOpen }: { isOpen?: boolean }) => (
   <Disclosure.Button className="bg-shark-700 inline-flex items-center justify-center p-2 rounded-md text-shark-400 hover:text-shark-50 hover:bg-shark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
@@ -18,7 +20,11 @@ export type MobileNavProps = {
   navigation: NavItem[]
   userNavigation: NavItem[]
   user: User
-}
+} & DivProps
+
+// const linkStyles = {
+//   [styles.navLink]: true
+// }
 
 export const MobileNav = ({
   navigation,
@@ -26,7 +32,7 @@ export const MobileNav = ({
   user,
   ...props
 }: MobileNavProps) => (
-  <Disclosure.Panel className="md:hidden">
+  <Disclosure.Panel className="md:hidden" {...props}>
     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
       {navigation.map((item) => (
         <a
@@ -35,7 +41,7 @@ export const MobileNav = ({
           className={clsx(
             item.current
               ? "bg-shark-200 text-shark-900"
-              : "text-shark-900 hover:bg-shark-300 hover:text-shark-50",
+              : "text-shark-200 hover:bg-shark-700 hover:text-shark-50",
             "block px-3 py-2 rounded-md text-base font-medium"
           )}
           aria-current={item.current ? "page" : undefined}
@@ -51,7 +57,9 @@ export const MobileNav = ({
         </div>
         <div className="ml-3">
           <div className="text-base font-medium text-shark-50">{user.name}</div>
-          <div className="text-sm font-medium text-shark-400">{user.email}</div>
+          {user.email && (
+            <div className="text-sm font-medium text-shark-400">{user.email}</div>
+          )}
         </div>
         <button
           type="button"
@@ -66,7 +74,7 @@ export const MobileNav = ({
           <a
             key={item.name}
             href={item.href}
-            className="block px-3 py-2 rounded-md text-base font-medium text-shark-400 hover:text-shark-50 hover:bg-shark-700"
+            className="block px-3 py-2 rounded-md text-secondary-2 font-medium hover:text-secondary hover:bg-shark-700"
           >
             {item.name}
           </a>

@@ -28,7 +28,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <div className="py-8 mx-2 md:mx-4">
+    <div className="pb-8 pt-16 mx-2 md:mx-4">
       <h3 className="text-lg leading-6 font-medium text-secondary-2">KPI Performance</h3>
       <dl className="mt-5 grid grid-cols-1 rounded-lg bg-shark-50 overflow-hidden shadow divide-y divide-shark-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
         {stats.map((item) => (
