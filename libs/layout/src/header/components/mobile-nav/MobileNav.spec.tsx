@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Header from "./header"
+import MobileNav from "./MobileNav"
 
-describe("Header", () => {
+describe("MobileNav", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Header />)
+    const { baseElement } = render(<MobileNav />)
     expect(baseElement).toBeTruthy()
   })
 })

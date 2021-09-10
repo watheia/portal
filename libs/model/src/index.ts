@@ -18,6 +18,5 @@ export type {
   Sample,
   Feature,
   Post,
-  SeoMeta,
   DivProps
 } from "./lib/types"
