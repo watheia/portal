@@ -72,8 +72,8 @@ export const color_scheme = {
 export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
 
 export type SvgIconProps = {
-  primaryColor: string | number
-  secondaryColor: string | number
+  primaryColor?: string | number
+  secondaryColor?: string | number
 } & SVGProps<SVGSVGElement>
 
 /**

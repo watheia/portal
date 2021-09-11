@@ -1,6 +1,6 @@
 import ExternalLinkIcon from "@heroicons/react/outline/ExternalLinkIcon"
 
-const CtaSection = () => (
+export const CtaSection = () => (
   <div className="relative bg-shark-900">
     <div className="relative h-56 bg-aqua-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
       <img

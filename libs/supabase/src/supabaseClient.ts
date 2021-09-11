@@ -1,7 +1,7 @@
-import { createClient } from "@supabase/supabase-js"
+import { createClient, SupabaseClient } from "@supabase/supabase-js"
 import { NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY } from "@watheia/model"
 
-let supabase = null
+let supabase: SupabaseClient | null = null
 
 if (!NEXT_PUBLIC_SUPABASE_URL) {
   console.error("Missing env.NEXT_PUBLIC_SUPABASE_URL")

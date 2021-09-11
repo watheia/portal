@@ -21,7 +21,6 @@
       "@watheia/supabase": ["libs/supabase/src/index.ts"],
       "@watheia/util.helpers": ["libs/util/helpers/src/index.ts"],
       "@watheia/views": ["libs/views/src/index.ts"],
-      "@waweb/assets.gfx/*": ["libs/assets/src/gfx/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],
       "@waweb/assets.styles/*": ["libs/assets/src/styles/*"]
     }

@@ -8,6 +8,7 @@ export const LoginForm = () => {
   const handleLogin = async (email: string) => {
     try {
       setLoading(true)
+      if (!supabase) throw new Error("supabase is unainitialized")
       const { error, user } = await supabase.auth.signIn({ email })
       if (error) throw error
       console.log("user", user)

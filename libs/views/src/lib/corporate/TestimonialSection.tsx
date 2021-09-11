@@ -1,5 +1,4 @@
 import { DivProps } from "@watheia/model"
-import { HtmlHTMLAttributes } from "markdown-to-jsx/node_modules/@types/react"
 
 export const TestimonialSection = (props: DivProps) => (
   <div
