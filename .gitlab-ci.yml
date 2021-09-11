@@ -42,6 +42,12 @@ build: # This job runs in the build stage, which runs first.
       --all=true
       --configuration=production
       --verbose=true
+  artifacts:
+    untracked: false
+    expire_in: 30 days
+    paths:
+      - dist/apps
+      - dist/libs
 
 test: # This job runs in the test stage.
   stage: test # It only starts when the job in the build stage completes successfully.
@@ -52,6 +58,11 @@ test: # This job runs in the test stage.
       --all=true
       --verbose=true
       --coverage
+  artifacts:
+    untracked: false
+    expire_in: 30 days
+    paths:
+      - coverage
 
 lint: # This job also runs in the test stage.
   needs: [install]
@@ -61,14 +72,19 @@ lint: # This job also runs in the test stage.
       --target=lint
       --all=true
 
-e2e: # This job also runs in the test stage.
-  needs: [install, build]
-  stage: test # It can run at the same time as unit-test-job (in parallel).
-  script:
-    - yarn nx run-many
-      --target=e2e
-      --all=true
-      --verbose=true
+# e2e: # This job also runs in the test stage.
+#   needs: [install, build]
+#   stage: test # It can run at the same time as unit-test-job (in parallel).
+#   script:
+#     - yarn nx run-many
+#       --target=e2e
+#       --all=true
+#       --verbose=true
+#   artifacts:
+#     untracked: false
+#     expire_in: 30 days
+#     paths:
+#       - dist/cypress
 
 deploy: # This job also runs in the test stage.
   needs: [install, build]

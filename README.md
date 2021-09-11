@@ -1,5 +1,7 @@
 # Wα [w-al-fu] Web (v0beta1)
 
+[![pipeline status](https://gitlab.com/watheia/waweb/badges/main/pipeline.svg)](https://gitlab.com/watheia/waweb/-/commits/main)
+
 Wα is a proof of concept implementation of a polyglot monorepo workspace for micro frontends.
 
 This project has two goals:

@@ -6,13 +6,10 @@ import {
   StatsSection,
   CtaSection
 } from "@watheia/view.corporate"
-import { useUser } from "@watheia/supabase.auth"
+import { useUser } from "@watheia/supa.auth"
 
 const Home = () => {
-  console.log("Initializing context...")
-  const { session, user } = useUser()
-  console.log("session = ", session)
-  console.log("user = ", user)
+  console.log("Initializing app context...")
   // const [session, setSession] = useState<AuthSession | null>(null)
   // const [profiles, setProfiles] = useState<Profile[]>([])
 

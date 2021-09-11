@@ -93,6 +93,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.1",
+    "jest-junit": "^12.2.0",
     "mini-css-extract-plugin": "^2.1.0",
     "mocha": "^9.1.1",
     "nx": "^12.9.0",
@@ -120,6 +121,16 @@
     "webpack-sources": "^3.0.2"
   },
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ]
   }
 }
