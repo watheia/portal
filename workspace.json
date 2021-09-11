@@ -295,6 +295,47 @@
         }
       }
     },
+    "uix-navigator": {
+      "root": "libs/uix/navigator",
+      "sourceRoot": "libs/uix/navigator/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/uix/navigator",
+            "tsConfig": "libs/uix/navigator/tsconfig.lib.json",
+            "project": "libs/uix/navigator/package.json",
+            "entryFile": "libs/uix/navigator/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/uix/navigator/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/uix/navigator/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/uix/navigator"],
+          "options": {
+            "jestConfig": "libs/uix/navigator/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "util-helpers": {
       "root": "libs/util/helpers",
       "sourceRoot": "libs/util/helpers/src",

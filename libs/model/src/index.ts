@@ -4,6 +4,8 @@ export type {
   ColorScheme,
   DivProps,
   Feature,
+  NavCtx,
+  GfxProps,
   Route,
   Post,
   User,

@@ -19,6 +19,7 @@
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
       "@watheia/supabase": ["libs/supabase/src/index.ts"],
+      "@watheia/uix.navigator": ["libs/uix/navigator/src/index.ts"],
       "@watheia/util.helpers": ["libs/util/helpers/src/index.ts"],
       "@watheia/util.hooks": ["libs/util/hooks/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],

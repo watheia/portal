@@ -2,6 +2,28 @@ import { HtmlHTMLAttributes, SVGProps } from "react"
 
 export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
 
+export type GfxProps = SVGProps<SVGSVGElement>
+
+export const color_scheme = {
+  light: "light",
+  dark: "dark"
+}
+
+export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
+
+export const user_status = {
+  ONLINE: "ONLINE",
+  OFFLINE: "OFFLINE"
+}
+
+export type UserStatus = typeof user_status[keyof typeof user_status]
+
+export type NavCtx = {
+  userNavigation: Route[]
+  navigation: Route[]
+  user: User
+}
+
 export interface User {
   name: string
   email?: string
@@ -60,25 +82,6 @@ export interface Post {
   }
   readingTime: string
 }
-
-export const user_status = {
-  ONLINE: "ONLINE",
-  OFFLINE: "OFFLINE"
-}
-
-export type UserStatus = typeof user_status[keyof typeof user_status]
-
-export const color_scheme = {
-  light: "light",
-  dark: "dark"
-}
-
-export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
-
-export type SvgIconProps = {
-  primaryColor?: string | number
-  secondaryColor?: string | number
-} & SVGProps<SVGSVGElement>
 
 /**
  * Model Channel
