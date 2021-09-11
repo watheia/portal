@@ -56,10 +56,11 @@ module.exports = {
         },
         "ring-1": "#04BFBF",
         "ring-2": "#fefeff",
+        disabled: "#a7a5a6",
         primary: "#110f10",
         "primary-2": "#1a1718",
         secondary: "#fefeff",
-        "secondary-2": "#fafbfb"
+        "secondary-2": "#dbdcdd"
       },
       textColor: {
         base: "#110f10",
