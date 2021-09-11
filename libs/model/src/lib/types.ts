@@ -1,4 +1,4 @@
-import { HtmlHTMLAttributes } from "react"
+import { HtmlHTMLAttributes, SVGProps } from "react"
 
 export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
 
@@ -70,6 +70,11 @@ export const color_scheme = {
 }
 
 export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
+
+export type SvgIconProps = {
+  primaryColor: string | number
+  secondaryColor: string | number
+} & SVGProps<SVGSVGElement>
 
 /**
  * Model Channel
