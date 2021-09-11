@@ -14,7 +14,7 @@ export type UserNavProps = {
 
 export const UserNav = ({ userNavigation, user, ...props }: UserNavProps) => {
   const router = useRouter()
-  const activeRoute = router?.asPath ?? "/"
+  const activeRoute = router?.asPath ?? "/home"
   return (
     <Menu as="div" className="ml-3 relative" {...props}>
       <div>
@@ -38,9 +38,8 @@ export const UserNav = ({ userNavigation, user, ...props }: UserNavProps) => {
               {({ active }) => (
                 <a
                   href={item.href}
-                  className={clsx({
-                    [styles.navLink]: true, //always applies
-                    [styles.active]: activeRoute.startsWith(item.href), //only when active page
+                  className={clsx(styles.navLink, {
+                    [styles.active]: active, //only when active page
                     [styles.disabled]: item.disabled
                   })}
                 >

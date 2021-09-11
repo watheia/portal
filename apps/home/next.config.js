@@ -6,6 +6,8 @@ const withMdx = require("@next/mdx")({
 
 const BLOG_URL = process.env.BLOG_URL
 
+const isProd = process.env.NODE_ENV === "production"
+
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
  **/
@@ -15,6 +17,15 @@ const nextConfig = {
     // Set this to true if you would like to to use SVGR
     // See: https://github.com/gregberge/svgr
     svgr: true
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: isProd
+      }
+    ]
   },
   async rewrites() {
     return [

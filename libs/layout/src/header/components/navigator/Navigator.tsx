@@ -24,8 +24,8 @@ export const Navigator = ({
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link href="/" passHref>
-                  <a href="/">
+                <Link href="/home" passHref>
+                  <a href="/home">
                     <img
                       className="h-8 w-8"
                       src="https://cdn.watheia.org/assets/watheia-alt.svg"

@@ -27,15 +27,6 @@ export interface Profile {
   updated_at: string
 }
 
-export const user_status = {
-  ONLINE: "ONLINE",
-  OFFLINE: "OFFLINE"
-}
-
-export type UserStatus = typeof user_status[keyof typeof user_status]
-
-export type ColorScheme = "light" | "dark"
-
 export interface SocialLink {
   name: string
   href: string
@@ -65,6 +56,20 @@ export interface Post {
   }
   readingLength: string
 }
+
+export const user_status = {
+  ONLINE: "ONLINE",
+  OFFLINE: "OFFLINE"
+}
+
+export type UserStatus = typeof user_status[keyof typeof user_status]
+
+export const color_scheme = {
+  light: "light",
+  dark: "dark"
+}
+
+export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
 
 /**
  * Model Channel

@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react"
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
 import { DivProps, NavItem, User } from "@watheia/model"
+import { isActiveRoute } from "@watheia/util.helpers"
 import clsx from "clsx"
 import { useRouter } from "next/router"
 
@@ -23,7 +24,7 @@ export const MobileNav = ({
   ...props
 }: MobileNavProps) => {
   const router = useRouter()
-  const activeRoute = router?.asPath ?? "/"
+  const activeRoute = router?.asPath ?? "/home"
   return (
     <Disclosure.Panel className="md:hidden" {...props}>
       <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -32,12 +33,12 @@ export const MobileNav = ({
             key={item.name}
             href={item.href}
             className={clsx(
-              activeRoute.startsWith(item.href)
+              isActiveRoute(item, activeRoute)
                 ? "bg-shark-700 text-secondary shadow-inner"
                 : "text-secondary-2 hover:bg-shark-500 hover:text-secondary",
               "block px-3 py-2 rounded-md font-medium"
             )}
-            aria-current={activeRoute.startsWith(item.href) ? "page" : undefined}
+            aria-current={isActiveRoute(item, activeRoute) ? "page" : undefined}
           >
             {item.name}
           </a>
