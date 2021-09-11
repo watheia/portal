@@ -50,6 +50,55 @@ export interface Profile {
   updated_at: string
 }
 
+export interface SocialLink {
+  name: string
+  href: string
+  icon: string
+}
+
+export interface Feature {
+  id: string | number
+  name: string
+  description: string
+  icon?: any
+}
+
+export interface Post {
+  id: number | string
+  title: string
+  href: string
+  date: string
+  datetime: string
+  category: { name: string; href: string }
+  imageUrl: string
+  description: string
+  author: {
+    name: string
+    imageUrl?: string
+    href?: string
+  }
+  readingLength: string
+}
+
+export const user_status = {
+  ONLINE: "ONLINE",
+  OFFLINE: "OFFLINE"
+}
+
+export type UserStatus = typeof user_status[keyof typeof user_status]
+
+export const color_scheme = {
+  light: "light",
+  dark: "dark"
+}
+
+export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
+
+export type SvgIconProps = {
+  primaryColor: string | number
+  secondaryColor: string | number
+} & SVGProps<SVGSVGElement>
+
 /**
  * @deprecated use Route instead
  */

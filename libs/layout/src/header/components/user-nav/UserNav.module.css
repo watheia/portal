@@ -1,0 +1,11 @@
+.navLink {
+  @apply block px-4 py-2 text-sm font-medium text-primary-2 bg-shark-50 hover:bg-shark-200;
+}
+
+.active {
+  @apply bg-shark-200;
+}
+
+.disabled {
+  @apply opacity-50 hover:bg-shark-50;
+}
