@@ -34,7 +34,7 @@ export const UserNav = ({ userNavigation, user, ...props }: UserNavProps) => {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-shark-50 ring-1 ring-black ring-opacity-5 focus:outline-none">
           {userNavigation.map((item) => (
-            <Menu.Item key={item.name} disabled={item.d}>
+            <Menu.Item key={item.name} disabled={item.disabled}>
               {({ active }) => (
                 <a
                   href={item.href}

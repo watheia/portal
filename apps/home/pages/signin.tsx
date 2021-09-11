@@ -24,7 +24,7 @@ export default function Home() {
   async function getPublicProfiles() {
     try {
       const { data, error } = await supabase
-        .from<Profile>("profiles")
+        .from("profiles")
         .select("id, username, avatar_url, website, updated_at")
         .order("updated_at", { ascending: false })
 
