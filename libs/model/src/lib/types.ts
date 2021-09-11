@@ -1,9 +1,6 @@
-export interface SeoMeta {
-  title?: string
-  url?: string
-  description?: string
-  image?: string
-}
+import { HtmlHTMLAttributes, SVGProps } from "react"
+
+export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
 
 export interface User {
   name: string
@@ -14,7 +11,7 @@ export interface User {
 export interface NavItem {
   name: string
   href: string
-  current?: boolean
+  disabled?: boolean
 }
 
 export interface Stat {
@@ -30,75 +27,35 @@ export interface Profile {
   updated_at: string
 }
 
-/**
- * Model Channel
- */
-export interface Channel {
-  id: bigint
-  inserted_at: Date
-  slug: string
-  created_by: string
+export interface SocialLink {
+  name: string
+  href: string
+  icon: string
 }
 
-/**
- * Model Message
- */
-export interface Message {
-  id: bigint
-  inserted_at: Date
-  message: string | null
-  user_id: string
-  channel_id: bigint
+export interface Feature {
+  id: string | number
+  name: string
+  description: string
+  icon?: any
 }
 
-/**
- * Model RolePermission
- */
-export interface RolePermission {
-  id: bigint
-  role: AppRole
-  permission: AppPermission
+export interface Post {
+  id: number | string
+  title: string
+  href: string
+  date: string
+  datetime: string
+  category: { name: string; href: string }
+  imageUrl: string
+  description: string
+  author: {
+    name: string
+    imageUrl?: string
+    href?: string
+  }
+  readingLength: string
 }
-
-/**
- * Model UserRole
- */
-export interface UserRole {
-  id: bigint
-  user_id: string
-  role: AppRole
-}
-
-/**
- * Model Principal
- */
-export interface Principal {
-  id: string
-  username: string | null
-  status: UserStatus | null
-}
-
-/**
- * Enums
- */
-
-// Based on
-// https://github.com/microsoft/TypeScript/issues/3192#issuecomment-261720275
-
-export const app_role = {
-  admin: "admin",
-  moderator: "moderator",
-  guest: "guest"
-}
-
-export type AppRole = typeof app_role[keyof typeof app_role]
-
-export const app_permission = {
-  channels_delete: "channels_delete",
-  messages_delete: "messages_delete"
-}
-
-export type AppPermission = typeof app_permission[keyof typeof app_permission]
 
 export const user_status = {
   ONLINE: "ONLINE",
@@ -107,13 +64,87 @@ export const user_status = {
 
 export type UserStatus = typeof user_status[keyof typeof user_status]
 
-export type ColorScheme = "light" | "dark"
-
-export interface SocialLink {
-  name: string
-  href: string
-  icon: string
+export const color_scheme = {
+  light: "light",
+  dark: "dark"
 }
+
+export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
+
+export type SvgIconProps = {
+  primaryColor: string | number
+  secondaryColor: string | number
+} & SVGProps<SVGSVGElement>
+
+/**
+ * Model Channel
+ */
+// export interface Channel {
+//   id: bigint
+//   inserted_at: Date
+//   slug: string
+//   created_by: string
+// }
+
+/**
+ * Model Message
+ */
+// export interface Message {
+//   id: bigint
+//   inserted_at: Date
+//   message: string | null
+//   user_id: string
+//   channel_id: bigint
+// }
+
+/**
+ * Model RolePermission
+ */
+// export interface RolePermission {
+//   id: bigint
+//   role: AppRole
+//   permission: AppPermission
+// }
+
+/**
+ * Model UserRole
+ */
+// export interface UserRole {
+//   id: bigint
+//   user_id: string
+//   role: AppRole
+// }
+
+/**
+ * Model Principal
+ */
+// export interface Principal {
+//   id: string
+//   username: string | null
+//   status: UserStatus | null
+// }
+
+/**
+ * Enums
+ */
+
+// Based on
+// https://github.com/microsoft/TypeScript/issues/3192#issuecomment-261720275
+
+// export const app_role = {
+//   admin: "admin",
+//   moderator: "moderator",
+//   guest: "guest"
+// }
+
+// export type AppRole = typeof app_role[keyof typeof app_role]
+
+// export const app_permission = {
+//   channels_delete: "channels_delete",
+//   messages_delete: "messages_delete"
+// }
+
+// export type AppPermission = typeof app_permission[keyof typeof app_permission]
 
 // export interface Product {
 //   id: string | number
@@ -173,10 +204,10 @@ export interface SocialLink {
 //   preview: string
 // }
 
-export interface Sample {
-  label: string
-  value: number
-}
+// export interface Sample {
+//   label: string
+//   value: number
+// }
 
 // export interface Action {
 //   icon: any
@@ -185,30 +216,6 @@ export interface Sample {
 //   iconForeground?: string
 //   iconBackground?: string
 // }
-
-export interface Feature {
-  id: string | number
-  name: string
-  description: string
-  icon?: any
-}
-
-export interface Post {
-  id: number | string
-  title: string
-  href: string
-  date: string
-  datetime: string
-  category: { name: string; href: string }
-  imageUrl: string
-  description: string
-  author: {
-    name: string
-    imageUrl?: string
-    href?: string
-  }
-  readingLength: string
-}
 
 // export type ActivityType = "comment" | "mention" | "post" | "update" | "assignment" | "tags"
 

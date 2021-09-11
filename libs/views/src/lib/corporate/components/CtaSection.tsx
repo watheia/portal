@@ -10,7 +10,7 @@ const CtaSection = () => (
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-aqua-500 to-regal-400 mix-blend-multiply"
+        className="absolute inset-0 bg-gradient-to-r from-aqua-500 to-aqua-400 mix-blend-multiply"
       />
     </div>
     <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
@@ -32,7 +32,7 @@ const CtaSection = () => (
               href="#"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-shark-900 bg-shark-50 hover:bg-shark-50"
             >
-              Visit the help center
+              Contact Sales
               <ExternalLinkIcon
                 className="-mr-1 ml-3 h-5 w-5 text-shark-400"
                 aria-hidden="true"

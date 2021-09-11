@@ -4,7 +4,7 @@ const posts = [
   {
     title: "Boost your conversion rate",
     href: "#",
-    category: { name: "Article", href: "#", color: "bg-indigo-100 text-indigo-800" },
+    category: { name: "Article", href: "#", color: "bg-regal-100 text-regal-800" },
     description:
       "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
     date: "Mar 16, 2021",
@@ -20,7 +20,7 @@ const posts = [
   {
     title: "How to use search engine optimization to drive sales",
     href: "#",
-    category: { name: "Video", href: "#", color: "bg-pink-100 text-pink-800" },
+    category: { name: "Video", href: "#", color: "bg-mulberry-100 text-mulberry-800" },
     description:
       "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
     date: "Mar 10, 2021",
@@ -36,7 +36,7 @@ const posts = [
   {
     title: "Improve your customer experience",
     href: "#",
-    category: { name: "Case Study", href: "#", color: "bg-green-100 text-green-800" },
+    category: { name: "Case Study", href: "#", color: "bg-aqua-100 text-aqua-800" },
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
     date: "Feb 12, 2021",
@@ -53,7 +53,7 @@ const posts = [
 
 export const Header = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-shark-50">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
@@ -73,7 +73,7 @@ export const Header = () => {
 }
 
 const FeaturedPosts = () => (
-  <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+  <div className="bg-shark-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
     <div className="relative max-w-lg mx-auto divide-y-2 divide-shark-200 lg:max-w-7xl">
       <div>
         <h2 className="text-3xl tracking-tight font-extrabold text-shark-900 sm:text-4xl">

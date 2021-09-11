@@ -1,11 +1,14 @@
 import { createClient } from "@supabase/supabase-js"
 import { NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY } from "@watheia/model"
 
-if (!NEXT_PUBLIC_SUPABASE_URL) throw new Error("Missing env.NEXT_PUBLIC_SUPABASE_URL")
-if (!NEXT_PUBLIC_SUPABASE_ANON_KEY)
-  throw new Error("Missing env.NEXT_PUBLIC_SUPABASE_ANON_KEY")
+let supabase = null
 
-export const supabase = createClient(
-  NEXT_PUBLIC_SUPABASE_URL,
-  NEXT_PUBLIC_SUPABASE_ANON_KEY
-)
+if (!NEXT_PUBLIC_SUPABASE_URL) {
+  console.error("Missing env.NEXT_PUBLIC_SUPABASE_URL")
+} else if (!NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  console.error("Missing env.NEXT_PUBLIC_SUPABASE_ANON_KEY")
+} else {
+  supabase = createClient(NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY)
+}
+
+export default supabase

@@ -6,7 +6,7 @@ export default {
   title: "TestimonialSection"
 } as Meta
 
-const Template: Story<> = (args) => <TestimonialSection {...args} />
+const Template: Story<any> = (args) => <TestimonialSection {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {}
