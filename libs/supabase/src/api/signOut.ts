@@ -1,6 +1,6 @@
-import { supabase } from ".."
+import { supabase } from "../supabase"
 
-export default async function signOut() {
+export const signOut = async () => {
   const { error } = await supabase.auth.signOut()
-  if (error) console.log("Error logging out:", error.message)
+  if (error) console.error("Error logging out:", error.message)
 }

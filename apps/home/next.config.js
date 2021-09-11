@@ -4,8 +4,6 @@ const withMdx = require("@next/mdx")({
   extension: /\.mdx?$/
 })
 
-const BLOG_URL = process.env.BLOG_URL
-
 const isProd = process.env.NODE_ENV === "production"
 
 /**
@@ -27,22 +25,6 @@ const nextConfig = {
       }
     ]
   }
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: "/:path*",
-  //       destination: `/:path*`
-  //     },
-  //     {
-  //       source: "/blog",
-  //       destination: `${BLOG_URL}/blog`
-  //     },
-  //     {
-  //       source: "/blog/:path*",
-  //       destination: `${BLOG_URL}/blog/:path*`
-  //     }
-  //   ]
-  // }
 }
 
 module.exports = withNx(withMdx(nextConfig))

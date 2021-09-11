@@ -1,6 +1,8 @@
 .root {
+  @apply bg-shark-900;
 }
 
-.avatar {
-  @apply bg-shark-800 p-1 rounded-full text-shark-400 hover:text-shark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white;
+.notifications {
+  /* @apply bg-shark-800 p-1 rounded-full text-shark-400 hover:text-shark-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white; */
+  @apply bg-shark-800 p-1 rounded-full text-shark-400;
 }

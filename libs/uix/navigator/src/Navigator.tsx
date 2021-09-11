@@ -10,6 +10,7 @@ import { HtmlHTMLAttributes } from "react"
 import { NavCtx } from "@watheia/model"
 
 import styles from "./Navigator.module.css"
+import { useRouter } from "next/router"
 
 export type NavigatorProps = NavCtx & HtmlHTMLAttributes<HTMLDivElement>
 
@@ -21,7 +22,7 @@ export const Navigator = ({
   ...props
 }: NavigatorProps) => {
   return (
-    <Disclosure as="nav" className={clsx("bg-shark-900", className)} {...props}>
+    <Disclosure as="nav" className={clsx(styles.root, className)} {...props}>
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +45,7 @@ export const Navigator = ({
               </div>
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center md:ml-6">
-                  <button type="button" className={styles.avatar}>
+                  <button type="button" className={styles.notifications}>
                     <span className="sr-only">View notifications</span>
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
