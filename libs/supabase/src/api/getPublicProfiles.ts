@@ -1,5 +1,5 @@
 import { Profile } from "@watheia/model"
-import supabase from "../supabaseClient"
+import supabase from "../supabase"
 
 export default async function getPublicProfiles(): Promise<Profile[]> {
   try {

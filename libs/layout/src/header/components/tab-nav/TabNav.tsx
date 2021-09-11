@@ -1,15 +1,15 @@
 /* eslint-disable-next-line */
-import { NavItem } from "@watheia/model"
+import { Route } from "@watheia/model"
 import { isActiveRoute } from "@watheia/util.helpers"
 import clsx from "clsx"
 import { useRouter } from "next/router"
 
 import styles from "./TabNav.module.css"
 
-type Tab = (item: NavItem) => JSX.Element
+type Tab = (item: Route) => JSX.Element
 
 const withTab = (activeRoute: string): Tab => {
-  return (item: NavItem) => {
+  return (item: Route) => {
     const isActive = isActiveRoute(item, activeRoute)
     return (
       <a
@@ -29,7 +29,7 @@ const withTab = (activeRoute: string): Tab => {
   }
 }
 export type TabNavProps = {
-  navigation: NavItem[]
+  navigation: Route[]
 }
 
 export const TabNav = ({ navigation }: TabNavProps) => {

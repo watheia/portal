@@ -1,8 +1,8 @@
-import { NavItem, User } from "@watheia/model"
+import { Route, User } from "@watheia/model"
 import { HtmlHTMLAttributes } from "react"
 
 export type HeaderProps = {
-  userNavigation: NavItem[]
-  navigation: NavItem[]
+  userNavigation: Route[]
+  navigation: Route[]
   user: User
 } & HtmlHTMLAttributes<HTMLDivElement>

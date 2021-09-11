@@ -4,7 +4,7 @@ export type {
   ColorScheme,
   DivProps,
   Feature,
-  NavItem,
+  Route,
   Post,
   User,
   Profile,

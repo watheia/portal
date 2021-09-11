@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react"
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
-import { DivProps, NavItem, User } from "@watheia/model"
+import { DivProps, Route, User } from "@watheia/model"
 import { isActiveRoute } from "@watheia/util.helpers"
 import clsx from "clsx"
 import { useRouter } from "next/router"
@@ -8,8 +8,8 @@ import { useRouter } from "next/router"
 import styles from "./MobileNav.module.css"
 
 export type MobileNavProps = {
-  navigation: NavItem[]
-  userNavigation: NavItem[]
+  navigation: Route[]
+  userNavigation: Route[]
   user: User
 } & DivProps
 

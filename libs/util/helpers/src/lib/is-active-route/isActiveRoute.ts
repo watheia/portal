@@ -1,4 +1,4 @@
-import { NavItem } from "@watheia/model"
+import { Route } from "@watheia/model"
 
 /**
  * Returns true if item.href starts with activeRoute, provided that route
@@ -8,7 +8,7 @@ import { NavItem } from "@watheia/model"
  * @param activeRoute
  * @returns
  */
-export const isActiveRoute = (item: NavItem, activeRoute: string) => {
+export const isActiveRoute = (item: Route, activeRoute: string) => {
   //short circuit for efficiency
   if (
     item.href === "" ||

@@ -58,6 +58,9 @@
     "util-helpers": {
       "tags": []
     },
+    "util-hooks": {
+      "tags": []
+    },
     "views": {
       "tags": []
     },

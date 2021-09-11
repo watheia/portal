@@ -7,10 +7,6 @@ This project has two goals:
 1. Provide a production-ready website. blog, and knowledge space for our corporate overlords
 2. Act as a smoke test of the progress for an internal Platform as a Service (PaaS) product we are developing
 
-## Home
+## Dependency Graph
 
 ![depgraph](apps/home/depgraph.svg)
-
-## Blog
-
-![depgraph](apps/blog/depgraph.svg)

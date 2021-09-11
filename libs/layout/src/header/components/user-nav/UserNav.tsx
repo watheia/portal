@@ -1,5 +1,5 @@
 import { Menu, Transition } from "@headlessui/react"
-import { DivProps, NavItem, User } from "@watheia/model"
+import { DivProps, Route, User } from "@watheia/model"
 import { Fragment } from "react"
 import clsx from "clsx"
 import { useRouter } from "next/router"
@@ -8,7 +8,7 @@ import styles from "./UserNav.module.css"
 
 /* eslint-disable-next-line */
 export type UserNavProps = {
-  userNavigation: NavItem[]
+  userNavigation: Route[]
   user: User
 } & DivProps
 

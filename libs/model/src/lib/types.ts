@@ -8,10 +8,11 @@ export interface User {
   imageUrl?: string
 }
 
-export interface NavItem {
+export interface Route {
   name: string
   href: string
   disabled?: boolean
+  icon?: string
 }
 
 export interface Stat {
@@ -27,6 +28,9 @@ export interface Profile {
   updated_at: string
 }
 
+/**
+ * @deprecated use Route instead
+ */
 export interface SocialLink {
   name: string
   href: string
@@ -46,15 +50,15 @@ export interface Post {
   href: string
   date: string
   datetime: string
-  category: { name: string; href: string }
-  imageUrl: string
+  category: { name: string; href: string; color?: string }
+  imageUrl?: string
   description: string
   author: {
     name: string
     imageUrl?: string
     href?: string
   }
-  readingLength: string
+  readingTime: string
 }
 
 export const user_status = {
