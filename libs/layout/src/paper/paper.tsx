@@ -11,9 +11,7 @@ export const Paper = ({ children, className, ...props }: PaperProps) => {
       {...props}
     >
       <div className=" border border-shark-500 overflow-hidden bg-transparent sm:bg-shark-900 sm:shadow-md sm:rounded-lg">
-        <div className="px-0 py-0 sm:px-1 sm:py-1 md:p-4 md:py-4 xlg:p-6 xlg:py-6">
-          {children}
-        </div>
+        <div className="px-0 py-0 sm:px-1 sm:py-1 md:p-2 md:py-2">{children}</div>
       </div>
     </div>
   )
