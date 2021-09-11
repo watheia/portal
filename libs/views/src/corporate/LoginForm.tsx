@@ -1,4 +1,4 @@
-import { supabase } from "@watheia/supabase"
+import { supabase } from "@watheia/supa.client"
 import { useState } from "react"
 
 export const LoginForm = () => {

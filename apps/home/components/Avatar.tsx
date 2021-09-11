@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { supabase } from "@watheia/supabase"
+import { supabase } from "@watheia/supa.client"
 import { DEFAULT_AVATARS_BUCKET } from "@watheia/model"
 
 export default function Avatar({ url, size }: { url: string | null; size: number }) {

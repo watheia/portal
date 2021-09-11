@@ -1,6 +1,6 @@
 import ProfileCard from "../components/ProfileCard"
 import { Profile } from "@watheia/model"
-import { supabase } from "@watheia/supabase"
+import { supabase } from "@watheia/supa.client"
 import { useEffect, useReducer } from "react"
 
 /**

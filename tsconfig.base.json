@@ -19,6 +19,7 @@
       "@gatekeeper/assets": ["libs/assets/src/index.ts"],
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
+      "@watheia/supa.client": ["libs/supabase/src/supabase.ts"],
       "@watheia/supa.api": ["libs/supabase/src/api/index.ts"],
       "@watheia/supa.auth": ["libs/supabase/src/auth/index.ts"],
       "@watheia/uix.navigator": ["libs/uix/navigator/src/index.ts"],
