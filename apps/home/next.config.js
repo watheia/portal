@@ -6,8 +6,6 @@ const withMdx = require("@next/mdx")({
 
 const isProd = process.env.NODE_ENV === "production"
 
-const isProd = process.env.NODE_ENV === "production"
-
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
  **/

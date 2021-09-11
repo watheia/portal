@@ -69,35 +69,16 @@ export interface Post {
   href: string
   date: string
   datetime: string
-  category: { name: string; href: string }
-  imageUrl: string
+  category: { name: string; href: string; color?: number | string }
+  imageUrl?: string
   description: string
   author: {
     name: string
     imageUrl?: string
     href?: string
   }
-  readingLength: string
+  readingTime: string
 }
-
-export const user_status = {
-  ONLINE: "ONLINE",
-  OFFLINE: "OFFLINE"
-}
-
-export type UserStatus = typeof user_status[keyof typeof user_status]
-
-export const color_scheme = {
-  light: "light",
-  dark: "dark"
-}
-
-export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
-
-export type SvgIconProps = {
-  primaryColor: string | number
-  secondaryColor: string | number
-} & SVGProps<SVGSVGElement>
 
 /**
  * @deprecated use Route instead
@@ -113,23 +94,6 @@ export interface Feature {
   name: string
   description: string
   icon?: any
-}
-
-export interface Post {
-  id: number | string
-  title: string
-  href: string
-  date: string
-  datetime: string
-  category: { name: string; href: string; color?: string }
-  imageUrl?: string
-  description: string
-  author: {
-    name: string
-    imageUrl?: string
-    href?: string
-  }
-  readingTime: string
 }
 
 /**
