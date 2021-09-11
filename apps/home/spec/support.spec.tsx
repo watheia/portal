@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react"
 
-import Support from "./support"
+import Support from "../pages/support"
 
 describe("Support", () => {
   it("should render successfully", () => {
