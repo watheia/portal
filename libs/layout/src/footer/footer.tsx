@@ -29,7 +29,7 @@ export function Footer({ social = socialDefault, className, ...props }: FooterPr
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-shark-300">
             &copy; 2021{" "}
-            <Link href="https://watheia.app/" passHref>
+            <Link href="/terms-and-conditions" passHref>
               <a className="text-shark-50">Watheia Labs, LLC</a>
             </Link>
             . All rights reserved.

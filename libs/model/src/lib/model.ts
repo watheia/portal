@@ -23,7 +23,7 @@ export const navigation: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "Blog", href: "/blog" },
   { name: "Resources", href: "/resources" },
-  { name: "Support", href: "/supoort" }
+  { name: "Support", href: "/support" }
 ]
 
 export const userNavigation: NavItem[] = [
