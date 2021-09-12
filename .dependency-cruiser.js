@@ -340,18 +340,6 @@ module.exports = {
           ],
           dependencies: [
             {
-              criteria: { "rules[0].severity": "error" },
-              attributes: { fontcolor: "red", color: "#d6c2cd" }
-            },
-            {
-              criteria: { "rules[0].severity": "warn" },
-              attributes: { fontcolor: "orange", color: "#d6c2cd" }
-            },
-            {
-              criteria: { "rules[0].severity": "info" },
-              attributes: { fontcolor: "blue", color: "#4e7f9d" }
-            },
-            {
               criteria: { resolved: "^src/model" },
               attributes: { color: "#9ab6c7" }
             },
