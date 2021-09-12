@@ -18,25 +18,6 @@ export const user_status = {
 
 export type UserStatus = typeof user_status[keyof typeof user_status]
 
-export type NavCtx = {
-  userNavigation: Route[]
-  navigation: Route[]
-  user: User
-}
-
-export interface User {
-  name: string
-  email?: string
-  imageUrl?: string
-}
-
-export interface Route {
-  name: string
-  href: string
-  disabled?: boolean
-  icon?: string
-}
-
 export interface Stat {
   label: string
   value: string | number
@@ -48,12 +29,6 @@ export interface Profile {
   username: string
   website: string
   updated_at: string
-}
-
-export interface SocialLink {
-  name: string
-  href: string
-  icon: string
 }
 
 export interface Feature {
@@ -78,15 +53,6 @@ export interface Post {
     href?: string
   }
   readingTime: string
-}
-
-/**
- * @deprecated use Route instead
- */
-export interface SocialLink {
-  name: string
-  href: string
-  icon: string
 }
 
 export interface Feature {

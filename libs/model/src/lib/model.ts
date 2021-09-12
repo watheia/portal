@@ -11,26 +11,7 @@ import {
   ServerIcon,
   ShieldCheckIcon
 } from "@heroicons/react/outline"
-import { User, Route, Stat, Feature, SocialLink, Post } from "./types"
-
-export const user: User = {
-  name: "Guest",
-  email: "",
-  imageUrl: "https://cdn.watheia.org/assets/icon.png"
-}
-
-export const navigation: Route[] = [
-  { name: "Home", href: "/home" },
-  { name: "Blog", href: "/blog" },
-  { name: "Resources", href: "/resources" },
-  { name: "Support", href: "/support" }
-]
-
-export const userNavigation: Route[] = [
-  { name: "Profile", href: "/user/profile", disabled: true },
-  { name: "Account", href: "/user/account", disabled: true },
-  { name: "Signin", href: "/signout" }
-]
+import { Stat, Feature, Post } from "./types"
 
 export const stats: Stat[] = [
   { label: "Founded", value: "2020" },
@@ -77,29 +58,6 @@ export const features = [
     icon: ServerIcon
   }
 ] as const
-
-export const social: SocialLink[] = [
-  {
-    name: "Facebook",
-    href: "https://facebook.com/watheialabs",
-    icon: "facebook"
-  },
-  {
-    name: "Instagram",
-    href: "#",
-    icon: "instagram"
-  },
-  {
-    name: "Twitter",
-    href: "#",
-    icon: "twitter"
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/watheia",
-    icon: "github"
-  }
-]
 
 export const solutions: Feature[] = [
   {

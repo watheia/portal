@@ -19,13 +19,14 @@
       "@gatekeeper/assets": ["libs/assets/src/index.ts"],
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
-      "@watheia/supa.client": ["libs/supabase/src/supabase.ts"],
+      "@watheia/navigation": ["libs/navigation/src/index.ts"],
       "@watheia/supa.api": ["libs/supabase/src/api/index.ts"],
       "@watheia/supa.auth": ["libs/supabase/src/auth/index.ts"],
-      "@watheia/uix.navigator": ["libs/uix/navigator/src/index.ts"],
-      "@watheia/util.helpers": ["libs/util/helpers/src/index.ts"],
-      "@watheia/util.hooks": ["libs/util/hooks/src/index.ts"],
+      "@watheia/supa.client": ["libs/supabase/src/supabase.ts"],
+      "@watheia/helpers": ["libs/util/helpers/src/index.ts"],
+      "@watheia/hooks": ["libs/util/hooks/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],
+      "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],
       "@waweb/assets.styles/*": ["libs/assets/src/styles/*"]
     }

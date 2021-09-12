@@ -1,3 +1,7 @@
 .root {
   @apply bg-shark-700;
 }
+
+.header {
+  @apply border-b border-black drop-shadow-md;
+}

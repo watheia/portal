@@ -52,10 +52,14 @@
     "model": {
       "tags": []
     },
-    "supabase": {
+    "navigation": {
       "tags": []
     },
-    "uix-navigator": {
+    "navigation-e2e": {
+      "tags": [],
+      "implicitDependencies": ["navigation"]
+    },
+    "supabase": {
       "tags": []
     },
     "util-helpers": {

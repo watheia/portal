@@ -1,6 +1,6 @@
 import { SITE_NAME, TWITTER_USER_NAME } from "@watheia/model"
 import Head from "next/head"
-import { getURL } from "@watheia/util.helpers"
+import { getURL } from "@watheia/helpers"
 import { useRouter } from "next/router"
 
 const staticAssets = "https://cdn.watheia.org/assets"

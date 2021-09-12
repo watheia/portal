@@ -1,16 +1,38 @@
 import { HtmlHTMLAttributes } from "react"
 import Icon from "./SocialIcon"
 import Link from "next/link"
-import { social as socialDefault } from "@watheia/model"
-import { SocialLink } from "@watheia/model"
 import clsx from "clsx"
+import { Route } from "@watheia/navigation"
+
+export const social: Route[] = [
+  {
+    name: "Facebook",
+    href: "https://facebook.com/watheialabs",
+    icon: "facebook"
+  },
+  {
+    name: "Instagram",
+    href: "#",
+    icon: "instagram"
+  },
+  {
+    name: "Twitter",
+    href: "#",
+    icon: "twitter"
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/watheia",
+    icon: "github"
+  }
+]
 
 /* eslint-disable-next-line */
 export type FooterProps = {
-  social?: SocialLink[]
+  social?: Route[]
 } & HtmlHTMLAttributes<HTMLDivElement>
 
-export function Footer({ social = socialDefault, className, ...props }: FooterProps) {
+export function Footer({ className, ...props }: FooterProps) {
   return (
     <footer className={clsx("bg-shark-700", className)} {...props}>
       <div className="max-w-7xl mx-auto py-4 px-6 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -22,7 +44,9 @@ export function Footer({ social = socialDefault, className, ...props }: FooterPr
               className="text-shark-400 hover:text-shark-500"
             >
               <span className="sr-only">{item.name}</span>
-              <Icon iconClass={item.icon} className="h-6 w-6" aria-hidden="true" />
+              {item.icon && (
+                <Icon iconClass={item.icon} className="h-6 w-6" aria-hidden="true" />
+              )}
             </a>
           ))}
         </div>

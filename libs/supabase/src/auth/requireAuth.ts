@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRouter } from "next/dist/client/router"
 import { useEffect } from "react"
-import { useUser } from "./useUser"
+import { usePrincipal } from "./usePrincipal"
 
 export const requireAuth = () => {
-  const { user } = useUser()
+  const { user } = usePrincipal()
   const router = useRouter()
 
   useEffect(() => {
