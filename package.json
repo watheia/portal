@@ -19,7 +19,7 @@
     "help": "nx help",
     "graph:blog": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/blog/depgraph.dot --progress cli-feedback apps/blog && cat apps/blog/depgraph.dot | dot -T svg > apps/blog/depgraph.svg",
     "graph:home": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/home/depgraph.dot --progress cli-feedback apps/home && cat apps/home/depgraph.dot | dot -T svg > apps/home/depgraph.svg",
-    "graph": "yarn graph:home && yarn graph:blog"
+    "graph": "yarn graph:home"
   },
   "private": true,
   "dependencies": {
@@ -93,6 +93,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.1",
+    "jest-junit": "^12.2.0",
     "mini-css-extract-plugin": "^2.1.0",
     "mocha": "^9.1.1",
     "nx": "^12.9.0",
@@ -118,5 +119,18 @@
     "webpack-merge": "^5.8.0",
     "webpack-node-externals": "^3.0.0",
     "webpack-sources": "^3.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ]
   }
 }

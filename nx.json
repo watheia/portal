@@ -55,7 +55,13 @@
     "supabase": {
       "tags": []
     },
+    "uix-navigator": {
+      "tags": []
+    },
     "util-helpers": {
+      "tags": []
+    },
+    "util-hooks": {
       "tags": []
     },
     "views": {

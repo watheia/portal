@@ -2,16 +2,39 @@ import { HtmlHTMLAttributes, SVGProps } from "react"
 
 export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
 
+export type GfxProps = SVGProps<SVGSVGElement>
+
+export const color_scheme = {
+  light: "light",
+  dark: "dark"
+}
+
+export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
+
+export const user_status = {
+  ONLINE: "ONLINE",
+  OFFLINE: "OFFLINE"
+}
+
+export type UserStatus = typeof user_status[keyof typeof user_status]
+
+export type NavCtx = {
+  userNavigation: Route[]
+  navigation: Route[]
+  user: User
+}
+
 export interface User {
   name: string
   email?: string
   imageUrl?: string
 }
 
-export interface NavItem {
+export interface Route {
   name: string
   href: string
   disabled?: boolean
+  icon?: string
 }
 
 export interface Stat {
@@ -46,35 +69,32 @@ export interface Post {
   href: string
   date: string
   datetime: string
-  category: { name: string; href: string }
-  imageUrl: string
+  category: { name: string; href: string; color?: number | string }
+  imageUrl?: string
   description: string
   author: {
     name: string
     imageUrl?: string
     href?: string
   }
-  readingLength: string
+  readingTime: string
 }
 
-export const user_status = {
-  ONLINE: "ONLINE",
-  OFFLINE: "OFFLINE"
+/**
+ * @deprecated use Route instead
+ */
+export interface SocialLink {
+  name: string
+  href: string
+  icon: string
 }
 
-export type UserStatus = typeof user_status[keyof typeof user_status]
-
-export const color_scheme = {
-  light: "light",
-  dark: "dark"
+export interface Feature {
+  id: string | number
+  name: string
+  description: string
+  icon?: any
 }
-
-export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
-
-export type SvgIconProps = {
-  primaryColor: string | number
-  secondaryColor: string | number
-} & SVGProps<SVGSVGElement>
 
 /**
  * Model Channel

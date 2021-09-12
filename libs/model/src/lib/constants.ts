@@ -3,7 +3,8 @@ export const NEXT_PUBLIC_SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
 
 export const PRIMARY_COLOR = "#04BFBF"
-export const SECONDARY_COLOR = "#1a1718"
+export const BLACK = "#1a1718"
+export const WHITE = "#fefeff"
 
 export const DEFAULT_AVATARS_BUCKET = "avatars"
 

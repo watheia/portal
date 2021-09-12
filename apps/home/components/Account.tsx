@@ -1,5 +1,5 @@
 import { useState, useEffect, ChangeEvent } from "react"
-import { supabase } from "@watheia/supabase"
+import { supabase } from "@watheia/supa.client"
 import UploadButton from "../components/UploadButton"
 import Avatar from "./Avatar"
 import { AuthSession } from "@supabase/supabase-js"
