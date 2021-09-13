@@ -367,11 +367,11 @@
 <g id="edge116" class="edge">
 <title>libs/supabase/src/supabase.ts&#45;&gt;node_modules/@supabase</title>
 <g id="a_edge116"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M607.5,-963.74C607.5,-918.32 607.5,-721.25 607.5,-721.25 607.5,-721.25 1159.11,-721.25 1159.11,-721.25"/>
-<polygon fill="red" stroke="red" points="1159.11,-723.35 1165.11,-721.25 1159.11,-719.15 1159.11,-723.35"/>
+<path fill="none" stroke="#d6c2cd" d="M607.5,-963.74C607.5,-918.32 607.5,-721.25 607.5,-721.25 607.5,-721.25 1159.11,-721.25 1159.11,-721.25"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1159.11,-723.35 1165.11,-721.25 1159.11,-719.15 1159.11,-723.35"/>
 </a>
 </g>
-<text text-anchor="middle" x="714.56" y="-714.05" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="714.56" y="-714.05" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/supabase/src/supabase.ts&#45;&gt;libs/model/src/index.ts -->
 <g id="edge117" class="edge">
@@ -884,11 +884,11 @@
 <g id="edge30" class="edge">
 <title>apps/home/spec/login.spec.tsx&#45;&gt;node_modules/@testing&#45;library</title>
 <g id="a_edge30"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M122.1,-639.33C139.69,-639.33 156.5,-639.33 156.5,-639.33 156.5,-639.33 156.5,-539.5 156.5,-539.5 156.5,-539.5 1148.68,-539.5 1148.68,-539.5"/>
-<polygon fill="red" stroke="red" points="1148.68,-541.6 1154.68,-539.5 1148.68,-537.4 1148.68,-541.6"/>
+<path fill="none" stroke="#d6c2cd" d="M122.1,-639.33C139.69,-639.33 156.5,-639.33 156.5,-639.33 156.5,-639.33 156.5,-539.5 156.5,-539.5 156.5,-539.5 1148.68,-539.5 1148.68,-539.5"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1148.68,-541.6 1154.68,-539.5 1148.68,-537.4 1148.68,-541.6"/>
 </a>
 </g>
-<text text-anchor="middle" x="551.47" y="-532.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<text text-anchor="middle" x="551.47" y="-532.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">not&#45;to&#45;dev&#45;dep</text>
 </g>
 <!-- apps/home/spec/resources.spec.tsx -->
 <g id="node33" class="node">
@@ -909,11 +909,11 @@
 <g id="edge32" class="edge">
 <title>apps/home/spec/resources.spec.tsx&#45;&gt;node_modules/@testing&#45;library</title>
 <g id="a_edge32"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M133.03,-664.67C149.91,-664.67 164.5,-664.67 164.5,-664.67 164.5,-664.67 164.5,-541.25 164.5,-541.25 164.5,-541.25 1148.7,-541.25 1148.7,-541.25"/>
-<polygon fill="red" stroke="red" points="1148.7,-543.35 1154.7,-541.25 1148.7,-539.15 1148.7,-543.35"/>
+<path fill="none" stroke="#d6c2cd" d="M133.03,-664.67C149.91,-664.67 164.5,-664.67 164.5,-664.67 164.5,-664.67 164.5,-541.25 164.5,-541.25 164.5,-541.25 1148.7,-541.25 1148.7,-541.25"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1148.7,-543.35 1154.7,-541.25 1148.7,-539.15 1148.7,-543.35"/>
 </a>
 </g>
-<text text-anchor="middle" x="545.15" y="-544.05" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<text text-anchor="middle" x="545.15" y="-544.05" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">not&#45;to&#45;dev&#45;dep</text>
 </g>
 <!-- apps/home/spec/support.spec.tsx -->
 <g id="node34" class="node">
@@ -934,11 +934,11 @@
 <g id="edge34" class="edge">
 <title>apps/home/spec/support.spec.tsx&#45;&gt;node_modules/@testing&#45;library</title>
 <g id="a_edge34"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M126.5,-599.79C126.5,-594.41 126.5,-588.67 126.5,-588.67 126.5,-588.67 1159.5,-588.67 1159.5,-588.67 1159.5,-588.67 1159.5,-549.03 1159.5,-549.03"/>
-<polygon fill="red" stroke="red" points="1161.6,-549.03 1159.5,-543.03 1157.4,-549.03 1161.6,-549.03"/>
+<path fill="none" stroke="#d6c2cd" d="M126.5,-599.79C126.5,-594.41 126.5,-588.67 126.5,-588.67 126.5,-588.67 1159.5,-588.67 1159.5,-588.67 1159.5,-588.67 1159.5,-549.03 1159.5,-549.03"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1161.6,-549.03 1159.5,-543.03 1157.4,-549.03 1161.6,-549.03"/>
 </a>
 </g>
-<text text-anchor="middle" x="623.26" y="-581.47" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<text text-anchor="middle" x="623.26" y="-581.47" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">not&#45;to&#45;dev&#45;dep</text>
 </g>
 <!-- apps/home/tailwind.config.js -->
 <g id="node35" class="node">
@@ -992,11 +992,11 @@
 <g id="edge137" class="edge">
 <title>tailwind&#45;workspace&#45;preset.js&#45;&gt;node_modules/@tailwindcss</title>
 <g id="a_edge137"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M267.5,-18.09C267.5,-80.55 267.5,-444 267.5,-444 267.5,-444 1155.81,-444 1155.81,-444"/>
-<polygon fill="red" stroke="red" points="1155.81,-446.1 1161.81,-444 1155.81,-441.9 1155.81,-446.1"/>
+<path fill="none" stroke="#d6c2cd" d="M267.5,-18.09C267.5,-80.55 267.5,-444 267.5,-444 267.5,-444 1155.81,-444 1155.81,-444"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1155.81,-446.1 1161.81,-444 1155.81,-441.9 1155.81,-446.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="464.7" y="-436.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<text text-anchor="middle" x="464.7" y="-436.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">not&#45;to&#45;dev&#45;dep</text>
 </g>
 <!-- libs/layout/src/container/container.module.css -->
 <g id="node37" class="node">
@@ -1020,21 +1020,21 @@
 <g id="edge40" class="edge">
 <title>libs/layout/src/container/container.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge40"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M644.57,-1273C649.29,-1273 652.5,-1273 652.5,-1273 652.5,-1273 652.5,-690.2 652.5,-690.2 652.5,-690.2 1166.37,-690.2 1166.37,-690.2"/>
-<polygon fill="red" stroke="red" points="1166.37,-692.3 1172.37,-690.2 1166.37,-688.1 1166.37,-692.3"/>
+<path fill="none" stroke="#d6c2cd" d="M644.57,-1273C649.29,-1273 652.5,-1273 652.5,-1273 652.5,-1273 652.5,-690.2 652.5,-690.2 652.5,-690.2 1166.37,-690.2 1166.37,-690.2"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.37,-692.3 1172.37,-690.2 1166.37,-688.1 1166.37,-692.3"/>
 </a>
 </g>
-<text text-anchor="middle" x="605" y="-721.43" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="605" y="-721.43" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/container/container.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge39" class="edge">
 <title>libs/layout/src/container/container.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge39"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M644.67,-1268.5C647.04,-1268.5 648.5,-1268.5 648.5,-1268.5 648.5,-1268.5 648.5,-629.5 648.5,-629.5 648.5,-629.5 1166.18,-629.5 1166.18,-629.5"/>
-<polygon fill="red" stroke="red" points="1166.18,-631.6 1172.18,-629.5 1166.18,-627.4 1166.18,-631.6"/>
+<path fill="none" stroke="#d6c2cd" d="M644.67,-1268.5C647.04,-1268.5 648.5,-1268.5 648.5,-1268.5 648.5,-1268.5 648.5,-629.5 648.5,-629.5 648.5,-629.5 1166.18,-629.5 1166.18,-629.5"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.18,-631.6 1172.18,-629.5 1166.18,-627.4 1166.18,-631.6"/>
 </a>
 </g>
-<text text-anchor="middle" x="601" y="-684.88" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="601" y="-684.88" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/container/container.tsx&#45;&gt;libs/layout/src/container/container.module.css -->
 <g id="edge38" class="edge">
@@ -1061,21 +1061,21 @@
 <g id="edge44" class="edge">
 <title>libs/layout/src/footer/SocialIcon.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge44"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M885.78,-1445.33C906.06,-1445.33 926.5,-1445.33 926.5,-1445.33 926.5,-1445.33 926.5,-690.9 926.5,-690.9 926.5,-690.9 1166.33,-690.9 1166.33,-690.9"/>
-<polygon fill="red" stroke="red" points="1166.33,-693 1172.33,-690.9 1166.33,-688.8 1166.33,-693"/>
+<path fill="none" stroke="#d6c2cd" d="M885.78,-1445.33C906.06,-1445.33 926.5,-1445.33 926.5,-1445.33 926.5,-1445.33 926.5,-690.9 926.5,-690.9 926.5,-690.9 1166.33,-690.9 1166.33,-690.9"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.33,-693 1172.33,-690.9 1166.33,-688.8 1166.33,-693"/>
 </a>
 </g>
-<text text-anchor="middle" x="879" y="-961.36" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="879" y="-961.36" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/SocialIcon.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge43" class="edge">
 <title>libs/layout/src/footer/SocialIcon.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge43"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M885.75,-1442.67C899.02,-1442.67 910.5,-1442.67 910.5,-1442.67 910.5,-1442.67 910.5,-631.83 910.5,-631.83 910.5,-631.83 1166.31,-631.83 1166.31,-631.83"/>
-<polygon fill="red" stroke="red" points="1166.31,-633.93 1172.31,-631.83 1166.31,-629.73 1166.31,-633.93"/>
+<path fill="none" stroke="#d6c2cd" d="M885.75,-1442.67C899.02,-1442.67 910.5,-1442.67 910.5,-1442.67 910.5,-1442.67 910.5,-631.83 910.5,-631.83 910.5,-631.83 1166.31,-631.83 1166.31,-631.83"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.31,-633.93 1172.31,-631.83 1166.31,-629.73 1166.31,-633.93"/>
 </a>
 </g>
-<text text-anchor="middle" x="863" y="-914.52" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="863" y="-914.52" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/icons/index.ts -->
 <g id="node41" class="node">
@@ -1165,31 +1165,31 @@
 <g id="edge49" class="edge">
 <title>libs/layout/src/footer/footer.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge49"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M755.19,-1449C774.26,-1449 795.5,-1449 795.5,-1449 795.5,-1449 795.5,-683 795.5,-683 795.5,-683 1166.37,-683 1166.37,-683"/>
-<polygon fill="red" stroke="red" points="1166.37,-685.1 1172.37,-683 1166.37,-680.9 1166.37,-685.1"/>
+<path fill="none" stroke="#d6c2cd" d="M755.19,-1449C774.26,-1449 795.5,-1449 795.5,-1449 795.5,-1449 795.5,-683 795.5,-683 795.5,-683 1166.37,-683 1166.37,-683"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.37,-685.1 1172.37,-683 1166.37,-680.9 1166.37,-685.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="748" y="-893.52" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="748" y="-893.52" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/footer.tsx&#45;&gt;node_modules/next -->
 <g id="edge48" class="edge">
 <title>libs/layout/src/footer/footer.tsx&#45;&gt;node_modules/next</title>
 <g id="a_edge48"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M755.15,-1443C770.26,-1443 785.5,-1443 785.5,-1443 785.5,-1443 785.5,-558.67 785.5,-558.67 785.5,-558.67 1166.34,-558.67 1166.34,-558.67"/>
-<polygon fill="red" stroke="red" points="1166.34,-560.77 1172.34,-558.67 1166.34,-556.57 1166.34,-560.77"/>
+<path fill="none" stroke="#d6c2cd" d="M755.15,-1443C770.26,-1443 785.5,-1443 785.5,-1443 785.5,-1443 785.5,-558.67 785.5,-558.67 785.5,-558.67 1166.34,-558.67 1166.34,-558.67"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.34,-560.77 1172.34,-558.67 1166.34,-556.57 1166.34,-560.77"/>
 </a>
 </g>
-<text text-anchor="middle" x="738" y="-818.39" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="738" y="-818.39" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/footer.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge47" class="edge">
 <title>libs/layout/src/footer/footer.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge47"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M755.05,-1446C771.02,-1446 787.5,-1446 787.5,-1446 787.5,-1446 787.5,-622 787.5,-622 787.5,-622 1166.47,-622 1166.47,-622"/>
-<polygon fill="red" stroke="red" points="1166.47,-624.1 1172.47,-622 1166.47,-619.9 1166.47,-624.1"/>
+<path fill="none" stroke="#d6c2cd" d="M755.05,-1446C771.02,-1446 787.5,-1446 787.5,-1446 787.5,-1446 787.5,-622 787.5,-622 787.5,-622 1166.47,-622 1166.47,-622"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.47,-624.1 1172.47,-622 1166.47,-619.9 1166.47,-624.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="740" y="-853.54" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="740" y="-853.54" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/footer.tsx&#45;&gt;libs/layout/src/footer/SocialIcon.tsx -->
 <g id="edge45" class="edge">
@@ -1306,41 +1306,41 @@
 <g id="edge50" class="edge">
 <title>libs/layout/src/footer/icons/facebook.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge50"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1104.51,-1517C1118.23,-1517 1130.5,-1517 1130.5,-1517 1130.5,-1517 1130.5,-685 1130.5,-685 1130.5,-685 1166.23,-685 1166.23,-685"/>
-<polygon fill="red" stroke="red" points="1166.23,-687.1 1172.23,-685 1166.23,-682.9 1166.23,-687.1"/>
+<path fill="none" stroke="#d6c2cd" d="M1104.51,-1517C1118.23,-1517 1130.5,-1517 1130.5,-1517 1130.5,-1517 1130.5,-685 1130.5,-685 1130.5,-685 1166.23,-685 1166.23,-685"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.23,-687.1 1172.23,-685 1166.23,-682.9 1166.23,-687.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="1083" y="-1088.93" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1083" y="-1088.93" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/icons/git&#45;hub.tsx&#45;&gt;node_modules/react -->
 <g id="edge51" class="edge">
 <title>libs/layout/src/footer/icons/git&#45;hub.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge51"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.86,-1547C1151.13,-1547 1240.5,-1547 1240.5,-1547 1240.5,-1547 1240.5,-684 1240.5,-684 1240.5,-684 1232.62,-684 1232.62,-684"/>
-<polygon fill="red" stroke="red" points="1232.62,-681.9 1226.62,-684 1232.62,-686.1 1232.62,-681.9"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.86,-1547C1151.13,-1547 1240.5,-1547 1240.5,-1547 1240.5,-1547 1240.5,-684 1240.5,-684 1240.5,-684 1232.62,-684 1232.62,-684"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1232.62,-681.9 1226.62,-684 1232.62,-686.1 1232.62,-681.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="1193" y="-1174.18" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1193" y="-1174.18" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/icons/instagram.tsx&#45;&gt;node_modules/react -->
 <g id="edge56" class="edge">
 <title>libs/layout/src/footer/icons/instagram.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge56"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1067.5,-1447.88C1067.5,-1361.6 1067.5,-692.3 1067.5,-692.3 1067.5,-692.3 1166.47,-692.3 1166.47,-692.3"/>
-<polygon fill="red" stroke="red" points="1166.47,-694.4 1172.47,-692.3 1166.47,-690.2 1166.47,-694.4"/>
+<path fill="none" stroke="#d6c2cd" d="M1067.5,-1447.88C1067.5,-1361.6 1067.5,-692.3 1067.5,-692.3 1067.5,-692.3 1166.47,-692.3 1166.47,-692.3"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.47,-694.4 1172.47,-692.3 1166.47,-690.2 1166.47,-694.4"/>
 </a>
 </g>
-<text text-anchor="middle" x="1020" y="-1013.41" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1020" y="-1013.41" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/icons/twitter.tsx&#45;&gt;node_modules/react -->
 <g id="edge57" class="edge">
 <title>libs/layout/src/footer/icons/twitter.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge57"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1098.54,-1487C1112.33,-1487 1125.5,-1487 1125.5,-1487 1125.5,-1487 1125.5,-684 1125.5,-684 1125.5,-684 1166.37,-684 1166.37,-684"/>
-<polygon fill="red" stroke="red" points="1166.37,-686.1 1172.37,-684 1166.37,-681.9 1166.37,-686.1"/>
+<path fill="none" stroke="#d6c2cd" d="M1098.54,-1487C1112.33,-1487 1125.5,-1487 1125.5,-1487 1125.5,-1487 1125.5,-684 1125.5,-684 1125.5,-684 1166.37,-684 1166.37,-684"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.37,-686.1 1172.37,-684 1166.37,-681.9 1166.37,-686.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="1078" y="-1071.35" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1078" y="-1071.35" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/footer/index.ts -->
 <g id="node48" class="node">
@@ -1361,21 +1361,21 @@
 <g id="edge68" class="edge">
 <title>libs/layout/src/layout.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge68"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M514.32,-1330C532.31,-1330 551.5,-1330 551.5,-1330 551.5,-1330 551.5,-681 551.5,-681 551.5,-681 1166.48,-681 1166.48,-681"/>
-<polygon fill="red" stroke="red" points="1166.48,-683.1 1172.48,-681 1166.48,-678.9 1166.48,-683.1"/>
+<path fill="none" stroke="#d6c2cd" d="M514.32,-1330C532.31,-1330 551.5,-1330 551.5,-1330 551.5,-1330 551.5,-681 551.5,-681 551.5,-681 1166.48,-681 1166.48,-681"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.48,-683.1 1172.48,-681 1166.48,-678.9 1166.48,-683.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="504" y="-709.4" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="504" y="-709.4" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/layout.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge67" class="edge">
 <title>libs/layout/src/layout.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge67"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M514.36,-1328C529.49,-1328 544.5,-1328 544.5,-1328 544.5,-1328 544.5,-620 544.5,-620 544.5,-620 1166.19,-620 1166.19,-620"/>
-<polygon fill="red" stroke="red" points="1166.19,-622.1 1172.19,-620 1166.19,-617.9 1166.19,-622.1"/>
+<path fill="none" stroke="#d6c2cd" d="M514.36,-1328C529.49,-1328 544.5,-1328 544.5,-1328 544.5,-1328 544.5,-620 544.5,-620 544.5,-620 1166.19,-620 1166.19,-620"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.19,-622.1 1172.19,-620 1166.19,-617.9 1166.19,-622.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="497" y="-671.03" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="497" y="-671.03" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/layout.tsx&#45;&gt;libs/navigation/src/index.ts -->
 <g id="edge66" class="edge">
@@ -1450,11 +1450,11 @@
 <g id="edge75" class="edge">
 <title>libs/layout/src/seo.tsx&#45;&gt;node_modules/next</title>
 <g id="a_edge75"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M634.17,-1350.5C646.98,-1350.5 659.5,-1350.5 659.5,-1350.5 659.5,-1350.5 659.5,-570.2 659.5,-570.2 659.5,-570.2 1166.35,-570.2 1166.35,-570.2"/>
-<polygon fill="red" stroke="red" points="1166.35,-572.3 1172.35,-570.2 1166.35,-568.1 1166.35,-572.3"/>
+<path fill="none" stroke="#d6c2cd" d="M634.17,-1350.5C646.98,-1350.5 659.5,-1350.5 659.5,-1350.5 659.5,-1350.5 659.5,-570.2 659.5,-570.2 659.5,-570.2 1166.35,-570.2 1166.35,-570.2"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.35,-572.3 1172.35,-570.2 1166.35,-568.1 1166.35,-572.3"/>
 </a>
 </g>
-<text text-anchor="middle" x="612" y="-712.39" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="612" y="-712.39" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/util/helpers/src/index.ts -->
 <g id="node55" class="node">
@@ -1475,21 +1475,21 @@
 <g id="edge72" class="edge">
 <title>libs/layout/src/paper/paper.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge72"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M755.13,-1389C773.45,-1389 793.5,-1389 793.5,-1389 793.5,-1389 793.5,-682 793.5,-682 793.5,-682 1166.23,-682 1166.23,-682"/>
-<polygon fill="red" stroke="red" points="1166.23,-684.1 1172.23,-682 1166.23,-679.9 1166.23,-684.1"/>
+<path fill="none" stroke="#d6c2cd" d="M755.13,-1389C773.45,-1389 793.5,-1389 793.5,-1389 793.5,-1389 793.5,-682 793.5,-682 793.5,-682 1166.23,-682 1166.23,-682"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.23,-684.1 1172.23,-682 1166.23,-679.9 1166.23,-684.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="841" y="-861.12" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="841" y="-861.12" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/paper/paper.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge71" class="edge">
 <title>libs/layout/src/paper/paper.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge71"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M755.34,-1384.5C772.42,-1384.5 790.5,-1384.5 790.5,-1384.5 790.5,-1384.5 790.5,-630.67 790.5,-630.67 790.5,-630.67 1166.35,-630.67 1166.35,-630.67"/>
-<polygon fill="red" stroke="red" points="1166.35,-632.77 1172.35,-630.67 1166.35,-628.57 1166.35,-632.77"/>
+<path fill="none" stroke="#d6c2cd" d="M755.34,-1384.5C772.42,-1384.5 790.5,-1384.5 790.5,-1384.5 790.5,-1384.5 790.5,-630.67 790.5,-630.67 790.5,-630.67 1166.35,-630.67 1166.35,-630.67"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.35,-632.77 1172.35,-630.67 1166.35,-628.57 1166.35,-632.77"/>
 </a>
 </g>
-<text text-anchor="middle" x="743" y="-830.04" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="743" y="-830.04" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/layout/src/paper/paper.module.css -->
 <g id="node54" class="node">
@@ -1573,21 +1573,21 @@
 <g id="edge80" class="edge">
 <title>libs/model/src/lib/model.ts&#45;&gt;node_modules/@heroicons</title>
 <g id="a_edge80"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M846.5,-989.95C846.5,-930.8 846.5,-601.6 846.5,-601.6 846.5,-601.6 1158.69,-601.6 1158.69,-601.6"/>
-<polygon fill="red" stroke="red" points="1158.69,-603.7 1164.69,-601.6 1158.69,-599.5 1158.69,-603.7"/>
+<path fill="none" stroke="#d6c2cd" d="M846.5,-989.95C846.5,-930.8 846.5,-601.6 846.5,-601.6 846.5,-601.6 1158.69,-601.6 1158.69,-601.6"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1158.69,-603.7 1164.69,-601.6 1158.69,-599.5 1158.69,-603.7"/>
 </a>
 </g>
-<text text-anchor="middle" x="799" y="-632.48" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="799" y="-632.48" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/model/src/lib/types.ts&#45;&gt;node_modules/react -->
 <g id="edge81" class="edge">
 <title>libs/model/src/lib/types.ts&#45;&gt;node_modules/react</title>
 <g id="a_edge81"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M969.5,-989.8C969.5,-938.65 969.5,-691.6 969.5,-691.6 969.5,-691.6 1166.21,-691.6 1166.21,-691.6"/>
-<polygon fill="red" stroke="red" points="1166.21,-693.7 1172.21,-691.6 1166.21,-689.5 1166.21,-693.7"/>
+<path fill="none" stroke="#d6c2cd" d="M969.5,-989.8C969.5,-938.65 969.5,-691.6 969.5,-691.6 969.5,-691.6 1166.21,-691.6 1166.21,-691.6"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.21,-693.7 1172.21,-691.6 1166.21,-689.5 1166.21,-693.7"/>
 </a>
 </g>
-<text text-anchor="middle" x="922" y="-735.14" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="922" y="-735.14" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.module.css -->
 <g id="node60" class="node">
@@ -1611,51 +1611,51 @@
 <g id="edge89" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/@supabase</title>
 <g id="a_edge89"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.13,-1933.25C1119.18,-1933.25 1139.5,-1933.25 1139.5,-1933.25 1139.5,-1933.25 1139.5,-708.5 1139.5,-708.5 1139.5,-708.5 1159.29,-708.5 1159.29,-708.5"/>
-<polygon fill="red" stroke="red" points="1159.29,-710.6 1165.29,-708.5 1159.29,-706.4 1159.29,-710.6"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.13,-1933.25C1119.18,-1933.25 1139.5,-1933.25 1139.5,-1933.25 1139.5,-1933.25 1139.5,-708.5 1139.5,-708.5 1139.5,-708.5 1159.29,-708.5 1159.29,-708.5"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1159.29,-710.6 1165.29,-708.5 1159.29,-706.4 1159.29,-710.6"/>
 </a>
 </g>
-<text text-anchor="middle" x="1092" y="-1323.46" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1092" y="-1323.46" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/react -->
 <g id="edge92" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge92"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.3,-1931C1117.69,-1931 1135.5,-1931 1135.5,-1931 1135.5,-1931 1135.5,-698.5 1135.5,-698.5 1135.5,-698.5 1199.5,-698.5 1199.5,-698.5 1199.5,-698.5 1199.5,-697.98 1199.5,-697.98"/>
-<polygon fill="red" stroke="red" points="1201.6,-699.27 1199.5,-693.27 1197.4,-699.27 1201.6,-699.27"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.3,-1931C1117.69,-1931 1135.5,-1931 1135.5,-1931 1135.5,-1931 1135.5,-698.5 1135.5,-698.5 1135.5,-698.5 1199.5,-698.5 1199.5,-698.5 1199.5,-698.5 1199.5,-697.98 1199.5,-697.98"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1201.6,-699.27 1199.5,-693.27 1197.4,-699.27 1201.6,-699.27"/>
 </a>
 </g>
-<text text-anchor="middle" x="1088" y="-1292.89" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1088" y="-1292.89" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/next -->
 <g id="edge91" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/next</title>
 <g id="a_edge91"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.2,-1924.25C1107.18,-1924.25 1112.5,-1924.25 1112.5,-1924.25 1112.5,-1924.25 1112.5,-562.33 1112.5,-562.33 1112.5,-562.33 1166.45,-562.33 1166.45,-562.33"/>
-<polygon fill="red" stroke="red" points="1166.45,-564.43 1172.45,-562.33 1166.45,-560.23 1166.45,-564.43"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.2,-1924.25C1107.18,-1924.25 1112.5,-1924.25 1112.5,-1924.25 1112.5,-1924.25 1112.5,-562.33 1112.5,-562.33 1112.5,-562.33 1166.45,-562.33 1166.45,-562.33"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.45,-564.43 1172.45,-562.33 1166.45,-560.23 1166.45,-564.43"/>
 </a>
 </g>
-<text text-anchor="middle" x="1065" y="-1215.27" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1065" y="-1215.27" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge90" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge90"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.16,-1928.75C1111.53,-1928.75 1121.5,-1928.75 1121.5,-1928.75 1121.5,-1928.75 1121.5,-624 1121.5,-624 1121.5,-624 1166.22,-624 1166.22,-624"/>
-<polygon fill="red" stroke="red" points="1166.22,-626.1 1172.22,-624 1166.22,-621.9 1166.22,-626.1"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.16,-1928.75C1111.53,-1928.75 1121.5,-1928.75 1121.5,-1928.75 1121.5,-1928.75 1121.5,-624 1121.5,-624 1121.5,-624 1166.22,-624 1166.22,-624"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.22,-626.1 1172.22,-624 1166.22,-621.9 1166.22,-626.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="1074" y="-1257.49" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1074" y="-1257.49" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/@heroicons -->
 <g id="edge88" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/@heroicons</title>
 <g id="a_edge88"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.18,-1926.5C1109.17,-1926.5 1116.5,-1926.5 1116.5,-1926.5 1116.5,-1926.5 1116.5,-592.33 1116.5,-592.33 1116.5,-592.33 1158.78,-592.33 1158.78,-592.33"/>
-<polygon fill="red" stroke="red" points="1158.78,-594.43 1164.78,-592.33 1158.78,-590.23 1158.78,-594.43"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.18,-1926.5C1109.17,-1926.5 1116.5,-1926.5 1116.5,-1926.5 1116.5,-1926.5 1116.5,-592.33 1116.5,-592.33 1116.5,-592.33 1158.78,-592.33 1158.78,-592.33"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1158.78,-594.43 1164.78,-592.33 1158.78,-590.23 1158.78,-594.43"/>
 </a>
 </g>
-<text text-anchor="middle" x="1069" y="-1239.23" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1069" y="-1239.23" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;libs/navigation/src/components/navbar/Navbar.module.css -->
 <g id="edge86" class="edge">
@@ -1703,11 +1703,11 @@
 <g id="edge87" class="edge">
 <title>libs/navigation/src/components/navbar/Navbar.tsx&#45;&gt;node_modules/@headlessui</title>
 <g id="a_edge87"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1100.15,-1935.5C1121.14,-1935.5 1144.5,-1935.5 1144.5,-1935.5 1144.5,-1935.5 1144.5,-748.33 1144.5,-748.33 1144.5,-748.33 1156.81,-748.33 1156.81,-748.33"/>
-<polygon fill="red" stroke="red" points="1156.81,-750.43 1162.81,-748.33 1156.81,-746.23 1156.81,-750.43"/>
+<path fill="none" stroke="#d6c2cd" d="M1100.15,-1935.5C1121.14,-1935.5 1144.5,-1935.5 1144.5,-1935.5 1144.5,-1935.5 1144.5,-748.33 1144.5,-748.33 1144.5,-748.33 1156.81,-748.33 1156.81,-748.33"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1156.81,-750.43 1162.81,-748.33 1156.81,-746.23 1156.81,-750.43"/>
 </a>
 </g>
-<text text-anchor="middle" x="1097" y="-1350.73" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1097" y="-1350.73" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/util/helpers.ts&#45;&gt;libs/navigation/src/util/types.ts -->
 <g id="edge115" class="edge">
@@ -1779,21 +1779,21 @@
 <g id="edge101" class="edge">
 <title>libs/navigation/src/components/tab&#45;nav/TabNav.tsx&#45;&gt;node_modules/next</title>
 <g id="a_edge101"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1327.5,-1981.89C1327.5,-1860.35 1327.5,-564 1327.5,-564 1327.5,-564 1232.65,-564 1232.65,-564"/>
-<polygon fill="red" stroke="red" points="1232.65,-561.9 1226.65,-564 1232.65,-566.1 1232.65,-561.9"/>
+<path fill="none" stroke="#d6c2cd" d="M1327.5,-1981.89C1327.5,-1860.35 1327.5,-564 1327.5,-564 1327.5,-564 1232.65,-564 1232.65,-564"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1232.65,-561.9 1226.65,-564 1232.65,-566.1 1232.65,-561.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="1280" y="-1218.32" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1280" y="-1218.32" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/tab&#45;nav/TabNav.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge99" class="edge">
 <title>libs/navigation/src/components/tab&#45;nav/TabNav.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge99"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1310.5,-1981.91C1310.5,-1863.3 1310.5,-624 1310.5,-624 1310.5,-624 1232.65,-624 1232.65,-624"/>
-<polygon fill="red" stroke="red" points="1232.65,-621.9 1226.65,-624 1232.65,-626.1 1232.65,-621.9"/>
+<path fill="none" stroke="#d6c2cd" d="M1310.5,-1981.91C1310.5,-1863.3 1310.5,-624 1310.5,-624 1310.5,-624 1232.65,-624 1232.65,-624"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1232.65,-621.9 1226.65,-624 1232.65,-626.1 1232.65,-621.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="1263" y="-1256.83" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1263" y="-1256.83" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/components/tab&#45;nav/TabNav.tsx&#45;&gt;libs/navigation/src/util/helpers.ts -->
 <g id="edge96" class="edge">
@@ -1829,11 +1829,11 @@
 <g id="edge100" class="edge">
 <title>libs/navigation/src/components/tab&#45;nav/TabNav.tsx&#45;&gt;node_modules/@types</title>
 <g id="a_edge100"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M1294.5,-1981.75C1294.5,-1863.62 1294.5,-654 1294.5,-654 1294.5,-654 1232.72,-654 1232.72,-654"/>
-<polygon fill="red" stroke="red" points="1232.72,-651.9 1226.72,-654 1232.72,-656.1 1232.72,-651.9"/>
+<path fill="none" stroke="#d6c2cd" d="M1294.5,-1981.75C1294.5,-1863.62 1294.5,-654 1294.5,-654 1294.5,-654 1232.72,-654 1232.72,-654"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1232.72,-651.9 1226.72,-654 1232.72,-656.1 1232.72,-651.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="1247" y="-1279.79" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="1247" y="-1279.79" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/navigation/src/navigation/primary.ts -->
 <g id="node74" class="node">
@@ -1902,11 +1902,11 @@
 <g id="edge121" class="edge">
 <title>libs/views/src/corporate/CtaSection.tsx&#45;&gt;node_modules/@heroicons</title>
 <g id="a_edge121"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M405.12,-1145C456.42,-1145 537.5,-1145 537.5,-1145 537.5,-1145 537.5,-600.2 537.5,-600.2 537.5,-600.2 1158.84,-600.2 1158.84,-600.2"/>
-<polygon fill="red" stroke="red" points="1158.84,-602.3 1164.84,-600.2 1158.84,-598.1 1158.84,-602.3"/>
+<path fill="none" stroke="#d6c2cd" d="M405.12,-1145C456.42,-1145 537.5,-1145 537.5,-1145 537.5,-1145 537.5,-600.2 537.5,-600.2 537.5,-600.2 1158.84,-600.2 1158.84,-600.2"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1158.84,-602.3 1164.84,-600.2 1158.84,-598.1 1158.84,-602.3"/>
 </a>
 </g>
-<text text-anchor="middle" x="490" y="-620.92" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="490" y="-620.92" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/views/src/corporate/FeaturesSection.tsx&#45;&gt;libs/model/src/index.ts -->
 <g id="edge122" class="edge">
@@ -1918,11 +1918,11 @@
 <g id="edge124" class="edge">
 <title>libs/views/src/corporate/HeroSection.tsx&#45;&gt;node_modules/@heroicons</title>
 <g id="a_edge124"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M408.18,-1017C457.51,-1017 530.5,-1017 530.5,-1017 530.5,-1017 530.5,-598.8 530.5,-598.8 530.5,-598.8 1158.94,-598.8 1158.94,-598.8"/>
-<polygon fill="red" stroke="red" points="1158.94,-600.9 1164.94,-598.8 1158.94,-596.7 1158.94,-600.9"/>
+<path fill="none" stroke="#d6c2cd" d="M408.18,-1017C457.51,-1017 530.5,-1017 530.5,-1017 530.5,-1017 530.5,-598.8 530.5,-598.8 530.5,-598.8 1158.94,-598.8 1158.94,-598.8"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1158.94,-600.9 1164.94,-598.8 1158.94,-596.7 1158.94,-600.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="526.96" y="-591.6" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="526.96" y="-591.6" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/views/src/corporate/HeroSection.tsx&#45;&gt;libs/views/src/corporate/LoginForm.tsx -->
 <g id="edge123" class="edge">
@@ -1940,31 +1940,31 @@
 <g id="edge126" class="edge">
 <title>libs/views/src/corporate/LoginForm.tsx&#45;&gt;node_modules/react</title>
 <g id="a_edge126"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M497.5,-986.83C497.5,-935.83 497.5,-689.5 497.5,-689.5 497.5,-689.5 1166.41,-689.5 1166.41,-689.5"/>
-<polygon fill="red" stroke="red" points="1166.41,-691.6 1172.41,-689.5 1166.41,-687.4 1166.41,-691.6"/>
+<path fill="none" stroke="#d6c2cd" d="M497.5,-986.83C497.5,-935.83 497.5,-689.5 497.5,-689.5 497.5,-689.5 1166.41,-689.5 1166.41,-689.5"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.41,-691.6 1172.41,-689.5 1166.41,-687.4 1166.41,-691.6"/>
 </a>
 </g>
-<text text-anchor="middle" x="730.79" y="-682.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="730.79" y="-682.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/views/src/corporate/StatsSection.tsx&#45;&gt;node_modules/clsx -->
 <g id="edge128" class="edge">
 <title>libs/views/src/corporate/StatsSection.tsx&#45;&gt;node_modules/clsx</title>
 <g id="a_edge128"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M409.19,-978.67C422.47,-978.67 433.5,-978.67 433.5,-978.67 433.5,-978.67 433.5,-627.17 433.5,-627.17 433.5,-627.17 1166.24,-627.17 1166.24,-627.17"/>
-<polygon fill="red" stroke="red" points="1166.24,-629.27 1172.24,-627.17 1166.24,-625.07 1166.24,-629.27"/>
+<path fill="none" stroke="#d6c2cd" d="M409.19,-978.67C422.47,-978.67 433.5,-978.67 433.5,-978.67 433.5,-978.67 433.5,-627.17 433.5,-627.17 433.5,-627.17 1166.24,-627.17 1166.24,-627.17"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1166.24,-629.27 1172.24,-627.17 1166.24,-625.07 1166.24,-629.27"/>
 </a>
 </g>
-<text text-anchor="middle" x="659.46" y="-619.97" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="659.46" y="-619.97" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/views/src/corporate/StatsSection.tsx&#45;&gt;node_modules/@heroicons -->
 <g id="edge127" class="edge">
 <title>libs/views/src/corporate/StatsSection.tsx&#45;&gt;node_modules/@heroicons</title>
 <g id="a_edge127"><a xlink:title="no&#45;non&#45;package&#45;json">
-<path fill="none" stroke="red" d="M409.13,-975.33C419.48,-975.33 427.5,-975.33 427.5,-975.33 427.5,-975.33 427.5,-597.4 427.5,-597.4 427.5,-597.4 1158.83,-597.4 1158.83,-597.4"/>
-<polygon fill="red" stroke="red" points="1158.83,-599.5 1164.83,-597.4 1158.83,-595.3 1158.83,-599.5"/>
+<path fill="none" stroke="#d6c2cd" d="M409.13,-975.33C419.48,-975.33 427.5,-975.33 427.5,-975.33 427.5,-975.33 427.5,-597.4 427.5,-597.4 427.5,-597.4 1158.83,-597.4 1158.83,-597.4"/>
+<polygon fill="#d6c2cd" stroke="#d6c2cd" points="1158.83,-599.5 1164.83,-597.4 1158.83,-595.3 1158.83,-599.5"/>
 </a>
 </g>
-<text text-anchor="middle" x="642.51" y="-600.2" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">no&#45;non&#45;package&#45;json</text>
+<text text-anchor="middle" x="642.51" y="-600.2" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#d6c2cd">no&#45;non&#45;package&#45;json</text>
 </g>
 <!-- libs/views/src/corporate/TestimonialSection.tsx&#45;&gt;libs/model/src/index.ts -->
 <g id="edge129" class="edge">

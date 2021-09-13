@@ -22,7 +22,7 @@ export function TabNav({ routes, activeRoute, className, ...props }: TabNavProps
               isActiveRoute(r, activeRoute)
                 ? "bg-shark-500 text-secondary shadow-inner"
                 : "text-secondary-2 hover:bg-shark-600 hover:text-secondary",
-              "px-3 py-2 rounded-md text-sm font-medium"
+              "px-3 py-2 rounded-md text-sm font-medium tracking-wider"
             )}
           >
             {r.name}
