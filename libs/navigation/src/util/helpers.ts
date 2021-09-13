@@ -12,6 +12,7 @@ export const DEFAULT_USER_NAME = "Guest"
  * @returns
  */
 export const isActiveRoute = (item: Route, activeRoute: string) => {
+  console.log(`isActiveRoute`)
   //short circuit for efficiency
   if (
     item.href === "" ||

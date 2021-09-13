@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react"
 import { Navbar, NavbarProps } from "./Navbar"
+import { navigation } from "../../navigation"
 
 export default {
   component: Navbar,
@@ -9,4 +10,6 @@ export default {
 const Template: Story<NavbarProps> = (args) => <Navbar {...args} />
 
 export const Primary = Template.bind({})
-Primary.args = {}
+Primary.args = {
+  navigation
+}

@@ -1,4 +1,4 @@
-export { navigation } from "./navigation"
+export * from "./navigation"
 export * from "./util/helpers"
 
 export type { NavbarProps } from "./components/navbar"

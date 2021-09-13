@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react"
 import { TabNav, TabNavProps } from "./TabNav"
+import { navigation } from "../../navigation"
 
 export default {
   component: TabNav,
@@ -8,5 +9,7 @@ export default {
 
 const Template: Story<TabNavProps> = (args) => <TabNav {...args} />
 
-export const Primary = Template.bind({})
-Primary.args = {}
+export const Primary = Template.bind({ routes: navigation.primary })
+Primary.args = {
+  activeRoute: "/home"
+}
