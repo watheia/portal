@@ -1,6 +1,6 @@
-import { DivProps } from "@watheia/model"
+import { ViewProps } from "@watheia/model"
 
-export const TestimonialSection = (props: DivProps) => (
+export const TestimonialSection = (props: ViewProps) => (
   <div
     className="pb-16 bg-gradient-to-r from-aqua-500 to-aqua-400 lg:pb-0 lg:z-10 lg:relative"
     {...props}

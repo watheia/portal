@@ -1,8 +1,10 @@
 import { HtmlHTMLAttributes, SVGProps } from "react"
 
-export type DivProps = HtmlHTMLAttributes<HTMLDivElement>
+export type AsyncStatus = "idle" | "pending" | "success" | "error"
 
-export type GfxProps = SVGProps<SVGSVGElement>
+export type ViewProps = HtmlHTMLAttributes<HTMLDivElement>
+
+export type GraphicProps = SVGProps<SVGSVGElement>
 
 export const color_scheme = {
   light: "light",
@@ -10,13 +12,6 @@ export const color_scheme = {
 }
 
 export type ColorScheme = typeof color_scheme[keyof typeof color_scheme]
-
-export const user_status = {
-  ONLINE: "ONLINE",
-  OFFLINE: "OFFLINE"
-}
-
-export type UserStatus = typeof user_status[keyof typeof user_status]
 
 export interface Stat {
   label: string
@@ -32,7 +27,7 @@ export interface Profile {
 }
 
 export interface Feature {
-  id: string | number
+  id?: string | number
   name: string
   description: string
   icon?: any
@@ -53,13 +48,6 @@ export interface Post {
     href?: string
   }
   readingTime: string
-}
-
-export interface Feature {
-  id: string | number
-  name: string
-  description: string
-  icon?: any
 }
 
 /**
@@ -102,9 +90,9 @@ export interface Feature {
 // }
 
 /**
- * Model Principal
+ * Model SessionCtx
  */
-// export interface Principal {
+// export interface SessionCtx {
 //   id: string
 //   username: string | null
 //   status: UserStatus | null

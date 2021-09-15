@@ -1,5 +1,4 @@
-import ChevronRightIcon from "@heroicons/react/outline/ChevronRightIcon"
-import LoginForm from "./LoginForm"
+import { LoginForm } from "@watheia/auth"
 
 const StatusIndicator = () => (
   <span className="inline-flex items-center text-shark-50 bg-shark-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-shark-200">

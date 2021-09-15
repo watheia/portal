@@ -2,15 +2,14 @@ import { Disclosure } from "@headlessui/react"
 import Link from "next/link"
 import clsx from "clsx"
 import TabNav from "../tab-nav"
-import PrincipalNav from "../principal-nav"
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
 import { HtmlHTMLAttributes } from "react"
 
 import styles from "./Navbar.module.css"
 import { useRouter } from "next/router"
-import { NavigationContext, Route } from "../../util/types"
+import { NavigationContext, Route } from "../../types"
 import { User } from "@supabase/supabase-js"
-import { DEFAULT_AVATAR, DEFAULT_USER_NAME, isActiveRoute } from "../../util/helpers"
+import { DEFAULT_AVATAR, isActiveRoute } from "../../helpers"
 
 const MobileMenuButton = ({ isOpen }: { isOpen?: boolean }) => (
   <Disclosure.Button className="bg-shark-700 inline-flex items-center justify-center p-2 rounded-md text-shark-400 hover:text-shark-50 hover:bg-shark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
@@ -99,11 +98,26 @@ const MobileNav = ({ navigation, activeRoute, user, ...props }: MobileNavProps) 
   )
 }
 
+type UserMenuProps = { userNavigation: Route[]; user: User }
+
+const UserNavGroup = ({ userNavigation, user }: UserMenuProps) => (
+  <div className="hidden md:block">
+    <div className="ml-4 flex items-center md:ml-6">
+      <button type="button" className={styles.notifications}>
+        <span className="sr-only">View notifications</span>
+        <BellIcon className="h-6 w-6" aria-hidden="true" />
+      </button>
+      <UserMenu routes={userNavigation} />
+    </div>
+  </div>
+)
+
 export type NavbarProps = NavigationContext & HtmlHTMLAttributes<HTMLDivElement>
 
 export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
   const router = useRouter()
   const activeRoute = router?.asPath ?? "/"
+  // const session = useSession()
 
   return (
     <Disclosure as="nav" className={clsx(styles.root, className)} {...props}>
@@ -127,15 +141,10 @@ export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
                   <TabNav routes={navigation.primary} activeRoute={activeRoute} />
                 </div>
               </div>
-              {/* <div className="hidden md:block">
-                <div className="ml-4 flex items-center md:ml-6">
-                  <button type="button" className={styles.notifications}>
-                    <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
-                  <UserNav userNavigation={userNavigation} user={user} />
-                </div>
-              </div> */}
+
+              {/* {session?.user && (
+                <UserNavGroup userNavigation={navigation.user} user={session.user} />
+              )} */}
               <div className="-mr-2 flex md:hidden">
                 <MobileMenuButton isOpen={open} />
               </div>

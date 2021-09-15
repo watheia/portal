@@ -32,6 +32,9 @@
     "assets": {
       "tags": []
     },
+    "auth": {
+      "tags": []
+    },
     "blog": {
       "tags": []
     },
@@ -59,7 +62,7 @@
       "tags": [],
       "implicitDependencies": ["navigation"]
     },
-    "supabase": {
+    "ui-atom": {
       "tags": []
     },
     "util-helpers": {

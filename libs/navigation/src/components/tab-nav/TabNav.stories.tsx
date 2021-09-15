@@ -9,7 +9,8 @@ export default {
 
 const Template: Story<TabNavProps> = (args) => <TabNav {...args} />
 
-export const Primary = Template.bind({ routes: navigation.primary })
+export const Primary = Template.bind({})
 Primary.args = {
-  activeRoute: "/home"
+  activeRoute: "/home",
+  routes: navigation.primary
 }

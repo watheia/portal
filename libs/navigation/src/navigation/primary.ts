@@ -1,4 +1,4 @@
-import { Route } from "../util/types"
+import { Route } from "../types"
 
 export const primary: Route[] = [
   { name: "Home", href: "/home" },

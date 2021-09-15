@@ -1,12 +1,12 @@
 export * from "./lib/model"
 export * from "./lib/constants"
 export type {
+  AsyncStatus,
   ColorScheme,
-  DivProps,
   Feature,
-  GfxProps,
-  Post,
   Profile,
-  Stat,
-  UserStatus
+  ViewProps,
+  GraphicProps,
+  Post,
+  Stat
 } from "./lib/types"
