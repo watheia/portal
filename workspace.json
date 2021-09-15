@@ -143,6 +143,84 @@
         }
       }
     },
+    "conduit": {
+      "root": "apps/conduit",
+      "sourceRoot": "apps/conduit",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/conduit",
+            "outputPath": "dist/apps/conduit"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "conduit:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "conduit:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "conduit:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/conduit"],
+          "options": {
+            "jestConfig": "apps/conduit/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/conduit/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "conduit-e2e": {
+      "root": "apps/conduit-e2e",
+      "sourceRoot": "apps/conduit-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/conduit-e2e/cypress.json",
+            "devServerTarget": "conduit:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "conduit:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/conduit-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "home": {
       "root": "apps/home",
       "sourceRoot": "apps/home",
@@ -622,5 +700,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "conduit"
 }
