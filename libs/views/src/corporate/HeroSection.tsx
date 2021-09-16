@@ -1,5 +1,4 @@
 import { LoginForm, useSession } from "@watheia/auth"
-import styles from ""
 
 const StatusIndicator = ({ isOnline = false }: { isOnline: boolean }) => {
   return isOnline ? <OnlineIndicator /> : <OfflineIndicator />
@@ -30,7 +29,7 @@ export const HeroSection = () => {
   const isOnline = !!!session?.user?.id
 
   return (
-    <section className={styles.root}>
+    <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden shadow-md">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">

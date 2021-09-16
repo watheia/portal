@@ -84,7 +84,7 @@ const Navbar = () => {
     <NavbarContainer>
       <NavbarPresenter>
         <Logo href="/" as="/" onClick={handleClick}>
-          conduit
+          Watheia
         </Logo>
         <NavbarList>
           <NavbarItem>

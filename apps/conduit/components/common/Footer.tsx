@@ -43,11 +43,10 @@ const Link = styled("a")``
 const Footer = () => (
   <FooterContainer>
     <FooterPresenter>
-      <Logo href="/">conduit</Logo>
+      <Logo href="/">Watheia</Logo>
       <Attribution>
-        An interactive learning project from{" "}
-        <Link href="https://thinkster.io">Thinkster</Link>. Code &amp; design licensed under
-        MIT.
+        &copy; 2021 <Link href="https://wateia.aapp">Watheia Labs, LLC.</Link>. All rights
+        reserved.
       </Attribution>
     </FooterPresenter>
   </FooterContainer>
