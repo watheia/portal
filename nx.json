@@ -52,6 +52,9 @@
       "tags": [],
       "implicitDependencies": ["conduit"]
     },
+    "helpers": {
+      "tags": []
+    },
     "home": {
       "tags": []
     },
@@ -73,9 +76,6 @@
       "implicitDependencies": ["navigation"]
     },
     "ui-atom": {
-      "tags": []
-    },
-    "util-helpers": {
       "tags": []
     },
     "views": {
