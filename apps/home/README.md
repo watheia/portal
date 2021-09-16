@@ -1,3 +1,1 @@
 # Home
-
-![depgraph](./depgraph.svg)

@@ -18,4 +18,4 @@ This project has two goals:
 
 ## Dependency Graph
 
-![depgraph](apps/home/depgraph.svg)
+![depgraph](./depgraph.svg)

@@ -94,37 +94,3 @@ deploy: # This job also runs in the test stage.
 # stages:
 #   - build
 #   - test
-
-# build:
-#   stage: build
-#   image: node:14-alpine
-#   script:
-#     - yarn install
-#     - yarn nx run-many
-#       --target=build
-#       --all=true
-#       --configuration=production
-#       --verbose=true
-
-# test:
-#   image: node:14-alpine
-#   stage: test
-#   needs: [build]
-#   script:
-#     - yarn install
-#     - yarn nx run-many
-#       --target=test
-#       --all=true
-#       --verbose=true
-#       --coverage
-
-# lint:
-#   image: node:14-alpine
-#   stage: test
-#   needs: [build]
-#   script:
-#     - yarn install
-#     - yarn nx run-many
-#       --target=lint
-#       --all=true
-#       --verbose=true
