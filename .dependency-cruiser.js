@@ -80,7 +80,7 @@ module.exports = {
     },
     {
       name: "no-non-package-json",
-      severity: "error",
+      severity: "info",
       comment:
         "This module depends on an npm package that isn't in the 'dependencies' section of your package.json. " +
         "That's problematic as the package either (1) won't be available on live (2 - worse) will be " +
@@ -130,7 +130,7 @@ module.exports = {
     },
     {
       name: "not-to-dev-dep",
-      severity: "error",
+      severity: "info",
       comment:
         "This module depends on an npm package from the 'devDependencies' section of your " +
         "package.json. It looks like something that ships to production, though. To prevent problems " +

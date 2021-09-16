@@ -17,9 +17,10 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "help": "nx help",
+    "graph:conduit": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/conduit/depgraph.dot --progress cli-feedback apps/conduit && cat apps/conduit/depgraph.dot | dot -T svg > apps/conduit/depgraph.svg",
     "graph:blog": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/blog/depgraph.dot --progress cli-feedback apps/blog && cat apps/blog/depgraph.dot | dot -T svg > apps/blog/depgraph.svg",
     "graph:home": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/home/depgraph.dot --progress cli-feedback apps/home && cat apps/home/depgraph.dot | dot -T svg > apps/home/depgraph.svg",
-    "graph": "yarn graph:home"
+    "graph": "yarn graph:conduit"
   },
   "private": true,
   "dependencies": {
@@ -37,7 +38,6 @@
     "clsx": "^1.1.1",
     "core-js": "^3.6.5",
     "emotion": "^11.0.0",
-    "emotion-server": "^11.0.0",
     "lazysizes": "^5.3.2",
     "marked": "^3.0.4",
     "next": "11.1.0",
@@ -45,7 +45,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "regenerator-runtime": "0.13.7",
-    "swr": "^1.0.1",
+    "swr": "^0.3.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

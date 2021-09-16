@@ -10265,13 +10265,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emotion-server@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "emotion-server@npm:11.0.0"
-  checksum: e0c11a9b6e1324d7c4512246e95174415b6405d886ffaf591e85ab8d53cefe6d3a5e46ce58ad747e2088c36d16f6efa8fea9141bf8a27326511b39d51b9e52d9
-  languageName: node
-  linkType: hard
-
 "emotion-theming@npm:^10.0.27":
   version: 10.0.27
   resolution: "emotion-theming@npm:10.0.27"
@@ -22514,14 +22507,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swr@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "swr@npm:1.0.1"
+"swr@npm:^0.3.0":
+  version: 0.3.11
+  resolution: "swr@npm:0.3.11"
   dependencies:
     dequal: 2.0.2
   peerDependencies:
     react: ^16.11.0 || ^17.0.0
-  checksum: 8aaa10c4c65cb9b46a143a52ac2728111fc8af96e83781df1f7b7d56aa027ef720b7feb230658616e479f224f684d4cbc5d2ca3265c40f95a3140dbdba801061
+  checksum: 035b29528319a2c82360075a4a3b25faf098832f1d5b66eb811ca59b5489317d2325ea2d2b6e4885fbf4778af9ee823cf20b886def252396dbae129448a1e899
   languageName: node
   linkType: hard
 
@@ -24190,7 +24183,6 @@ typescript@~4.3.5:
     cypress: ^8.3.0
     dependency-cruiser: ^10.2.0
     emotion: ^11.0.0
-    emotion-server: ^11.0.0
     eslint: 7.22.0
     eslint-config-next: 11.1.0
     eslint-config-prettier: 8.1.0
@@ -24224,7 +24216,7 @@ typescript@~4.3.5:
     stylelint-config-idiomatic-order: ^8.1.0
     stylelint-config-prettier: ^8.0.0
     stylelint-config-standard: ^21.0.0
-    swr: ^1.0.1
+    swr: ^0.3.0
     tailwindcss: ^2.2.14
     terser-webpack-plugin: ^5.1.1
     ts-jest: 27.0.3

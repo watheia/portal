@@ -4,6 +4,6 @@ export const getURL = (): string => {
       ? process.env.URL
       : process?.env?.VERCEL_URL && process.env.VERCEL_URL !== ""
       ? process.env.VERCEL_URL
-      : "http://localhost:3000"
+      : "http://localhost:4200"
   return url.includes("http") ? url : `https://${url}`
 }

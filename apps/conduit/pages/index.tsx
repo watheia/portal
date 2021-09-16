@@ -1,99 +1,109 @@
 import styled from "@emotion/styled"
+import Head from "next/head"
+import React from "react"
 
-const StyledPage = styled.div`
-  .page {
+import ArticleList from "../components/article/ArticleList"
+import Banner from "../components/home/Banner"
+import Tags from "../components/home/Tags"
+import TabList from "../components/home/TabList"
+
+const IndexPageContainer = styled("div")``
+
+const IndexPagePresenter = styled("div")`
+  margin: 1.5rem auto 0;
+  padding: 0 15px;
+
+  @media (min-width: 544px) {
+    max-width: 576px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 940px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
   }
 `
 
-export function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.@emotion/styled file.
-   */
-  return (
-    <StyledPage>
-      <h2>Resources &amp; Tools</h2>
-      <p>Thank you for using and showing some ♥ for Nx.</p>
-      <div className="flex github-star-container">
-        <a href="https://github.com/nrwl/nx" target="_blank" rel="noopener noreferrer">
-          {" "}
-          If you like Nx, please give it a star:
-          <div className="github-star-badge">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/star.svg" className="material-icons" alt="" />
-            Star
-          </div>
-        </a>
-      </div>
-      <p>Here are some links to help you get started.</p>
-      <ul className="resources">
-        <li className="col-span-2">
-          <a
-            className="resource flex"
-            href="https://egghead.io/playlists/scale-react-development-with-nx-4038"
-          >
-            Scale React Development with Nx (Course)
-          </a>
-        </li>
-        <li className="col-span-2">
-          <a
-            className="resource flex"
-            href="https://nx.dev/latest/react/tutorial/01-create-application"
-          >
-            Interactive tutorial
-          </a>
-        </li>
-        <li className="col-span-2">
-          <a className="resource flex" href="https://nx.app/">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 120 120"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z"
-                fill="#0E2039"
-              />
-              <path
-                d="M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z"
-                fill="white"
-              />
-            </svg>
-            <span className="gutter-left">Nx Cloud</span>
-          </a>
-        </li>
-      </ul>
-      <h2>Next Steps</h2>
-      <p>Here are some things you can do with Nx.</p>
-      <details open>
-        <summary>Add UI library</summary>
-        <pre>{`# Generate UI lib
-nx g @nrwl/react:lib ui
+const MainContent = styled("div")`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+`
 
-# Add a component
-nx g @nrwl/react:component xyz --project ui`}</pre>
-      </details>
-      <details>
-        <summary>View dependency graph</summary>
-        <pre>{`nx dep-graph`}</pre>
-      </details>
-      <details>
-        <summary>Run affected commands</summary>
-        <pre>{`# see what's been affected by changes
-nx affected:dep-graph
+const ContentContainer = styled("div")`
+  width: 100%;
+  @media (min-width: 768px) {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+`
 
-# run tests for current changes
-nx affected:test
+const FeedToggle = styled("div")`
+  margin-bottom: -1px;
+`
 
-# run e2e tests for current changes
-nx affected:e2e
-`}</pre>
-      </details>
-    </StyledPage>
-  )
-}
+const SidebarContainer = styled("div")`
+  @media (min-width: 768px) {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+`
 
-export default Index
+const SidebarPresenter = styled("div")`
+  padding: 5px 10px 10px;
+  background: #f3f3f3;
+  border-radius: 4px;
+`
+
+const SidebarTitle = styled("p")`
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+`
+
+const IndexPage = () => (
+  <>
+    <Head>
+      <title>HOME | NEXT REALWORLD</title>
+      <meta
+        name="description"
+        content="Next.js + SWR codebase containing realworld examples (CRUD, auth, advanced patterns, etc) that adheres to the realworld spec and API"
+      />
+    </Head>
+    <IndexPageContainer className="home-page">
+      <Banner />
+      <IndexPagePresenter>
+        <MainContent>
+          <ContentContainer>
+            <FeedToggle>
+              <TabList />
+            </FeedToggle>
+            <ArticleList />
+          </ContentContainer>
+          <SidebarContainer>
+            <SidebarPresenter>
+              <SidebarTitle>Popular Tags</SidebarTitle>
+              <Tags />
+            </SidebarPresenter>
+          </SidebarContainer>
+        </MainContent>
+      </IndexPagePresenter>
+    </IndexPageContainer>
+  </>
+)
+
+export default IndexPage

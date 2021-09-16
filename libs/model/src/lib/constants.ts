@@ -13,16 +13,17 @@ export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_U
 export const TWITTER_USER_NAME = "watheia"
 export const BRAND_NAME = "Watheia"
 export const SITE_NAME_MULTILINE = ["Watheia", "Corporate"]
-export const SITE_NAME = "Corporate"
+export const SITE_NAME = "watheia-corporate"
 export const META_DESCRIPTION =
-  "This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel."
+  "Watheia Labs LLC is a digital agency building products for the modern web."
 export const SITE_DESCRIPTION =
-  "An interactive online experience by the community, free for everyone."
-export const DATE = "October 27, 2020"
+  "Choose Watheia Labs as your partner to build beautiful and engaging experiences for your customer."
+export const DATE = "October 1, 2021"
 export const SHORT_DATE = "Oct 1 - 9:00am PST"
 export const FULL_DATE = "Oct 1st 9am Pacific Time (GMT-7)"
 export const TWEET_TEXT = META_DESCRIPTION
 export const COOKIE = "user-id"
+export const LOCALE = "en_US"
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name

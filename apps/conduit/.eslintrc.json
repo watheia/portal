@@ -16,7 +16,10 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "rules": {}
+      "rules": {
+        "react-hooks/rules-of-hooks": 1,
+        "react/display-name": 1
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
