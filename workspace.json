@@ -545,47 +545,6 @@
         }
       }
     },
-    "util-hooks": {
-      "root": "libs/util/hooks",
-      "sourceRoot": "libs/util/hooks/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/web:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/util/hooks",
-            "tsConfig": "libs/util/hooks/tsconfig.lib.json",
-            "project": "libs/util/hooks/package.json",
-            "entryFile": "libs/util/hooks/src/index.ts",
-            "external": ["react/jsx-runtime"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "libs/util/hooks/README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["libs/util/hooks/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/util/hooks"],
-          "options": {
-            "jestConfig": "libs/util/hooks/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "views": {
       "root": "libs/views",
       "sourceRoot": "libs/views/src",

@@ -1,5 +1,5 @@
 import { LoginForm, useSession } from "@watheia/auth"
-import styles from "./HeroSection.module.css"
+import styles from ""
 
 const StatusIndicator = ({ isOnline = false }: { isOnline: boolean }) => {
   return isOnline ? <OnlineIndicator /> : <OfflineIndicator />
@@ -26,7 +26,7 @@ const OfflineIndicator = () => (
 export const HeroSection = () => {
   const { session } = useSession()
   // intentional cast to boolean representationd
-  // eslint-disable-next-line no-extra-boolean-
+  // eslint-disable-next-line no-extra-boolean-cast
   const isOnline = !!!session?.user?.id
 
   return (
