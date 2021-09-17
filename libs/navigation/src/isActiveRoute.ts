@@ -1,8 +1,5 @@
 import { Route } from "./types"
 
-export const DEFAULT_AVATAR = "https://cdn.watheia.org/assets/icon.png"
-
-export const DEFAULT_USER_NAME = "Guest"
 /**
  * Returns true if item.href starts with activeRoute, provided that route
  * is not equal to "/"

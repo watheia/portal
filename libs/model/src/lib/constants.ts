@@ -2,11 +2,13 @@ export const BLOG_URL = process.env.BLOG_URL || "http://localhost:4300"
 export const NEXT_PUBLIC_SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ""
 export const NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
 
+export const DEFAULT_AVATAR = "https://cdn.watheia.org/assets/icon.png"
+export const DEFAULT_AVATARS_BUCKET = "avatars"
+export const DEFAULT_USER_NAME = "Guest"
+
 export const PRIMARY_COLOR = "#04BFBF"
 export const BLACK = "#1a1718"
 export const WHITE = "#fefeff"
-
-export const DEFAULT_AVATARS_BUCKET = "avatars"
 
 export const SITE_URL = "https://watheia.app"
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin

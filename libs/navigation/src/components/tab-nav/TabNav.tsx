@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { HtmlHTMLAttributes } from "markdown-to-jsx/node_modules/@types/react"
 import Link from "next/link"
-import { isActiveRoute } from "../../helpers"
+import { isActiveRoute } from "../../isActiveRoute"
 import { Route } from "../../types"
 import styles from "./TabNav.module.css"
 
