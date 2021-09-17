@@ -10,6 +10,7 @@ export const PRIMARY_COLOR = "#04BFBF"
 export const BLACK = "#1a1718"
 export const WHITE = "#fefeff"
 
+export const PREVIEW_IMAGE_FALLBACK = "https://cdn.watheia.org/assets/wa-card.png"
 export const SITE_URL = "https://watheia.app"
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin
 export const TWITTER_USER_NAME = "watheia"
