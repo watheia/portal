@@ -1,7 +1,7 @@
 import { PrismaClient, Prisma, User } from "@prisma/client"
 const prisma = new PrismaClient()
 
-const userData: Prisma.UserCreateInput[] = [
+export const defaultUsers: Prisma.UserCreateInput[] = [
   {
     username: "amiller",
     email: "amiller@watheia.org"
@@ -49,11 +49,20 @@ const userData: Prisma.UserCreateInput[] = [
   }
 ]
 
+export const mockUser: User = {
+  id: 0,
+  username: "guest",
+  email: "bdd@watheia.org",
+  bio: "Mock User",
+  password: "password",
+  image: "https://cdn.watheia.org/assets/images/avatar.png"
+}
+
 async function createUsers(): Promise<User[]> {
-  console.log(`Creating ${userData.length} users ...`)
+  console.log(`Creating ${defaultUsers.length} users ...`)
 
   return Promise.all(
-    userData.map(async (u) => {
+    defaultUsers.map(async (u) => {
       return await prisma.user.create({
         data: u
       })

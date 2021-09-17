@@ -11,6 +11,7 @@ import { NavigationContext, Route } from "../../types"
 import { User } from "@supabase/supabase-js"
 import { isActiveRoute } from "../../isActiveRoute"
 import { DEFAULT_AVATAR } from "@watheia/model"
+import { useSession } from "@watheia/auth"
 
 const MobileMenuButton = ({ isOpen }: { isOpen?: boolean }) => (
   <Disclosure.Button className="bg-shark-700 inline-flex items-center justify-center p-2 rounded-md text-shark-400 hover:text-shark-50 hover:bg-shark-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-shark-800 focus:ring-white">
@@ -118,7 +119,7 @@ export type NavbarProps = NavigationContext & HtmlHTMLAttributes<HTMLDivElement>
 export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
   const router = useRouter()
   const activeRoute = router?.asPath ?? "/"
-  // const session = useSession()
+  const { user } = useSession()
 
   return (
     <Disclosure as="nav" className={clsx(styles.root, className)} {...props}>
@@ -151,7 +152,7 @@ export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
               </div>
             </div>
           </div>
-          <MobileNav navigation={navigation} activeRoute={activeRoute} />
+          <MobileNav navigation={navigation} activeRoute={activeRoute} user={user} />
         </>
       )}
     </Disclosure>
