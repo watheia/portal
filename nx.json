@@ -38,13 +38,6 @@
     "auth": {
       "tags": []
     },
-    "blog": {
-      "tags": []
-    },
-    "blog-e2e": {
-      "tags": [],
-      "implicitDependencies": ["blog"]
-    },
     "conduit": {
       "tags": []
     },

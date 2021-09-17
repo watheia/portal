@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+model User {
+  bio           String?
+  email         String      @unique
+  id            Int         @default(autoincrement()) @id
+  image         String?
+  password      String?
+  username      String?     @unique
+  articles      Article[]   @relation("UserArticles")
+  favorites     Article[]   @relation("UserFavorites", references: [id])
+  followedBy    User[]      @relation("UserFollows", references: [id])
+  following     User[]      @relation("UserFollows", references: [id])
+  comments      Comment[]
+
+  @@map("users")
+}
+
+model Article {
+  id            Int         @default(autoincrement()) @id
+  slug          String      @unique
+  title         String
+  description   String
+  body          String
+  createdAt     DateTime    @default(now()) @map("created_at")
+  updatedAt     DateTime    @default(now()) @map("updated_at")
+  tagList       String      @map("tag_list")
+  author        User        @relation("UserArticles", fields: [authorId], references: [id])
+  authorId      Int         @map("author_id")
+  favoritedBy   User[]      @relation("UserFavorites", references: [id])
+  comments      Comment[]
+
+  @@map("articles")
+}
+
+model Comment {
+  id          Int         @default(autoincrement()) @id
+  createdAt   DateTime    @default(now()) @map("created_at")
+  updatedAt   DateTime    @default(now()) @map("updated_at")
+  body        String
+  article     Article     @relation(fields: [articleId], references: [id])
+  articleId   Int         @map("article_id")
+  author      User        @relation(fields: [authorId], references: [id])
+  authorId    Int         @map("author_id")
+
+  @@map("comments")
+}
+
+model Tag {
+  id    Int     @default(autoincrement()) @id
+  name  String  @unique
+
+  @@map("tags")
+}

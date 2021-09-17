@@ -56,3 +56,5 @@ package.tgz
 
 .coveralls.yml
 libs/auth/.env
+prisma/migrations/
+prisma/dev.db*

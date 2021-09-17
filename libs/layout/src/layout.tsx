@@ -1,21 +1,20 @@
 import { HtmlHTMLAttributes } from "react"
+import { navigation } from "@watheia/navigation"
 import Paper from "./paper"
 import Footer from "./footer"
-import SEO, { SeoProps } from "./seo"
+import SEO, { SEOProps } from "./seo"
 import clsx from "clsx"
 import styles from "./layout.module.css"
-import { Navbar, navigation } from "@watheia/navigation"
+import Header from "./header"
 
-export type LayoutProps = { meta?: SeoProps } & HtmlHTMLAttributes<HTMLDivElement>
+export type LayoutProps = { meta?: SEOProps } & HtmlHTMLAttributes<HTMLDivElement>
 
 export const Layout = ({ className, children, meta, ...props }: LayoutProps) => {
   return (
     <>
       <SEO {...meta} />
       <div className={clsx(styles.root, className)} {...props}>
-        <header className={styles.header}>
-          <Navbar navigation={navigation} />
-        </header>
+        <Header navigation={navigation} />
         <main>
           <Paper>{children}</Paper>
         </main>

@@ -1,5 +1,5 @@
 export * from "./navigation"
-export * from "./helpers"
+export * from "./isActiveRoute"
 
 export type { NavbarProps } from "./components/navbar"
 export { Navbar } from "./components/navbar"

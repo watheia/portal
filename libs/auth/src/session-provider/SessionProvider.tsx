@@ -5,16 +5,16 @@ import client from "../client"
 
 export const SessionProvider = (props: JSX.IntrinsicAttributes) => {
   const [session, setSession] = useState<any>(false)
-  // const [user, setUser] = useState<any>(false)
+  const [user, setUser] = useState<any>(false)
 
   useEffect(() => {
     const session = client.auth.session()
     setSession(session)
-    // setUser(session?.user ?? false)
+    setUser(session?.user ?? false)
     const { data: authListener } = client.auth.onAuthStateChange(async (event, session) => {
       console.info("EVENT: ", event)
       setSession(session)
-      // setUser(session?.user ?? false)
+      setUser(session?.user ?? false)
     })
 
     return () => {
@@ -23,8 +23,9 @@ export const SessionProvider = (props: JSX.IntrinsicAttributes) => {
   }, [])
 
   const value = {
-    session
-    // user
+    session,
+    user
   }
+
   return <SessionCtx.Provider value={value} {...props} />
 }

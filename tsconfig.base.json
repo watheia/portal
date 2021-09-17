@@ -18,6 +18,8 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "@gatekeeper/assets": ["libs/assets/src/index.ts"],

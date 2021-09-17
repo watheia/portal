@@ -9,8 +9,10 @@ export const ServerlessSection = () => (
           No server? No problem.
         </p>
         <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis
-          quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+          Your virtual private cloud comes with everything you need for modern serverless
+          CI/CD deployments. Installing single-use serverless functions and complex
+          applications that can scale to 0 is a breeze using OpenFAAS and Knative, ideal for
+          GitLab's serverless Auto DevOps coming in 2021.
         </p>
       </div>
       <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
