@@ -7,7 +7,7 @@
     "start": "nx serve",
     "build:apps": "nx affected:apps",
     "build:libs": "nx affected:libs",
-    "build": "nx affected:build",
+    "build": "prisma generate && nx affected:build",
     "e2e": "nx affected:e2e",
     "test": "nx affected:test",
     "lint": "nx workspace-lint && nx affected:lint",
@@ -18,7 +18,8 @@
     "workspace-generator": "nx workspace-generator",
     "help": "nx help",
     "graph:conduit": "depcruise --config .dependency-cruiser.js --output-type dot --output-to apps/conduit/depgraph.dot --progress cli-feedback apps/conduit && cat apps/conduit/depgraph.dot | dot -T svg > apps/conduit/depgraph.svg",
-    "graph": "depcruise --config .dependency-cruiser.js --output-type dot --output-to depgraph.dot --progress cli-feedback . && cat depgraph.dot | dot -T svg > depgraph.svg"
+    "graph": "depcruise --config .dependency-cruiser.js --output-type dot --output-to depgraph.dot --progress cli-feedback . && cat depgraph.dot | dot -T svg > depgraph.svg",
+    "db": "prisma db"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "@nestjs/platform-express": "^7.0.0",
     "@next/mdx": "^11.1.2",
     "@nrwl/next": "12.9.0",
+    "@prisma/client": "3.0.2",
     "@reach/skip-nav": "^0.16.0",
     "@supabase/supabase-js": "^1.22.5",
     "axios": "^0.21.4",
@@ -88,7 +90,7 @@
     "@types/history": "^4.7.9",
     "@types/jest": "26.0.24",
     "@types/mocha": "^9.0.0",
-    "@types/node": "14.14.33",
+    "@types/node": "^16.9.2",
     "@types/nprogress": "^0.2.0",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.3",
@@ -119,6 +121,7 @@
     "postcss-nesting": "^8.0.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.1",
+    "prisma": "3.0.2",
     "react-refresh": "^0.10.0",
     "react-test-renderer": "^17.0.2",
     "source-map-loader": "^3.0.0",
@@ -129,7 +132,8 @@
     "tailwindcss": "^2.2.14",
     "terser-webpack-plugin": "^5.1.1",
     "ts-jest": "27.0.3",
-    "typescript": "~4.3.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
     "url-loader": "^3.0.0",
     "webpack": "^5.47.0",
     "webpack-dev-server": "4.0.0-rc.0",
@@ -149,5 +153,8 @@
       "text",
       "clover"
     ]
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }

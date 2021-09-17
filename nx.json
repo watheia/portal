@@ -38,19 +38,15 @@
     "auth": {
       "tags": []
     },
-    "blog": {
-      "tags": []
-    },
-    "blog-e2e": {
-      "tags": [],
-      "implicitDependencies": ["blog"]
-    },
     "conduit": {
       "tags": []
     },
     "conduit-e2e": {
       "tags": [],
       "implicitDependencies": ["conduit"]
+    },
+    "helpers": {
+      "tags": []
     },
     "home": {
       "tags": []
@@ -73,9 +69,6 @@
       "implicitDependencies": ["navigation"]
     },
     "ui-atom": {
-      "tags": []
-    },
-    "util-helpers": {
       "tags": []
     },
     "views": {

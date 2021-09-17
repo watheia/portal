@@ -115,85 +115,6 @@
         }
       }
     },
-    "blog": {
-      "root": "apps/blog",
-      "sourceRoot": "apps/blog",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "root": "apps/blog",
-            "outputPath": "dist/apps/blog"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "blog:build",
-            "dev": true,
-            "port": 4300
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "blog:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "blog:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/blog"],
-          "options": {
-            "jestConfig": "apps/blog/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/blog/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "blog-e2e": {
-      "root": "apps/blog-e2e",
-      "sourceRoot": "apps/blog-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/blog-e2e/cypress.json",
-            "devServerTarget": "blog:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "blog:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/blog-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
-    },
     "conduit": {
       "root": "apps/conduit",
       "sourceRoot": "apps/conduit",
@@ -214,7 +135,8 @@
           "executor": "@nrwl/next:server",
           "options": {
             "buildTarget": "conduit:build",
-            "dev": true
+            "dev": true,
+            "port": 4400
           },
           "configurations": {
             "production": {
@@ -268,6 +190,39 @@
           "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["apps/conduit-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "helpers": {
+      "root": "libs/helpers",
+      "sourceRoot": "libs/helpers/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/helpers",
+            "tsConfig": "libs/helpers/tsconfig.lib.json",
+            "packageJson": "libs/helpers/package.json",
+            "main": "libs/helpers/src/index.ts",
+            "assets": ["libs/helpers/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/helpers/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/helpers"],
+          "options": {
+            "jestConfig": "libs/helpers/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
@@ -559,39 +514,6 @@
           "outputs": ["coverage/libs/ui/atom"],
           "options": {
             "jestConfig": "libs/ui/atom/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "util-helpers": {
-      "root": "libs/util/helpers",
-      "sourceRoot": "libs/util/helpers/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/node:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/util/helpers",
-            "tsConfig": "libs/util/helpers/tsconfig.lib.json",
-            "packageJson": "libs/util/helpers/package.json",
-            "main": "libs/util/helpers/src/index.ts",
-            "assets": ["libs/util/helpers/*.md"]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["libs/util/helpers/**/*.ts"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/util/helpers"],
-          "options": {
-            "jestConfig": "libs/util/helpers/jest.config.js",
             "passWithNoTests": true
           }
         }

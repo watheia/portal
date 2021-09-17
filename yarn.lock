@@ -1715,6 +1715,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cspotcode/source-map-consumer@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@cspotcode/source-map-consumer@npm:0.8.0"
+  checksum: c0c16ca3d2f58898f1bd74c4f41a189dbcc202e642e60e489cbcc2e52419c4e89bdead02c886a12fb13ea37798ede9e562b2321df997ebc210ae9bd881561b4e
+  languageName: node
+  linkType: hard
+
+"@cspotcode/source-map-support@npm:0.6.1":
+  version: 0.6.1
+  resolution: "@cspotcode/source-map-support@npm:0.6.1"
+  dependencies:
+    "@cspotcode/source-map-consumer": 0.8.0
+  checksum: da9fb4f6404ebd210537bfa8b2821a747407bf422d2d3d46f29bf85c7c3a68a126de1a9ec41398d57ca116c3bef56d58c2fb4def0800630b1ec82533ad2447c2
+  languageName: node
+  linkType: hard
+
 "@csstools/convert-colors@npm:^1.4.0":
   version: 1.4.0
   resolution: "@csstools/convert-colors@npm:1.4.0"
@@ -3491,6 +3507,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@prisma/client@npm:3.0.2"
+  dependencies:
+    "@prisma/engines-version": 2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: f72bae6cc67a8d848845669caf5c652def14fe93591651a3c4b107caefd6f20252edef712caffb32a9153d04633d950bfec6baa12edd1e17b38f4ea94c99bf9e
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db":
+  version: 2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db
+  resolution: "@prisma/engines-version@npm:2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db"
+  checksum: 62589b282f4b626d99903469be529b5de2e140f34f5c11ca41686a938338f74ae4be9cf8b23477f2c1cf4e270093f6a7fc9e8c5afc607b10f985ed5931cddbb5
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db":
+  version: 2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db
+  resolution: "@prisma/engines@npm:2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db"
+  checksum: 17d5068e2505875400f9c0095989997b2ed5241894f6735db4cc6e65e98829516b3dedd32159c0a6459a127344046827759e3c8927a2843b9b3e940ea688cb13
+  languageName: node
+  linkType: hard
+
 "@reach/router@npm:^1.3.4":
   version: 1.3.4
   resolution: "@reach/router@npm:1.3.4"
@@ -4979,6 +5023,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/node10@npm:^1.0.7":
+  version: 1.0.8
+  resolution: "@tsconfig/node10@npm:1.0.8"
+  checksum: b8d5fffbc6b17ef64ef74f7fdbccee02a809a063ade785c3648dae59406bc207f70ea2c4296f92749b33019fa36a5ae716e42e49cc7f1bbf0fd147be0d6b970a
+  languageName: node
+  linkType: hard
+
+"@tsconfig/node12@npm:^1.0.7":
+  version: 1.0.9
+  resolution: "@tsconfig/node12@npm:1.0.9"
+  checksum: a01b2400ab3582b86b589c6d31dcd0c0656f333adecde85d6d7d4086adb059808b82692380bb169546d189bf771ae21d02544a75b57bd6da4a5dd95f8567bec9
+  languageName: node
+  linkType: hard
+
+"@tsconfig/node14@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@tsconfig/node14@npm:1.0.1"
+  checksum: 976345e896c0f059867f94f8d0f6ddb8b1844fb62bf36b727de8a9a68f024857e5db97ed51d3325e23e0616a5e48c034ff51a8d595b3fe7e955f3587540489be
+  languageName: node
+  linkType: hard
+
+"@tsconfig/node16@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@tsconfig/node16@npm:1.0.2"
+  checksum: ca94d3639714672bbfd55f03521d3f56bb6a25479bd425da81faf21f13e1e9d15f40f97377dedbbf477a5841c5b0c8f4cd1b391f33553d750b9202c54c2c07aa
+  languageName: node
+  linkType: hard
+
 "@types/aria-query@npm:^4.2.0":
   version: 4.2.2
   resolution: "@types/aria-query@npm:4.2.2"
@@ -5289,17 +5361,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.14.33":
-  version: 14.14.33
-  resolution: "@types/node@npm:14.14.33"
-  checksum: bce02f05074c6ee08b8846847e592fda1642f0e3c5b668671a5300594317c06ed0b6c013f5873037fbe98f41e7a94c8f7fc8f5ff49145417b36c0321a553ff3c
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:^14.0.10, @types/node@npm:^14.14.31":
   version: 14.17.16
   resolution: "@types/node@npm:14.17.16"
   checksum: 257e85d0c89310115312b8954f90588ec35065cace86dfe7989d223028c2d47af7c154074482f82988c1f9c1e6e80fef428f569f9767816987c71f6bc661fcb0
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.9.2":
+  version: 16.9.2
+  resolution: "@types/node@npm:16.9.2"
+  checksum: 204aa883bc93a267f43804af8872e538935369ab905d5ca702d2c17a213339f8df974bb95d21e2e714e8f83f669b185d8526f7c4b5d16adbdb5d96d4f2e75fa9
   languageName: node
   linkType: hard
 
@@ -6223,7 +6295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-walk@npm:^8.0.0":
+"acorn-walk@npm:^8.0.0, acorn-walk@npm:^8.1.1":
   version: 8.2.0
   resolution: "acorn-walk@npm:8.2.0"
   checksum: 1715e76c01dd7b2d4ca472f9c58968516a4899378a63ad5b6c2d668bba8da21a71976c14ec5f5b75f887b6317c4ae0b897ab141c831d741dc76024d8745f1ad1
@@ -19554,6 +19626,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"prisma@npm:3.0.2":
+  version: 3.0.2
+  resolution: "prisma@npm:3.0.2"
+  dependencies:
+    "@prisma/engines": 2.31.0-32.2452cc6313d52b8b9a96999ac0e974d0aedf88db
+  bin:
+    prisma: build/index.js
+    prisma2: build/index.js
+  checksum: 916d0c190724eec13a74c8fd68f2a84fde12e841041897cfaf242050a67ae2eef8c54ad5c2823126da7d0cf21d1f8819e5ca7efef82d59271b78dfa326025299
+  languageName: node
+  linkType: hard
+
 "prismjs@npm:^1.21.0, prismjs@npm:~1.24.0":
   version: 1.24.1
   resolution: "prismjs@npm:1.24.1"
@@ -23439,6 +23523,42 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"ts-node@npm:^10.2.1":
+  version: 10.2.1
+  resolution: "ts-node@npm:10.2.1"
+  dependencies:
+    "@cspotcode/source-map-support": 0.6.1
+    "@tsconfig/node10": ^1.0.7
+    "@tsconfig/node12": ^1.0.7
+    "@tsconfig/node14": ^1.0.0
+    "@tsconfig/node16": ^1.0.2
+    acorn: ^8.4.1
+    acorn-walk: ^8.1.1
+    arg: ^4.1.0
+    create-require: ^1.1.0
+    diff: ^4.0.1
+    make-error: ^1.1.1
+    yn: 3.1.1
+  peerDependencies:
+    "@swc/core": ">=1.2.50"
+    "@swc/wasm": ">=1.2.50"
+    "@types/node": "*"
+    typescript: ">=2.7"
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    "@swc/wasm":
+      optional: true
+  bin:
+    ts-node: dist/bin.js
+    ts-node-cwd: dist/bin-cwd.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: f37d2827a583c51d012cdd3d9b96629fba7a5b5dfad2c26ca48c7c89f904118924689ca56f4b9b2136217194870a76f26aae06e3490ee613b0e960f02dc96bbe
+  languageName: node
+  linkType: hard
+
 "ts-node@npm:^9.1.1, ts-node@npm:~9.1.1":
   version: 9.1.1
   resolution: "ts-node@npm:9.1.1"
@@ -23687,23 +23807,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~4.3.5#~builtin<compat/typescript>":
-  version: 4.3.5
-  resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=32657b"
+typescript@^4.4.3:
+  version: 4.4.3
+  resolution: "typescript@npm:4.4.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 4e2edec3c9b7b9a22ad9cbf9371339d9e13bfe44731f0e2d6a5287f991c3b0e3e0ac0c0ebbf9bf6fc2051e30559c789bfc9cf572cd6b836a0222ae141fac1dba
+  checksum: 05823f21796d450531a7e4ab299715d38fd9ded0e4ce7400876053f4b5166ca3dde7a68cecfe72d9086039f03c0b6edba36516fb10ed83c5837d9600532ea4c2
   languageName: node
   linkType: hard
 
-typescript@~4.3.5:
-  version: 4.3.5
-  resolution: "typescript@npm:4.3.5"
+"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+  version: 4.4.3
+  resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: bab033b5e2b0790dd35b77fd005df976ef80b8d84fd2c6e63cc31808151875beae9216e5a315fe7068e8499905c3c354248fe83272cdfc13b7705635f0c66c97
+  checksum: 28ab98313afab46788ff41014fdb5932430ada6e03cf9e92ac47f406526a2cac1ae2894834e7da61e46b7429318e9c47f45ba8de323332f0cb9af99b72ebae74
   languageName: node
   linkType: hard
 
@@ -24474,6 +24594,7 @@ typescript@~4.3.5:
     "@nrwl/workspace": 12.9.0
     "@nx-tools/nx-docker": ^1.0.5
     "@pmmmwh/react-refresh-webpack-plugin": 0.5.0-rc.2
+    "@prisma/client": 3.0.2
     "@reach/skip-nav": ^0.16.0
     "@storybook/addon-essentials": ~6.3.0
     "@storybook/react": ~6.3.0
@@ -24490,7 +24611,7 @@ typescript@~4.3.5:
     "@types/history": ^4.7.9
     "@types/jest": 26.0.24
     "@types/mocha": ^9.0.0
-    "@types/node": 14.14.33
+    "@types/node": ^16.9.2
     "@types/nprogress": ^0.2.0
     "@types/react": 17.0.3
     "@types/react-dom": 17.0.3
@@ -24529,6 +24650,7 @@ typescript@~4.3.5:
     postcss-nesting: ^8.0.1
     postcss-preset-env: ^6.7.0
     prettier: ^2.3.1
+    prisma: 3.0.2
     react: 17.0.2
     react-dom: 17.0.2
     react-refresh: ^0.10.0
@@ -24545,8 +24667,9 @@ typescript@~4.3.5:
     tailwindcss: ^2.2.14
     terser-webpack-plugin: ^5.1.1
     ts-jest: 27.0.3
+    ts-node: ^10.2.1
     tslib: ^2.0.0
-    typescript: ~4.3.5
+    typescript: ^4.4.3
     url-loader: ^3.0.0
     webpack: ^5.47.0
     webpack-dev-server: 4.0.0-rc.0
