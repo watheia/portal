@@ -56,3 +56,9 @@ package.tgz
 
 .coveralls.yml
 libs/auth/.env
+prisma/migrations/migration_lock.toml
+prisma/migrations/20210917064905_2021_09_16_initial_setup/migration.sql
+prisma/migrations/20210917065127_2021_09_16_02_use_naming_conventions/migration.sql
+prisma/migrations/20210917081841_/migration.sql
+prisma/dev.db-journal
+prisma/dev.db
