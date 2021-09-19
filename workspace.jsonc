@@ -1,0 +1,106 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
+ **/ {
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "layout",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://cdn.watheia.org/assets/logo.svg",
+    /**
+     * default directory for all components in workspace, the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "libs/components/src/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "watheia.layout"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/yarn",
+    "policy": {
+      "dependencies": {},
+      "peerDependencies": {
+        "@adobe/react-spectrum": "^3.11.1",
+        "@emotion/react": "^11.4.0",
+        "@emotion/styled": "^11.3.0",
+        "@popperjs/core": "^2.0.0",
+        "@spectrum-icons/ui": "^3.2.0",
+        "@spectrum-icons/workflow": "^3.2.0",
+        "@types/react": "^17.0.14",
+        "@types/react-dom": "^17.0.9",
+        "@types/react-router-dom": "^5.1.8",
+        "react": "^17.0.0",
+        "react-dom": "^17.0.0",
+        "react-router-dom": "^5.2.0"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": ["**/*.spec.ts"],
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your
+   * workspace. this is extremely useful for upgrading, aligning and building components with a new
+   * set of dependencies. a rule can be a directory or a component-id/namespace, in which case,
+   * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
+   * see https://harmony-docs.bit.dev/aspects/variants for more info.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * "*" is a special rule which applied on all components in the workspace.
+     **/
+    "*": {
+      "teambit.dependencies/dependency-resolver": {},
+      "teambit.pkg/pkg": {
+        "packageManagerPublishArgs": ["--access public"],
+        "packageJson": {
+          "name": "@watheia/{scope}.{name}",
+          "private": false,
+          "license": "EPL-2.0",
+          "author": "Aaron R Miller<amiller@watheia.org>",
+          "homepage": "https://watheia.app/home",
+          "repository": {
+            "url": "https://bit.dev/{scope}/{name}"
+          },
+          "keywords": [
+            "micro component",
+            "micro frontend",
+            "watheia",
+            "bit",
+            "atomic design",
+            "spectrum"
+          ]
+        }
+      }
+    },
+    "{ui/*}": {
+      "defaultScope": "watheia.app",
+      "teambit.react/react": {}
+    },
+    "{theme/**}": {
+      "defaultScope": "watheia.theme",
+      "teambit.react/react": {}
+    }
+  }
+}

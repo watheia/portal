@@ -24,16 +24,49 @@
     "paths": {
       "@gatekeeper/assets": ["libs/assets/src/index.ts"],
       "@watheia/atoms": ["libs/ui/atom/src/index.ts"],
+      "@watheia/atoms.button": ["libs/ui/atoms/button/src/index.ts"],
+      "@watheia/atoms.link": ["libs/ui/atoms/link/src/index.ts"],
+      "@watheia/atoms.text": ["libs/ui/atoms/text/src/index.ts"],
+      "@watheia/atoms.view": ["libs/ui/atoms/view/src/index.ts"],
       "@watheia/auth": ["libs/auth/src/index.ts"],
       "@watheia/helpers": ["libs/helpers/src/index.ts"],
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
+      "@watheia/molecules.buttongroup": ["libs/ui/molecules/buttongroup/src/index.ts"],
+      "@watheia/molecules.form": ["libs/ui/molecules/form/src/index.ts"],
       "@watheia/navigation": ["libs/navigation/src/index.ts"],
+      "@watheia/organisms.layout": ["libs/ui/organisms/layout/src/index.ts"],
+      "@watheia/test.utils": ["libs/test/utils/src/index.ts"],
+      "@watheia/theme.dark": ["libs/theme/dark/src/index.ts"],
+      "@watheia/theme.default": ["libs/theme/default/src/index.ts"],
+      "@watheia/theme.light": ["libs/theme/light/src/index.ts"],
+      "@watheia/theme.provider": ["libs/theme/provider/src/index.ts"],
+      "@watheia/theme.styles.button/*": ["libs/theme/styles/src/components/button/*"],
+      "@watheia/theme.styles.buttongroup/*": [
+        "libs/theme/styles/src/components/buttongroup/*"
+      ],
+      "@watheia/theme.styles.commons/*": ["libs/theme/styles/src/components/commons/*"],
+      "@watheia/theme.styles.dialog/*": ["libs/theme/styles/src/components/dialog/*"],
+      "@watheia/theme.styles.helptext/*": ["libs/theme/styles/src/components/helptext/*"],
+      "@watheia/theme.styles.icon/*": ["libs/theme/styles/src/components/icon/*"],
+      "@watheia/theme.styles.link/*": ["libs/theme/styles/src/components/link/*"],
+      "@watheia/theme.styles.overlay/*": [
+        "libs/theme/styles/src/components/overlay/index.css"
+      ],
+      "@watheia/theme.styles.page/*": ["libs/theme/styles/src/components/page/*"],
+      "@watheia/theme.styles.typography/*": [
+        "libs/theme/styles/src/components/typography/*"
+      ],
+      "@watheia/theme.styles.vars/*": ["libs/theme/styles/src/vars/*"],
+      "@watheia/theme.styles.well/*": ["libs/theme/styles/src/components/well/*"],
+      "@watheia/ui.atoms.divider": ["libs/ui/atoms/divider/src/index.ts"],
+      "@watheia/utils": ["libs/utils/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],
       "@waweb/assets.styles/*": ["libs/assets/src/styles/*"]
     }
   },
+  "include": ["css-module-type.d.ts"],
   "exclude": ["node_modules", "tmp"]
 }

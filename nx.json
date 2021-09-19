@@ -78,7 +78,49 @@
       "tags": [],
       "implicitDependencies": ["nextjs-stackbit-starter"]
     },
-    "ui-atom": {
+    "test-utils": {
+      "tags": []
+    },
+    "theme-dark": {
+      "tags": []
+    },
+    "theme-default": {
+      "tags": []
+    },
+    "theme-light": {
+      "tags": []
+    },
+    "theme-provider": {
+      "tags": []
+    },
+    "theme-styles": {
+      "tags": []
+    },
+    "ui-atoms-button": {
+      "tags": []
+    },
+    "ui-atoms-divider": {
+      "tags": []
+    },
+    "ui-atoms-link": {
+      "tags": []
+    },
+    "ui-atoms-text": {
+      "tags": []
+    },
+    "ui-atoms-view": {
+      "tags": []
+    },
+    "ui-molecules-buttongroup": {
+      "tags": []
+    },
+    "ui-molecules-form": {
+      "tags": []
+    },
+    "ui-organisms-layout": {
+      "tags": []
+    },
+    "utils": {
       "tags": []
     },
     "views": {

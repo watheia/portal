@@ -36,7 +36,7 @@ const renderIcon = (iconClass: string): JSX.Element => {
 /**
  * Component to display the icon
  *
- * @param {Object} props
+ * @param {Record<string, any>} props
  */
 const Icon = ({ iconClass, iconColor, className, ...rest }: IconProps): JSX.Element => {
   return <div>{renderIcon(iconClass)}</div>
