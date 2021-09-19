@@ -1,25 +1,15 @@
-import { AppProps } from "next/app"
-import Head from "next/head"
-import "./styles.css"
+import React from "react"
+import { UserContextProvider } from "../hooks/authUser"
 
-function CustomApp({ Component, pageProps }: AppProps) {
+import "@waweb/assets.styles/index.css"
+import "../styles/globals.css"
+
+export default function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Head>
-        <title>Welcome to nextjs-auth-tailwind!</title>
-      </Head>
-      <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to nextjs-auth-tailwind!</h1>
-        </header>
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </div>
-    </>
+    <div className={"dark"}>
+      <UserContextProvider>
+        <Component {...pageProps} />
+      </UserContextProvider>
+    </div>
   )
 }
-
-export default CustomApp

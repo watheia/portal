@@ -5465,6 +5465,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supabase/ui@npm:^0.35.0":
+  version: 0.35.0
+  resolution: "@supabase/ui@npm:0.35.0"
+  dependencies:
+    fsevents: ^2.3.2
+    lodash: ^4.17.20
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.1
+    react-dom: ^16.13.1 || ^17.0.1
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 9f67037e5b8ffd0ca40c70141653ddc978bcdd71e2f6251ee1074dfe6e42355c1e3babf2dce15c521827d7bdb1fca1f6cfc1be7f0e5602e02df4d7358a83c1a4
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:^5.4.0":
   version: 5.4.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:5.4.0"
@@ -26781,6 +26798,7 @@ typescript@^4.4.3:
     "@storybook/addon-essentials": ~6.3.0
     "@storybook/react": ~6.3.0
     "@supabase/supabase-js": ^1.22.5
+    "@supabase/ui": ^0.35.0
     "@svgr/webpack": ^5.4.0
     "@tailwindcss/aspect-ratio": ^0.2.1
     "@tailwindcss/forms": ^0.3.3

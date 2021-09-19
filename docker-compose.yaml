@@ -18,7 +18,7 @@ services:
       - db
     # command: "strapi start"
     # volumes:
-      # - ./app:/srv/app
+    # - ./app:/srv/app
 
   db:
     container_name: postgres

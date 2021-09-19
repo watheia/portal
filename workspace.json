@@ -496,6 +496,84 @@
         }
       }
     },
+    "nextjs-stackbit-starter": {
+      "root": "apps/nextjs-stackbit-starter",
+      "sourceRoot": "apps/nextjs-stackbit-starter",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/nextjs-stackbit-starter",
+            "outputPath": "dist/apps/nextjs-stackbit-starter"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "nextjs-stackbit-starter:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "nextjs-stackbit-starter:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "nextjs-stackbit-starter:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/nextjs-stackbit-starter"],
+          "options": {
+            "jestConfig": "apps/nextjs-stackbit-starter/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/nextjs-stackbit-starter/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "nextjs-stackbit-starter-e2e": {
+      "root": "apps/nextjs-stackbit-starter-e2e",
+      "sourceRoot": "apps/nextjs-stackbit-starter-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/nextjs-stackbit-starter-e2e/cypress.json",
+            "devServerTarget": "nextjs-stackbit-starter:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nextjs-stackbit-starter:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/nextjs-stackbit-starter-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "ui-atom": {
       "root": "libs/ui/atom",
       "sourceRoot": "libs/ui/atom/src",

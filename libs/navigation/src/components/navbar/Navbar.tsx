@@ -122,9 +122,9 @@ export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
   const activeRoute = router?.asPath ?? "/"
   const { session, user } = useSession()
 
-  console.log(`Update active route: ${activeRoute}`)
-  console.log(session)
-  console.log(user)
+  // console.log(`Update active route: ${activeRoute}`)
+  // console.log(session)
+  // console.log(user)
 
   return (
     <Disclosure as="nav" className={clsx(styles.root, className)} {...props}>
