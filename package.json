@@ -109,7 +109,7 @@
     "@testing-library/user-event": "^13.2.1",
     "@types/chai": "^4.2.21",
     "@types/history": "^4.7.9",
-    "@types/jest": "26.0.24",
+    "@types/jest": "^27.0.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.2",
     "@types/nprogress": "^0.2.0",

@@ -50,9 +50,7 @@
       "@watheia/theme.styles.helptext/*": ["libs/theme/styles/src/components/helptext/*"],
       "@watheia/theme.styles.icon/*": ["libs/theme/styles/src/components/icon/*"],
       "@watheia/theme.styles.link/*": ["libs/theme/styles/src/components/link/*"],
-      "@watheia/theme.styles.overlay/*": [
-        "libs/theme/styles/src/components/overlay/index.css"
-      ],
+      "@watheia/theme.styles.overlay/*": ["libs/theme/styles/src/components/overlay/*"],
       "@watheia/theme.styles.page/*": ["libs/theme/styles/src/components/page/*"],
       "@watheia/theme.styles.typography/*": [
         "libs/theme/styles/src/components/typography/*"
@@ -60,6 +58,8 @@
       "@watheia/theme.styles.vars/*": ["libs/theme/styles/src/vars/*"],
       "@watheia/theme.styles.well/*": ["libs/theme/styles/src/components/well/*"],
       "@watheia/ui.atoms.divider": ["libs/ui/atoms/divider/src/index.ts"],
+      "@watheia/ui.atoms.button": ["libs/ui/atoms/button/src/index.ts"],
+      "@watheia/ui.atoms.text": ["libs/ui/atoms/text/src/index.ts"],
       "@watheia/utils": ["libs/utils/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],

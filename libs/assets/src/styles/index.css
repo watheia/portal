@@ -1,7 +1,3 @@
 @tailwind base;
-@import "./base.css";
-
-@tailwind components;
-@import "./components.css";
-
-@tailwind utilities;
+@import "./base.module.css" @tailwind components;
+@import "./components.module.css" @tailwind utilities;

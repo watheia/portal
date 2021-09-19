@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -11,8 +12,16 @@
  */
 
 import { act, fireEvent } from "@testing-library/react"
-import type { ITypeOpts } from "@testing-library/user-event"
+
 import userEvent from "@testing-library/user-event"
+
+export interface ITypeOpts {
+  skipClick?: boolean
+  skipAutoClose?: boolean
+  delay?: number
+  initialSelectionStart?: number
+  initialSelectionEnd?: number
+}
 
 // Triggers a "press" event on an element.
 // TODO: move to somewhere more common
@@ -28,7 +37,6 @@ export function triggerPress(element, opts = {}) {
 export function installMouseEvent() {
   beforeAll(() => {
     const oldMouseEvent = MouseEvent
-    // @ts-ignore
     global.MouseEvent = class FakeMouseEvent extends MouseEvent {
       _init: { pageX: number; pageY: number }
       constructor(name, init) {
