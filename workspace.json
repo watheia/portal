@@ -115,81 +115,21 @@
         }
       }
     },
-    "conduit": {
-      "root": "apps/conduit",
-      "sourceRoot": "apps/conduit",
+    "docs": {
       "projectType": "application",
+      "root": "apps/docs",
+      "sourceRoot": "apps/docs/src",
       "targets": {
         "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
+          "executor": "@nx-plus/docusaurus:browser",
           "options": {
-            "root": "apps/conduit",
-            "outputPath": "dist/apps/conduit"
-          },
-          "configurations": {
-            "production": {}
+            "outputPath": "dist/apps/docs"
           }
         },
         "serve": {
-          "executor": "@nrwl/next:server",
+          "executor": "@nx-plus/docusaurus:dev-server",
           "options": {
-            "buildTarget": "conduit:build",
-            "dev": true,
-            "port": 4400
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "conduit:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "conduit:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/conduit"],
-          "options": {
-            "jestConfig": "apps/conduit/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/conduit/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
-    "conduit-e2e": {
-      "root": "apps/conduit-e2e",
-      "sourceRoot": "apps/conduit-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/conduit-e2e/cypress.json",
-            "devServerTarget": "conduit:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "conduit:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/conduit-e2e/**/*.{js,ts}"]
+            "port": 3000
           }
         }
       }
@@ -633,6 +573,5 @@
         "linter": "eslint"
       }
     }
-  },
-  "defaultProject": "conduit"
+  }
 }

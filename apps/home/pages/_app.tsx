@@ -1,13 +1,17 @@
+import React from "react"
 import { AppProps } from "next/app"
 import { Layout } from "@watheia/layout"
 
 import "@waweb/assets.styles/index.css"
+import { SessionProvider } from "@watheia/auth"
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <SessionProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </SessionProvider>
   )
 }
 

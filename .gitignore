@@ -58,3 +58,7 @@ package.tgz
 libs/auth/.env
 prisma/migrations/
 prisma/dev.db*
+
+# Generated Docusaurus files
+.docusaurus/
+.cache-loader/
