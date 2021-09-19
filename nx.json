@@ -64,6 +64,13 @@
       "tags": [],
       "implicitDependencies": ["navigation"]
     },
+    "nextjs-auth-tailwind": {
+      "tags": []
+    },
+    "nextjs-auth-tailwind-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nextjs-auth-tailwind"]
+    },
     "ui-atom": {
       "tags": []
     },

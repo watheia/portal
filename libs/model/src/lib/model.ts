@@ -23,7 +23,7 @@ export const stats: Stat[] = [
 export const features: Feature[] = [
   {
     id: 0,
-    name: "Push to Deploy",
+    name: "Infrastructure as Code",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.",
     icon: CloudUploadIcon

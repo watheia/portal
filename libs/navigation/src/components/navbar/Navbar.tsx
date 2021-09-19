@@ -24,12 +24,6 @@ const MobileMenuButton = ({ isOpen }: { isOpen?: boolean }) => (
   </Disclosure.Button>
 )
 
-export type MobileNavProps = {
-  activeRoute: string
-  user?: User | null
-} & NavigationContext &
-  HtmlHTMLAttributes<HTMLDivElement>
-
 const UserInfo = ({ user }: { user: User }) => (
   <div className="pt-4 pb-3 border-t border-shark-700">
     <div className="flex items-center px-5">
@@ -72,6 +66,13 @@ const UserMenu = ({ routes }: { routes: Route[] }) => (
     ))}
   </div>
 )
+
+export type MobileNavProps = {
+  activeRoute: string
+  user?: User | null
+} & NavigationContext &
+  HtmlHTMLAttributes<HTMLDivElement>
+
 const MobileNav = ({ navigation, activeRoute, user, ...props }: MobileNavProps) => {
   return (
     <Disclosure.Panel className="md:hidden" {...props}>
@@ -100,9 +101,9 @@ const MobileNav = ({ navigation, activeRoute, user, ...props }: MobileNavProps) 
   )
 }
 
-type UserMenuProps = { userNavigation: Route[]; user: User }
+type UserNavGroupProps = { userNavigation: Route[]; user: User }
 
-const UserNavGroup = ({ userNavigation, user }: UserMenuProps) => (
+const UserNavGroup = ({ userNavigation, user }: UserNavGroupProps) => (
   <div className="hidden md:block">
     <div className="ml-4 flex items-center md:ml-6">
       <button type="button" className={styles.notifications}>
@@ -119,7 +120,11 @@ export type NavbarProps = NavigationContext & HtmlHTMLAttributes<HTMLDivElement>
 export const Navbar = ({ navigation, className, ...props }: NavbarProps) => {
   const router = useRouter()
   const activeRoute = router?.asPath ?? "/"
-  const { user } = useSession()
+  const { session, user } = useSession()
+
+  console.log(`Update active route: ${activeRoute}`)
+  console.log(session)
+  console.log(user)
 
   return (
     <Disclosure as="nav" className={clsx(styles.root, className)} {...props}>

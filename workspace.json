@@ -418,6 +418,84 @@
         }
       }
     },
+    "nextjs-auth-tailwind": {
+      "root": "apps/nextjs-auth-tailwind",
+      "sourceRoot": "apps/nextjs-auth-tailwind",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/nextjs-auth-tailwind",
+            "outputPath": "dist/apps/nextjs-auth-tailwind"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "nextjs-auth-tailwind:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "nextjs-auth-tailwind:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "nextjs-auth-tailwind:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/nextjs-auth-tailwind"],
+          "options": {
+            "jestConfig": "apps/nextjs-auth-tailwind/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/nextjs-auth-tailwind/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "nextjs-auth-tailwind-e2e": {
+      "root": "apps/nextjs-auth-tailwind-e2e",
+      "sourceRoot": "apps/nextjs-auth-tailwind-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/nextjs-auth-tailwind-e2e/cypress.json",
+            "devServerTarget": "nextjs-auth-tailwind:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "nextjs-auth-tailwind:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/nextjs-auth-tailwind-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "ui-atom": {
       "root": "libs/ui/atom",
       "sourceRoot": "libs/ui/atom/src",
@@ -573,5 +651,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "nextjs-auth-tailwind"
 }

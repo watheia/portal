@@ -7,11 +7,12 @@ export const FeaturesSection = () => (
         Deploy faster
       </h2>
       <p className="mt-2 text-3xl font-extrabold text-shark-900 tracking-tight sm:text-4xl">
-        Everything you need to deploy your app
+        Everything you need to deploy domain-driven functions, services, and apps
       </p>
       <p className="mt-5 max-w-prose mx-auto text-xl text-shark-500">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis
-        nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+        We provide everything you need for modern micro frontend applications, focusing more
+        on the composition of independent components and services than monolithic apps.
+        Build with confidence using core technologies developed internally at Google.
       </p>
       <div className="mt-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

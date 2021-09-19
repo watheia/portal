@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { SessionCtx } from "./SessionCtx"
 
 import client from "../client"
 
-export const SessionProvider = (props: JSX.IntrinsicAttributes) => {
+export type SessionProviderProps = {
+  children: ReactNode | ReactNode[] | null
+} & JSX.IntrinsicAttributes
+
+export const SessionProvider = (props: SessionProviderProps) => {
   const [session, setSession] = useState<any>(false)
   const [user, setUser] = useState<any>(false)
 
