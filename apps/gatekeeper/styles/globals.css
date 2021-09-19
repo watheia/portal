@@ -5,6 +5,7 @@
 .authcontainer {
   max-width: 420px;
   margin: 96px auto;
+  background-color: var(--shark-9);
 }
 
 .authcontainer a {

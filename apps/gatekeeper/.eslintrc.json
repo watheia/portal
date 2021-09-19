@@ -10,7 +10,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parserOptions": {
-        "project": ["apps/nextjs-auth-tailwind/tsconfig(.*)?.json"]
+        "project": ["apps/gatekeeper/tsconfig.*?.json"]
       },
       "rules": {}
     },

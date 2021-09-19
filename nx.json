@@ -41,6 +41,13 @@
     "docs": {
       "tags": []
     },
+    "gatekeeper": {
+      "tags": []
+    },
+    "gatekeeper-e2e": {
+      "tags": [],
+      "implicitDependencies": ["gatekeeper"]
+    },
     "helpers": {
       "tags": []
     },
@@ -63,13 +70,6 @@
     "navigation-e2e": {
       "tags": [],
       "implicitDependencies": ["navigation"]
-    },
-    "nextjs-auth-tailwind": {
-      "tags": []
-    },
-    "nextjs-auth-tailwind-e2e": {
-      "tags": [],
-      "implicitDependencies": ["nextjs-auth-tailwind"]
     },
     "nextjs-stackbit-starter": {
       "tags": []
