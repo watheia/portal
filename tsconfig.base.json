@@ -22,7 +22,6 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@gatekeeper/assets": ["libs/assets/src/index.ts"],
       "@watheia/atoms": ["libs/ui/atom/src/index.ts"],
       "@watheia/auth": ["libs/auth/src/index.ts"],
       "@watheia/helpers": ["libs/helpers/src/index.ts"],

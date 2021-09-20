@@ -1,5 +1,5 @@
 {
-  "npmScope": "gatekeeper",
+  "npmScope": "watheia",
   "affected": {
     "defaultBase": "main"
   },
@@ -46,15 +46,6 @@
     },
     "docs": {
       "tags": []
-    },
-    "gatekeeper": {
-      "tags": []
-    },
-    "gatekeeper-e2e": {
-      "tags": [],
-      "implicitDependencies": [
-        "gatekeeper"
-      ]
     },
     "helpers": {
       "tags": []
