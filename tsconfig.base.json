@@ -29,6 +29,7 @@
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
       "@watheia/navigation": ["libs/navigation/src/index.ts"],
+      "@watheia/ui.atom.link": ["libs/ui/atom/link/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],
