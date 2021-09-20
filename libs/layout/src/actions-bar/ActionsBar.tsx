@@ -4,9 +4,127 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import { ChevronDownIcon } from "@heroicons/react/solid"
 import clsx from "clsx"
 import { Fragment, HtmlHTMLAttributes } from "react"
+import Link from "next/link"
 import { blogPosts, callsToAction, corporate, resources, solutions } from "./data"
 
 export type ActionsBarProps = HtmlHTMLAttributes<HTMLDivElement>
+
+const Logo = () => (
+  <Link href="/" passHref>
+    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+    <a className="flex">
+      <span className="sr-only">Home</span>
+      <img
+        className="h-8 w-auto sm:h-10"
+        src="https://cdn.watheia.org/assets/watheia.svg"
+        alt="Watheia"
+      />
+    </a>
+  </Link>
+)
+
+const MobileNavPanel = () => (
+  <Popover.Panel
+    focus
+    className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+  >
+    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-shark-50">
+      <div className="pt-5 pb-6 px-5 sm:pb-8">
+        <div className="flex items-center justify-between">
+          <div>
+            <Logo />
+          </div>
+          <div className="-mr-2">
+            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-shark-400 hover:text-shark-500 hover:bg-shark-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-aqua-500">
+              <span className="sr-only">Close menu</span>
+              <XIcon className="h-6 w-6" aria-hidden="true" />
+            </Popover.Button>
+          </div>
+        </div>
+        <div className="mt-6 sm:mt-8">
+          <nav>
+            <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
+              {solutions.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="-m-3 flex items-center p-3 rounded-lg hover:bg-shark-50"
+                >
+                  <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-aqua-500 text-white sm:h-12 sm:w-12">
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                  <div className="ml-4 text-base font-medium text-shark-900">
+                    {item.name}
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className="mt-8 text-base">
+              <a href="#" className="font-medium text-aqua-600 hover:text-aqua-500">
+                {" "}
+                View all products <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div className="py-6 px-5">
+        <div className="grid grid-cols-2 gap-4">
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Pricing
+          </a>
+
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Docs
+          </a>
+
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Company
+          </a>
+
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Resources
+          </a>
+
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Blog
+          </a>
+
+          <a
+            href="#"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Contact Sales
+          </a>
+        </div>
+        <div className="mt-6">
+          <p className="mt-6 text-center text-base font-medium text-shark-500">
+            Existing client?{" "}
+            <Link href="/auth">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a className="text-aqua-600 hover:text-aqua-500">Sign in</a>
+            </Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  </Popover.Panel>
+)
 
 export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
   return (
@@ -18,17 +136,10 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
       <div className="relative z-20">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="#" className="flex">
-              <span className="sr-only">Workflow</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt=""
-              />
-            </a>
+            <Logo />
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-shark-400 hover:text-shark-500 hover:bg-shark-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-aqua-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -40,15 +151,15 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                   <>
                     <Popover.Button
                       className={clsx(
-                        open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        open ? "text-shark-900" : "text-shark-500",
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-shark-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
                       )}
                     >
                       <span>Solutions</span>
                       <ChevronDownIcon
                         className={clsx(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                          open ? "text-shark-600" : "text-shark-400",
+                          "ml-2 h-5 w-5 group-hover:text-shark-500"
                         )}
                         aria-hidden="true"
                       />
@@ -69,24 +180,24 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+                              className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-shark-50"
                             >
                               <div className="flex md:h-full lg:flex-col">
                                 <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                  <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-aqua-500 text-white sm:h-12 sm:w-12">
                                     <item.icon className="h-6 w-6" aria-hidden="true" />
                                   </span>
                                 </div>
                                 <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                   <div>
-                                    <p className="text-base font-medium text-gray-900">
+                                    <p className="text-base font-medium text-shark-900">
                                       {item.name}
                                     </p>
-                                    <p className="mt-1 text-sm text-gray-500">
+                                    <p className="mt-1 text-sm text-shark-500">
                                       {item.description}
                                     </p>
                                   </div>
-                                  <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
+                                  <p className="mt-2 text-sm font-medium text-aqua-600 lg:mt-4">
                                     Learn more <span aria-hidden="true">&rarr;</span>
                                   </p>
                                 </div>
@@ -94,16 +205,16 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                             </a>
                           ))}
                         </div>
-                        <div className="bg-gray-50">
+                        <div className="bg-shark-50">
                           <div className="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
                                 <a
                                   href={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-shark-900 hover:bg-shark-100"
                                 >
                                   <item.icon
-                                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                    className="flex-shrink-0 h-6 w-6 text-shark-400"
                                     aria-hidden="true"
                                   />
                                   <span className="ml-3">{item.name}</span>
@@ -119,13 +230,13 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
               </Popover>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-base font-medium text-shark-500 hover:text-shark-900"
               >
                 Pricing
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-base font-medium text-shark-500 hover:text-shark-900"
               >
                 Docs
               </a>
@@ -134,15 +245,15 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                   <>
                     <Popover.Button
                       className={clsx(
-                        open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        open ? "text-shark-900" : "text-shark-500",
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-shark-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
                       )}
                     >
                       <span>More</span>
                       <ChevronDownIcon
                         className={clsx(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                          open ? "text-shark-600" : "text-shark-400",
+                          "ml-2 h-5 w-5 group-hover:text-shark-500"
                         )}
                         aria-hidden="true"
                       />
@@ -160,23 +271,23 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                       <Popover.Panel className="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
                         <div className="absolute inset-0 flex">
                           <div className="bg-white w-1/2" />
-                          <div className="bg-gray-50 w-1/2" />
+                          <div className="bg-shark-50 w-1/2" />
                         </div>
                         <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
                           <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div>
-                              <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                              <h3 className="text-sm font-medium tracking-wide text-shark-500 uppercase">
                                 Company
                               </h3>
-                              <ul role="list" className="mt-5 space-y-6">
+                              <ul className="mt-5 space-y-6">
                                 {corporate.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-shark-900 hover:bg-shark-50"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                        className="flex-shrink-0 h-6 w-6 text-shark-400"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -186,18 +297,18 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                               </ul>
                             </div>
                             <div>
-                              <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                              <h3 className="text-sm font-medium tracking-wide text-shark-500 uppercase">
                                 Resources
                               </h3>
-                              <ul role="list" className="mt-5 space-y-6">
+                              <ul className="mt-5 space-y-6">
                                 {resources.map((item) => (
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-shark-900 hover:bg-shark-50"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                        className="flex-shrink-0 h-6 w-6 text-shark-400"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -207,17 +318,17 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                               </ul>
                             </div>
                           </nav>
-                          <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                          <div className="bg-shark-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                             <div>
-                              <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                              <h3 className="text-sm font-medium tracking-wide text-shark-500 uppercase">
                                 From the blog
                               </h3>
-                              <ul role="list" className="mt-6 space-y-6">
+                              <ul className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
                                     <a
                                       href={post.href}
-                                      className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
+                                      className="-m-3 p-3 flex rounded-lg hover:bg-shark-100"
                                     >
                                       <div className="hidden sm:block flex-shrink-0">
                                         <img
@@ -227,10 +338,10 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                                         />
                                       </div>
                                       <div className="w-0 flex-1 sm:ml-8">
-                                        <h4 className="text-base font-medium text-gray-900 truncate">
+                                        <h4 className="text-base font-medium text-shark-900 truncate">
                                           {post.name}
                                         </h4>
-                                        <p className="mt-1 text-sm text-gray-500">
+                                        <p className="mt-1 text-sm text-shark-500">
                                           {post.preview}
                                         </p>
                                       </div>
@@ -240,7 +351,7 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
                               </ul>
                             </div>
                             <div className="mt-6 text-sm font-medium">
-                              <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                              <a href="#" className="text-aqua-600 hover:text-aqua-500">
                                 {" "}
                                 View all posts <span aria-hidden="true">&rarr;</span>
                               </a>
@@ -256,15 +367,9 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
             <div className="flex items-center md:ml-12">
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-base font-medium text-shark-500 hover:text-shark-900"
               >
                 Sign in
-              </a>
-              <a
-                href="#"
-                className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-              >
-                Sign up
               </a>
             </div>
           </div>
@@ -280,119 +385,10 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel
-          focus
-          className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-        >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5 sm:pb-8">
-              <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                </div>
-                <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-              <div className="mt-6 sm:mt-8">
-                <nav>
-                  <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                    {solutions.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
-                      >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">
-                          {item.name}
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                  <div className="mt-8 text-base">
-                    <a
-                      href="#"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
-                    >
-                      {" "}
-                      View all products <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Docs
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Company
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Resources
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Contact Sales
-                </a>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </Popover.Panel>
+        <MobileNavPanel />
       </Transition>
     </Popover>
   )
 }
+
+export default ActionsBar
