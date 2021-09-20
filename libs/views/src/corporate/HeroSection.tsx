@@ -18,7 +18,7 @@ const OfflineIndicator = () => (
     <span className="px-3 py-0.5 text-shark-50 text-xs font-semibold leading-5 uppercase tracking-wide bg-shark-400 rounded-full">
       offline
     </span>
-    <span className="ml-4 text-sm text-secondary-2">Login to activate time .</span>
+    <span className="ml-4 text-sm text-secondary-2">Login to activate realtime.</span>
   </span>
 )
 
@@ -26,10 +26,10 @@ export const HeroSection = () => {
   const { session } = useSession()
   // intentional cast to boolean representationd
   // eslint-disable-next-line no-extra-boolean-cast
-  const isOnline = !!!session?.user?.id
+  const isOnline = !!session?.user
 
   return (
-    <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden shadow-md">
+    <section className="pt-10 bg-shark-700 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden shadow-md">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">

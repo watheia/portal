@@ -15,7 +15,13 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "stylelint"
+        ],
         "accessToken": "YTU5MDQyNGEtZTFkOS00Mzg5LTg3MzEtYzMzZTIzODhiMTVifHJlYWQtd3JpdGU="
       }
     }
@@ -49,7 +55,9 @@
     },
     "home-e2e": {
       "tags": [],
-      "implicitDependencies": ["home"]
+      "implicitDependencies": [
+        "home"
+      ]
     },
     "layout": {
       "tags": []
@@ -62,31 +70,18 @@
     },
     "navigation-e2e": {
       "tags": [],
-      "implicitDependencies": ["navigation"]
-    },
-    "nextjs-auth-tailwind": {
-      "tags": []
-    },
-    "nextjs-auth-tailwind-e2e": {
-      "tags": [],
-      "implicitDependencies": ["nextjs-auth-tailwind"]
-    },
-    "nextjs-stackbit-starter": {
-      "tags": []
-    },
-    "nextjs-stackbit-starter-e2e": {
-      "tags": [],
-      "implicitDependencies": ["nextjs-stackbit-starter"]
-    },
-    "ui-atom": {
-      "tags": []
+      "implicitDependencies": [
+        "navigation"
+      ]
     },
     "views": {
       "tags": []
     },
     "views-e2e": {
       "tags": [],
-      "implicitDependencies": ["views"]
+      "implicitDependencies": [
+        "views"
+      ]
     }
   }
 }
