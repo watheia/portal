@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Login from "../pages/auth"
+import Image from "./Image"
 
-describe("Login", () => {
+describe("Image", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Login />)
+    const { baseElement } = render(<Image />)
     expect(baseElement).toBeTruthy()
   })
 })

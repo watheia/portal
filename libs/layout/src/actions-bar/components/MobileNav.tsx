@@ -1,7 +1,8 @@
 import { Popover } from "@headlessui/react"
 import { XIcon } from "@heroicons/react/outline"
-import { solutions } from "@watheia/model"
-import Link from "next/link"
+import { Logo } from "@watheia/gfx"
+import { solutions } from "../data"
+import { Link } from "@watheia/atoms"
 
 export const MobileNavPanel = () => (
   <Popover.Panel
@@ -25,7 +26,7 @@ export const MobileNavPanel = () => (
           <nav>
             <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
               {solutions.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="-m-3 flex items-center p-3 rounded-lg hover:bg-shark-50"
@@ -36,68 +37,67 @@ export const MobileNavPanel = () => (
                   <div className="ml-4 text-base font-medium text-shark-900">
                     {item.name}
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
             <div className="mt-8 text-base">
-              <a href="#" className="font-medium text-aqua-600 hover:text-aqua-500">
+              <Link
+                href="/corporate/solutions"
+                className="font-medium text-aqua-600 hover:text-aqua-500"
+              >
                 {" "}
-                View all products <span aria-hidden="true">&rarr;</span>
-              </a>
+                View all solutions <span aria-hidden="true">&rarr;</span>
+              </Link>
             </div>
           </nav>
         </div>
       </div>
       <div className="py-6 px-5">
         <div className="grid grid-cols-2 gap-4">
-          <a
-            href="#"
+          <Link
+            href="/corporate"
             className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
           >
-            Pricing
-          </a>
-
-          <a
-            href="#"
+            Corporate
+          </Link>
+          <Link
+            href="/potfolio"
+            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
+          >
+            Portfolio
+          </Link>
+          <Link
+            href="/docs"
             className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
           >
             Docs
-          </a>
-
-          <a
-            href="#"
-            className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
-          >
-            Company
-          </a>
-
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/resources"
             className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
           >
             Resources
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            href="/blog"
             className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
           >
             Blog
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="rounded-md text-base font-medium text-shark-900 hover:text-shark-700"
           >
             Contact Sales
-          </a>
+          </Link>
         </div>
         <div className="mt-6">
           <p className="mt-6 text-center text-base font-medium text-shark-500">
             Existing client?{" "}
-            <Link href="/auth">
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a className="text-aqua-600 hover:text-aqua-500">Sign in</a>
+            <Link href="/auth" className="text-aqua-600 hover:text-aqua-500">
+              Sign in
             </Link>
           </p>
         </div>
@@ -106,4 +106,4 @@ export const MobileNavPanel = () => (
   </Popover.Panel>
 )
 
-export default MobileNav
+export default MobileNavPanel

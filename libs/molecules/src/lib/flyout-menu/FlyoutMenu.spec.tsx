@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react"
 
-import Login from "../pages/auth"
+import FlyoutMenu from "./FlyoutMenu"
 
-describe("Login", () => {
+describe("FlyoutMenu", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Login />)
+    const { baseElement } = render(<FlyoutMenu />)
     expect(baseElement).toBeTruthy()
   })
 })

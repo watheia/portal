@@ -1,0 +1,10 @@
+.menu {
+}
+
+.menuButton {
+  @apply bg-white rounded-md inline-flex items-center font-medium hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500;
+}
+
+.chevron {
+  @apply ml-2 h-5 w-5 group-hover:text-primary-2;
+}

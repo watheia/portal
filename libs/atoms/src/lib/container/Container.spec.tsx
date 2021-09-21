@@ -1,9 +1,10 @@
 import { render } from "@testing-library/react"
-import Link from "./Link"
 
-describe("Link", () => {
+import Container from "./Container"
+
+describe("Container", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Link />)
+    const { baseElement } = render(<Container />)
     expect(baseElement).toBeTruthy()
   })
 })

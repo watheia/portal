@@ -1,1 +1,11 @@
-export * from "./lib/Link"
+export type { ButtonProps } from "./lib/button"
+export type { ContainerProps } from "./lib/container"
+export type { ImageProps } from "./lib/image"
+export type { TextProps } from "./lib/text"
+
+export * from "./lib/link"
+export * from "./lib/image"
+export * from "./lib/text"
+export * from "./lib/link"
+export * from "./lib/container"
+export * from "./lib/button"

@@ -9,25 +9,25 @@ export const solutions = [
   {
     name: "Analytics",
     description: "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+    href: "/corporate/solutions/analytics",
     icon: ChartBarIcon
   },
   {
     name: "Engagement",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
+    href: "/corporate/solutions/engagement",
     icon: CursorClickIcon
   },
   {
     name: "Security",
     description: "Your customers' data will be safe and secure.",
-    href: "#",
+    href: "/corporate/solutions/security",
     icon: ShieldCheckIcon
   },
   {
-    name: "Integrations",
+    name: "Integration",
     description: "Connect with third-party tools that you're already using.",
-    href: "#",
+    href: "/corporate/solutions/integration",
     icon: ViewGridIcon
   }
 ]

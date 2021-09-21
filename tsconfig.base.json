@@ -24,9 +24,11 @@
     "paths": {
       "@watheia/atoms": ["libs/atoms/src/index.ts"],
       "@watheia/auth": ["libs/auth/src/index.ts"],
+      "@watheia/gfx": ["libs/gfx/src/index.ts"],
       "@watheia/helpers": ["libs/helpers/src/index.ts"],
       "@watheia/layout": ["libs/layout/src/index.ts"],
       "@watheia/model": ["libs/model/src/index.ts"],
+      "@watheia/molecules": ["libs/molecules/src/index.ts"],
       "@watheia/navigation": ["libs/navigation/src/index.ts"],
       "@watheia/view.corporate": ["libs/views/src/corporate/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],

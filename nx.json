@@ -44,6 +44,9 @@
     "docs": {
       "tags": []
     },
+    "gfx": {
+      "tags": []
+    },
     "helpers": {
       "tags": []
     },
@@ -58,6 +61,9 @@
       "tags": []
     },
     "model": {
+      "tags": []
+    },
+    "molecules": {
       "tags": []
     },
     "navigation": {
