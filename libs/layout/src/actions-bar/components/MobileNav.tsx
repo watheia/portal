@@ -3,6 +3,22 @@ import { XIcon } from "@heroicons/react/outline"
 import { Logo } from "@watheia/gfx"
 import { solutions } from "../data"
 import { Link } from "@watheia/atoms"
+import { HtmlHTMLAttributes } from "react"
+import clsx from "clsx"
+
+type NavLinkProps = {
+  to: string
+} & Omit<HtmlHTMLAttributes<HTMLAnchorElement>, "href">
+
+export const NavLink = ({ to, children, ...rest }: NavLinkProps) => (
+  <Link
+    href="/docs"
+    className={clsx("rounded-md text-secondary-2 font-medium hover:text-secondary")}
+    {...rest}
+  >
+    {children}
+  </Link>
+)
 
 export const MobileNavPanel = () => (
   <Popover.Panel
