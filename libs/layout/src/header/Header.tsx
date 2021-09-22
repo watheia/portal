@@ -1,6 +1,6 @@
 import { Navbar, NavigationContext } from "@watheia/navigator"
 import { HtmlHTMLAttributes } from "react"
-import { ActionsBar } from "../actions-bar"
+import { ActionsBar } from "@watheia/organisms"
 import styles from "./Header.module.css"
 
 export type HeaderProps = NavigationContext & HtmlHTMLAttributes<HTMLDivElement>

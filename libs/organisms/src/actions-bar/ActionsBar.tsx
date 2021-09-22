@@ -49,12 +49,12 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
               <PrimaryNav />
-              <NavLink to="/portfolio">Portfolio</NavLink>
-              <NavLink to="/docs">Docs</NavLink>
+              <NavLink href="/portfolio">Portfolio</NavLink>
+              <NavLink href="/docs">Docs</NavLink>
               <SecondaryNav />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <NavLink to="/auth">Sign in</NavLink>
+              <NavLink href="/auth">Sign in</NavLink>
             </div>
           </div>
         </div>

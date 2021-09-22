@@ -6,7 +6,9 @@ export interface Route {
 }
 
 export type Navigation = {
-  user: Route[]
-  primary: Route[]
-  social: Route[]
+  navigation: {
+    user: Route[]
+    primary: Route[]
+    social: Route[]
+  }
 }
