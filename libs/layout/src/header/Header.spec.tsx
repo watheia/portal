@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react"
-import { navigation } from "@watheia/navigation"
+import { navigation } from "@watheia/navigator"
 import Header from "./Header"
 
 describe("Header", () => {

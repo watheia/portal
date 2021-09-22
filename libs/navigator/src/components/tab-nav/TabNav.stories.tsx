@@ -1,6 +1,6 @@
 import { Story, Meta } from "@storybook/react"
 import { TabNav, TabNavProps } from "./TabNav"
-import { navigation } from "../../navigation"
+import { navigation } from "../../data"
 
 export default {
   component: TabNav,

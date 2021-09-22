@@ -1,3 +1,4 @@
+export * from "./lib/compare-url"
 export * from "./lib/is-browser"
 export * from "./lib/primitive-types"
 export * from "./lib/string-affix"

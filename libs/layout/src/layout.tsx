@@ -1,5 +1,5 @@
 import { HtmlHTMLAttributes } from "react"
-import { navigation } from "@watheia/navigation"
+import { navigation } from "@watheia/navigator"
 import Paper from "./paper"
 import Footer from "./footer"
 import SEO, { SEOProps } from "./seo"

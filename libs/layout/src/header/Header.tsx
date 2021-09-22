@@ -1,4 +1,4 @@
-import { Navbar, NavigationContext } from "@watheia/navigation"
+import { Navbar, NavigationContext } from "@watheia/navigator"
 import { HtmlHTMLAttributes } from "react"
 import { ActionsBar } from "../actions-bar"
 import styles from "./Header.module.css"

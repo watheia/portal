@@ -2,7 +2,7 @@ import { HtmlHTMLAttributes } from "react"
 import Icon from "./SocialIcon"
 import Link from "next/link"
 import clsx from "clsx"
-import { Route } from "@watheia/navigation"
+import { Route } from "@watheia/navigator"
 
 export const social: Route[] = [
   {

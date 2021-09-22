@@ -15,7 +15,13 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "stylelint"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "stylelint"
+        ],
         "accessToken": "YTU5MDQyNGEtZTFkOS00Mzg5LTg3MzEtYzMzZTIzODhiMTVifHJlYWQtd3JpdGU="
       }
     }
@@ -55,7 +61,9 @@
     },
     "home-e2e": {
       "tags": [],
-      "implicitDependencies": ["home"]
+      "implicitDependencies": [
+        "home"
+      ]
     },
     "layout": {
       "tags": []
@@ -66,12 +74,17 @@
     "molecules": {
       "tags": []
     },
-    "navigation": {
+    "navigator": {
       "tags": []
     },
-    "navigation-e2e": {
+    "navigator-e2e": {
       "tags": [],
-      "implicitDependencies": ["navigation"]
+      "implicitDependencies": [
+        "navigator"
+      ]
+    },
+    "organisms": {
+      "tags": []
     },
     "utils": {
       "tags": []
@@ -81,7 +94,9 @@
     },
     "views-e2e": {
       "tags": [],
-      "implicitDependencies": ["views"]
+      "implicitDependencies": [
+        "views"
+      ]
     }
   }
 }

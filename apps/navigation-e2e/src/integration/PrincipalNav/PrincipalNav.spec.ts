@@ -1,4 +1,4 @@
-describe("navigation: SessionCtxNav component", () => {
+describe("navigator: SessionCtxNav component", () => {
   beforeEach(() => cy.visit("/iframe.html?id=principalnav--primary"))
 
   it("should render the component", () => {

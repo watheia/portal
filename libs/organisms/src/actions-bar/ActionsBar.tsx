@@ -11,6 +11,7 @@ import { Link, Button } from "@watheia/atoms"
 import styles from "./ActionsBar.module.css"
 import PrimaryNav from "./components/PrimaryNav"
 import SecondaryNav from "./components/SecondaryNav"
+import { NavLink } from "@watheia/navigator"
 
 const CloseButton = () => (
   <Popover.Button className="bg-shark-50 rounded-md p-2 inline-flex items-center justify-center text-shark-400 hover:text-shark-500 hover:bg-shark-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-aqua-500">
@@ -48,18 +49,12 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
               <PrimaryNav />
-              <Link href="/portfolio" className={styles.navLink}>
-                Portfolio
-              </Link>
-              <Link href="/docs" className={styles.navLink}>
-                Docs
-              </Link>
+              <NavLink to="/portfolio">Portfolio</NavLink>
+              <NavLink to="/docs">Docs</NavLink>
               <SecondaryNav />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <Link href="/auth" className={styles.navLink}>
-                Sign in
-              </Link>
+              <NavLink to="/auth">Sign in</NavLink>
             </div>
           </div>
         </div>
