@@ -73,6 +73,9 @@
       "tags": [],
       "implicitDependencies": ["navigation"]
     },
+    "utils": {
+      "tags": []
+    },
     "views": {
       "tags": []
     },
