@@ -5,7 +5,7 @@ import {
   TestimonialSection,
   StatsSection,
   CtaSection
-} from "@watheia/view.corporate"
+} from "@watheia/app.ui.views"
 
 const CorporateIndex = () => {
   console.log("Initializing app context...")

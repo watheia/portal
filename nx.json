@@ -35,9 +35,6 @@
     "assets": {
       "tags": []
     },
-    "atoms": {
-      "tags": []
-    },
     "auth": {
       "tags": []
     },
@@ -47,9 +44,6 @@
     "docs": {
       "tags": []
     },
-    "gfx": {
-      "tags": []
-    },
     "home": {
       "tags": []
     },
@@ -57,27 +51,30 @@
       "tags": [],
       "implicitDependencies": ["home"]
     },
-    "layout": {
+    "ui-atoms": {
       "tags": []
     },
-    "model": {
+    "ui-gfx": {
       "tags": []
     },
-    "molecules": {
+    "ui-layout": {
       "tags": []
     },
-    "organisms": {
+    "ui-molecules": {
       "tags": []
+    },
+    "ui-organisms": {
+      "tags": []
+    },
+    "ui-views": {
+      "tags": []
+    },
+    "ui-views-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ui-views"]
     },
     "utils": {
       "tags": []
-    },
-    "views": {
-      "tags": []
-    },
-    "views-e2e": {
-      "tags": [],
-      "implicitDependencies": ["views"]
     }
   }
 }
