@@ -249,39 +249,6 @@
         }
       }
     },
-    "helpers": {
-      "root": "libs/helpers",
-      "sourceRoot": "libs/helpers/src",
-      "projectType": "library",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/node:package",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/libs/helpers",
-            "tsConfig": "libs/helpers/tsconfig.lib.json",
-            "packageJson": "libs/helpers/package.json",
-            "main": "libs/helpers/src/index.ts",
-            "assets": ["libs/helpers/*.md"]
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["libs/helpers/**/*.ts"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/helpers"],
-          "options": {
-            "jestConfig": "libs/helpers/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "home": {
       "root": "apps/home",
       "sourceRoot": "apps/home",
