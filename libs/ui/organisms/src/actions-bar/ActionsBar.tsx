@@ -41,7 +41,7 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
       <div className="relative z-20">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <Logo href="/" variant="primary" />
+            <Logo href="/" variant="secondary" />
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <MenuButton />

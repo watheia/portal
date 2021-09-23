@@ -1,53 +1,57 @@
-import { HtmlHTMLAttributes } from "react"
-import NLink from "next/link"
-
-import styles from "./NavLink.module.scss"
+import React, { useMemo } from "react"
 import clsx from "clsx"
 
-export type NavLinkProps = {
-  href: string
+import { isBrowser, compareUrl } from "@watheia/utils"
+import Link, { LinkProps } from "../link"
+import styles from "./NavLink.module.scss"
 
-  /**
-   * opens link in a new tab
-   */
-  external?: boolean
-} & HtmlHTMLAttributes<HTMLAnchorElement>
-
-/**
- * Base component for link, equivalent to a `<a/>` tag.
- *
- * This component is a placeholder for future implementations,
- * where different applications can override this component with their underlying navigation system.
- */
-export function NavLink({ href, external, children, className, ...rest }: NavLinkProps) {
-  // Use standard link for external
-  if (external || href.startsWith("https://")) {
-    return (
-      <a
-        className={clsx(styles.link, className)}
-        data-bit-id="watheia.app/atoms/link"
-        rel="noreferrer"
-        target="_blank"
-        href={href}
-        {...rest}
-      >
-        {children}
-      </a>
-    )
-  }
-
-  //used wrapped link for internal
-  return (
-    <NLink href={href} passHref>
-      <a
-        className={clsx(styles.link, className)}
-        data-bit-id="watheia.app/atoms/link"
-        {...rest}
-      >
-        {children}
-      </a>
-    </NLink>
-  )
+export type NavLinkProps = LinkProps & {
+  /** class name to apply when active */
+  activeClassName?: string
+  /** styles to apply when active. Will be merged with the style prop */
+  activeStyle?: React.CSSProperties
+  /** href should match url exactly in order to apply. */
+  exact?: boolean
+  /** take in consideration trailing slash on the location pathname */
+  strict?: boolean
+  /** explicit active state override */
+  isActive?: (() => boolean) | undefined
 }
 
-export default NavLink
+/**
+ * A special version of `<Link/>` that will add styles to the rendered element when it matches the current URL.
+ * Used to provide default fallbacks for next/router
+ */
+export function NavLink({
+  activeClassName,
+  activeStyle,
+  isActive,
+  exact,
+  strict,
+  style,
+  className,
+  ...rest
+}: NavLinkProps) {
+  // TODO - consider using getLocation()
+  const activeHref = isBrowser ? window.location.href : "/"
+
+  const isDefaultActive = useMemo(
+    () => rest.href && compareUrl(activeHref, rest.href),
+    [activeHref, rest.href]
+  )
+
+  const calcIsActive = isActive?.() || isDefaultActive
+
+  const combinedStyles = useMemo(
+    () => (calcIsActive && activeStyle ? { ...style, ...activeStyle } : style),
+    [activeStyle, calcIsActive, style]
+  )
+
+  return (
+    <Link
+      {...rest}
+      style={combinedStyles}
+      className={clsx(styles.link, className, calcIsActive && activeClassName)}
+    />
+  )
+}
