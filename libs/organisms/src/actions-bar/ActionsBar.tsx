@@ -2,16 +2,16 @@
 import { Fragment, HtmlHTMLAttributes } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
-import { solutions, blogPosts, callsToAction, corporate, resources } from "./data"
-import { ChevronDownIcon } from "@heroicons/react/solid"
+import { solutions } from "@watheia/catalog"
+
 import clsx from "clsx"
 import { Logo } from "@watheia/gfx"
-import { Link, Button } from "@watheia/atoms"
+import { Link } from "@watheia/atoms"
 
 import styles from "./ActionsBar.module.css"
 import PrimaryNav from "./components/PrimaryNav"
 import SecondaryNav from "./components/SecondaryNav"
-import { NavLink } from "@watheia/navigator"
+import { NavLink } from "@watheia/catalog"
 
 const CloseButton = () => (
   <Popover.Button className="bg-shark-50 rounded-md p-2 inline-flex items-center justify-center text-shark-400 hover:text-shark-500 hover:bg-shark-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-aqua-500">

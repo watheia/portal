@@ -1,29 +1,13 @@
 import { Popover, Transition } from "@headlessui/react"
-import { callsToAction, solutions } from "../data"
-import clsx from "clsx"
-import { ChevronDownIcon } from "@heroicons/react/solid"
+import { callsToAction, solutions } from "@watheia/catalog"
 import { Fragment } from "react"
+import { NavDropdown } from "./NavDropdown"
 
 export const PrimaryNav = () => (
   <Popover>
     {({ open }) => (
       <>
-        <Popover.Button
-          className={clsx(
-            open ? "text-shark-900" : "text-shark-500",
-            "group bg-shark-50 rounded-md inline-flex items-center text-base font-medium hover:text-shark-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aqua-500"
-          )}
-        >
-          <span>Solutions</span>
-          <ChevronDownIcon
-            className={clsx(
-              open ? "text-shark-600" : "text-shark-400",
-              "ml-2 h-5 w-5 group-hover:text-shark-500"
-            )}
-            aria-hidden="true"
-          />
-        </Popover.Button>
-
+        <NavDropdown open={open}>Solutions</NavDropdown>
         <Transition
           as={Fragment}
           enter="transition ease-out duration-200"
