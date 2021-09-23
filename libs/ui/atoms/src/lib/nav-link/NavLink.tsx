@@ -55,3 +55,5 @@ export function NavLink({
     />
   )
 }
+
+export default NavLink
