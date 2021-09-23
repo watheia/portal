@@ -27,6 +27,7 @@ export const HeroSection = () => {
   // intentional cast to boolean representationd
   // eslint-disable-next-line no-extra-boolean-cast
   const isOnline = !!session?.user
+  console.log(`isOnline=${isOnline}`)
 
   return (
     <section className="pt-10 bg-shark-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden shadow-md">
