@@ -1,8 +1,8 @@
 import { ReactNode, useEffect, useState } from "react"
 import { SessionCtx } from "./SessionCtx"
 
-import client from "../client"
-import { Session, User } from '@supabase/supabase-js'
+import client from "../supabaseClient"
+import { Session, User } from "@supabase/supabase-js"
 
 export type SessionProviderProps = {
   children: ReactNode | ReactNode[] | null

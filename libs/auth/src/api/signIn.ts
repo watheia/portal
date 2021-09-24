@@ -1,4 +1,4 @@
-import client from "../client"
+import client from "../supabaseClient"
 
 export async function signIn(email: string) {
   try {

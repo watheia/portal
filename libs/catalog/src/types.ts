@@ -56,9 +56,6 @@ export interface Listing extends IAction {
   imageUrl?: string
 }
 
-/**
- * @deprecated
- */
 export type AsyncStatus = "idle" | "pending" | "success" | "error"
 
 /**

@@ -1,4 +1,4 @@
-import client from "../client"
+import client from "../supabaseClient"
 
 export const signOut = async () => {
   const { error } = await client.auth.signOut()

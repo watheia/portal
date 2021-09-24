@@ -1,4 +1,4 @@
-import client from "../../client"
+import client from "../../supabaseClient"
 import clsx from "clsx"
 import { HtmlHTMLAttributes, useState } from "react"
 

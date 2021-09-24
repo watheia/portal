@@ -1,7 +1,7 @@
 import { DEFAULT_AVATARS_BUCKET } from "@watheia/catalog"
 import { ChangeEvent, useState } from "react"
 import { AsyncStatus } from "@watheia/catalog"
-import client from "../client"
+import client from "../supabaseClient"
 
 export type UploadAvatarResult = {
   status: string
@@ -53,5 +53,7 @@ export async function useAvatar(
     }
   } finally {
     setStatus("idle")
+    // eslint-disable-next-line no-unsafe-finally
+    return { status: "idle" }
   }
 }
