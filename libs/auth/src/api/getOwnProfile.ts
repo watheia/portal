@@ -1,4 +1,4 @@
-import { Profile } from "@watheia/model"
+import { Profile } from "@watheia/catalog"
 import client from "../client"
 
 export default async function getOwnProfile(): Promise<Profile> {

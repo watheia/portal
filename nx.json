@@ -1,5 +1,5 @@
 {
-  "npmScope": "gatekeeper",
+  "npmScope": "watheia",
   "affected": {
     "defaultBase": "main"
   },
@@ -38,17 +38,10 @@
     "auth": {
       "tags": []
     },
+    "catalog": {
+      "tags": []
+    },
     "docs": {
-      "tags": []
-    },
-    "gatekeeper": {
-      "tags": []
-    },
-    "gatekeeper-e2e": {
-      "tags": [],
-      "implicitDependencies": ["gatekeeper"]
-    },
-    "helpers": {
       "tags": []
     },
     "home": {
@@ -58,35 +51,30 @@
       "tags": [],
       "implicitDependencies": ["home"]
     },
-    "layout": {
+    "ui-atoms": {
       "tags": []
     },
-    "model": {
+    "ui-gfx": {
       "tags": []
     },
-    "navigation": {
+    "ui-layout": {
       "tags": []
     },
-    "navigation-e2e": {
+    "ui-molecules": {
+      "tags": []
+    },
+    "ui-organisms": {
+      "tags": []
+    },
+    "ui-views": {
+      "tags": []
+    },
+    "ui-views-e2e": {
       "tags": [],
-      "implicitDependencies": ["navigation"]
+      "implicitDependencies": ["ui-views"]
     },
-    "nextjs-stackbit-starter": {
+    "utils": {
       "tags": []
-    },
-    "nextjs-stackbit-starter-e2e": {
-      "tags": [],
-      "implicitDependencies": ["nextjs-stackbit-starter"]
-    },
-    "ui-atom": {
-      "tags": []
-    },
-    "views": {
-      "tags": []
-    },
-    "views-e2e": {
-      "tags": [],
-      "implicitDependencies": ["views"]
     }
   }
 }

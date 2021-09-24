@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SEO } from "@watheia/layout"
+import { SEO } from "@watheia/app.ui.layout"
 import Document, { Html, Head, Main, NextScript } from "next/document"
 
 export default class CustomDocument extends Document {

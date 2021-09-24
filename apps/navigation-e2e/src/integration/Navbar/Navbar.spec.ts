@@ -1,4 +1,4 @@
-describe("navigation: Navbar component", () => {
+describe("navigator: Navbar component", () => {
   beforeEach(() => cy.visit("/iframe.html?id=navbar--primary"))
 
   it("should render the component", () => {

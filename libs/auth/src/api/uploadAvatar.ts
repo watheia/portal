@@ -1,6 +1,6 @@
-import { DEFAULT_AVATARS_BUCKET } from "@watheia/model"
+import { DEFAULT_AVATARS_BUCKET } from "@watheia/catalog"
 import { ChangeEvent, useState } from "react"
-import { AsyncStatus } from "@watheia/model"
+import { AsyncStatus } from "@watheia/catalog"
 import client from "../client"
 
 export type UploadAvatarResult = {

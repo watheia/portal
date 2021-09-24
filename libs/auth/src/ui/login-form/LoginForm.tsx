@@ -58,9 +58,12 @@ export const LoginForm = ({ className, ...props }: LoginFormProps) => {
       </div>
       <p className="mt-3 text-sm text-shark-300 sm:mt-4">
         Your privacy is important to us. Please read our{" "}
-        <a href="/term-and-conditions" className="font-medium text-shark-50">
+        <a
+          href="/term-and-conditions"
+          className="font-medium text-shark-50 hover:underline"
+        >
           terms and conditions
-        </a>
+        </a>{" "}
         for more information.
       </p>
     </form>
