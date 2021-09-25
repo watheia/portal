@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import clsx from "clsx"
-import { posts } from "@watheia/model"
+import { posts } from "@watheia/catalog"
 export const Header = () => {
   return (
     <div className="bg-shark-50">

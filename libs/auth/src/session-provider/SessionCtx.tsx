@@ -2,13 +2,13 @@ import { createContext } from "react"
 import { Session, User } from "@supabase/supabase-js"
 
 export type SessionCtxProps = {
-  session: Session | null
-  user: User | null
+  session?: Session
+  user?: User
 }
 
 const defaultContext = {
-  session: null,
-  user: null
+  session: undefined,
+  user: undefined
 }
 
 export const SessionCtx = createContext<SessionCtxProps>(defaultContext)

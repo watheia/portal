@@ -29,5 +29,5 @@ jobs:
           cache: "yarn"
       - run: yarn install
       - run: yarn serve blog &
-      - run: yarn nx run home:test --verbose --coverage
-      # - run: yarn nx run gatekeeper:build:production --verbose
+      - run: yarn nx affected --target=lint
+      - run: yarn nx affected --target=test

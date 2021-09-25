@@ -1,24 +1,25 @@
 import { ReactNode, useEffect, useState } from "react"
 import { SessionCtx } from "./SessionCtx"
 
-import client from "../client"
+import client from "../supabaseClient"
+import { Session, User } from "@supabase/supabase-js"
 
 export type SessionProviderProps = {
   children: ReactNode | ReactNode[] | null
 } & JSX.IntrinsicAttributes
 
 export const SessionProvider = (props: SessionProviderProps) => {
-  const [session, setSession] = useState<any>(false)
-  const [user, setUser] = useState<any>(false)
+  const [session, setSession] = useState<Session>()
+  const [user, setUser] = useState<User>()
 
   useEffect(() => {
     const session = client.auth.session()
-    setSession(session)
-    setUser(session?.user ?? false)
+    setSession(session ?? undefined)
+    setUser(session?.user ?? undefined)
     const { data: authListener } = client.auth.onAuthStateChange(async (event, session) => {
       console.info("EVENT: ", event)
-      setSession(session)
-      setUser(session?.user ?? false)
+      setSession(session ?? undefined)
+      setUser(session?.user ?? undefined)
     })
 
     return () => {

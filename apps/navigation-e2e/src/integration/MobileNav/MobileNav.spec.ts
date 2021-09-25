@@ -1,4 +1,4 @@
-describe("navigation: MobileNav component", () => {
+describe("navigator: MobileNav component", () => {
   beforeEach(() => cy.visit("/iframe.html?id=mobilenav--primary"))
 
   it("should render the component", () => {

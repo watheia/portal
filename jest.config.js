@@ -26,7 +26,11 @@ module.exports = {
     https://jestjs.io/docs/configuration#transform-objectstring-pathtotransformer--pathtotransformer-object */
     "^.+\\.(js|jsx|ts|tsx)$": ["babel-jest", { presets: ["next/babel"] }]
   },
-  transformIgnorePatterns: ["/node_modules/", "^.+\\.module\\.(css|sass|scss)$"],
+  transformIgnorePatterns: [
+    "/node_modules/",
+    "^.+\\.module\\.(css|sass|scss)$",
+    "^.+\\.stories\\.(js|jsx|ts|tsx)$"
+  ],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   collectCoverage: true,
   reporters: ["default", "jest-junit"],

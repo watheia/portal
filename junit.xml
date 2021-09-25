@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="17" failures="0" errors="0" time="6.327">
+  <testsuite name="Index" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:30" time="0.877" tests="1">
+    <testcase classname="Index should render successfully" name="Index should render successfully" time="0.047">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppController" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:31" time="0.606" tests="1">
+    <testcase classname="AppController getData should return &quot;Welcome to api!&quot;" name="AppController getData should return &quot;Welcome to api!&quot;" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Layout" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:32" time="0.664" tests="1">
+    <testcase classname="Layout should render successfully" name="Layout should render successfully" time="0.07">
+    </testcase>
+  </testsuite>
+  <testsuite name="Navbar" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:32" time="0.376" tests="1">
+    <testcase classname="Navbar should render successfully" name="Navbar should render successfully" time="0.022">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoginForm" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:33" time="0.289" tests="1">
+    <testcase classname="LoginForm should render successfully" name="LoginForm should render successfully" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="Header" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:33" time="0.348" tests="1">
+    <testcase classname="Header should render successfully" name="Header should render successfully" time="0.024">
+    </testcase>
+  </testsuite>
+  <testsuite name="Container" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:33" time="0.128" tests="1">
+    <testcase classname="Container should render successfully" name="Container should render successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Index" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.176" tests="1">
+    <testcase classname="Index should render successfully" name="Index should render successfully" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="Resources" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.173" tests="1">
+    <testcase classname="Resources should render successfully" name="Resources should render successfully" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="UiAtom" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.198" tests="1">
+    <testcase classname="UiAtom should render successfully" name="UiAtom should render successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="TabNav" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.123" tests="1">
+    <testcase classname="TabNav should render successfully" name="TabNav should render successfully" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="Footer" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.121" tests="1">
+    <testcase classname="Footer should render successfully" name="Footer should render successfully" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="Login" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:34" time="0.106" tests="1">
+    <testcase classname="Login should render successfully" name="Login should render successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Support" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:35" time="0.115" tests="1">
+    <testcase classname="Support should render successfully" name="Support should render successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="ActionBar" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:35" time="0.108" tests="1">
+    <testcase classname="ActionBar should render successfully" name="ActionBar should render successfully" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Paper" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:35" time="0.108" tests="1">
+    <testcase classname="Paper should render successfully" name="Paper should render successfully" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppService" errors="0" failures="0" skipped="0" timestamp="2021-09-19T03:21:35" time="0.181" tests="1">
+    <testcase classname="AppService getData should return &quot;Welcome to api!&quot;" name="AppService getData should return &quot;Welcome to api!&quot;" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

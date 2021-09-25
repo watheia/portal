@@ -1,4 +1,4 @@
-describe("navigation: TabNav component", () => {
+describe("navigator: TabNav component", () => {
   beforeEach(() => cy.visit("/iframe.html?id=tabnav--primary"))
 
   it("should render the component", () => {

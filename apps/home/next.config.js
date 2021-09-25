@@ -20,7 +20,12 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/home",
+        destination: "/corporate",
+        permanent: isProd
+      },
+      {
+        source: "/home",
+        destination: "/corporate",
         permanent: isProd
       }
     ]
