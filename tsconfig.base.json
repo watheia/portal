@@ -30,6 +30,7 @@
       "@watheia/app.ui.views": ["libs/ui/views/src/corporate/index.ts"],
       "@watheia/auth": ["libs/auth/src/index.ts"],
       "@watheia/catalog": ["libs/catalog/src/index.ts"],
+      "@watheia/theme": ["libs/theme/src/index.ts"],
       "@watheia/utils": ["libs/utils/src/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],

@@ -51,6 +51,9 @@
       "tags": [],
       "implicitDependencies": ["home"]
     },
+    "theme": {
+      "tags": []
+    },
     "ui-atoms": {
       "tags": []
     },
