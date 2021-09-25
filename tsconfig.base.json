@@ -34,7 +34,12 @@
       "@watheia/utils": ["libs/utils/src/index.ts"],
       "@waweb/assets.graphics.*": ["libs/assets/src/graphics/*"],
       "@waweb/assets.images/*": ["libs/assets/src/images/*"],
-      "@waweb/assets.styles/*": ["libs/assets/src/styles/*"]
+      "@waweb/assets.styles/*": ["libs/assets/src/styles/*"],
+      "@watheia/theme.styles.page/*": ["libs/theme/src/lib/styles/components/page/*"],
+      "@watheia/theme.styles.typography/*": [
+        "libs/theme/src/lib/styles/components/typography/*"
+      ],
+      "@watheia/theme.styles.global/*": ["libs/theme/src/lib/styles/vars/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
