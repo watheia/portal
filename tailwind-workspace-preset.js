@@ -60,7 +60,12 @@ module.exports = {
         primary: "#110f10",
         "primary-2": "#1a1718",
         secondary: "#fefeff",
-        "secondary-2": "#dbdcdd"
+        "secondary-2": "#dbdcdd",
+        "accent-1": "#FAFAFA",
+        "accent-2": "#EAEAEA",
+        "accent-7": "#333",
+        success: "#024873",
+        cyan: "#9be5e5"
       },
       textColor: {
         base: "#110f10",
@@ -68,8 +73,25 @@ module.exports = {
         secondary: "#fefeff",
         brand: "#04BFBF"
       },
+      spacing: {
+        28: "7rem"
+      },
+      letterSpacing: {
+        tighter: "-.04em"
+      },
+      lineHeight: {
+        tight: 1.2
+      },
+      fontSize: {
+        "5xl": "2.5rem",
+        "6xl": "2.75rem",
+        "7xl": "4.5rem",
+        "8xl": "6.25rem"
+      },
       boxShadow: {
-        "outline-2": "0 0 0 2px #151313",
+        "outline-2": "0 0 0 2px #1a1718",
+        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
+        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
         magical:
           "rgba(0, 0, 0, 0.02) 0px 30px 30px, rgba(0, 0, 0, 0.03) 0px 0px 8px, rgba(0, 0, 0, 0.05) 0px 1px 0px"
       },

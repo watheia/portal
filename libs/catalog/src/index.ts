@@ -10,6 +10,9 @@ export type {
   Post
 } from "./types"
 
+export type { RequestParams } from "./dato"
+export { default as dato } from "./dato"
+
 export * from "./blogPosts"
 export * from "./callsToAction"
 export * from "./constants"
