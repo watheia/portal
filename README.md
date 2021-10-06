@@ -16,6 +16,6 @@ This project has two goals:
 [x] Integrated pipeline using both GitHub Actions and GitLab CI in the same pipeline.
 [ ] Tekton plugin to replicate internal cluster operator
 
-## Dependency Graph
+## Source Graph
 
 ![depgraph](./depgraph.svg)

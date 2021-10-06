@@ -46,9 +46,11 @@ export const HeroSection = () => {
                 Let micro components drive feature delivery at global scale with the worlds{" "}
                 <s>first</s> best DevOps platform built for IoT and the edge.
               </p>
-              <div className="mt-10 sm:mt-12">
-                <LoginForm />
-              </div>
+              {!isOnline && (
+                <div className="mt-10 sm:mt-12">
+                  <LoginForm />
+                </div>
+              )}
             </div>
           </div>
           <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">

@@ -3,6 +3,7 @@ import { Fragment, HtmlHTMLAttributes } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import { MenuIcon, XIcon } from "@heroicons/react/outline"
 import { solutions } from "@watheia/catalog"
+import { useSession } from "@watheia/auth"
 
 import clsx from "clsx"
 import { Logo } from "@watheia/app.ui.gfx"
@@ -32,6 +33,7 @@ const MenuButton = () => (
 export type ActionsBarProps = HtmlHTMLAttributes<HTMLDivElement>
 
 export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
+  const { session, user } = useSession()
   return (
     <Popover className={clsx(styles.actionBar, className)} {...props}>
       <div
@@ -54,7 +56,7 @@ export const ActionsBar = ({ className, ...props }: ActionsBarProps) => {
               <SecondaryNav />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <NavLink href="/auth">Sign in</NavLink>
+              {!user && <NavLink href="/auth">Sign in</NavLink>}
             </div>
           </div>
         </div>
